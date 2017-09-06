@@ -1,0 +1,66 @@
+//$rcolor: #e61937;
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web:400,600,700');
+//@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+//@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@mixin noto() {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+@mixin maven() {
+    font-family: 'Maven', sans-serif;
+}
+//@mixin titi() {
+//    font-family: 'Titillium Web', sans-serif;
+//}
+//@mixin lato() {
+//    font-family: 'Lato', sans-serif;
+//}
+//@mixin roboto() {
+//    font-family: 'Roboto', sans-serif;
+//}
+
+body {
+    position: relative;
+	min-width: 1200px;
+    font-size: 13px;
+    color: #666;
+    @include noto();
+    padding-top: 100px;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+p {
+	margin-bottom: 0;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+dl {
+    margin-bottom: 0;
+}
+address {
+    margin-bottom: 0;
+}
+.container {
+    min-width: 1200px !important;
+}
+.container-fluid {
+    min-width: 1200px;
+    max-width: 1920px;
+}
+
+@mixin trans($prop: all, $sec: .15s, $timing: linear, $delay: 0s) {
+	-webkit-transition-property: $prop;
+    transition-property: $prop;
+	-webkit-transition-duration: $sec;
+    transition-duration: $sec;
+	-webkit-transition-timing-function: $timing;
+    transition-timing-function: $timing;
+	-webkit-transition-delay: $delay;
+    transition-delay: $delay;
+}

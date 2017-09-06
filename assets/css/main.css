@@ -1,3 +1,34 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+  position: relative;
+  min-width: 1200px;
+  font-size: 13px;
+  color: #666;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding-top: 100px; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+p {
+  margin-bottom: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+dl {
+  margin-bottom: 0; }
+
+address {
+  margin-bottom: 0; }
+
+.container {
+  min-width: 1200px !important; }
+
+.container-fluid {
+  min-width: 1200px;
+  max-width: 1920px; }
 
 /*# sourceMappingURL=main.css.map */
