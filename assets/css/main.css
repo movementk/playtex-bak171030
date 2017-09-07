@@ -2,8 +2,10 @@
 body {
   position: relative;
   min-width: 1200px;
+  max-width: 100%;
   font-size: 13px;
   color: #666;
+  font-weight: 300;
   font-family: 'Noto Sans KR', sans-serif;
   padding-top: 100px; }
 
@@ -29,6 +31,6 @@ address {
 
 .container-fluid {
   min-width: 1200px;
-  max-width: 1920px; }
+  max-width: 1890px; }
 
 /*# sourceMappingURL=main.css.map */

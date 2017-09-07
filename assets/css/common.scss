@@ -9,7 +9,7 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 @mixin maven() {
-    font-family: 'Maven', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
 }
 //@mixin titi() {
 //    font-family: 'Titillium Web', sans-serif;
@@ -24,8 +24,10 @@
 body {
     position: relative;
 	min-width: 1200px;
+    max-width: 100%;
     font-size: 13px;
     color: #666;
+    font-weight: 300;
     @include noto();
     padding-top: 100px;
 }
@@ -51,7 +53,7 @@ address {
 }
 .container-fluid {
     min-width: 1200px;
-    max-width: 1920px;
+    max-width: 1890px;
 }
 
 @mixin trans($prop: all, $sec: .15s, $timing: linear, $delay: 0s) {
