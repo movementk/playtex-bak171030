@@ -121,19 +121,22 @@ address {
             #content .jumbotron .bx-wrapper .bx-controls .bx-pager .bx-pager-item a.active {
               background-color: #fff; }
 #content #best-seller {
-  max-width: 1715px;
+  max-width: 1860px;
   margin: 100px auto;
   background-image: url(/assets/images/main/best_seller_bg.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: auto; }
+  @media (min-width: 1800px) {
+    #content #best-seller .container-fluid {
+      padding-right: 145px; } }
   #content #best-seller .best-list {
     float: right; }
     #content #best-seller .best-list .section-title {
       font-size: 0;
       margin-top: 40px;
       margin-bottom: 50px;
-      padding-right: 160px; }
+      padding-right: 190px; }
       #content #best-seller .best-list .section-title hr {
         display: inline-block;
         width: 60%;
@@ -169,7 +172,7 @@ address {
       #content #best-seller .best-list .bx-wrapper .bx-controls {
         position: absolute;
         top: -103px;
-        right: 30px; }
+        right: 0; }
         #content #best-seller .best-list .bx-wrapper .bx-controls .bx-controls-direction {
           font-size: 0; }
           #content #best-seller .best-list .bx-wrapper .bx-controls .bx-controls-direction a {
@@ -194,7 +197,7 @@ address {
             #content #best-seller .best-list .bx-wrapper .bx-controls .bx-controls-direction a.bx-next:before {
               content: "\E805"; }
 #content #playtex-line {
-  max-width: 1890px;
+  max-width: 1860px;
   margin: 90px auto; }
   #content #playtex-line .article-header {
     text-align: center;
@@ -307,13 +310,144 @@ address {
         background-image: url(/assets/images/main/line_bg05.jpg); }
       #content #playtex-line .article-content ul li:nth-of-type(6) {
         background-image: url(/assets/images/main/line_bg06.jpg); }
+#content #item-characteristic {
+  max-width: 1860px;
+  margin: 0 auto; }
+  #content #item-characteristic .img-responsive {
+    margin: 0 auto; }
 #content #new-arrivals {
-  max-width: 1715px;
+  max-width: 1860px;
   margin: 100px auto;
   background-image: url(/assets/images/main/new_arrivals_bg.jpg);
   background-repeat: no-repeat;
   background-position: 100% 0;
   background-size: auto; }
+  @media (min-width: 1800px) {
+    #content #new-arrivals .container-fluid {
+      padding-left: 145px; } }
+  #content #new-arrivals .arrivals-list {
+    float: left; }
+    #content #new-arrivals .arrivals-list .section-title {
+      font-size: 0;
+      margin-top: 40px;
+      margin-bottom: 50px;
+      padding-left: 160px; }
+      #content #new-arrivals .arrivals-list .section-title h3 {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        text-align: left; }
+        #content #new-arrivals .arrivals-list .section-title h3 img {
+          display: inline-block; }
+      #content #new-arrivals .arrivals-list .section-title hr {
+        display: inline-block;
+        width: 50%;
+        margin: 27px 0;
+        border-top: 1px solid #333; }
+    #content #new-arrivals .arrivals-list .bx-wrapper {
+      position: relative; }
+      #content #new-arrivals .arrivals-list .bx-wrapper .bx-viewport ul li a {
+        text-decoration: none; }
+        #content #new-arrivals .arrivals-list .bx-wrapper .bx-viewport ul li a figure .img-responsive {
+          width: 100% !important;
+          margin: 0 auto; }
+        #content #new-arrivals .arrivals-list .bx-wrapper .bx-viewport ul li a figure figcaption {
+          width: 100%;
+          margin-top: 30px;
+          text-align: center; }
+          #content #new-arrivals .arrivals-list .bx-wrapper .bx-viewport ul li a figure figcaption p {
+            font-size: 15px;
+            color: #333;
+            line-height: 22px;
+            margin-bottom: 20px; }
+          #content #new-arrivals .arrivals-list .bx-wrapper .bx-viewport ul li a figure figcaption strong {
+            font-size: 18px;
+            color: #333;
+            font-family: 'Maven Pro', sans-serif; }
+      #content #new-arrivals .arrivals-list .bx-wrapper .bx-controls {
+        position: absolute;
+        top: -103px;
+        left: 0; }
+        #content #new-arrivals .arrivals-list .bx-wrapper .bx-controls .bx-controls-direction {
+          font-size: 0; }
+          #content #new-arrivals .arrivals-list .bx-wrapper .bx-controls .bx-controls-direction a {
+            position: relative;
+            display: inline-block;
+            width: 52px;
+            height: 52px;
+            border: 1px solid #bcbcbc;
+            text-decoration: none; }
+            #content #new-arrivals .arrivals-list .bx-wrapper .bx-controls .bx-controls-direction a:before {
+              display: inline-block;
+              text-align: center;
+              width: 52px;
+              font-size: 23px;
+              color: #696969;
+              line-height: 52px;
+              font-family: "fontello"; }
+            #content #new-arrivals .arrivals-list .bx-wrapper .bx-controls .bx-controls-direction a.bx-prev {
+              border-right: 0; }
+              #content #new-arrivals .arrivals-list .bx-wrapper .bx-controls .bx-controls-direction a.bx-prev:before {
+                content: "\E806"; }
+            #content #new-arrivals .arrivals-list .bx-wrapper .bx-controls .bx-controls-direction a.bx-next:before {
+              content: "\E805"; }
+#content #video-promotion {
+  max-width: 1890px;
+  margin: 0 auto;
+  height: 540px;
+  background-image: url(/assets/images/main/promotion_video_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto 540px; }
+#content #editors-pick {
+  max-width: 1600px;
+  margin: 100px auto 135px; }
+  #content #editors-pick .section-header {
+    text-align: center;
+    margin-bottom: 50px; }
+    #content #editors-pick .section-header h3 {
+      display: block;
+      font-size: 25px;
+      color: #2b2b2b;
+      font-weight: bold;
+      font-family: 'Maven Pro', sans-serif;
+      letter-spacing: 3px;
+      margin-bottom: 26px; }
+    #content #editors-pick .section-header hr {
+      display: block;
+      width: 70px;
+      margin: 0 auto;
+      border-top: 1px solid #181818; }
+  #content #editors-pick ul li a {
+    text-decoration: none; }
+    #content #editors-pick ul li a figure {
+      margin-top: 70px; }
+      #content #editors-pick ul li a figure .img-responsive {
+        margin: 0 auto;
+        width: 100%; }
+      #content #editors-pick ul li a figure figcaption {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center; }
+        #content #editors-pick ul li a figure figcaption p {
+          font-size: 15px;
+          color: #333;
+          line-height: 22px;
+          margin-bottom: 20px; }
+        #content #editors-pick ul li a figure figcaption strong {
+          font-size: 18px;
+          color: #333;
+          font-family: 'Maven Pro', sans-serif; }
+  #content #editors-pick ul li:nth-of-type(1) figure {
+    margin-top: 0; }
+  #content #editors-pick ul li:nth-of-type(2) figure {
+    margin-top: 0; }
+  #content #editors-pick ul li:nth-of-type(3) figure {
+    margin-top: 0; }
+  #content #editors-pick ul li:nth-of-type(4) figure {
+    margin-top: 0; }
+  #content #editors-pick ul li:nth-of-type(4n + 1) {
+    clear: both; }
 
 .label-area {
   text-align: center;
