@@ -123,19 +123,25 @@
     }
     //베스트 셀러 
     #best-seller {
-        max-width: 1715px;
+//        max-width: 1715px;
+        max-width: 1860px;
         margin: 100px auto;
         background-image: url(/assets/images/main/best_seller_bg.jpg);
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: auto;
+        .container-fluid {
+            @media(min-width: 1800px) {
+                padding-right: 145px;
+            }
+        }
         .best-list {
             float: right;
             .section-title {
                 font-size: 0;
                 margin-top: 40px;
                 margin-bottom: 50px;
-                padding-right: 160px;
+                padding-right: 190px;
                 hr {
                     display: inline-block;
                     width: 60%;
@@ -188,7 +194,7 @@
                 .bx-controls {
                     position: absolute;
                     top: -103px;
-                    right: 30px;
+                    right: 0;
                     .bx-controls-direction {
                         font-size: 0;
                         a {
@@ -224,8 +230,9 @@
             }
         }
     }
+    // 플레이텍스 디자인 라인
     #playtex-line {
-        max-width: 1890px;
+        max-width: 1860px;
         margin: 90px auto;
         .article-header {
             text-align: center;
@@ -342,108 +349,214 @@
             }
         }
     }
+    // 아이템 효과
+    #item-characteristic {
+        max-width: 1860px;
+        margin: 0 auto;
+        .img-responsive {
+            margin: 0 auto;
+        }
+    }
+    // new arrivals
     #new-arrivals {
-        max-width: 1715px;
+//        max-width: 1715px;
+        max-width: 1860px;
         margin: 100px auto;
         background-image: url(/assets/images/main/new_arrivals_bg.jpg);
         background-repeat: no-repeat;
         background-position: 100% 0;
         background-size: auto;
-//        .best-list {
-//            float: left;
-//            .section-title {
-//                font-size: 0;
-//                margin-top: 40px;
-//                margin-bottom: 50px;
-//                padding-right: 160px;
-//                hr {
-//                    display: inline-block;
-//                    width: 60%;
-//                    margin: 27px 0;
-//                    border-top: 1px solid #333;
-//                }
-//                h3 {
-//                    display: inline-block;
-//                    width: 40%;
-//                    vertical-align: top;
-//                    text-align: right;
-//                    img {
-//                        display: inline-block;
-//                    }
-//                }
-//            }
-//            .bx-wrapper {
-//                position: relative;
-//                .bx-viewport {
-//                    ul {
-//                        li {
-//                            a {
-//                                text-decoration: none;
-//                                figure {
-//                                    .img-responsive {
-//                                        width: 100% !important;
-//                                        margin: 0 auto;
-//                                    }
-//                                    figcaption {
-//                                        width: 100%;
-//                                        margin-top: 30px;
-//                                        text-align: center;
-//                                        p {
-//                                            font-size: 15px;
-//                                            color: #333;
-//                                            line-height: 22px;
-//                                            margin-bottom: 20px;
-//                                        }
-//                                        strong {
-//                                            font-size: 18px;
-//                                            color: #333;
-//                                            @include maven();
-//                                        }
-//                                    }
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
-//                .bx-controls {
-//                    position: absolute;
-//                    top: -103px;
-//                    right: 30px;
-//                    .bx-controls-direction {
-//                        font-size: 0;
-//                        a {
-//                            position: relative;
-//                            display: inline-block;
-//                            width: 52px;
-//                            height: 52px;
-//                            border: 1px solid #bcbcbc;
-//                            text-decoration: none;
-//                            &:before {
-//                                display: inline-block;
-//                                text-align: center;
-//                                width: 52px;
-//                                font-size: 23px;
-//                                color: #696969;
-//                                line-height: 52px;
-//                                font-family: "fontello";
-//                            }
-//                            &.bx-prev {
-//                                border-right: 0;
-//                                &:before {
-//                                    content: "\E806";
-//                                }
-//                            }
-//                            &.bx-next {
-//                                &:before {
-//                                    content: "\E805";
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//        }
+        .container-fluid {
+            @media(min-width: 1800px) {
+                padding-left: 145px;
+            }
+        }
+        .arrivals-list {
+            float: left;
+            .section-title {
+                font-size: 0;
+                margin-top: 40px;
+                margin-bottom: 50px;
+                padding-left: 160px;
+                h3 {
+                    display: inline-block;
+                    width: 50%;
+                    vertical-align: top;
+                    text-align: left;
+                    img {
+                        display: inline-block;
+                    }
+                }
+                hr {
+                    display: inline-block;
+                    width: 50%;
+                    margin: 27px 0;
+                    border-top: 1px solid #333;
+                }
+            }
+            .bx-wrapper {
+                position: relative;
+                .bx-viewport {
+                    ul {
+                        li {
+                            a {
+                                text-decoration: none;
+                                figure {
+                                    .img-responsive {
+                                        width: 100% !important;
+                                        margin: 0 auto;
+                                    }
+                                    figcaption {
+                                        width: 100%;
+                                        margin-top: 30px;
+                                        text-align: center;
+                                        p {
+                                            font-size: 15px;
+                                            color: #333;
+                                            line-height: 22px;
+                                            margin-bottom: 20px;
+                                        }
+                                        strong {
+                                            font-size: 18px;
+                                            color: #333;
+                                            @include maven();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .bx-controls {
+                    position: absolute;
+                    top: -103px;
+                    left: 0;
+                    .bx-controls-direction {
+                        font-size: 0;
+                        a {
+                            position: relative;
+                            display: inline-block;
+                            width: 52px;
+                            height: 52px;
+                            border: 1px solid #bcbcbc;
+                            text-decoration: none;
+                            &:before {
+                                display: inline-block;
+                                text-align: center;
+                                width: 52px;
+                                font-size: 23px;
+                                color: #696969;
+                                line-height: 52px;
+                                font-family: "fontello";
+                            }
+                            &.bx-prev {
+                                border-right: 0;
+                                &:before {
+                                    content: "\E806";
+                                }
+                            }
+                            &.bx-next {
+                                &:before {
+                                    content: "\E805";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+    // 홍보영상 
+    #video-promotion {
+        max-width: 1890px;
+        margin: 0 auto;
+        height: 540px;
+        background-image: url(/assets/images/main/promotion_video_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: auto 540px;;
+    }
+    
+    
+    //editors pick
+    #editors-pick {
+        max-width: 1600px;
+        margin: 100px auto 135px;
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+            h3 {
+                display: block;
+                font-size: 25px;
+                color: #2b2b2b;
+                font-weight: bold;
+                @include maven();
+                letter-spacing: 3px;
+                margin-bottom: 26px;
+            }
+            hr {
+                display: block;
+                width: 70px;
+                margin: 0 auto;
+                border-top: 1px solid #181818;
+            }
+        }
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    figure {
+                        margin-top: 70px;
+                        .img-responsive {
+                            margin: 0 auto;
+                            width: 100%;
+                        }
+                        figcaption {
+                            width: 100%;
+                            margin-top: 30px;
+                            text-align: center;
+                            p {
+                                font-size: 15px;
+                                color: #333;
+                                line-height: 22px;
+                                margin-bottom: 20px;
+                            }
+                            strong {
+                                font-size: 18px;
+                                color: #333;
+                                @include maven();
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(1) {
+                    figure {
+                        margin-top: 0;
+                    }
+                }
+                &:nth-of-type(2) {
+                    figure {
+                        margin-top: 0;
+                    }
+                }
+                &:nth-of-type(3) {
+                    figure {
+                        margin-top: 0;
+                    }
+                }
+                &:nth-of-type(4) {
+                    figure {
+                        margin-top: 0;
+                    }
+                }
+                &:nth-of-type(4n + 1) {
+                    clear: both;
+                }
+            }
+        }
+    }
+    
+    
 }
 .label-area {
     text-align: center;
