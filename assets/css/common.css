@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
   position: relative;
@@ -32,5 +33,183 @@ address {
 .container-fluid {
   min-width: 1200px;
   max-width: 1890px; }
+
+/*******************************  공통 Style  *******************************/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 9999; }
+  #header .logo {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    margin-top: -34px; }
+  #header #gnb {
+    float: left; }
+    #header #gnb ul {
+      font-size: 0; }
+      #header #gnb ul li {
+        display: inline-block;
+        margin-right: 60px; }
+        #header #gnb ul li a {
+          font-size: 20px;
+          color: #2b2b2b;
+          font-weight: 400;
+          line-height: 100px;
+          text-decoration: none; }
+        #header #gnb ul li:last-child {
+          margin-right: 0; }
+  #header #quick-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    overflow: hidden; }
+    #header #quick-nav ul {
+      float: left;
+      font-size: 0; }
+      #header #quick-nav ul li {
+        display: inline-block;
+        margin: 0 10px; }
+        #header #quick-nav ul li a {
+          font-size: 22px;
+          color: #2b2b2b;
+          line-height: 100px; }
+
+#opening {
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf; }
+  #opening .call-number {
+    display: inline-block;
+    line-height: 60px; }
+    #opening .call-number img {
+      display: inline-block; }
+  #opening .opening-hours {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    vertical-align: top;
+    line-height: 18px;
+    padding: 12px 0;
+    margin-left: 30px; }
+  #opening .notice {
+    position: relative; }
+    #opening .notice dl {
+      font-size: 0; }
+      #opening .notice dl dt {
+        display: inline-block;
+        width: 70px;
+        font-size: 13px;
+        color: #999;
+        line-height: 60px;
+        vertical-align: top;
+        font-weight: 400; }
+      #opening .notice dl dd {
+        display: inline-block;
+        line-height: 60px;
+        font-size: 13px;
+        width: 370px; }
+        #opening .notice dl dd a {
+          display: block;
+          font-size: 13px;
+          color: #333;
+          font-weight: 400;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap; }
+    #opening .notice .btn-more {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -10px; }
+      #opening .notice .btn-more .btn {
+        display: block;
+        width: 19px;
+        height: 19px;
+        font-size: 13px;
+        color: #999;
+        padding: 0; }
+
+#footer {
+  padding: 50px 0;
+  background-color: #2b2b2b; }
+  #footer .company-info {
+    overflow: hidden; }
+    #footer .company-info li {
+      float: left;
+      font-size: 13px;
+      color: #999;
+      font-weight: 300;
+      line-height: 25px; }
+      #footer .company-info li a {
+        color: #999; }
+      #footer .company-info li address {
+        display: inline-block; }
+      #footer .company-info li:nth-of-type(3):after {
+        content: "";
+        padding: 0; }
+      #footer .company-info li:nth-of-type(4) {
+        clear: both; }
+      #footer .company-info li:nth-of-type(5):after {
+        content: "";
+        padding: 0; }
+      #footer .company-info li:nth-of-type(6) {
+        clear: both; }
+      #footer .company-info li:last-child:after {
+        content: "";
+        padding: 0; }
+      #footer .company-info li:after {
+        position: relative;
+        top: -2px;
+        display: inline-block;
+        content: "|";
+        font-size: 10px;
+        color: #999;
+        padding: 0 10px; }
+  #footer .policy {
+    font-size: 0;
+    margin: 35px 0 10px; }
+    #footer .policy li {
+      display: inline-block;
+      font-size: 13px; }
+      #footer .policy li a {
+        color: #666; }
+      #footer .policy li:after {
+        position: relative;
+        top: -2px;
+        content: "\E807";
+        font-family: "fontello";
+        font-size: 10px;
+        color: #666;
+        padding: 0 15px; }
+      #footer .policy li:last-child:after {
+        content: "";
+        padding: 0; }
+  #footer .join-confirm {
+    font-size: 13px;
+    color: #666; }
+    #footer .join-confirm a {
+      display: inline-block;
+      margin-left: 10px;
+      color: #666; }
+  #footer .logo {
+    text-align: right; }
+  #footer .copyright {
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: right;
+    margin-top: 50px; }
+    #footer .copyright a {
+      color: #666;
+      text-decoration: none; }
 
 /*# sourceMappingURL=common.css.map */
