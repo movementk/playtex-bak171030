@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 body {
   position: relative;
   min-width: 1200px;
@@ -621,8 +623,23 @@ address {
   margin: 0;
   border: 0; }
 
+/*******************************  Pagination  *******************************/
+.paging {
+  text-align: center; }
+  .paging .pagination {
+    margin: 0; }
+    .paging .pagination li a {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      color: #666;
+      padding: 0;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 0; }
+
 /*******************************  공통 Style List  *******************************/
-.product-list .page-header {
+.common-list .page-header {
   width: 100%;
   height: 359px;
   text-align: center;
@@ -630,28 +647,237 @@ address {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
-  .product-list .page-header h2 {
+  .common-list .page-header .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .common-list .page-header h2 {
+    font-size: 80px;
     color: #fff;
-    line-height: 289px; }
-  .product-list .page-header .list-lnb {
+    line-height: 289px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif; }
+  .common-list .page-header .list-lnb {
     height: 70px;
     background-color: #fff; }
-    .product-list .page-header .list-lnb ul {
+    .common-list .page-header .list-lnb ul {
       display: table;
       width: 100%; }
-      .product-list .page-header .list-lnb ul li {
-        text-align: center;
+      .common-list .page-header .list-lnb ul li {
+        display: table-cell;
         width: 1%;
-        display: table-cell; }
-        .product-list .page-header .list-lnb ul li a {
+        text-align: center; }
+        .common-list .page-header .list-lnb ul li a {
+          position: relative;
           display: inline-block;
-          line-height: 70px; }
-
-.item-list {
+          font-size: 15px;
+          color: #333;
+          line-height: 70px;
+          font-weight: bold;
+          font-family: 'Maven Pro', sans-serif;
+          text-decoration: none; }
+          .common-list .page-header .list-lnb ul li a span {
+            display: inline-block;
+            width: 0;
+            height: 1px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            background-color: #8c6239;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
+          .common-list .page-header .list-lnb ul li a:hover, .common-list .page-header .list-lnb ul li a:focus {
+            color: #8c6239; }
+            .common-list .page-header .list-lnb ul li a:hover span, .common-list .page-header .list-lnb ul li a:focus span {
+              width: 100%;
+              margin-left: -50%; }
+        .common-list .page-header .list-lnb ul li.active a {
+          color: #8c6239; }
+          .common-list .page-header .list-lnb ul li.active a span {
+            width: 100%;
+            margin-left: -50%; }
+.common-list .item-list {
   width: 100%;
-  height: 350px;
-  background-color: orange; }
+  padding-bottom: 150px;
+  background-color: #f7f7f7; }
+  .common-list .item-list .best-item {
+    position: relative;
+    margin-top: 66px;
+    padding-bottom: 80px;
+    background-color: #fff; }
+  .common-list .item-list .page-summary {
+    height: 275px; }
+    .common-list .item-list .page-summary .item-title {
+      font-size: 40px;
+      color: #333;
+      font-weight: 900;
+      font-family: 'Lato', sans-serif;
+      margin-bottom: 30px; }
+    .common-list .item-list .page-summary p {
+      font-size: 17px;
+      color: #333;
+      line-height: 25px; }
+  .common-list .item-list .bx-wrapper {
+    position: relative; }
+    .common-list .item-list .bx-wrapper .bx-viewport .best-item-list li a {
+      position: relative;
+      display: block;
+      width: 270px;
+      height: 270px;
+      padding-top: 5px;
+      padding-right: 5px;
+      text-decoration: none; }
+      .common-list .item-list .bx-wrapper .bx-viewport .best-item-list li a .products-rank {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        display: block;
+        width: 55px;
+        padding: 5px 0;
+        text-align: center;
+        color: #fff;
+        font-family: 'Maven Pro', sans-serif;
+        background-color: rgba(155, 135, 110, 0.8); }
+        .common-list .item-list .bx-wrapper .bx-viewport .best-item-list li a .products-rank small {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-left: -12px;
+          font-size: 10px;
+          display: block;
+          font-weight: 300; }
+        .common-list .item-list .bx-wrapper .bx-viewport .best-item-list li a .products-rank p {
+          position: relative;
+          font-size: 25px;
+          font-weight: bold;
+          padding-top: 10px; }
+      .common-list .item-list .bx-wrapper .bx-viewport .best-item-list li a .figure img {
+        width: 265px;
+        height: 265px; }
+    .common-list .item-list .bx-wrapper .bx-controls {
+      position: absolute;
+      bottom: 0;
+      left: -300px; }
+      .common-list .item-list .bx-wrapper .bx-controls .bx-controls-direction {
+        font-size: 0; }
+        .common-list .item-list .bx-wrapper .bx-controls .bx-controls-direction a {
+          position: relative;
+          display: inline-block;
+          width: 52px;
+          height: 52px;
+          border: 1px solid #bcbcbc;
+          text-decoration: none; }
+          .common-list .item-list .bx-wrapper .bx-controls .bx-controls-direction a:before {
+            display: inline-block;
+            text-align: center;
+            width: 52px;
+            font-size: 23px;
+            color: #696969;
+            line-height: 52px;
+            font-family: "fontello"; }
+          .common-list .item-list .bx-wrapper .bx-controls .bx-controls-direction a.bx-prev {
+            border-right: 0; }
+            .common-list .item-list .bx-wrapper .bx-controls .bx-controls-direction a.bx-prev:before {
+              content: "\E806"; }
+          .common-list .item-list .bx-wrapper .bx-controls .bx-controls-direction a.bx-next:before {
+            content: "\E805"; }
+.common-list .product-list {
+  padding-top: 60px;
+  overflow: hidden; }
+  .common-list .product-list .select-box {
+    float: right;
+    width: 180px;
+    margin-bottom: 40px; }
+    .common-list .product-list .select-box .btn.dropdown-toggle {
+      position: relative;
+      width: 180px;
+      font-size: 14px;
+      color: #666;
+      text-align: left;
+      padding: 0 15px 10px;
+      border-radius: 0;
+      border: 1px solid #f7f7f7;
+      background-color: #f7f7f7; }
+      .common-list .product-list .select-box .btn.dropdown-toggle:after {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        content: "\E808";
+        font-family: "fontello"; }
+      .common-list .product-list .select-box .btn.dropdown-toggle:hover, .common-list .product-list .select-box .btn.dropdown-toggle:focus {
+        box-shadow: none; }
+    .common-list .product-list .select-box .dropdown-menu {
+      width: 180px;
+      margin: 0;
+      padding: 5px 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      border-top: 1px solid #ccc;
+      background-color: #f7f7f7;
+      opacity: .9; }
+      .common-list .product-list .select-box .dropdown-menu li {
+        text-align: left; }
+        .common-list .product-list .select-box .dropdown-menu li a {
+          font-size: 12px;
+          color: #666;
+          padding: 0 15px;
+          line-height: 30px; }
+          .common-list .product-list .select-box .dropdown-menu li a:hover, .common-list .product-list .select-box .dropdown-menu li a:focus {
+            box-shadow: none;
+            background-color: rgba(247, 247, 247, 0.6); }
+    .common-list .product-list .select-box.open .btn.dropdown-toggle:after {
+      content: "\E809"; }
+  .common-list .product-list ul {
+    clear: both; }
+    .common-list .product-list ul li:nth-of-type(1) a {
+      margin-top: 0; }
+    .common-list .product-list ul li:nth-of-type(2) a {
+      margin-top: 0; }
+    .common-list .product-list ul li:nth-of-type(3) a {
+      margin-top: 0; }
+    .common-list .product-list ul li a {
+      display: block;
+      margin-top: 100px;
+      text-decoration: none; }
+      .common-list .product-list ul li a figure .img-responsive {
+        width: 100% !important;
+        margin: 0 auto; }
+      .common-list .product-list ul li a figure figcaption {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center; }
+        .common-list .product-list ul li a figure figcaption p {
+          font-size: 15px;
+          color: #333;
+          line-height: 22px;
+          margin-bottom: 20px; }
+        .common-list .product-list ul li a figure figcaption strong {
+          font-size: 18px;
+          color: #333;
+          font-family: 'Maven Pro', sans-serif; }
+.common-list .paging {
+  margin-top: 100px; }
 
 /*******************************  공통 Style View  *******************************/
+.common-view .page-header {
+  width: 100%;
+  height: 359px;
+  text-align: center;
+  background-image: url(/assets/images/item/sub_visual_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+.common-view .item-view {
+  padding-bottom: 160px; }
+  .common-view .item-view .view-header {
+    margin-top: -155px;
+    background-color: orange;
+    height: 547px; }
 
 /*# sourceMappingURL=style.css.map */
