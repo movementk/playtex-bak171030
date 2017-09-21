@@ -538,8 +538,31 @@
     border: 0;
 }
 
+/*******************************  Pagination  *******************************/
+.paging {
+    text-align: center;
+    .pagination {
+        margin: 0;
+        li {
+            a {
+                width: 30px;
+                height: 30px;
+                font-size: 18px;
+                color: #666;
+                padding: 0;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 0;
+                i {
+                    
+                }
+            }
+        }
+    }
+}
+
 /*******************************  공통 Style List  *******************************/
-.product-list {
+.common-list {
     .page-header {
         width: 100%;
         height: 359px;
@@ -548,9 +571,16 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
         h2 {
+            font-size: 80px;
             color: #fff;
             line-height: 289px;
+            font-style: italic;
+            @include playfd();
         }
         .list-lnb {
             height: 70px;
@@ -559,30 +589,300 @@
                 display: table;
                 width: 100%;
                 li {
-                    text-align: center;
-                    width: 1%;
                     display: table-cell;
+                    width: 1%;
+                    text-align: center;
                     a {
+                        position: relative;
                         display: inline-block;
+                        font-size: 15px;
+                        color: #333;
                         line-height: 70px;
+                        font-weight: bold;
+                        @include maven();
+                        text-decoration: none;
+                        span {
+                            display: inline-block;
+                            width: 0;
+                            height: 1px;
+                            position: absolute;
+                            bottom: 20px;
+                            left: 50%;
+                            background-color: #8c6239;
+                            @include trans();
+                        }
+                        &:hover, &:focus {
+                            color: #8c6239;
+                            span {
+                                width: 100%;
+                                margin-left: -50%;
+                            }
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: #8c6239;
+                            span {
+                                width: 100%;
+                                margin-left: -50%;
+                            }
+                        }
                     }
                 }
             }
         }
     }
+    .item-list {
+        width: 100%;
+        padding-bottom: 150px;
+        background-color: #f7f7f7;
+        .best-item {
+            position: relative;
+            margin-top: 66px;
+            padding-bottom: 80px;
+            background-color: #fff;
+        }
+        .page-summary {
+            height: 275px;
+            .item-title {
+                font-size: 40px;
+                color: #333;
+                font-weight: 900;
+                @include lato();
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 17px;
+                color: #333;
+                line-height: 25px;
+            }
+        }
+        .bx-wrapper {
+            position: relative;
+            .bx-viewport {
+                .best-item-list {
+                    li {
+                        a {
+                            position: relative;
+                            display: block;
+                            width: 270px;
+                            height: 270px;
+                            padding-top: 5px;
+                            padding-right: 5px;
+                            text-decoration: none;
+                            .products-rank {
+                                position: absolute;
+                                top: 0;
+                                right: 0px;
+                                display: block;
+                                width: 55px;
+                                padding: 5px 0;
+                                text-align: center;
+                                color: #fff;
+                                @include maven();
+                                background-color: rgba(155, 135, 110, .8);
+                                small {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 50%;
+                                    margin-left: -12px;
+                                    font-size: 10px;
+                                    display: block;
+                                    font-weight: 300;
+                                }
+                                p {
+                                    position: relative;
+                                    font-size: 25px;
+                                    font-weight: bold;
+                                    padding-top: 10px;
+                                }
+                            }
+                            .figure {
+                                img {
+                                    width: 265px;
+                                    height: 265px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .bx-controls {
+                position: absolute;
+                bottom: 0;
+                left: -300px;
+                .bx-controls-direction {
+                    font-size: 0;
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        width: 52px;
+                        height: 52px;
+                        border: 1px solid #bcbcbc;
+                        text-decoration: none;
+                        &:before {
+                            display: inline-block;
+                            text-align: center;
+                            width: 52px;
+                            font-size: 23px;
+                            color: #696969;
+                            line-height: 52px;
+                            font-family: "fontello";
+                        }
+                        &.bx-prev {
+                            border-right: 0;
+                            &:before {
+                                content: "\E806";
+                            }
+                        }
+                        &.bx-next {
+                            &:before {
+                                content: "\E805";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product-list {
+        padding-top: 60px;
+        overflow: hidden;
+        .select-box {
+            float: right;
+            width: 180px;
+            margin-bottom: 40px;
+            .btn.dropdown-toggle {
+                position: relative;
+                width: 180px;
+                font-size: 14px;
+                color: #666;
+                text-align: left;
+                padding: 0 15px 10px;
+                border-radius: 0;
+                border: 1px solid #f7f7f7;
+                background-color: #f7f7f7;
+                &:after {
+                    position: absolute;
+                    top: 1px;
+                    right: 0;
+                    content: "\E808";
+                    font-family: "fontello";
+                }
+                &:hover, &:focus {
+                    box-shadow: none;
+                }
+            }
+            .dropdown-menu {
+                width: 180px;
+                margin: 0;
+                padding: 5px 0;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                border-top: 1px solid #ccc;
+                background-color: #f7f7f7;
+                opacity: .9;
+                li {
+                    text-align: left;
+                    a {
+                        font-size: 12px;
+                        color: #666;
+                        padding: 0 15px;
+                        line-height: 30px;
+                        &:hover, &:focus {
+                            box-shadow: none;
+                            background-color: rgba(247, 247, 247, .6);
+                        }
+                    }
+                }
+            }
+            &.open {
+                .btn.dropdown-toggle {
+                    &:after {
+                        content: "\E809";
+                    }
+                }
+            }
+        }
+        ul {
+            clear: both;
+            li {
+                &:nth-of-type(1) {
+                    a {
+                        margin-top: 0;
+                    }
+                }
+                &:nth-of-type(2) {
+                    a {
+                        margin-top: 0;
+                    }
+                }
+                &:nth-of-type(3) {
+                    a {
+                        margin-top: 0;
+                    }
+                }
+                a {
+                    display: block;
+                    margin-top: 100px;
+                    text-decoration: none;
+                    figure {
+                        .img-responsive {
+                            width: 100% !important;
+                            margin: 0 auto;
+                        }
+                        figcaption {
+                            width: 100%;
+                            margin-top: 30px;
+                            text-align: center;
+                            p {
+                                font-size: 15px;
+                                color: #333;
+                                line-height: 22px;
+                                margin-bottom: 20px;
+                            }
+                            strong {
+                                font-size: 18px;
+                                color: #333;
+                                @include maven();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .paging {
+        margin-top: 100px;
+    }
 }
-.item-list {
-    width: 100%;
-    height: 350px;
-    background-color: orange;
-}
+
 
 
 
 
 
 /*******************************  공통 Style View  *******************************/
-
+.common-view {
+    .page-header {
+        width: 100%;
+        height: 359px;
+        text-align: center;
+        background-image: url(/assets/images/item/sub_visual_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    .item-view {
+        padding-bottom: 160px;
+        .view-header {
+            margin-top: -155px;
+            background-color: orange;
+            height: 547px;
+        }
+    }
+}
 
 
 
