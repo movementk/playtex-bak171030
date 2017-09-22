@@ -331,17 +331,17 @@
                     <a href="#" aria-label="Previous">
                         <i class="icon-angle-double-left"></i>
                     </a>
-                <li>
+                <li class="arrow-left">
                     <a href="#" aria-label="Previous">
                         <i class="icon-angle-left"></i>
                     </a>
                 </li>
-                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li>
+                <li class="arrow-right">
                     <a href="#" aria-label="Next">
                         <i class="icon-angle-right"></i>
                     </a>

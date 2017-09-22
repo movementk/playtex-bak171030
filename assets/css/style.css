@@ -36,6 +36,20 @@ address {
   min-width: 1200px;
   max-width: 1890px; }
 
+label {
+  margin: 0;
+  font-weight: 400; }
+
+.form-group {
+  margin: 0; }
+
+.form-control {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none; }
+  .form-control:hover, .form-control:focus {
+    box-shadow: none; }
+
 /*******************************  공통 Style  *******************************/
 #header {
   position: fixed;
@@ -214,6 +228,7 @@ address {
       color: #666;
       text-decoration: none; }
 
+/*******************************  Sub Page  *******************************/
 #content .jumbotron {
   padding: 0;
   margin: 0; }
@@ -623,6 +638,55 @@ address {
   margin: 0;
   border: 0; }
 
+/*******************************  버튼 리스트  *******************************/
+.btn {
+  padding: 0;
+  border: 0;
+  border-radius: 0; }
+
+.btn-area p {
+  font-size: 0; }
+  .btn-area p .btn {
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+    .btn-area p .btn:last-child {
+      margin-right: 0; }
+    .btn-area p .btn i {
+      margin-right: 5px; }
+    .btn-area p .btn:hover, .btn-area p .btn:focus {
+      opacity: .7; }
+  .btn-area p .btn-sm {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 10px; }
+  .btn-area p .btn-md {
+    width: 200px;
+    font-size: 20px;
+    height: 85px;
+    line-height: 85px;
+    margin-right: 15px; }
+  .btn-area p .btn-lg {
+    width: 270px;
+    font-size: 20px;
+    height: 85px;
+    line-height: 85px;
+    margin-right: 15px; }
+  .btn-area p .btn-gray {
+    background-color: #999; }
+  .btn-area p .btn-black {
+    background-color: #333; }
+
 /*******************************  Pagination  *******************************/
 .paging {
   text-align: center; }
@@ -632,11 +696,46 @@ address {
       width: 30px;
       height: 30px;
       font-size: 18px;
-      color: #666;
+      color: #888;
+      font-weight: 300;
       padding: 0;
+      margin: 0 3px;
       line-height: 30px;
       text-align: center;
-      border-radius: 0; }
+      border-radius: 0;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.15s;
+      transition-duration: 0.15s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      border: 0;
+      background-color: #f7f7f7; }
+      .paging .pagination li a i {
+        margin: 0;
+        padding: 0;
+        line-height: 30px; }
+        .paging .pagination li a i:before {
+          margin: 0;
+          padding: 0; }
+      .paging .pagination li a:hover, .paging .pagination li a:focus {
+        opacity: .7;
+        background-color: #f7f7f7 !important; }
+    .paging .pagination li.active a {
+      font-weight: 400;
+      color: #333;
+      line-height: 28px;
+      border-radius: 50%;
+      border: 1px solid #3f3f3f; }
+      .paging .pagination li.active a:hover, .paging .pagination li.active a:focus {
+        opacity: 1;
+        color: #333; }
+    .paging .pagination li.arrow-left a {
+      margin-right: 15px; }
+    .paging .pagination li.arrow-right a {
+      margin-left: 15px; }
 
 /*******************************  공통 Style List  *******************************/
 .common-list .page-header {
@@ -876,8 +975,487 @@ address {
 .common-view .item-view {
   padding-bottom: 160px; }
   .common-view .item-view .view-header {
-    margin-top: -155px;
-    background-color: orange;
-    height: 547px; }
+    margin-top: -155px; }
+    .common-view .item-view .view-header figure img {
+      width: 570px;
+      height: 570px; }
+    .common-view .item-view .view-header .details {
+      padding-top: 20px; }
+      .common-view .item-view .view-header .details .product-title {
+        font-size: 24px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 32px; }
+      .common-view .item-view .view-header .details .payment {
+        height: 56px;
+        margin-top: 15px; }
+        .common-view .item-view .view-header .details .payment p {
+          display: inline-block;
+          font-size: 26px;
+          color: #fff;
+          font-weight: bold;
+          margin-right: 20px;
+          font-family: 'Maven Pro', sans-serif; }
+        .common-view .item-view .view-header .details .payment .label-area {
+          display: inline-block; }
+      .common-view .item-view .view-header .details .product-info {
+        padding-top: 25px; }
+        .common-view .item-view .view-header .details .product-info .info-list > li > dl {
+          position: relative; }
+          .common-view .item-view .view-header .details .product-info .info-list > li > dl > dt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 13px;
+            color: #333;
+            font-weight: 400;
+            width: 130px;
+            line-height: 30px; }
+          .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd {
+            font-size: 13px;
+            color: #666;
+            font-weight: 400;
+            padding-left: 130px;
+            line-height: 30px; }
+            .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd.consumer-pay {
+              text-decoration: line-through; }
+            .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul {
+              font-size: 0; }
+              .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul > li {
+                display: inline-block;
+                font-size: 13px; }
+                .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul > li > dl {
+                  display: inline-block; }
+                  .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul > li > dl > dt {
+                    display: inline-block;
+                    color: #666;
+                    font-weight: 400; }
+                    .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul > li > dl > dt:after {
+                      content: ":"; }
+                  .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul > li > dl > dd {
+                    display: inline-block;
+                    color: #666; }
+                .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul > li:after {
+                  position: relative;
+                  top: -1px;
+                  font-size: 12px;
+                  content: "|";
+                  padding: 0 10px; }
+                .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul > li:last-child:after {
+                  content: "";
+                  padding: 0; }
+        .common-view .item-view .view-header .details .product-info .product-opstion {
+          margin: 25px 0;
+          padding: 15px 100px 15px 0;
+          border-top: 1px solid #dfdfdf;
+          border-bottom: 1px solid #dfdfdf; }
+          .common-view .item-view .view-header .details .product-info .product-opstion > dl {
+            font-size: 0; }
+            .common-view .item-view .view-header .details .product-info .product-opstion > dl > dt {
+              display: inline-block;
+              width: 130px;
+              font-size: 13px;
+              color: #333;
+              font-weight: 400;
+              line-height: 35px; }
+            .common-view .item-view .view-header .details .product-info .product-opstion > dl > dd {
+              display: inline-block; }
+              .common-view .item-view .view-header .details .product-info .product-opstion > dl > dd .form-control {
+                width: 100%;
+                height: 35px;
+                width: 235px;
+                border-radius: 0;
+                border: 1px solid #dfdfdf;
+                box-shadow: none; }
+        .common-view .item-view .view-header .details .product-info > .total {
+          text-align: right;
+          font-size: 0; }
+          .common-view .item-view .view-header .details .product-info > .total > dt {
+            display: inline-block;
+            font-size: 13px;
+            color: #333;
+            font-weight: 400;
+            margin-right: 15px; }
+          .common-view .item-view .view-header .details .product-info > .total > dd {
+            display: inline-block;
+            font-size: 13px;
+            color: #333;
+            font-weight: 400; }
+            .common-view .item-view .view-header .details .product-info > .total > dd b {
+              font-size: 18px;
+              font-weight: bold;
+              font-family: 'Maven Pro', sans-serif; }
+    .common-view .item-view .view-header .payment-btn {
+      margin-top: 80px; }
+  .common-view .item-view .recommend-products {
+    position: relative;
+    margin-top: 120px;
+    padding-top: 55px;
+    border-top: 1px solid #666; }
+    .common-view .item-view .recommend-products > p {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      display: inline-block;
+      width: 170px;
+      font-size: 15px;
+      color: #333;
+      font-weight: 400;
+      margin-left: -85px;
+      text-align: center;
+      background-color: #fff; }
+    .common-view .item-view .recommend-products > ul > li > a {
+      text-decoration: none; }
+      .common-view .item-view .recommend-products > ul > li > a figure img {
+        width: 270px;
+        height: 270px; }
+      .common-view .item-view .recommend-products > ul > li > a figure figcaption {
+        text-align: center;
+        margin-top: 20px; }
+        .common-view .item-view .recommend-products > ul > li > a figure figcaption .product-title {
+          font-size: 13px;
+          color: #333;
+          line-height: 20px; }
+        .common-view .item-view .recommend-products > ul > li > a figure figcaption .payment {
+          font-size: 17px;
+          color: #333;
+          font-weight: bold;
+          margin-top: 15px;
+          font-family: 'Maven Pro', sans-serif; }
+.common-view .product-information article {
+  padding-top: 120px; }
+  .common-view .product-information article .article-header .information-tab {
+    display: table; }
+    .common-view .product-information article .article-header .information-tab > li {
+      display: table-cell;
+      width: 1%; }
+      .common-view .product-information article .article-header .information-tab > li > a {
+        display: block;
+        font-size: 15px;
+        color: #888;
+        line-height: 54px;
+        font-weight: 300;
+        text-align: center;
+        text-decoration: none;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #333; }
+      .common-view .product-information article .article-header .information-tab > li:first-child a {
+        border-left: 1px solid #ccc; }
+      .common-view .product-information article .article-header .information-tab > li.active a {
+        font-weight: 400;
+        color: #333;
+        border: 1px solid #333 !important;
+        border-bottom: 1px solid #fff !important; }
+  .common-view .product-information article .article-content .table-wrap .table {
+    table-layout: fixed;
+    margin-bottom: 0; }
+    .common-view .product-information article .article-content .table-wrap .table tbody tr td {
+      font-size: 14px;
+      color: #666;
+      font-weight: 300;
+      padding: 15px 0;
+      border: 0;
+      text-align: center; }
+      .common-view .product-information article .article-content .table-wrap .table tbody tr td.num {
+        width: 70px;
+        font-family: 'Maven Pro', sans-serif; }
+      .common-view .product-information article .article-content .table-wrap .table tbody tr td.subject {
+        text-align: left;
+        padding-left: 30px; }
+        .common-view .product-information article .article-content .table-wrap .table tbody tr td.subject a {
+          color: #666;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          display: block; }
+      .common-view .product-information article .article-content .table-wrap .table tbody tr td.reply {
+        position: relative;
+        padding-left: 45px; }
+        .common-view .product-information article .article-content .table-wrap .table tbody tr td.reply:before {
+          position: absolute;
+          top: 50%;
+          left: 30px;
+          margin-top: -10px;
+          content: "\E80D";
+          font-family: "fontello"; }
+      .common-view .product-information article .article-content .table-wrap .table tbody tr td.grade {
+        width: 200px; }
+        .common-view .product-information article .article-content .table-wrap .table tbody tr td.grade i {
+          display: inline-block;
+          color: #f0c419; }
+          .common-view .product-information article .article-content .table-wrap .table tbody tr td.grade i:before {
+            margin: 0 -1px; }
+      .common-view .product-information article .article-content .table-wrap .table tbody tr td.usr-name {
+        width: 100px; }
+      .common-view .product-information article .article-content .table-wrap .table tbody tr td.date {
+        width: 140px;
+        font-family: 'Maven Pro', sans-serif; }
+  .common-view .product-information article .article-content .table-wrap .btn-area {
+    margin-top: 20px;
+    text-align: right; }
+  .common-view .product-information article .article-content .paging {
+    margin-top: 20px; }
+    .common-view .product-information article .article-content .paging .pagination li a {
+      background-color: #fff; }
+      .common-view .product-information article .article-content .paging .pagination li a:hover, .common-view .product-information article .article-content .paging .pagination li a:focus {
+        background-color: #fff !important; }
+.common-view .product-information #detail-information .article-content {
+  height: 530px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-top: 0; }
+.common-view .product-information #exchange-delivery .article-header .information-tab > li:nth-of-type(1) a {
+  border-right: 0; }
+.common-view .product-information #exchange-delivery .article-content {
+  margin-top: 70px;
+  padding-bottom: 50px; }
+  .common-view .product-information #exchange-delivery .article-content h4 {
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 25px; }
+  .common-view .product-information #exchange-delivery .article-content p {
+    font-size: 13px;
+    color: #666;
+    font-weight: 300;
+    line-height: 26px; }
+.common-view .product-information #review .article-header .information-tab > li:nth-of-type(2) a {
+  border-right: 0; }
+.common-view .product-information #review .article-content {
+  margin-top: 50px; }
+.common-view .product-information #inquiry .article-header .information-tab > li:nth-of-type(3) a {
+  border-right: 0; }
+.common-view .product-information #inquiry .article-content {
+  margin-top: 50px; }
+
+/*******************************  Member  *******************************/
+.member #header {
+  border-bottom: 1px solid #e5e5e5; }
+.member .page-header {
+  text-align: center;
+  padding: 120px 0 100px; }
+  .member .page-header h2 {
+    font-size: 70px;
+    color: #2b2b2b;
+    font-style: italic;
+    font-family: 'Playfair Display', serif; }
+.member .form-control {
+  font-size: 13px;
+  border: 1px solid #dfdfdf; }
+
+.login article {
+  padding-bottom: 200px; }
+  .login article .article-header .login-tab {
+    display: table; }
+    .login article .article-header .login-tab > li {
+      display: table-cell;
+      width: 1%; }
+      .login article .article-header .login-tab > li > a {
+        display: block;
+        font-size: 15px;
+        color: #888;
+        line-height: 54px;
+        font-weight: 300;
+        text-align: center;
+        text-decoration: none;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #333; }
+      .login article .article-header .login-tab > li:first-child a {
+        border-left: 1px solid #ccc; }
+      .login article .article-header .login-tab > li.active a {
+        font-weight: 400;
+        color: #333;
+        border: 1px solid #333 !important;
+        border-bottom: 1px solid #fff !important; }
+  .login article .article-content {
+    margin-top: 100px; }
+    .login article .article-content .summary {
+      font-size: 18px;
+      color: #2b2b2b;
+      line-height: 30px;
+      text-align: center; }
+    .login article .article-content .login-form {
+      width: 570px;
+      margin: 0 auto;
+      margin-top: 70px; }
+      .login article .article-content .login-form .input-box {
+        position: relative;
+        padding-right: 134px;
+        padding-bottom: 60px;
+        border-bottom: 1px solid #d8dce5; }
+        .login article .article-content .login-form .input-box .form-group ~ .form-group {
+          margin-top: 10px; }
+        .login article .article-content .login-form .input-box .btn-login {
+          position: absolute;
+          top: 0;
+          right: 0; }
+          .login article .article-content .login-form .input-box .btn-login .btn-default {
+            width: 120px;
+            height: 78px;
+            color: #fff;
+            border-radius: 0;
+            background-color: #333;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
+            .login article .article-content .login-form .input-box .btn-login .btn-default:hover, .login article .article-content .login-form .input-box .btn-login .btn-default:focus {
+              opacity: .8; }
+        .login article .article-content .login-form .input-box .id-save {
+          font-size: 14px;
+          color: #666;
+          margin-top: 15px; }
+          .login article .article-content .login-form .input-box .id-save input {
+            position: relative;
+            top: 1px;
+            margin-right: 10px; }
+        .login article .article-content .login-form .input-box .none-member-btn {
+          margin-top: 40px; }
+          .login article .article-content .login-form .input-box .none-member-btn .btn-primary {
+            width: 570px;
+            height: 52px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            border: 1px solid #ddd;
+            background-color: #f7f7f7;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
+            .login article .article-content .login-form .input-box .none-member-btn .btn-primary:hover, .login article .article-content .login-form .input-box .none-member-btn .btn-primary:focus {
+              opacity: .8; }
+      .login article .article-content .login-form .member-link {
+        text-align: center;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #d8dce5; }
+        .login article .article-content .login-form .member-link > ul > li a {
+          display: inline-block;
+          margin: 0 auto;
+          text-decoration: none;
+          text-align: center; }
+          .login article .article-content .login-form .member-link > ul > li a .figure {
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            border-radius: 50%;
+            background-color: #f7f7f7;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
+            .login article .article-content .login-form .member-link > ul > li a .figure img {
+              display: inline-block; }
+          .login article .article-content .login-form .member-link > ul > li a .details {
+            font-size: 14px;
+            color: #666;
+            font-weight: 400;
+            margin-top: 20px; }
+          .login article .article-content .login-form .member-link > ul > li a:hover .figure, .login article .article-content .login-form .member-link > ul > li a:focus .figure {
+            background-color: #e6e6e6; }
+      .login article .article-content .login-form .sns-login {
+        margin-top: 35px; }
+        .login article .article-content .login-form .sns-login > ul {
+          font-size: 0; }
+          .login article .article-content .login-form .sns-login > ul > li {
+            display: inline-block;
+            width: 180px;
+            margin-right: 15px; }
+            .login article .article-content .login-form .sns-login > ul > li:last-child {
+              margin-right: 0; }
+            .login article .article-content .login-form .sns-login > ul > li > a {
+              display: block;
+              width: 100%;
+              height: 45px;
+              line-height: 45px;
+              font-size: 13px;
+              color: #fff;
+              text-align: center;
+              text-decoration: none;
+              -webkit-transition-property: all;
+              transition-property: all;
+              -webkit-transition-duration: 0.15s;
+              transition-duration: 0.15s;
+              -webkit-transition-timing-function: linear;
+              transition-timing-function: linear;
+              -webkit-transition-delay: 0s;
+              transition-delay: 0s; }
+              .login article .article-content .login-form .sns-login > ul > li > a img {
+                display: inline-block;
+                margin-right: 6px; }
+              .login article .article-content .login-form .sns-login > ul > li > a.face-book {
+                background-color: #3a589b; }
+              .login article .article-content .login-form .sns-login > ul > li > a.naver {
+                background-color: #1ec700; }
+              .login article .article-content .login-form .sns-login > ul > li > a.kakao {
+                background-color: #462527; }
+              .login article .article-content .login-form .sns-login > ul > li > a:hover, .login article .article-content .login-form .sns-login > ul > li > a:focus {
+                opacity: .8; }
+
+.nonmember article .article-header .login-tab > li:first-child a {
+  border-left: 1px solid #ccc;
+  border-right: 0; }
+
+.find-for article {
+  padding-bottom: 300px; }
+  .find-for article .article-content .summary {
+    font-size: 18px;
+    color: #2b2b2b;
+    line-height: 30px;
+    text-align: center; }
+  .find-for article .article-content .find-form {
+    width: 570px;
+    margin: 0 auto;
+    margin-top: 70px; }
+    .find-for article .article-content .find-form .input-box {
+      position: relative; }
+      .find-for article .article-content .find-form .input-box .form-group ~ .form-group {
+        margin-top: 10px; }
+      .find-for article .article-content .find-form .input-box .btn-find {
+        margin-top: 30px; }
+        .find-for article .article-content .find-form .input-box .btn-find .btn-default {
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+          color: #fff;
+          border-radius: 0;
+          background-color: #333;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+          .find-for article .article-content .find-form .input-box .btn-find .btn-default:hover, .find-for article .article-content .find-form .input-box .btn-find .btn-default:focus {
+            opacity: .8; }
+
+.agreement article .article-header .step-list {
+  width: 100%;
+  font-size: 0; }
+  .agreement article .article-header .step-list li {
+    display: inline-block;
+    width: 33.33%;
+    background-color: orange; }
+    .agreement article .article-header .step-list li .figure {
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
