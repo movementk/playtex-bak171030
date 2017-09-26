@@ -1978,19 +1978,531 @@ label {
     }
 }
 
-// 회원가입 약관동의
-.agreement {
+// 회원가입 공통
+.join {
     article {
+        padding-bottom: 200px;
         .article-header {
+            margin-bottom: 80px;
             .step-list {
+                position: relative;
                 width: 100%;
                 font-size: 0;
                 li {
+                    position: relative;
+                    z-index: 99;
                     display: inline-block;
                     width: 33.33%;
-                    background-color: orange;
-                    .figure {
+                    div {
                         display: inline-block;
+                        width: 100px;
+                        .figure {
+                            display: inline-block;
+                            width: 100px;
+                            height: 100px;
+                            text-align: center;
+                            line-height: 100px;
+                            border-radius: 50%;
+                            background-color: #f1f1f1;
+                            img {
+                                display: inline-block;
+                            }
+                        }
+                        .details {
+                            display: inline-block;
+                            width: 100px;
+                            text-align: center;
+                            font-size: 15px;
+                            color: #333;
+                            opacity: .4;
+                            font-weight: bold;
+                            margin-top: 18px;
+                            @include maven();
+                        }
+                    }
+                    &.active {
+                        div {
+                            .figure {
+                                background-color: #af9f8b;
+                            }
+                            .details {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        text-align: center;
+                    }
+                    &:nth-of-type(3) {
+                        text-align: right;
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    content: " ";
+                    display: inline-block;
+                    width: 99%;
+                    height: 1px;
+                    z-index: 1;
+                    border-top: 1px solid #e5e5e5;
+                }
+            }
+        }
+    }
+}
+
+// 약관 동의
+.agreement {
+    .article-content {
+        .consent {
+            border: 1px solid #dfdfdf;
+            .consent-head {
+                padding: 20px 30px;
+                background-color: #f1f1f1;
+                border-bottom: 1px solid #dfdfdf;
+                label {
+                    font-size: 16px;
+                    color: #222;
+                    input {
+                        position: relative;
+                        top: 2px;
+                        margin-right: 7px;
+                    }
+                }
+            }
+            .consent-content {
+                padding: 40px 70px 50px;
+                .form-group {
+                    vertical-align: top;
+                    display: inline-block;
+                    label {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 35px;
+                        color: #666;
+                        input {
+                            position: relative;
+                            top: 1px;
+                            margin-right: 5px;
+                        }
+                        &.marketing {
+                            margin-right: 5px;
+                        }
+                        &.mail {
+                            font-weight: 300;
+                            input {
+                                margin-right: 0;
+                            }
+                        }
+                        &.sms {
+                            font-weight: 300;
+                            margin-left: 10px;
+                            input {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    .consent-btn {
+                        display: inline-block;
+                        .btn-default {
+                            width: 85px;
+                            height: 35px;
+                            font-size: 13px;
+                            color: #666;
+                            line-height: 33px;
+                            text-align: center;
+                            border: 1px solid #ccc;
+                            background-color: #fff;
+                            @include trans();
+                            &:hover, &:focus {
+                                opacity: .7;
+                            }
+                        }
+                    }
+                    &:nth-of-type(1) {
+                        margin-right: 65px;
+                        label {
+                            margin-right: 55px;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        margin-right: 55px;
+                        label {
+                            margin-right: 35px;
+                        }
+                    }
+                }
+                hr {
+                    width: 100%;
+                    border-top: 1px solid #d8dce5;
+                    margin: 30px 0 40px;
+                }
+                .summary {
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 25px;
+                }
+            }
+        }
+        .btn-area {
+            margin-top: 60px;
+            text-align: center;
+            p {
+                .btn-lg {
+                    width: 370px;
+                    height: 65px;
+                    line-height: 65px;
+                }
+            }
+        }
+        .terms {
+            margin-top: 120px;
+            border: 1px solid #dfdfdf;
+            h3 {
+                font-size: 16px;
+                color: #222;
+                line-height: 60px;
+                padding-left: 30px;
+                border-bottom: 1px solid #dfdfdf;
+                background-color: #f1f1f1;
+            }
+            > div {
+                width: 100%;
+                height: 260px;
+                font-size: 14px;
+                color: #666;
+                line-height: 25px;
+                overflow-y: scroll;
+                padding: 50px 30px 45px;
+            }
+        }
+        .privacy {
+            margin-top: 60px;
+            border: 1px solid #dfdfdf;
+            h3 {
+                font-size: 16px;
+                color: #222;
+                line-height: 60px;
+                padding-left: 30px;
+                border-bottom: 1px solid #dfdfdf;
+                background-color: #f1f1f1;
+            }
+            .table-wrap {
+                padding: 50px 70px 60px;
+                .table {
+                    border: 0;
+                    thead {
+                        tr {
+                            th {
+                                font-size: 14px;
+                                color: #2b2b2b;
+                                font-weight: 400;
+                                padding: 18px 0;
+                                text-align: center;
+                                border: 1px solid #dfdfdf;
+                                &:first-child {
+                                    border-left: 0;
+                                }
+                                &:last-child {
+                                    border-right: 0;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                font-size: 14px;
+                                color: #666;
+                                font-weight: 300;
+                                text-align: center;
+                                padding: 18px 0;
+                                border: 1px solid #dfdfdf;
+                                border-top: 0;
+                                &:first-child {
+                                    border-left: 0;
+                                }
+                                &:last-child {
+                                    border-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                > p {
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 25px;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+
+// 회원가입 작성 폼
+.join-form {
+    .article-content {
+        .table-wrap {
+            .table {
+                border: 0;
+                border-top: 1px solid #000;
+                tbody {
+                    tr {
+                        th {
+                            width: 200px;
+                            font-size: 14px;
+                            color: #333;
+                            text-align: left;
+                            font-weight: 400;
+                            vertical-align: middle;
+                            padding-left: 30px;
+                            border: 0;
+                            border-bottom: 1px solid #dfdfdf;
+                            background-color: #f8f8f8;
+                            label {
+                                font-size: 14px;
+                                color: #333;
+                                font-weight: 400;
+                            }
+                        }
+                        td {
+                            padding: 12px 20px;
+                            border: 0;
+                            border-bottom: 1px solid #dfdfdf;
+                            .form-group {
+                                display: inline-block;
+                                .form-control {
+                                    width: 280px;
+                                    height: 35px;
+                                    border: 1px solid #ddd;
+                                }
+                            }
+                            .note {
+                                display: inline-block;
+                                font-size: 12px;
+                                color: #666;
+                                line-height: 35px;
+                                margin-left: 10px;
+                            }
+                            &.e-mail {
+                                .form-group {
+                                    .form-control {
+                                        width: 450px;
+                                    }
+                                }
+                            }
+                            &.birthday {
+                                .form-group {
+                                    .form-control {
+                                        display: inline-block;
+                                        width: 80px;
+                                        margin-right: 8px;
+                                    }
+                                }
+                            }
+                            &.certificate {
+                                .form-group {
+                                    display: inline-block;
+                                    margin-right: 8px;
+                                    .form-control {
+                                        width: 180px;
+                                    }
+                                }
+                                .btn-certificate {
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    .btn-default {
+                                        width: 85px;
+                                        height: 35x;
+                                        font-size: 13px;
+                                        color: #fff;
+                                        text-align: center;
+                                        line-height: 35px;
+                                        background-color: #999;
+                                        @include trans();
+                                        &:hover, &:focus {
+                                            opacity: .7;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .essential {
+            margin-top: 50px;
+            padding-left: 30px;
+            label {
+                font-size: 14px;
+                color: #333;
+                font-weight: 400;
+                line-height: 30px;
+                input {
+                    position: relative;
+                    top: 1px;
+                    margin-right: 3px;
+                }
+            }
+            > p {
+                font-size: 14px;
+                color: #666;
+                line-height: 30px;
+            }
+        }
+        .btn-area {
+            text-align: center;
+            margin-top: 120px;
+            p {
+                .btn-lg {
+                    width: 200px;
+                    height: 60px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}
+
+
+/*******************************  Mypage  *******************************/
+.mypage {
+    #header {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .page-header {
+        text-align: center;
+        padding: 120px 0 100px;
+        h2 {
+            font-size: 70px;
+            color: #2b2b2b;
+            font-style: italic;
+            @include playfd();
+        }
+    }
+    article {
+        .article-header {
+            .mypage-tab {
+                > ul {
+                    display: inline-block;
+                    > li {
+                        display: inline;
+                        > a {
+                            position: relative;
+                            float: left;
+                            width: 234px;
+                            font-size: 14px;
+                            color: #666;
+                            font-weight: 400;
+                            text-align: center;
+                            padding: 14px 0;
+                            margin-left: -1px;
+                            text-decoration: none;
+                            border: 1px solid #dfdfdf;
+                        }
+                        &.active {
+                            a {
+                                color: #fff;
+                                background-color: #2b2b2b;
+                                border-color: #2b2b2b;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            margin-top: 90px;
+            .paging {
+                .pagination {
+                    li {
+                        a {
+                            background-color: #fff;
+                            &:hover, &:focus {
+                                background-color: #fff !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .table-wrap {
+                .table {
+                    table-layout: fixed;
+                    border: 0;
+                    border-top: 2px solid #000;
+                    thead {
+                        tr {
+                            th {
+                                font-size: 14px;
+                                color: #2b2b2b;
+                                font-weight: 400;
+                                text-align: center;
+                                padding: 20px 0;
+                                border: 0;
+                                border-bottom: 1px solid #aaa;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                font-size: 13px;
+                                color: #666;
+                                vertical-align: middle;
+                                text-align: center;
+                                padding: 15px 0;
+                                border: 0;
+                                border-bottom: 1px solid #dfdfdf;
+                                &.num {
+                                    @include maven();
+                                }
+                                &.title {
+                                    text-align: left;
+                                    padding-left: 40px;
+                                    a {
+                                        display: block;
+                                        color: #666;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                    }
+                                }
+                                &.payment {
+                                    @include maven();
+                                }
+                                .btn-inquiry {
+                                    p {
+                                        .btn-xs {
+                                            width: 80px;
+                                            height: 30px;
+                                            font-size: 12px;
+                                            color: #fff;
+                                            text-align: center;
+                                            line-height: 30px;
+                                            margin-bottom: 5px;
+                                            @include trans();
+                                            &:last-child {
+                                                margin-bottom: 0;
+                                            }
+                                            &.btn-gray {
+                                                background-color: #999;
+                                            }
+                                            &.btn-beige {
+                                                background-color: #998675;
+                                            }
+                                            &:hover, &:focus {
+                                                opacity: .7;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1999,14 +2511,236 @@ label {
 }
 
 
+// 주문 내역 및 상세 및 후기
+.order-list {
+    article {
+        padding-bottom: 140px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(6) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(7) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(8) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(9) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(10) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            .table-wrap {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:nth-of-type(1) {
+                                    width: 130px;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 120px;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 150px;
+                                }
+                                &:nth-of-type(5) {
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                &.num {
+                                    
+                                }
+                                &.title {
+                                    
+                                }
+                                &.payment {
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .paging {
+                margin-top: 60px;
+            }
+            .attention {
+                margin-top: 100px;
+                ul {
+                    li {
+                        position: relative;
+                        font-size: 13px;
+                        color: #666;
+                        line-height: 30px;
+                        padding-left: 25px;
+                        &:before {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            color: #998675;
+                            font-size: 15px;
+                            content: "\E80E";
+                            font-family: "fontello";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-
-
-
-
-
-
-
+///////////////////////     주문 조회 및 리뷰 모달     ///////////////////////
+.modal-open {
+    #header {
+        padding-right: 17px;
+    }
+}
+.modal-backdrop.in {
+    opacity: 0;
+}
+#inquiry-Modal {
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, .7);
+    .modal-dialog {
+        width: 900px !important;
+        margin-top: 70px;
+        margin-bottom: 150px;
+        .modal-content {
+            border-radius: 0;
+            .modal-header {
+                text-align: center;
+                padding: 60px 0 70px;
+                border-bottom: 0;
+                .modal-title {
+                    font-size: 70px;
+                    color: #2b2b2b;
+                    font-style: italic;
+                    @include playfd();
+                }
+                > p {
+                    font-size: 15px;
+                    color: #2b2b2b;
+                    font-weight: 300;
+                    margin-top: 50px;
+                    > b {
+                        color: #a67c52;
+                        font-weight: 500;
+                        &:before {
+                            content: "[";
+                            padding-right: 3px;
+                        }
+                        &:after {
+                            content: "]";
+                            padding-left: 3px;
+                        }
+                    }
+                }
+            }
+            .modal-body {
+                padding: 0 30px;
+                .nav-tabs {
+                    li {
+                        width: 50%;
+                        a {
+                            font-size: 15px;
+                            color: #888;
+                            text-align: center;
+                            margin: 0;
+                            font-weight: 300;
+                            padding: 17px 0 16px;
+                            border-color: #ccc;
+                            border-bottom: 1px solid #333;
+                            border-radius: 0;
+                            background-color: #fff;
+                            
+                        }
+                        &.active {
+                            a {
+                                font-weight: 400;
+                                color: #333;
+                                border-color: #333;
+                                border-bottom: 1px solid #fff;
+                            }
+                        }
+                    }
+                }
+                .tab-content {
+                    margin-top: 50px;
+                    .tab-pane {
+                        article {
+                            ~ article {
+                                margin-top: 50px;
+                            }
+                            .table-title {
+                                font-size: 16px;
+                                color: #222;
+                                margin-bottom: 20px;
+                            }
+                            .table-wrap {
+                                .table {
+                                    border: 0;
+                                    border-top: 2px solid #000;
+                                    margin: 0;
+                                    tbody {
+                                        tr {
+                                            th {
+                                                width: 200px;
+                                                font-size: 13px;
+                                                color: #333;
+                                                font-weight: 500;
+                                                padding: 20px 0 20px 30px;
+                                                border: 0;
+                                                border-bottom: 1px solid #dfdfdf;
+                                                background-color: #f8f8f8;
+                                            }
+                                            td {
+                                                font-size: 13px;
+                                                color: #666;
+                                                font-weight: 400;
+                                                padding: 20px;
+                                                border: 0;
+                                                border-bottom: 1px solid #dfdfdf;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-footer {
+                padding: 60px 0 65px;
+                border-top: 0;
+            }
+        }
+    }
+}
 
 
 
