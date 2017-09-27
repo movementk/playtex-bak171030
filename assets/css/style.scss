@@ -868,7 +868,7 @@ label {
         font-size: 0;
         .btn {
             display: inline-block;
-            font-size: 13px;
+            font-size: 14px;
             color: #fff;
             font-weight: 300;
             @include trans();
@@ -879,7 +879,7 @@ label {
                 margin-right: 5px;
             }
             &:hover, &:focus {
-                opacity: .7;
+                opacity: .8;
             }
         }
         .btn-sm {
@@ -941,7 +941,7 @@ label {
                     }
                 }
                 &:hover, &:focus {
-                    opacity: .7;
+                    opacity: .8;
                     background-color: #f7f7f7 !important;
                 }
             }
@@ -2117,7 +2117,7 @@ label {
                             background-color: #fff;
                             @include trans();
                             &:hover, &:focus {
-                                opacity: .7;
+                                opacity: .8;
                             }
                         }
                     }
@@ -2325,7 +2325,7 @@ label {
                                         background-color: #999;
                                         @include trans();
                                         &:hover, &:focus {
-                                            opacity: .7;
+                                            opacity: .8;
                                         }
                                     }
                                 }
@@ -2496,7 +2496,7 @@ label {
                                                 background-color: #998675;
                                             }
                                             &:hover, &:focus {
-                                                opacity: .7;
+                                                opacity: .8;
                                             }
                                         }
                                     }
@@ -2693,6 +2693,7 @@ label {
                     margin-top: 50px;
                     .tab-pane {
                         article {
+                            padding-bottom: 0;
                             ~ article {
                                 margin-top: 50px;
                             }
@@ -2729,18 +2730,2002 @@ label {
                                         }
                                     }
                                 }
+                                &.type-2 {
+                                    .table {
+                                        thead {
+                                            tr {
+                                                th {
+                                                    font-size: 13px;
+                                                    color: #333;
+                                                    font-weight: 500;
+                                                    padding: 20px 0 20px;
+                                                    text-align: center;
+                                                    border: 0;
+                                                    border-bottom: 1px solid #dfdfdf;
+                                                    background-color: #fff;
+                                                }
+                                            }
+                                        }
+                                        tbody {
+                                            tr {
+                                                td {
+                                                    line-height: 20px;
+                                                    text-align: center;
+                                                    padding: 20px 10px;
+                                                    vertical-align: middle;
+                                                    &.order-num, &.item-payment, &.saved-money, &.delivery-num {
+                                                        @include maven();
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.product-info {
+                                .type-2 {
+                                    .table {
+                                        thead {
+                                            tr {
+                                                th {
+                                                    &:nth-of-type(2) {
+                                                        width: 130px;
+                                                    }
+                                                    &:nth-of-type(3) {
+                                                        width: 80px;
+                                                    }
+                                                    &:nth-of-type(4) {
+                                                        width: 65px;
+                                                    }
+                                                    &:nth-of-type(5) {
+                                                        width: 60px;
+                                                    }
+                                                    &:nth-of-type(6) {
+                                                        width: 70px;
+                                                    }
+                                                    &:nth-of-type(7) {
+                                                        width: 115px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        tbody {
+                                            tr {
+                                                td {
+                                                    padding-left: 5px;
+                                                    padding-right: 5px;
+                                                    &.item-details {
+                                                        padding-left: 10px;
+                                                        text-align: left;
+                                                        a {
+                                                            display: table;
+                                                            font-size: 0;
+                                                            p {
+                                                                display: table-cell;
+                                                                vertical-align: middle;
+                                                                &.item {
+                                                                    img {
+                                                                        width: 110px;
+                                                                        height: 110px;
+                                                                    }
+                                                                }
+                                                                &.item-title {
+                                                                    width: 190px;
+                                                                    font-size: 13px;
+                                                                    color: #2b2b2b;
+                                                                    line-height: 20px;
+                                                                    padding-left: 15px;
+                                                                }
+                                                            }
+                                                            
+                                                        }
+                                                    }
+                                                    &.product-count {
+                                                        .form-group {
+                                                            position: relative;
+                                                            width: 60px;
+                                                            display: block;
+                                                            margin: 0 auto;
+                                                            .form-control {
+                                                                height: 36px;
+                                                                padding: 5px;
+                                                                padding-right: 20px;
+                                                                border: 1px solid #ddd;
+                                                            }
+                                                            .count-btn {
+                                                                position: absolute;
+                                                                top: 0;
+                                                                right: 0;
+                                                                width: 20px;
+                                                                .btn {
+                                                                    width: 20px;
+                                                                    height: 18px;
+                                                                    display: block;
+                                                                    margin: 0;
+                                                                    background-color: #fff;
+                                                                    border: 1px solid #ddd;
+                                                                    i {
+                                                                        font-size: 11px;
+                                                                    }
+                                                                    &.btn-up {
+                                                                        line-height: 8px;
+                                                                    }
+                                                                    &.btn-down {
+                                                                        line-height: 15px;
+                                                                        border-top: 0;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .payment-total {
+                                        text-align: right;
+                                        padding: 15px 20px;
+                                        border-bottom: 1px solid #ddd;
+                                        background-color: #f1f1f1;
+                                        p {
+                                            font-size: 14px;
+                                            color: #666;
+                                            b {
+                                                font-size: 16px;
+                                                color: #2b2b2b;
+                                                @include maven();
+                                                &:before {
+                                                    content: "=";
+                                                    font-weight: 300;
+                                                    padding: 0 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.payment-info {
+                                .type-2 {
+                                    .table {
+                                        tbody {
+                                            tr {
+                                                td {
+                                                    font-weight: 300;
+                                                    text-align: center;
+                                                    &.title-th {
+                                                        width: 200px;
+                                                        font-weight: 500;
+                                                        color: #333;
+                                                        background-color: #f8f8f8;
+                                                    }
+                                                    &:last-child {
+                                                        width: 350px;
+                                                    }
+                                                    &:nth-of-type(2) {
+                                                        font-weight: 400;
+                                                        @include maven();
+                                                    }
+                                                }
+                                                &:last-child {
+                                                    td {
+                                                        color: #a67c52;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.review-info {
+                                .type-2 {
+                                    .table {
+                                        thead {
+                                            tr {
+                                                th {
+                                                    &:nth-of-type(2) {
+                                                        width: 80px;
+                                                    }
+                                                    &:nth-of-type(3) {
+                                                        width: 100px;
+                                                    }
+                                                    &:nth-of-type(4) {
+                                                        width: 140px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        tbody {
+                                            tr {
+                                                td {
+                                                    padding-left: 5px;
+                                                    padding-right: 5px;
+                                                    &.item-details {
+                                                        padding-left: 10px;
+                                                        text-align: left;
+                                                        a {
+                                                            display: table;
+                                                            font-size: 0;
+                                                            p {
+                                                                display: table-cell;
+                                                                vertical-align: middle;
+                                                                &.item {
+                                                                    img {
+                                                                        width: 110px;
+                                                                        height: 110px;
+                                                                    }
+                                                                }
+                                                                &.item-title {
+                                                                    width: 390px;
+                                                                    font-size: 13px;
+                                                                    color: #2b2b2b;
+                                                                    line-height: 20px;
+                                                                    padding-left: 15px;
+                                                                    padding-right: 60px;
+                                                                }
+                                                            }
+                                                            
+                                                        }
+                                                    }
+                                                    &.product-count {
+                                                        .form-group {
+                                                            position: relative;
+                                                            width: 60px;
+                                                            display: block;
+                                                            margin: 0 auto;
+                                                            .form-control {
+                                                                height: 36px;
+                                                                padding: 5px;
+                                                                padding-right: 20px;
+                                                                border: 1px solid #ddd;
+                                                            }
+                                                            .count-btn {
+                                                                position: absolute;
+                                                                top: 0;
+                                                                right: 0;
+                                                                width: 20px;
+                                                                .btn {
+                                                                    width: 20px;
+                                                                    height: 18px;
+                                                                    display: block;
+                                                                    margin: 0;
+                                                                    background-color: #fff;
+                                                                    border: 1px solid #ddd;
+                                                                    i {
+                                                                        font-size: 11px;
+                                                                    }
+                                                                    &.btn-up {
+                                                                        line-height: 8px;
+                                                                    }
+                                                                    &.btn-down {
+                                                                        line-height: 15px;
+                                                                        border-top: 0;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .review-btn {
+                                                        .btn-default {
+                                                            width: 80px;
+                                                            height: 30px;
+                                                            font-size: 12px;
+                                                            line-height: 30px;
+                                                            color: #fff;
+                                                            text-align: center;
+                                                            background-color: #999;
+                                                            @include trans();
+                                                            &:hover, &:focus {
+                                                                opacity: .8;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.review-write {
+                                .table-wrap {
+                                    tbody {
+                                        tr {
+                                            th {
+                                                padding-left: 30px;
+                                                vertical-align: middle;
+                                                label {
+                                                    font-weight: 500;
+                                                }
+                                                &.review-content {
+                                                    padding-top: 20px;
+                                                    vertical-align: middle;
+                                                }
+                                            }
+                                            td {
+                                                vertical-align: middle;
+                                                padding: 10px 30px 10px 20px;
+                                                .form-control {
+                                                    width: 100%;
+                                                    height: 35px;
+                                                    border: 1px solid #ddd;
+                                                }
+                                                &.password {
+                                                    .form-group {
+                                                        .form-control {
+                                                            width: 280px;
+                                                        }
+                                                    }
+                                                }
+                                                &.e-mail {
+                                                    .form-group {
+                                                        .form-control {
+                                                            width: 280px;
+                                                        }
+                                                    }
+                                                }
+                                                &.review-content {
+                                                    .form-group {
+                                                        .form-control {
+                                                            height: 160px;
+                                                        }
+                                                    }
+                                                }
+                                                &.attach {
+                                                    .form-group {
+                                                        position: relative;
+                                                        padding-right: 100px;
+                                                        label {
+                                                            position: absolute;
+                                                            top: 0;
+                                                            right: 0;
+                                                            width: 90px;
+                                                            height: 35px;
+                                                            font-size: 12px;
+                                                            color: #fff;
+                                                            text-align: center;
+                                                            line-height: 35px;
+                                                            background-color: #999;
+                                                            cursor: pointer;
+                                                            @include trans();
+                                                            &:hover, &:focus {
+                                                                opacity: .8;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                &.product-grade {
+                                                    font-size: 0;
+                                                    label {
+                                                        font-size: 15px;
+                                                        display: inline-block;
+                                                        margin-right: 20px;
+                                                        input {
+                                                            position: relative;
+                                                            top: 1px;
+                                                            margin-right: 5px;
+                                                        }
+                                                        &:last-child {
+                                                            margin-right: 0;
+                                                        }
+                                                        i {
+                                                            display: inline-block;
+                                                            color: #f0c419;
+                                                            &:before {
+                                                                margin: 0 -1px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-area {
+                    text-align: center;
+                    padding: 60px 0 65px;
+                    p {
+                        .btn-sm {
+                            width: 130px;
+                            height: 40px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 적립금 내역
+.mileage {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(6) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(7) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(8) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(9) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(10) {
+                            a {
+                                border-top: 0;
                             }
                         }
                     }
                 }
             }
-            .modal-footer {
-                padding: 60px 0 65px;
-                border-top: 0;
+        }
+        .article-content {
+            .table-wrap {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:nth-of-type(1) {
+                                    width: 170px;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 160px;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                &:nth-of-type(2) {
+                                    text-align: left;
+                                }
+                                a {
+                                    color: #666;
+                                }
+                                &.date, &.save-mileage {
+                                    @include maven();
+                                }
+                                &.minus {
+                                    color: #e61937;
+                                    &:before {
+                                        content: "-";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .paging {
+                margin-top: 60px;
+            }
+            .attention {
+                margin-top: 100px;
+                ul {
+                    li {
+                        position: relative;
+                        font-size: 13px;
+                        color: #666;
+                        line-height: 30px;
+                        padding-left: 25px;
+                        &:before {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            color: #998675;
+                            font-size: 15px;
+                            content: "\E80E";
+                            font-family: "fontello";
+                        }
+                    }
+                }
             }
         }
     }
 }
+
+// 할인쿠폰
+.coupon {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(6) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(7) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(8) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(9) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(10) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            .table-wrap {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:nth-of-type(1) {
+                                    width: 150px;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 140px;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 150px;
+                                }
+                                &:nth-of-type(5) {
+                                    width: 170px;
+                                }
+                                &:nth-of-type(6) {
+                                    width: 200px;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                &.coupon-name {
+                                    padding-left: 20px;
+                                    text-align: left;
+                                }
+                                &.coupon-num, &.coupon-period {
+                                    @include maven();
+                                }
+                                a {
+                                    color: #666;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .paging {
+                margin-top: 60px;
+            }
+            .attention {
+                margin-top: 100px;
+                h3 {
+                   font-size: 14px;
+                    color: #2b2b2b;
+                    margin-bottom: 30px;
+                    ~ h3 {
+                        margin-top: 70px;
+                    }
+                }
+                ul {
+                    li {
+                        position: relative;
+                        font-size: 13px;
+                        color: #666;
+                        line-height: 30px;
+                        padding-left: 25px;
+                        &:before {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            color: #998675;
+                            font-size: 15px;
+                            content: "\E80E";
+                            font-family: "fontello";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 위시리스트
+.wish-list {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(6) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(7) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(8) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(9) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                        &:nth-of-type(10) {
+                            a {
+                                border-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            .table-wrap {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:nth-of-type(1) {
+                                    width: 70px;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 90px;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 80px;
+                                }
+                                &:nth-of-type(5) {
+                                    width: 90px;
+                                }
+                                &:nth-of-type(6) {
+                                    width: 100px;
+                                }
+                                &:nth-of-type(7) {
+                                    width: 120px;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                vertical-align: middle;
+                                &.item-details {
+                                    padding-left: 10px;
+                                    text-align: left;
+                                    a {
+                                        display: table;
+                                        font-size: 0;
+                                        p {
+                                            display: table-cell;
+                                            vertical-align: middle;
+                                            &.item {
+                                                img {
+                                                    width: 110px;
+                                                    height: 110px;
+                                                }
+                                            }
+                                            &.item-title {
+                                                width: 500px;
+                                                font-size: 13px;
+                                                color: #2b2b2b;
+                                                line-height: 20px;
+                                                padding-left: 15px;
+                                            }
+                                        }
+
+                                    }
+                                }
+                                &.item-count {
+                                    .count {
+                                        width: 50px;
+                                        height: 35px;
+                                        font-size: 13px;
+                                        color: #666;
+                                        text-align: center;
+                                        line-height: 35px;
+                                        border: 1px solid #ddd;
+                                        margin: 0 auto;
+                                    }
+                                }
+                                &.mileage, &.payment, &.item-count {
+                                    @include maven();
+                                }
+                                &.basket {
+                                    .btn-area {
+                                        p {
+                                            .btn-xs {
+                                                width: 100px;
+                                                height: 30px;
+                                                line-height: 30px;
+                                                margin: 0;
+                                                &.btn-beige {
+                                                    margin-top: 5px;
+                                                    background-color: #998675;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .paging {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+// 최근 본 상품
+.viewed-items {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(1) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            .table-wrap {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:nth-of-type(1) {
+                                    width: 70px;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 90px;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 80px;
+                                }
+                                &:nth-of-type(5) {
+                                    width: 90px;
+                                }
+                                &:nth-of-type(6) {
+                                    width: 100px;
+                                }
+                                &:nth-of-type(7) {
+                                    width: 120px;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                vertical-align: middle;
+                                &.item-details {
+                                    padding-left: 10px;
+                                    text-align: left;
+                                    a {
+                                        display: table;
+                                        font-size: 0;
+                                        p {
+                                            display: table-cell;
+                                            vertical-align: middle;
+                                            &.item {
+                                                img {
+                                                    width: 110px;
+                                                    height: 110px;
+                                                }
+                                            }
+                                            &.item-title {
+                                                width: 500px;
+                                                font-size: 13px;
+                                                color: #2b2b2b;
+                                                line-height: 20px;
+                                                padding-left: 15px;
+                                            }
+                                        }
+
+                                    }
+                                }
+                                &.item-count {
+                                    .count {
+                                        width: 50px;
+                                        height: 35px;
+                                        font-size: 13px;
+                                        color: #666;
+                                        text-align: center;
+                                        line-height: 35px;
+                                        border: 1px solid #ddd;
+                                        margin: 0 auto;
+                                    }
+                                }
+                                &.mileage, &.payment, &.item-count {
+                                    @include maven();
+                                }
+                                &.basket {
+                                    .btn-area {
+                                        p {
+                                            .btn-xs {
+                                                width: 100px;
+                                                height: 30px;
+                                                line-height: 30px;
+                                                margin: 0;
+                                                &.btn-beige {
+                                                    margin-top: 5px;
+                                                    background-color: #998675;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .paging {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+// 1:1 문의 리스트
+.inquiry-list {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(1) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            .table-wrap {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:nth-of-type(1) {
+                                    width: 120px;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 150px;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 130px;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                &:last-child {
+                                    color: #c7b299;
+                                }
+                                &.num, &.date {
+                                    @include maven();
+                                }
+                                &.subject {
+                                    text-align: left;
+                                    a {
+                                        padding-left: 20px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        color: #666;
+                                        display: block;
+                                    }
+                                }
+                                &.reply-success {
+                                    color: #666;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                text-align: right;
+                margin-top: 30px;
+                .btn-sm {
+                    width: 130px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+            .paging {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+// 1:1 문의 보기
+.inquiry-view {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(1) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            .view {
+                .view-header {
+                    position: relative;
+                    padding: 20px 30px 20px 40px;
+                    background-color: #8d8d8d;
+                    h3 {
+                        font-size: 15px;
+                        color: #fff;
+                        font-weight: 400;
+                    }
+                    .date {
+                        position: absolute;
+                        top: 20px;
+                        right: 35px;
+                        font-size: 13px;
+                        color: #fff;
+                        @include maven();
+                    }
+                }
+                .view-content {
+                    min-height: 500px;
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 25px;
+                    padding: 50px;
+                    padding-bottom: 100px;
+                    border-bottom: 1px solid #dfdfdf;
+                }
+            }
+            .btn-area {
+                text-align: right;
+                margin-top: 30px;
+                .btn-sm {
+                    width: 130px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+
+// 1:1 문의 쓰기
+.inquiry-write {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(1) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            .table-wrap {
+                .table {
+                    tbody {
+                        tr {
+                            th {
+                                width: 200px;
+                                font-size: 14px;
+                                color: #333;
+                                font-weight: 400;
+                                vertical-align: middle;
+                                padding: 20px 0 20px 30px;
+                                border: 0;
+                                border-bottom: 1px solid #dfdfdf;
+                                background-color: #f8f8f8;
+                                &.content {
+                                    vertical-align: top;
+                                }
+                                label {
+                                    font-weight: 400;
+                                }
+                            }
+                            td {
+                                text-align: left;
+                                padding: 10px 70px 10px 20px;
+                                border: 0;
+                                border-bottom: 1px solid #dfdfdf;
+                                .form-control {
+                                    height: 35px;
+                                    border: 1px solid #ddd;
+                                }
+                                &.content {
+                                    .form-group {
+                                        .form-control {
+                                            height: 340px;
+                                        }
+                                    }
+                                }
+                                &.e-mail, &.phone {
+                                    .form-group {
+                                        .form-control {
+                                            width: 280px;
+                                        }
+                                    }
+                                }
+                                &.inquiry-type {
+                                    .form-group {
+                                        .form-control {
+                                            width: 150px;
+                                        }
+                                    }
+                                }
+                                &.attach {
+                                    .form-group {
+                                        position: relative;
+                                        padding-right: 110px;
+                                        label {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            width: 100px;
+                                            height: 35px;
+                                            font-size: 12px;
+                                            color: #fff;
+                                            text-align: center;
+                                            line-height: 35px;
+                                            background-color: #999;
+                                            cursor: pointer;
+                                            @include trans();
+                                            &:hover, &:focus {
+                                                opacity: .8;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                text-align: right;
+                margin-top: 30px;
+                p {
+                    .btn-sm {
+                        width: 130px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 회원 정보 수정 비밀번호 확인
+.pw-confirm {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(1) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            text-align: center;
+            padding-top: 85px;
+            figure {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+                figcaption {
+                    font-size: 14px;
+                    color: #333;
+                    line-height: 25px;
+                    margin-top: 50px;
+                }
+            }
+            .form-group {
+                width: 370px;
+                margin: 0 auto;
+                margin-top: 60px;
+                .usr-id {
+                    width: 100%;
+                    height: 35px;
+                    font-size: 13px;
+                    color: #2b2b2b;
+                    text-align: left;
+                    font-weight: 400;
+                    line-height: 33px;
+                    padding-left: 15px;
+                    border: 1px solid #ddd;
+                }
+                .form-control {
+                    width: 100%;
+                    height: 35px;
+                    margin-top: 10px;
+                    padding-left: 15px;
+                    border: 1px solid #ddd;
+                }
+            }
+            .btn-area {
+                text-align: center;
+                margin-top: 60px;
+                p {
+                    .btn-sm {
+                        width: 130px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 회원 정보수정 
+.profile-modify {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(1) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            .table-wrap {
+                tbody {
+                    tr {
+                        th {
+                            width: 200px;
+                            font-size: 14px;
+                            font-weight: 400;
+                            vertical-align: middle;
+                            padding: 20px 0 20px 30px;
+                            border: 0;
+                            border-bottom: 1px solid #dfdfdf;
+                            background-color: #f8f8f8;
+                            label {
+                                font-weight: 400;
+                            }
+                        }
+                        td {
+                            text-align: left !important;
+                            padding: 10px 20px  !important;
+                            .form-control {
+                                width: 280px;
+                                height: 35px;
+                            }
+                            .note {
+                                margin-left: 8px;
+                                display: inline-block;
+                                font-size: 12px;
+                                color: #666;
+                            }
+                            &.u-pw, &.phone, &.sms {
+                                .form-group {
+                                    display: inline-block;
+                                }
+                            }
+                            &.e-mail {
+                                .form-group {
+                                    .form-control {
+                                        width: 450px;
+                                    }
+                                }
+                            }
+                            &.birthdate {
+                                .form-group {
+                                    overflow: hidden;
+                                    .form-control {
+                                        float: left;
+                                        width: 80px;
+                                        margin-right: 10px;
+                                        &:last-child {
+                                            margin-right: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            &.phone, &.sms {
+                                .form-group {
+                                    .form-control {
+                                        width: 180px;
+                                    }
+                                }
+                                .btn-certification {
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    margin-left: 8px;
+                                    .btn-xs {
+                                        width: 85px;
+                                        height: 35px;
+                                        font-size: 13px;
+                                        color: #fff;
+                                        line-height: 35px;
+                                        background-color: #999;
+                                        @include trans();
+                                        &:hover, &:focus {
+                                            opacity: .8;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .checkbox {
+                position: relative;
+                margin-top: 50px;
+                padding: 0 30px;
+                label {
+                    font-size: 14px;
+                    color: #333;
+                    line-height: 30px;
+                    font-weight: 400;
+                    input {
+                        position: relative;
+                        top: 1px;
+                        margin-right: 5px;
+                    }
+                }
+                .summary {
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 30px;
+                    font-weight: 300;
+                }
+                .btn-leave {
+                    position: absolute;
+                    top: 0;
+                    right: 30px;
+                    .btn-white {
+                        width: 100px;
+                        height: 35px;
+                        font-size: 13px;
+                        color: #666;
+                        line-height: 33px;
+                        text-align: center;
+                        border: 1px solid #bbb;
+                        @include trans();
+                        &:hover, &:focus {
+                            opacity: .8;
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                text-align: center; 
+                margin-top: 120px;
+                p {
+                    .btn-lg {
+                        width: 200px;
+                        height: 60px;
+                        line-height: 60px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 회원 탈퇴
+.member-leave {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .mypage-tab {
+                > ul{
+                    > li {
+                        &:nth-of-type(1) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            .leave-info {
+                h3 {
+                    font-size: 16px;
+                    color: #222;
+                    padding-left: 30px;
+                    line-height: 60px;
+                    border: 1px solid #dfdfdf;
+                    background-color: #f1f1f1;
+                }
+                .content {
+                    padding: 40px 30px 50px;
+                    border: 1px solid #dfdfdf;
+                    border-top: 0;
+                    .summary {
+                        font-size: 14px;
+                        color: #666;
+                        line-height: 30px;
+                        margin-bottom: 45px;
+                    }
+                    ol {
+                        margin-bottom: 45px;
+                        li {
+                            font-size: 14px;
+                            color: #666;
+                            line-height: 30px;
+                            list-style: decimal;
+                            list-style-position: inside;
+                        }
+                    }
+                    .attention {
+                        font-size: 14px;
+                        color: #a67c52;
+                        &:before {
+                            content: "※";
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            .table-wrap {
+                margin-top: 70px;
+                h3 {
+                    font-size: 16px;
+                    color: #222;
+                    margin-bottom: 30px;
+                }
+                .table {
+                    tbody {
+                        tr {
+                            th {
+                                width: 200px;
+                                border: 0;
+                                font-size: 14px;
+                                font-weight: 400;
+                                padding: 20px 0 20px 30px;
+                                border-bottom: 1px solid #dfdfdf;
+                                background-color: #f8f8f8;
+                                label {
+                                    font-weight: 400;
+                                }
+                            }
+                            td {
+                                padding: 10px 70px 10px 20px;
+                                text-align: left;
+                                .form-group {
+                                    .form-control {
+                                        height: 340px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                margin-top: 30px;
+                text-align: right;
+                p {
+                    .btn-sm {
+                        width: 130px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 장바구니 공통 
+.cart {
+    article {
+        padding-bottom: 200px;
+        .article-header {
+            .step-list {
+                position: relative;
+                width: 100%;
+                font-size: 0;
+                li {
+                    position: relative;
+                    z-index: 99;
+                    display: inline-block;
+                    width: 33.33%;
+                    div {
+                        display: inline-block;
+                        width: 100px;
+                        .figure {
+                            display: inline-block;
+                            width: 100px;
+                            height: 100px;
+                            text-align: center;
+                            line-height: 100px;
+                            border-radius: 50%;
+                            background-color: #f1f1f1;
+                            img {
+                                display: inline-block;
+                            }
+                        }
+                        .details {
+                            display: inline-block;
+                            width: 100px;
+                            text-align: center;
+                            font-size: 15px;
+                            color: #333;
+                            opacity: .4;
+                            font-weight: bold;
+                            margin-top: 18px;
+                            @include maven();
+                        }
+                    }
+                    &.active {
+                        div {
+                            .figure {
+                                background-color: #af9f8b;
+                            }
+                            .details {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        text-align: center;
+                    }
+                    &:nth-of-type(3) {
+                        text-align: right;
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    content: " ";
+                    display: inline-block;
+                    width: 99%;
+                    height: 1px;
+                    z-index: 1;
+                    border-top: 1px solid #e5e5e5;
+                }
+            }
+        }
+        .article-content {
+            margin-top: 70px;
+        }
+    }
+}
+// 장바구니 리스트
+.cart-list {
+    .article-content {
+        .save-cart {
+            .table-wrap {
+                .table {
+                    margin: 0;
+                    thead {
+                        tr {
+                            th {
+                                &:nth-of-type(1) {
+                                    width: 70px;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 90px;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 90px;
+                                }
+                                &:nth-of-type(5) {
+                                    width: 90px;
+                                }
+                                &:nth-of-type(6) {
+                                    width: 115px;
+                                }
+                                &:nth-of-type(7) {
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                vertical-align: middle;
+                                &.item-details {
+                                    padding-left: 10px;
+                                    text-align: left;
+                                    a {
+                                        display: table;
+                                        font-size: 0;
+                                        p {
+                                            display: table-cell;
+                                            vertical-align: middle;
+                                            &.item {
+                                                img {
+                                                    width: 110px;
+                                                    height: 110px;
+                                                }
+                                            }
+                                            &.item-title {
+                                                width: 400px;
+                                                font-size: 13px;
+                                                color: #2b2b2b;
+                                                line-height: 20px;
+                                                padding-left: 15px;
+                                            }
+                                        }
+
+                                    }
+                                }
+                                &.product-count {
+                                    .form-group {
+                                        position: relative;
+                                        width: 60px;
+                                        display: block;
+                                        margin: 0 auto;
+                                        .form-control {
+                                            height: 36px;
+                                            padding: 5px;
+                                            padding-right: 20px;
+                                            border: 1px solid #ddd;
+                                        }
+                                        .count-btn {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            width: 20px;
+                                            .btn {
+                                                width: 20px;
+                                                height: 18px;
+                                                display: block;
+                                                margin: 0;
+                                                background-color: #fff;
+                                                border: 1px solid #ddd;
+                                                i {
+                                                    font-size: 11px;
+                                                }
+                                                &.btn-up {
+                                                    line-height: 8px;
+                                                }
+                                                &.btn-down {
+                                                    line-height: 15px;
+                                                    border-top: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .modify-btn {
+                                        margin-top: 5px;
+                                        .btn-default {
+                                            width: 60px;
+                                            height: 25px;
+                                            line-height: 25px;
+                                            color: #fff;
+                                            font-size: 12px;
+                                            text-align: center;
+                                            background-color: #999;
+                                        }
+                                    }
+                                }
+                                &.mileage, &.payment, &.item-count {
+                                    @include maven();
+                                }
+                                &.delete-selection {
+                                    .delete-btn {
+                                        .btn-xs {
+                                            width: 70px;
+                                            height: 30px;
+                                            line-height: 30px;
+                                            margin: 0;
+                                            @include trans();
+                                            &.btn-beige {
+                                                color: #fff;
+                                                margin-bottom: 5px;
+                                                background-color: #998675;
+                                            }
+                                            &.btn-white {
+                                                line-height: 28px;
+                                                color: #666;
+                                                border: 1px solid #ccc;
+                                            }
+                                            &:hover, &:focus {
+                                                opacity: .8;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .total {
+                    text-align: right;
+                    padding: 35px 20px;
+                    border-bottom: 1px solid #dfdfdf;
+                    background-color: #f1f1f1;
+                    p {
+                        display: inline-block;
+                        font-size: 16px;
+                        font-weight: 400;
+                        span, b {
+                            margin-left: 20px;
+                            @include maven();
+                        }
+                        &.amount {
+                            color: #666;
+                            span {
+                                font-weight: 500;
+                            }
+                        }
+                        &.total-payment {
+                            color: #2b2b2b;
+                            b {
+                                font-size: 20px;
+                            }
+                            &:before {
+                                font-weight: 300;
+                                content: "=";
+                                padding: 0 30px;
+                            }
+                            small {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                text-align: center;
+                margin-top: 60px;
+                p {
+                    .btn-lg {
+                        width: 250px;
+                        height: 65px;
+                        line-height: 65px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .interest-product {
+            margin-top: 120px;
+            h3 {
+                font-size: 18px;
+                color: #222;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            .table-wrap {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:nth-of-type(1) {
+                                    width: 70px;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 90px;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 80px;
+                                }
+                                &:nth-of-type(5) {
+                                    width: 90px;
+                                }
+                                &:nth-of-type(6) {
+                                    width: 100px;
+                                }
+                                &:nth-of-type(7) {
+                                    width: 120px;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                vertical-align: middle;
+                                &.item-details {
+                                    padding-left: 10px;
+                                    text-align: left;
+                                    a {
+                                        display: table;
+                                        font-size: 0;
+                                        p {
+                                            display: table-cell;
+                                            vertical-align: middle;
+                                            &.item {
+                                                img {
+                                                    width: 110px;
+                                                    height: 110px;
+                                                }
+                                            }
+                                            &.item-title {
+                                                width: 500px;
+                                                font-size: 13px;
+                                                color: #2b2b2b;
+                                                line-height: 20px;
+                                                padding-left: 15px;
+                                            }
+                                        }
+
+                                    }
+                                }
+                                &.item-count {
+                                    .count {
+                                        width: 50px;
+                                        height: 35px;
+                                        font-size: 13px;
+                                        color: #666;
+                                        text-align: center;
+                                        line-height: 35px;
+                                        border: 1px solid #ddd;
+                                        margin: 0 auto;
+                                    }
+                                }
+                                &.mileage, &.payment, &.item-count {
+                                    @include maven();
+                                }
+                                &.basket {
+                                    .btn-area {
+                                        p {
+                                            .btn-xs {
+                                                width: 100px;
+                                                height: 30px;
+                                                line-height: 30px;
+                                                margin: 0;
+                                                &.btn-beige {
+                                                    margin-top: 5px;
+                                                    background-color: #998675;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
