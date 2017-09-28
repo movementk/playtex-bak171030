@@ -2,6 +2,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300i");
 body {
   position: relative;
   min-width: 1200px;
@@ -2214,6 +2215,117 @@ label {
             height: 40px;
             line-height: 40px; }
 
+#coupon-Modal {
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.7); }
+  #coupon-Modal .modal-dialog {
+    width: 580px !important;
+    margin-top: 70px;
+    margin-bottom: 150px; }
+    #coupon-Modal .modal-dialog .modal-content {
+      border-radius: 0; }
+      #coupon-Modal .modal-dialog .modal-content .modal-header {
+        text-align: center;
+        padding: 60px 0 80px;
+        border-bottom: 0; }
+        #coupon-Modal .modal-dialog .modal-content .modal-header .modal-title {
+          font-size: 70px;
+          color: #2b2b2b;
+          font-style: italic;
+          font-family: 'Playfair Display', serif; }
+        #coupon-Modal .modal-dialog .modal-content .modal-header > p {
+          font-size: 15px;
+          color: #2b2b2b;
+          font-weight: 300;
+          margin-top: 50px; }
+      #coupon-Modal .modal-dialog .modal-content .modal-body {
+        padding: 0 30px 45px; }
+        #coupon-Modal .modal-dialog .modal-content .modal-body article {
+          padding-bottom: 0; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article ~ article {
+            margin-top: 50px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article h3 {
+            font-size: 15px;
+            color: #222;
+            margin-bottom: 20px;
+            font-weight: 400; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article .table-wrap .table thead tr th {
+            font-size: 12px;
+            color: #fff;
+            font-weight: 400;
+            padding: 6px 0;
+            line-height: 18px;
+            vertical-align: middle;
+            text-align: center;
+            border: 0;
+            background-color: #8d8d8d; }
+            #coupon-Modal .modal-dialog .modal-content .modal-body article .table-wrap .table thead tr th.title {
+              text-align: left;
+              padding-left: 20px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article .table-wrap .table tbody tr td {
+            font-size: 12px;
+            color: #666;
+            line-height: 18px;
+            font-weight: 300;
+            text-align: center;
+            border: 0;
+            padding: 15px 0;
+            vertical-align: middle;
+            border-bottom: 1px solid #dfdfdf; }
+            #coupon-Modal .modal-dialog .modal-content .modal-body article .table-wrap .table tbody tr td.coupon-num, #coupon-Modal .modal-dialog .modal-content .modal-body article .table-wrap .table tbody tr td.using-date, #coupon-Modal .modal-dialog .modal-content .modal-body article .table-wrap .table tbody tr td.payment {
+              font-family: 'Maven Pro', sans-serif; }
+            #coupon-Modal .modal-dialog .modal-content .modal-body article .table-wrap .table tbody tr td.title {
+              text-align: left;
+              padding-left: 10px !important; }
+            #coupon-Modal .modal-dialog .modal-content .modal-body article .table-wrap .table tbody tr td .form-group .form-control {
+              width: 90px;
+              height: 35px;
+              font-size: 12px;
+              margin: 0 auto;
+              padding-left: 5px;
+              padding-right: 5px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.possession-coupon .table-warp .table thead th:nth-of-type(1) {
+            width: 80px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.possession-coupon .table-warp .table thead th:nth-of-type(3) {
+            width: 60px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.possession-coupon .table-warp .table thead th:nth-of-type(4) {
+            width: 60px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.possession-coupon .table-warp .table thead th:nth-of-type(5) {
+            width: 60px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.possession-coupon .table-warp .table thead th:nth-of-type(6) {
+            width: 60px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.possession-coupon .table-warp .table thead th:nth-of-type(7) {
+            width: 90px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.using-coupon .table-wrap .table thead tr th:nth-of-type(2) {
+            width: 60px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.using-coupon .table-wrap .table thead tr th:nth-of-type(3) {
+            width: 110px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.using-coupon .table-wrap .table thead tr th:nth-of-type(4) {
+            width: 60px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.using-coupon .table-wrap .table thead tr th:nth-of-type(5) {
+            width: 60px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.using-coupon .table-wrap .table tbody tr td {
+            padding: 20px 0; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body article.using-coupon .total-payment {
+            display: block;
+            text-align: right;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #2b2b2b; }
+            #coupon-Modal .modal-dialog .modal-content .modal-body article.using-coupon .total-payment strong {
+              display: inline-block;
+              font-family: 'Maven Pro', sans-serif;
+              margin-left: 20px; }
+        #coupon-Modal .modal-dialog .modal-content .modal-body .btn-area {
+          text-align: center;
+          margin-top: 60px; }
+          #coupon-Modal .modal-dialog .modal-content .modal-body .btn-area p .btn-sm {
+            width: 100px;
+            height: 35px;
+            font-size: 13px;
+            line-height: 35px; }
+
 .mileage article {
   padding-bottom: 200px; }
   .mileage article .article-header .mypage-tab > ul > li:nth-of-type(6) a {
@@ -3023,6 +3135,12 @@ label {
         padding: 0 30px; }
       .cart-list .article-content .save-cart .table-wrap .total p.total-payment small {
         font-size: 13px; }
+        .cart-list .article-content .save-cart .table-wrap .total p.total-payment small i {
+          font-size: 13px;
+          font-weight: bold;
+          margin: 0;
+          font-style: normal;
+          font-family: 'Maven Pro', sans-serif; }
 .cart-list .article-content .save-cart .btn-area {
   text-align: center;
   margin-top: 60px; }
@@ -3089,5 +3207,976 @@ label {
       .cart-list .article-content .interest-product .table-wrap .table tbody tr td.basket .btn-area p .btn-xs.btn-beige {
         margin-top: 5px;
         background-color: #998675; }
+
+.cart-payment article .article-content .selection-product {
+  margin-bottom: 100px; }
+  .cart-payment article .article-content .selection-product .table-wrap .table {
+    margin: 0; }
+    .cart-payment article .article-content .selection-product .table-wrap .table thead tr th:nth-of-type(2) {
+      width: 100px; }
+    .cart-payment article .article-content .selection-product .table-wrap .table thead tr th:nth-of-type(3) {
+      width: 60px; }
+    .cart-payment article .article-content .selection-product .table-wrap .table thead tr th:nth-of-type(4) {
+      width: 140px; }
+    .cart-payment article .article-content .selection-product .table-wrap .table tbody tr td {
+      vertical-align: middle; }
+      .cart-payment article .article-content .selection-product .table-wrap .table tbody tr td.item-details {
+        padding-left: 20px;
+        text-align: left; }
+        .cart-payment article .article-content .selection-product .table-wrap .table tbody tr td.item-details a {
+          display: table;
+          font-size: 0; }
+          .cart-payment article .article-content .selection-product .table-wrap .table tbody tr td.item-details a p {
+            display: table-cell;
+            vertical-align: middle; }
+            .cart-payment article .article-content .selection-product .table-wrap .table tbody tr td.item-details a p.item img {
+              width: 110px;
+              height: 110px; }
+            .cart-payment article .article-content .selection-product .table-wrap .table tbody tr td.item-details a p.item-title {
+              width: 100%;
+              font-size: 13px;
+              color: #2b2b2b;
+              line-height: 20px;
+              padding-left: 15px;
+              padding-right: 30px; }
+      .cart-payment article .article-content .selection-product .table-wrap .table tbody tr td.mileage, .cart-payment article .article-content .selection-product .table-wrap .table tbody tr td.payment, .cart-payment article .article-content .selection-product .table-wrap .table tbody tr td.item-count, .cart-payment article .article-content .selection-product .table-wrap .table tbody tr td.product-quantity {
+        font-family: 'Maven Pro', sans-serif; }
+  .cart-payment article .article-content .selection-product .table-wrap .total {
+    text-align: right;
+    padding: 35px 20px;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #f1f1f1; }
+    .cart-payment article .article-content .selection-product .table-wrap .total p {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 400; }
+      .cart-payment article .article-content .selection-product .table-wrap .total p span, .cart-payment article .article-content .selection-product .table-wrap .total p b {
+        margin-left: 20px;
+        font-family: 'Maven Pro', sans-serif; }
+      .cart-payment article .article-content .selection-product .table-wrap .total p.amount {
+        color: #666; }
+        .cart-payment article .article-content .selection-product .table-wrap .total p.amount span {
+          font-weight: 500; }
+      .cart-payment article .article-content .selection-product .table-wrap .total p.total-payment {
+        color: #2b2b2b; }
+        .cart-payment article .article-content .selection-product .table-wrap .total p.total-payment b {
+          font-size: 20px; }
+        .cart-payment article .article-content .selection-product .table-wrap .total p.total-payment:before {
+          font-weight: 300;
+          content: "=";
+          padding: 0 30px; }
+        .cart-payment article .article-content .selection-product .table-wrap .total p.total-payment small {
+          font-size: 13px; }
+          .cart-payment article .article-content .selection-product .table-wrap .total p.total-payment small i {
+            font-size: 13px;
+            font-weight: bold;
+            margin: 0;
+            font-style: normal;
+            font-family: 'Maven Pro', sans-serif; }
+.cart-payment article .article-content .order-form article {
+  padding-bottom: 0; }
+  .cart-payment article .article-content .order-form article ~ article {
+    margin-top: 80px; }
+  .cart-payment article .article-content .order-form article h3 {
+    font-size: 18px;
+    color: #222;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .cart-payment article .article-content .order-form article .table-wrap .table tbody th {
+    width: 200px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    color: #333;
+    padding: 20px 30px;
+    vertical-align: middle;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #f8f8f8; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody th label {
+      font-weight: 400; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody th.v-align {
+      vertical-align: top; }
+  .cart-payment article .article-content .order-form article .table-wrap .table tbody td {
+    font-size: 14px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 10px 70px 10px 20px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td .form-control {
+      width: 100%;
+      height: 35px;
+      border: 1px solid #ddd; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td .t-maven {
+      font-weight: 400;
+      font-style: normal;
+      font-family: 'Maven Pro', sans-serif; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.phone .form-group .form-control {
+      display: inline-block;
+      width: 80px; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.phone .form-group .form-control:nth-of-type(1) {
+        margin-right: 5px; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.phone .form-group .form-control:nth-of-type(2) {
+        margin: 0 5px; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.phone .form-group .form-control:nth-of-type(3) {
+        margin-left: 5px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.e-mail .form-group .form-control {
+      width: 281px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.u-addr .form-group:first-child {
+      margin-bottom: 20px; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.u-addr .form-group:first-child label {
+        font-size: 14px;
+        color: #666;
+        font-weight: 300;
+        margin-right: 25px; }
+        .cart-payment article .article-content .order-form article .table-wrap .table tbody td.u-addr .form-group:first-child label input {
+          position: relative;
+          top: 2px;
+          margin-right: 5px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.u-addr .form-group ~ .form-group .form-control:nth-of-type(1) {
+      display: inline-block;
+      width: 150px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.u-addr .form-group ~ .form-group .form-control ~ .form-control {
+      margin-top: 10px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.u-addr .form-group .addr-btn {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 8px; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.u-addr .form-group .addr-btn .btn-default {
+        width: 100px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        font-size: 13px;
+        color: #fff;
+        background-color: #999;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; }
+        .cart-payment article .article-content .order-form article .table-wrap .table tbody td.u-addr .form-group .addr-btn .btn-default:hover, .cart-payment article .article-content .order-form article .table-wrap .table tbody td.u-addr .form-group .addr-btn .btn-default:focus {
+          opacity: .8; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.content .form-group .form-control {
+      height: 80px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.consent .form-group label {
+      font-size: 14px;
+      font-weight: 300;
+      color: #666; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.consent .form-group label input {
+        position: relative;
+        top: 1px;
+        margin-right: 5px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.mileage .form-group {
+      display: inline-block; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.mileage .form-group label {
+        font-size: 14px;
+        color: #666;
+        font-weight: 300; }
+        .cart-payment article .article-content .order-form article .table-wrap .table tbody td.mileage .form-group label .form-control {
+          width: 150px;
+          display: inline-block;
+          margin-right: 10px;
+          font-family: 'Maven Pro', sans-serif; }
+        .cart-payment article .article-content .order-form article .table-wrap .table tbody td.mileage .form-group label.using input {
+          position: relative;
+          top: 2px;
+          margin-right: 5px; }
+        .cart-payment article .article-content .order-form article .table-wrap .table tbody td.mileage .form-group label.using:before {
+          content: "\F177";
+          font-family: "fontello";
+          color: #c69c6d;
+          padding: 0 20px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.mileage .possession-mileage {
+      display: inline-block;
+      vertical-align: top; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.mileage .possession-mileage p {
+        display: inline-block;
+        width: 150px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        color: #666;
+        padding: 0 12px;
+        margin: 0 10px;
+        background-color: #ebebeb;
+        font-family: 'Maven Pro', sans-serif; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.coupon .form-group .form-control {
+      display: inline-block;
+      width: 250px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.coupon .form-group .coupon-btn {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 8px; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.coupon .form-group .coupon-btn .btn-default {
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+        background-color: #999;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; }
+        .cart-payment article .article-content .order-form article .table-wrap .table tbody td.coupon .form-group .coupon-btn .btn-default:hover, .cart-payment article .article-content .order-form article .table-wrap .table tbody td.coupon .form-group .coupon-btn .btn-default:focus {
+          opacity: .8; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.coupon .note {
+      font-size: 13px;
+      color: #666;
+      font-weight: 300;
+      line-height: 20px;
+      margin-top: 20px; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.coupon .note b {
+        font-weight: 400;
+        color: #a67c52; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.payment-option .form-group label {
+      display: block;
+      font-size: 14px;
+      color: #666;
+      font-weight: 300;
+      line-height: 35px; }
+      .cart-payment article .article-content .order-form article .table-wrap .table tbody td.payment-option .form-group label input {
+        position: relative;
+        top: 2px;
+        margin-right: 5px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.payment-option .form-group .account label {
+      display: inline-block;
+      margin-right: 10px; }
+    .cart-payment article .article-content .order-form article .table-wrap .table tbody td.payment-option .form-group .account .form-control {
+      display: inline-block;
+      width: 370px; }
+  .cart-payment article .article-content .order-form article.delivery-info {
+    overflow: hidden; }
+    .cart-payment article .article-content .order-form article.delivery-info h3 {
+      float: left; }
+    .cart-payment article .article-content .order-form article.delivery-info > label {
+      float: right;
+      font-size: 14px;
+      color: #666;
+      font-weight: 300; }
+      .cart-payment article .article-content .order-form article.delivery-info > label > input {
+        position: relative;
+        top: 2px;
+        margin-right: 5px; }
+  .cart-payment article .article-content .order-form article.payment-info {
+    overflow: hidden; }
+    .cart-payment article .article-content .order-form article.payment-info h3 {
+      float: left; }
+    .cart-payment article .article-content .order-form article.payment-info > label {
+      float: right;
+      font-size: 14px;
+      color: #666;
+      font-weight: 300; }
+      .cart-payment article .article-content .order-form article.payment-info > label > input {
+        position: relative;
+        top: 2px;
+        margin-right: 5px; }
+.cart-payment article .article-content .order-form .final-payment {
+  overflow: hidden;
+  margin-top: 80px;
+  padding: 0 20px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf; }
+  .cart-payment article .article-content .order-form .final-payment p {
+    float: left;
+    font-size: 13px;
+    color: #666;
+    line-height: 85px; }
+    .cart-payment article .article-content .order-form .final-payment p ~ p {
+      font-size: 16px;
+      color: #2b2b2b;
+      float: right; }
+      .cart-payment article .article-content .order-form .final-payment p ~ p strong {
+        font-size: 20px;
+        font-family: 'Maven Pro', sans-serif; }
+      .cart-payment article .article-content .order-form .final-payment p ~ p small {
+        font-size: 13px; }
+        .cart-payment article .article-content .order-form .final-payment p ~ p small b {
+          font-size: 13px;
+          font-weight: bold;
+          margin: 0;
+          font-family: 'Maven Pro', sans-serif; }
+    .cart-payment article .article-content .order-form .final-payment p b {
+      font-size: 18px;
+      color: #222;
+      font-weight: 400;
+      margin-right: 20px; }
+.cart-payment article .article-content .order-form .btn-area {
+  margin-top: 100px;
+  text-align: center; }
+  .cart-payment article .article-content .order-form .btn-area p .btn-lg {
+    width: 250px;
+    height: 65px;
+    line-height: 65px; }
+
+.success article .article-content .selection-product {
+  margin-bottom: 100px; }
+  .success article .article-content .selection-product .table-wrap .table {
+    margin: 0; }
+    .success article .article-content .selection-product .table-wrap .table thead tr th:nth-of-type(2) {
+      width: 100px; }
+    .success article .article-content .selection-product .table-wrap .table thead tr th:nth-of-type(3) {
+      width: 60px; }
+    .success article .article-content .selection-product .table-wrap .table thead tr th:nth-of-type(4) {
+      width: 140px; }
+    .success article .article-content .selection-product .table-wrap .table tbody tr td {
+      vertical-align: middle; }
+      .success article .article-content .selection-product .table-wrap .table tbody tr td.item-details {
+        padding-left: 20px;
+        text-align: left; }
+        .success article .article-content .selection-product .table-wrap .table tbody tr td.item-details a {
+          display: table;
+          font-size: 0; }
+          .success article .article-content .selection-product .table-wrap .table tbody tr td.item-details a p {
+            display: table-cell;
+            vertical-align: middle; }
+            .success article .article-content .selection-product .table-wrap .table tbody tr td.item-details a p.item img {
+              width: 110px;
+              height: 110px; }
+            .success article .article-content .selection-product .table-wrap .table tbody tr td.item-details a p.item-title {
+              width: 100%;
+              font-size: 13px;
+              color: #2b2b2b;
+              line-height: 20px;
+              padding-left: 15px;
+              padding-right: 30px; }
+      .success article .article-content .selection-product .table-wrap .table tbody tr td.mileage, .success article .article-content .selection-product .table-wrap .table tbody tr td.payment, .success article .article-content .selection-product .table-wrap .table tbody tr td.item-count, .success article .article-content .selection-product .table-wrap .table tbody tr td.product-quantity {
+        font-family: 'Maven Pro', sans-serif; }
+  .success article .article-content .selection-product .table-wrap .total {
+    text-align: right;
+    padding: 35px 20px;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #f1f1f1; }
+    .success article .article-content .selection-product .table-wrap .total p {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 400; }
+      .success article .article-content .selection-product .table-wrap .total p span, .success article .article-content .selection-product .table-wrap .total p b {
+        font-family: 'Maven Pro', sans-serif; }
+      .success article .article-content .selection-product .table-wrap .total p span {
+        margin-left: 20px; }
+        .success article .article-content .selection-product .table-wrap .total p span:nth-of-type(2) {
+          margin-left: 0; }
+      .success article .article-content .selection-product .table-wrap .total p.amount {
+        color: #666; }
+        .success article .article-content .selection-product .table-wrap .total p.amount span {
+          font-weight: 500; }
+      .success article .article-content .selection-product .table-wrap .total p.total-payment {
+        color: #2b2b2b; }
+        .success article .article-content .selection-product .table-wrap .total p.total-payment b {
+          font-size: 20px; }
+        .success article .article-content .selection-product .table-wrap .total p.total-payment:before {
+          font-weight: 300;
+          content: "=";
+          padding: 0 30px; }
+        .success article .article-content .selection-product .table-wrap .total p.total-payment small {
+          font-size: 13px; }
+          .success article .article-content .selection-product .table-wrap .total p.total-payment small i {
+            font-size: 13px;
+            font-weight: bold;
+            margin: 0;
+            font-style: normal;
+            font-family: 'Maven Pro', sans-serif; }
+  .success article .article-content .selection-product .table-wrap .btn-area {
+    text-align: center;
+    margin-top: 60px; }
+    .success article .article-content .selection-product .table-wrap .btn-area p .btn-lg {
+      width: 250px;
+      height: 65px;
+      font-size: 16px;
+      line-height: 65px; }
+.success article .article-content .order-information article {
+  padding-bottom: 0; }
+  .success article .article-content .order-information article ~ article {
+    margin-top: 80px; }
+  .success article .article-content .order-information article h3 {
+    font-size: 18px;
+    color: #222;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .success article .article-content .order-information article .table-wrap .table tbody th {
+    width: 200px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    color: #333;
+    padding: 20px 30px;
+    vertical-align: middle;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #f8f8f8; }
+  .success article .article-content .order-information article .table-wrap .table tbody td {
+    font-size: 14px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 20px;
+    line-height: 20px; }
+    .success article .article-content .order-information article .table-wrap .table tbody td b {
+      color: #a67c52;
+      font-weight: 400; }
+.success article .article-content .order-information .success-txt {
+  position: relative;
+  margin-top: 100px;
+  padding: 45px 40px 50px;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #f1f1f1; }
+  .success article .article-content .order-information .success-txt > h4 {
+    font-size: 18px;
+    color: #222;
+    font-weight: 400;
+    margin-bottom: 40px; }
+  .success article .article-content .order-information .success-txt > p {
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+    font-weight: 300; }
+    .success article .article-content .order-information .success-txt > p b {
+      font-weight: 400;
+      color: #a67c52; }
+  .success article .article-content .order-information .success-txt .btn-area {
+    position: absolute;
+    top: 45px;
+    right: 40px; }
+    .success article .article-content .order-information .success-txt .btn-area p .btn-lg {
+      width: 200px;
+      height: 55px;
+      font-size: 16px;
+      line-height: 55px;
+      display: block;
+      margin: 0; }
+      .success article .article-content .order-information .success-txt .btn-area p .btn-lg.btn-gray {
+        margin-top: 10px; }
+
+/*******************************  Board  *******************************/
+.board #header {
+  border-bottom: 1px solid #e5e5e5; }
+.board .page-header {
+  text-align: center;
+  padding: 120px 0 100px; }
+  .board .page-header h2 {
+    font-size: 70px;
+    color: #2b2b2b;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Playfair Display', serif; }
+    .board .page-header h2.lora span {
+      font-family: 'Lora', serif; }
+  .board .page-header .summary {
+    font-size: 14px;
+    color: #2b2b2b;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 60px; }
+.board article {
+  padding-bottom: 200px; }
+  .board article .paging .pagination li a {
+    background-color: #fff !important; }
+.board .pw-confirm article .article-content {
+  padding-top: 0; }
+.board .search-form {
+  position: relative;
+  overflow: hidden;
+  width: 370px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom: 1px solid #ccc; }
+  .board .search-form .form-group .form-control {
+    float: left;
+    width: 270px;
+    font-size: 13px;
+    color: #666;
+    padding-left: 10px;
+    padding-right: 35px;
+    border: 1px solid #fff; }
+  .board .search-form .form-group select.form-control {
+    width: 100px;
+    padding-right: 0; }
+  .board .search-form .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .board .search-form .search-btn .btn-default {
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+      line-height: 34px;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.15s;
+      transition-duration: 0.15s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+      .board .search-form .search-btn .btn-default i {
+        font-size: 14px;
+        color: #333; }
+      .board .search-form .search-btn .btn-default:hover, .board .search-form .search-btn .btn-default:focus {
+        opacity: .8;
+        background-color: #fff; }
+
+.qna-list article .article-content {
+  margin-top: 70px; }
+  .qna-list article .article-content .table-wrap .table {
+    table-layout: fixed;
+    margin-bottom: 0; }
+    .qna-list article .article-content .table-wrap .table thead tr th {
+      font-size: 15px;
+      color: #fff;
+      font-weight: 400;
+      text-align: center;
+      padding: 20px 0;
+      border: 0;
+      background-color: #8d8d8d;
+      font-family: 'Maven Pro', sans-serif; }
+      .qna-list article .article-content .table-wrap .table thead tr th:nth-of-type(1) {
+        width: 70px; }
+      .qna-list article .article-content .table-wrap .table thead tr th:nth-of-type(2) {
+        width: 200px; }
+      .qna-list article .article-content .table-wrap .table thead tr th:nth-of-type(4) {
+        width: 135px; }
+      .qna-list article .article-content .table-wrap .table thead tr th:nth-of-type(5) {
+        width: 135px; }
+      .qna-list article .article-content .table-wrap .table thead tr th:nth-of-type(6) {
+        width: 100px; }
+    .qna-list article .article-content .table-wrap .table tbody tr td {
+      font-size: 14px;
+      color: #666;
+      vertical-align: middle;
+      text-align: center;
+      padding: 30px 0;
+      border: 0;
+      border-bottom: 1px solid #dfdfdf; }
+      .qna-list article .article-content .table-wrap .table tbody tr td img {
+        display: block;
+        margin: 0 auto; }
+      .qna-list article .article-content .table-wrap .table tbody tr td.title {
+        text-align: left; }
+        .qna-list article .article-content .table-wrap .table tbody tr td.title .product-title {
+          font-size: 13px;
+          color: #999;
+          line-height: 40px;
+          text-decoration: none; }
+        .qna-list article .article-content .table-wrap .table tbody tr td.title .subject {
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 40px;
+          color: #2b2b2b; }
+          .qna-list article .article-content .table-wrap .table tbody tr td.title .subject.reply {
+            position: relative;
+            padding-left: 20px; }
+            .qna-list article .article-content .table-wrap .table tbody tr td.title .subject.reply:before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              font-size: 15px;
+              color: #888;
+              content: "\E80D";
+              font-family: "fontello"; }
+      .qna-list article .article-content .table-wrap .table tbody tr td.product figure img {
+        display: block;
+        width: 120px;
+        height: 120px; }
+      .qna-list article .article-content .table-wrap .table tbody tr td.num, .qna-list article .article-content .table-wrap .table tbody tr td.date, .qna-list article .article-content .table-wrap .table tbody tr td.hit {
+        font-family: 'Maven Pro', sans-serif; }
+  .qna-list article .article-content .btn-area {
+    margin-top: 30px;
+    text-align: right; }
+    .qna-list article .article-content .btn-area p .btn-sm {
+      width: 130px;
+      height: 40px;
+      line-height: 40px; }
+  .qna-list article .article-content .paging {
+    margin-top: 20px; }
+
+.board-view article .article-content .view .view-header {
+  position: relative;
+  padding: 20px 30px 20px 40px;
+  background-color: #8d8d8d; }
+  .board-view article .article-content .view .view-header h3 {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400; }
+  .board-view article .article-content .view .view-header .date {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Maven Pro', sans-serif; }
+.board-view article .article-content .view .view-content {
+  min-height: 500px;
+  font-size: 14px;
+  color: #666;
+  line-height: 25px;
+  padding: 50px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #dfdfdf; }
+.board-view article .article-content .btn-area {
+  text-align: right;
+  margin-top: 30px; }
+  .board-view article .article-content .btn-area .btn-sm {
+    width: 130px;
+    height: 40px;
+    line-height: 40px; }
+
+.board-write article .article-content .table-wrap .table {
+  border-top: 1px solid #000; }
+  .board-write article .article-content .table-wrap .table tbody tr th {
+    width: 200px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    vertical-align: middle;
+    padding: 20px 0 20px 30px;
+    border: 0;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #f8f8f8; }
+    .board-write article .article-content .table-wrap .table tbody tr th.content {
+      vertical-align: top; }
+    .board-write article .article-content .table-wrap .table tbody tr th label {
+      font-weight: 400; }
+  .board-write article .article-content .table-wrap .table tbody tr td {
+    text-align: left;
+    padding: 10px 70px 10px 20px;
+    border: 0;
+    border-bottom: 1px solid #dfdfdf; }
+    .board-write article .article-content .table-wrap .table tbody tr td .form-control {
+      height: 35px;
+      border: 1px solid #ddd; }
+    .board-write article .article-content .table-wrap .table tbody tr td.u-name .form-group .form-control, .board-write article .article-content .table-wrap .table tbody tr td.u-pw .form-group .form-control {
+      width: 280px; }
+    .board-write article .article-content .table-wrap .table tbody tr td.u-pw .form-group {
+      display: inline-block; }
+    .board-write article .article-content .table-wrap .table tbody tr td.u-pw label {
+      display: inline-block;
+      margin-left: 20px;
+      font-size: 14px;
+      color: #666;
+      font-weight: 300; }
+      .board-write article .article-content .table-wrap .table tbody tr td.u-pw label input {
+        position: relative;
+        top: 2px;
+        margin-right: 5px; }
+    .board-write article .article-content .table-wrap .table tbody tr td.subject .form-group .form-control {
+      width: 719px;
+      display: inline-block; }
+    .board-write article .article-content .table-wrap .table tbody tr td.subject .form-group select.form-control {
+      width: 150px;
+      margin-right: 8px; }
+    .board-write article .article-content .table-wrap .table tbody tr td.content .form-group .form-control {
+      height: 340px; }
+    .board-write article .article-content .table-wrap .table tbody tr td.attach .form-group {
+      position: relative;
+      padding-right: 110px; }
+      .board-write article .article-content .table-wrap .table tbody tr td.attach .form-group label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+        background-color: #999;
+        cursor: pointer;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; }
+        .board-write article .article-content .table-wrap .table tbody tr td.attach .form-group label:hover, .board-write article .article-content .table-wrap .table tbody tr td.attach .form-group label:focus {
+          opacity: .8; }
+.board-write article .article-content .btn-area {
+  text-align: right;
+  margin-top: 30px; }
+  .board-write article .article-content .btn-area p .btn-sm {
+    width: 130px;
+    height: 40px;
+    line-height: 40px; }
+
+.faq-list article .article-content {
+  margin-top: 70px; }
+  .faq-list article .article-content .nav-tabs-faq {
+    border-bottom: 0; }
+    .faq-list article .article-content .nav-tabs-faq li {
+      width: 14.28%; }
+      .faq-list article .article-content .nav-tabs-faq li a {
+        font-size: 14px;
+        font-weight: 400;
+        color: #888;
+        line-height: 54px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-left: -1px;
+        border-radius: 0;
+        border: 1px solid #ccc;
+        border-bottom: 1px solid #333; }
+        .faq-list article .article-content .nav-tabs-faq li a:hover, .faq-list article .article-content .nav-tabs-faq li a:focus {
+          background-color: #fff; }
+      .faq-list article .article-content .nav-tabs-faq li.active a {
+        position: relative;
+        color: #333;
+        z-index: 99;
+        border-color: #333;
+        border-bottom: 1px solid #fff; }
+  .faq-list article .article-content .tab-content {
+    padding-top: 60px; }
+    .faq-list article .article-content .tab-content .tab-pane .panel-group {
+      margin: 0; }
+      .faq-list article .article-content .tab-content .tab-pane .panel-group .panel {
+        margin: 0;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none; }
+        .faq-list article .article-content .tab-content .tab-pane .panel-group .panel .panel-heading {
+          padding: 0 20px;
+          border: 0;
+          border-bottom: 1px solid #dfdfdf;
+          background-color: #fff; }
+          .faq-list article .article-content .tab-content .tab-pane .panel-group .panel .panel-heading a {
+            position: relative;
+            display: block;
+            padding: 17px 0;
+            font-size: 0; }
+            .faq-list article .article-content .tab-content .tab-pane .panel-group .panel .panel-heading a:before {
+              display: inline-block;
+              font-size: 17px;
+              width: 30px;
+              content: "Q";
+              text-align: center;
+              color: #8c6239;
+              font-weight: 900;
+              font-family: 'Maven Pro', sans-serif; }
+            .faq-list article .article-content .tab-content .tab-pane .panel-group .panel .panel-heading a p {
+              display: inline-block;
+              font-size: 14px;
+              font-weight: 400; }
+              .faq-list article .article-content .tab-content .tab-pane .panel-group .panel .panel-heading a p.category {
+                width: 250px;
+                color: #8c6239;
+                text-align: center; }
+              .faq-list article .article-content .tab-content .tab-pane .panel-group .panel .panel-heading a p.title {
+                color: #2b2b2b; }
+            .faq-list article .article-content .tab-content .tab-pane .panel-group .panel .panel-heading a:after {
+              position: absolute;
+              top: 50%;
+              right: 0;
+              margin-top: -9px;
+              font-size: 13px;
+              color: #aaa;
+              content: "\E80F";
+              font-family: "fontello"; }
+            .faq-list article .article-content .tab-content .tab-pane .panel-group .panel .panel-heading a.collapsed:after {
+              content: "\E810"; }
+        .faq-list article .article-content .tab-content .tab-pane .panel-group .panel .panel-collapse .panel-body {
+          position: relative;
+          font-size: 14px;
+          color: #666;
+          font-weight: 400;
+          line-height: 28px;
+          padding: 30px;
+          padding-left: 100px;
+          border: 0;
+          border-bottom: 1px solid #dfdfdf;
+          background-color: #f1f1f1; }
+          .faq-list article .article-content .tab-content .tab-pane .panel-group .panel .panel-collapse .panel-body:before {
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            content: "A";
+            color: #fff;
+            text-align: center;
+            font-weight: 900;
+            line-height: 30px;
+            border-radius: 50%;
+            background-color: #998675;
+            font-family: 'Maven Pro', sans-serif; }
+    .faq-list article .article-content .tab-content .tab-pane .paging {
+      margin-top: 60px; }
+
+.review-list article .article-content {
+  margin-top: 70px; }
+  .review-list article .article-content .table-wrap .table {
+    table-layout: fixed;
+    margin-bottom: 0; }
+    .review-list article .article-content .table-wrap .table thead tr th {
+      font-size: 15px;
+      color: #fff;
+      font-weight: 400;
+      text-align: center;
+      padding: 20px 0;
+      border: 0;
+      background-color: #8d8d8d;
+      font-family: 'Maven Pro', sans-serif; }
+      .review-list article .article-content .table-wrap .table thead tr th:nth-of-type(1) {
+        width: 170px; }
+      .review-list article .article-content .table-wrap .table thead tr th:nth-of-type(3) {
+        width: 130px; }
+      .review-list article .article-content .table-wrap .table thead tr th:nth-of-type(4) {
+        width: 170px; }
+    .review-list article .article-content .table-wrap .table tbody tr td {
+      font-size: 14px;
+      color: #666;
+      vertical-align: middle;
+      text-align: center;
+      padding: 30px 0;
+      border: 0;
+      border-bottom: 1px solid #dfdfdf; }
+      .review-list article .article-content .table-wrap .table tbody tr td img {
+        display: block;
+        margin: 0 auto; }
+      .review-list article .article-content .table-wrap .table tbody tr td.title {
+        text-align: left;
+        padding-left: 30px; }
+        .review-list article .article-content .table-wrap .table tbody tr td.title .product-title {
+          font-size: 13px;
+          color: #999;
+          line-height: 40px;
+          text-decoration: none; }
+        .review-list article .article-content .table-wrap .table tbody tr td.title .subject {
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 40px;
+          color: #2b2b2b; }
+      .review-list article .article-content .table-wrap .table tbody tr td.product figure img {
+        display: block;
+        width: 110px;
+        height: 110px; }
+      .review-list article .article-content .table-wrap .table tbody tr td.date {
+        font-family: 'Maven Pro', sans-serif; }
+  .review-list article .article-content .paging {
+    margin-top: 60px; }
+
+.review-view article .article-content .view .view-header {
+  position: relative;
+  padding: 20px 30px 20px 40px;
+  background-color: #8d8d8d; }
+  .review-view article .article-content .view .view-header h3 {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400; }
+  .review-view article .article-content .view .view-header .date {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Maven Pro', sans-serif; }
+.review-view article .article-content .view .view-content {
+  border-bottom: 1px solid #dfdfdf; }
+  .review-view article .article-content .view .view-content > a {
+    display: table;
+    padding: 20px 0;
+    text-decoration: none;
+    border-bottom: 1px solid #dfdfdf; }
+    .review-view article .article-content .view .view-content > a > div {
+      display: table-cell;
+      height: 110px;
+      padding: 0 30px;
+      vertical-align: middle; }
+      .review-view article .article-content .view .view-content > a > div.item img {
+        display: block;
+        margin: 0 auto;
+        width: 110px;
+        height: 110px; }
+      .review-view article .article-content .view .view-content > a > div.details {
+        width: 100%; }
+        .review-view article .article-content .view .view-content > a > div.details .title {
+          font-size: 15px;
+          color: #333;
+          line-height: 40px; }
+        .review-view article .article-content .view .view-content > a > div.details .payment {
+          display: inline-block;
+          font-size: 17px;
+          color: #333;
+          line-height: 20px;
+          font-family: 'Maven Pro', sans-serif; }
+  .review-view article .article-content .view .view-content .review-content {
+    font-size: 14px;
+    color: #666;
+    line-height: 25px;
+    padding: 50px;
+    padding-bottom: 130px; }
+.review-view article .article-content .btn-area {
+  text-align: right;
+  margin-top: 30px; }
+  .review-view article .article-content .btn-area .btn-sm {
+    width: 130px;
+    height: 40px;
+    line-height: 40px; }
+
+.notice-list article .article-content {
+  margin-top: 70px; }
+  .notice-list article .article-content .table-wrap .table {
+    table-layout: fixed;
+    margin-bottom: 0; }
+    .notice-list article .article-content .table-wrap .table thead tr th {
+      font-size: 15px;
+      color: #fff;
+      font-weight: 400;
+      text-align: center;
+      padding: 20px 0;
+      border: 0;
+      background-color: #8d8d8d;
+      font-family: 'Maven Pro', sans-serif; }
+      .notice-list article .article-content .table-wrap .table thead tr th:nth-of-type(1) {
+        width: 100px; }
+      .notice-list article .article-content .table-wrap .table thead tr th:nth-of-type(3) {
+        width: 130px; }
+      .notice-list article .article-content .table-wrap .table thead tr th:nth-of-type(4) {
+        width: 100px; }
+    .notice-list article .article-content .table-wrap .table tbody tr td {
+      font-size: 14px;
+      color: #666;
+      vertical-align: middle;
+      text-align: center;
+      padding: 20px 0;
+      border: 0;
+      border-bottom: 1px solid #dfdfdf; }
+      .notice-list article .article-content .table-wrap .table tbody tr td img {
+        display: block;
+        margin: 0 auto; }
+      .notice-list article .article-content .table-wrap .table tbody tr td.title {
+        text-align: left;
+        padding-left: 30px; }
+        .notice-list article .article-content .table-wrap .table tbody tr td.title a {
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 14px;
+          font-weight: 400;
+          color: #666; }
+      .notice-list article .article-content .table-wrap .table tbody tr td.num, .notice-list article .article-content .table-wrap .table tbody tr td.date, .notice-list article .article-content .table-wrap .table tbody tr td.hit {
+        font-family: 'Maven Pro', sans-serif; }
+  .notice-list article .article-content .paging {
+    margin-top: 60px; }
 
 /*# sourceMappingURL=style.css.map */

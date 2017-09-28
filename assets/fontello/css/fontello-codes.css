@@ -14,7 +14,10 @@
 .icon-star:before { content: '\e80c'; } /* '' */
 .icon-level-down:before { content: '\e80d'; } /* '' */
 .icon-check:before { content: '\e80e'; } /* '' */
+.icon-up-open-big:before { content: '\e80f'; } /* '' */
+.icon-down-open-big:before { content: '\e810'; } /* '' */
 .icon-angle-double-left:before { content: '\f100'; } /* '' */
 .icon-angle-double-right:before { content: '\f101'; } /* '' */
 .icon-angle-left:before { content: '\f104'; } /* '' */
 .icon-angle-right:before { content: '\f105'; } /* '' */
+.icon-left:before { content: '\f177'; } /* '' */

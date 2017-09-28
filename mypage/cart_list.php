@@ -162,14 +162,14 @@
                             </table>
                             <div class="total">
                                 <p class="amount">총 구매금액 <span>88,800</span>원</p>
-                                <p class="total-payment">총 결제금액 <b>88,800</b>원 <small>(적립금 980원)</small></p>
+                                <p class="total-payment">총 결제금액 <b>88,800</b>원 <small>(적립금 <i>980</i>원)</small></p>
                             </div>
                         </div>
                         <div class="btn-area">
                             <p>
                                 <a href="#" class="btn btn-lg btn-gray" role="button">장바구니 비우기</a>
                                 <a href="#" class="btn btn-lg btn-gray" role="button">계속 쇼핑하기</a>
-                                <a href="#" class="btn btn-lg btn-black" role="button">주문하기</a>
+                                <a href="/mypage/cart_payment.php" class="btn btn-lg btn-black" role="button">주문하기</a>
                             </p>
                         </div>
                     </div>
