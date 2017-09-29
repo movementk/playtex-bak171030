@@ -16,8 +16,10 @@
 .icon-check:before { content: '\e80e'; } /* '' */
 .icon-up-open-big:before { content: '\e80f'; } /* '' */
 .icon-down-open-big:before { content: '\e810'; } /* '' */
+.icon-pencil:before { content: '\e811'; } /* '' */
 .icon-angle-double-left:before { content: '\f100'; } /* '' */
 .icon-angle-double-right:before { content: '\f101'; } /* '' */
 .icon-angle-left:before { content: '\f104'; } /* '' */
 .icon-angle-right:before { content: '\f105'; } /* '' */
 .icon-left:before { content: '\f177'; } /* '' */
+.icon-trash:before { content: '\f1f8'; } /* '' */

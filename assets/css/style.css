@@ -57,38 +57,58 @@ label {
   top: 0;
   left: 0;
   width: 100%;
+  min-width: 1200px;
   height: 100px;
-  overflow: hidden;
   background-color: #fff;
-  z-index: 9999; }
+  z-index: 9999;
+  border-bottom: 1px solid #e5e5e5; }
   #header .logo {
     position: absolute;
     top: 50%;
     left: 30px;
     margin-top: -34px; }
   #header #gnb {
-    float: left; }
+    display: block;
+    margin-left: 220px; }
+    @media (min-width: 1600px) {
+      #header #gnb {
+        margin-left: 350px; } }
     #header #gnb ul {
       font-size: 0; }
       #header #gnb ul li {
-        display: inline-block;
-        margin-right: 60px; }
+        display: inline-block; }
         #header #gnb ul li a {
+          display: block;
           font-size: 20px;
           color: #2b2b2b;
           font-weight: 400;
           line-height: 100px;
+          padding-right: 60px;
           text-decoration: none; }
         #header #gnb ul li:last-child {
           margin-right: 0; }
+  #header #gnb-full {
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    background-color: #fff; }
   #header #quick-nav {
+    text-align: right;
+    font-size: 0;
     position: absolute;
     top: 0;
     right: 0;
-    height: 100px;
-    overflow: hidden; }
+    height: 100px; }
     #header #quick-nav ul {
-      float: left;
+      display: inline-block;
       font-size: 0; }
       #header #quick-nav ul li {
         display: inline-block;
@@ -97,6 +117,33 @@ label {
           font-size: 22px;
           color: #2b2b2b;
           line-height: 100px; }
+    #header #quick-nav .global-search {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 50px; }
+      #header #quick-nav .global-search .btn-search {
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        line-height: 100px;
+        background-color: #2b2b2b;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; }
+        #header #quick-nav .global-search .btn-search .icon-search {
+          font-size: 22px; }
+        #header #quick-nav .global-search .btn-search:hover, #header #quick-nav .global-search .btn-search:focus {
+          opacity: .8; }
+
+.nav-expanded #gnb-full {
+  position: relative;
+  height: 300px;
+  z-index: 9999999999; }
 
 #opening {
   width: 100%;
@@ -1231,8 +1278,6 @@ label {
   margin-top: 50px; }
 
 /*******************************  Member  *******************************/
-.member #header {
-  border-bottom: 1px solid #e5e5e5; }
 .member .page-header {
   text-align: center;
   padding: 120px 0 100px; }
@@ -1739,8 +1784,6 @@ label {
     line-height: 60px; }
 
 /*******************************  Mypage  *******************************/
-.mypage #header {
-  border-bottom: 1px solid #e5e5e5; }
 .mypage .page-header {
   text-align: center;
   padding: 120px 0 100px; }
@@ -3656,8 +3699,6 @@ label {
         margin-top: 10px; }
 
 /*******************************  Board  *******************************/
-.board #header {
-  border-bottom: 1px solid #e5e5e5; }
 .board .page-header {
   text-align: center;
   padding: 120px 0 100px; }
@@ -4178,5 +4219,687 @@ label {
         font-family: 'Maven Pro', sans-serif; }
   .notice-list article .article-content .paging {
     margin-top: 60px; }
+
+/*******************************  Benefit  *******************************/
+.benefit .page-header {
+  text-align: center;
+  padding: 120px 0 100px; }
+  .benefit .page-header h2 {
+    font-size: 70px;
+    color: #2b2b2b;
+    font-style: italic;
+    font-family: 'Playfair Display', serif; }
+.benefit article {
+  padding-bottom: 200px; }
+  .benefit article .paging .pagination li a {
+    background-color: #fff !important; }
+
+.event-list article .article-content > ul > li > a {
+  display: block;
+  margin-top: 90px;
+  text-decoration: none; }
+  .event-list article .article-content > ul > li > a figure img {
+    width: 100%; }
+  .event-list article .article-content > ul > li > a figure figcaption {
+    font-size: 16px;
+    color: #2b2b2b;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px; }
+.event-list article .article-content > ul > li:nth-of-type(1) {
+  margin-top: 0; }
+.event-list article .article-content > ul > li:nth-of-type(2) {
+  margin-top: 0; }
+.event-list article .article-content > ul > li:nth-of-type(3) {
+  margin-top: 0; }
+.event-list article .article-content .paging {
+  margin-top: 125px; }
+
+.event-view article .article-content .view .view-header {
+  position: relative;
+  padding: 20px 30px 20px 40px;
+  background-color: #8d8d8d; }
+  .event-view article .article-content .view .view-header h3 {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400; }
+  .event-view article .article-content .view .view-header .date {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Maven Pro', sans-serif; }
+.event-view article .article-content .view .view-content {
+  min-height: 500px;
+  font-size: 14px;
+  color: #666;
+  line-height: 25px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #dfdfdf; }
+.event-view article .article-content .btn-area {
+  text-align: right;
+  margin-top: 30px; }
+  .event-view article .article-content .btn-area .btn-sm {
+    width: 130px;
+    height: 40px;
+    line-height: 40px; }
+.event-view article .article-content .reply-area {
+  margin-top: 60px; }
+  .event-view article .article-content .reply-area .reply-write {
+    position: relative;
+    padding: 25px 30px;
+    padding-right: 200px;
+    background-color: #f1f1f1; }
+    .event-view article .article-content .reply-area .reply-write .form-group .form-control {
+      width: 100%;
+      height: 80px;
+      border: 1px solid #dfdfdf; }
+    .event-view article .article-content .reply-area .reply-write .reply-btn {
+      position: absolute;
+      top: 25px;
+      right: 30px; }
+      .event-view article .article-content .reply-area .reply-write .reply-btn .btn-default {
+        width: 150px;
+        height: 80px;
+        font-size: 16px;
+        color: #fff;
+        line-height: 80px;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        background-color: #333; }
+        .event-view article .article-content .reply-area .reply-write .reply-btn .btn-default:hover, .event-view article .article-content .reply-area .reply-write .reply-btn .btn-default:focus {
+          opacity: .8; }
+  .event-view article .article-content .reply-area .reply-list {
+    margin-top: 30px; }
+    .event-view article .article-content .reply-area .reply-list > li {
+      overflow: hidden;
+      padding: 20px 20px 20px 30px;
+      border-bottom: 1px solid #dfdfdf; }
+      .event-view article .article-content .reply-area .reply-list > li:first-child {
+        border-top: 1px solid #dfdfdf; }
+      .event-view article .article-content .reply-area .reply-list > li.reply {
+        position: relative;
+        padding-left: 50px; }
+        .event-view article .article-content .reply-area .reply-list > li.reply:before {
+          position: absolute;
+          top: 50%;
+          margin-top: -10px;
+          left: 30px;
+          font-size: 15px;
+          color: #888;
+          content: "\E80D";
+          font-family: "fontello"; }
+      .event-view article .article-content .reply-area .reply-list > li > dl {
+        float: left;
+        font-size: 0; }
+        .event-view article .article-content .reply-area .reply-list > li > dl dt {
+          display: inline-block;
+          font-size: 13px;
+          color: #333;
+          font-weight: 400; }
+          .event-view article .article-content .reply-area .reply-list > li > dl dt:after {
+            position: relative;
+            top: -2px;
+            font-size: 10px;
+            content: "|";
+            color: #ccc;
+            padding: 0 15px; }
+        .event-view article .article-content .reply-area .reply-list > li > dl dd {
+          display: inline-block;
+          font-size: 13px;
+          color: #999;
+          font-weight: 400;
+          font-family: 'Maven Pro', sans-serif; }
+      .event-view article .article-content .reply-area .reply-list > li .modify-btn {
+        float: right; }
+        .event-view article .article-content .reply-area .reply-list > li .modify-btn .btn {
+          display: inline-block;
+          font-size: 12px;
+          color: #999;
+          padding: 0 5px;
+          text-decoration: none; }
+          .event-view article .article-content .reply-area .reply-list > li .modify-btn .btn i {
+            font-size: 13px; }
+      .event-view article .article-content .reply-area .reply-list > li > p {
+        clear: both;
+        font-size: 13px;
+        color: #666;
+        font-weight: 300;
+        padding-top: 15px; }
+
+.coupon-zone {
+  padding-bottom: 200px; }
+  .coupon-zone article {
+    padding: 0;
+    margin: 0; }
+  .coupon-zone section {
+    padding-bottom: 120px; }
+    .coupon-zone section .section-header {
+      text-align: center;
+      margin: 125px 0 80px; }
+      .coupon-zone section .section-header .sub-title {
+        position: relative; }
+        .coupon-zone section .section-header .sub-title hr {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -11px;
+          display: block;
+          width: 370px;
+          height: 1px;
+          margin: 0 auto;
+          margin-left: -185px;
+          content: "";
+          z-index: 1;
+          border-top: 1px solid #2b2b2b; }
+        .coupon-zone section .section-header .sub-title p {
+          position: relative;
+          z-index: 2;
+          display: inline-block;
+          font-size: 16px;
+          color: #2b2b2b;
+          padding: 0 25px;
+          font-weight: 500;
+          font-family: 'Maven Pro', sans-serif;
+          background-color: #fff; }
+      .coupon-zone section .section-header h3 {
+        font-size: 40px;
+        color: #2b2b2b;
+        font-weight: lighter;
+        margin-top: 35px;
+        letter-spacing: -1px; }
+        .coupon-zone section .section-header h3 strong {
+          font-weight: 500; }
+    .coupon-zone section.discount-coupon {
+      background-color: #f8f1eb; }
+      .coupon-zone section.discount-coupon .section-header .sub-title {
+        background-color: #f8f1eb; }
+      .coupon-zone section.discount-coupon .section-content article {
+        text-align: center;
+        padding: 60px 0 65px;
+        background-color: #fff; }
+        .coupon-zone section.discount-coupon .section-content article h4 {
+          font-size: 30px;
+          color: #2b2b2b;
+          line-height: 38px;
+          font-weight: lighter;
+          margin-bottom: 45px; }
+          .coupon-zone section.discount-coupon .section-content article h4 strong {
+            font-size: 35px;
+            display: block;
+            font-weight: 400; }
+        .coupon-zone section.discount-coupon .section-content article figure {
+          margin-bottom: 50px; }
+          .coupon-zone section.discount-coupon .section-content article figure img {
+            display: block;
+            margin: 0 auto; }
+        .coupon-zone section.discount-coupon .section-content article .btn-benefit {
+          width: 370px;
+          font-size: 0;
+          margin: 0 auto; }
+          .coupon-zone section.discount-coupon .section-content article .btn-benefit .btn-white {
+            height: 60px;
+            line-height: 58px;
+            font-size: 18px;
+            color: #2b2b2b;
+            text-align: center;
+            border: 1px solid #949494;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
+            .coupon-zone section.discount-coupon .section-content article .btn-benefit .btn-white img {
+              display: inline-block; }
+            .coupon-zone section.discount-coupon .section-content article .btn-benefit .btn-white.btn-lg {
+              width: 100%; }
+            .coupon-zone section.discount-coupon .section-content article .btn-benefit .btn-white.btn-md {
+              display: inline-block;
+              width: 170px;
+              margin-right: 30px; }
+              .coupon-zone section.discount-coupon .section-content article .btn-benefit .btn-white.btn-md:last-child {
+                margin-right: 0; }
+            .coupon-zone section.discount-coupon .section-content article .btn-benefit .btn-white:hover, .coupon-zone section.discount-coupon .section-content article .btn-benefit .btn-white:focus {
+              opacity: .8; }
+    .coupon-zone section.special-discount .section-content {
+      padding-top: 20px;
+      text-align: center; }
+      .coupon-zone section.special-discount .section-content figure {
+        margin-bottom: 40px; }
+        .coupon-zone section.special-discount .section-content figure img {
+          display: block;
+          margin: 0 auto; }
+      .coupon-zone section.special-discount .section-content .btn-down {
+        width: 370px;
+        margin: 0 auto; }
+        .coupon-zone section.special-discount .section-content .btn-down .btn-lg {
+          width: 100%;
+          font-size: 18px;
+          height: 60px;
+          line-height: 60px;
+          color: #fff;
+          background-color: #333; }
+      .coupon-zone section.special-discount .section-content ul {
+        margin-top: 70px; }
+        .coupon-zone section.special-discount .section-content ul li .note {
+          font-size: 0;
+          text-align: center;
+          margin: 0 auto; }
+          .coupon-zone section.special-discount .section-content ul li .note dt {
+            display: inline-block;
+            font-size: 14px;
+            color: #2b2b2b;
+            line-height: 30px;
+            font-weight: 300; }
+            .coupon-zone section.special-discount .section-content ul li .note dt:after {
+              content: ":";
+              padding: 0 2px; }
+          .coupon-zone section.special-discount .section-content ul li .note dd {
+            display: inline-block;
+            font-size: 14px;
+            color: #2b2b2b;
+            line-height: 30px;
+            font-weight: 300; }
+    .coupon-zone section.members-benefit {
+      background-color: #f1f2f4; }
+      .coupon-zone section.members-benefit .section-header .sub-title p {
+        background-color: #f1f2f4; }
+      .coupon-zone section.members-benefit .section-content .table-wrap {
+        margin-bottom: 30px; }
+        .coupon-zone section.members-benefit .section-content .table-wrap .table {
+          table-layout: fixed;
+          border: 0;
+          border-top: 2px solid #000;
+          background-color: #fff; }
+          .coupon-zone section.members-benefit .section-content .table-wrap .table tbody tr th {
+            width: 130px;
+            font-size: 15px;
+            color: #fff;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            border-bottom: 1px solid #dfdfdf;
+            background-color: #595757; }
+          .coupon-zone section.members-benefit .section-content .table-wrap .table tbody tr td {
+            font-size: 14px;
+            color: #666;
+            font-weight: 300;
+            padding: 30px 0;
+            line-height: 24px;
+            min-height: 100px;
+            text-align: center;
+            vertical-align: middle;
+            border-right: 1px solid #dfdfdf;
+            border-bottom: 1px solid #dfdfdf; }
+            .coupon-zone section.members-benefit .section-content .table-wrap .table tbody tr td b {
+              display: block;
+              color: #a67c52;
+              font-weight: 400; }
+            .coupon-zone section.members-benefit .section-content .table-wrap .table tbody tr td small {
+              display: block;
+              font-size: 12px; }
+            .coupon-zone section.members-benefit .section-content .table-wrap .table tbody tr td:last-child {
+              border-right: 0; }
+            .coupon-zone section.members-benefit .section-content .table-wrap .table tbody tr td figure img {
+              display: block;
+              margin: 0 auto; }
+            .coupon-zone section.members-benefit .section-content .table-wrap .table tbody tr td figure figcaption {
+              font-size: 16px;
+              color: #2b2b2b;
+              font-weight: 400;
+              margin-top: 20px; }
+              .coupon-zone section.members-benefit .section-content .table-wrap .table tbody tr td figure figcaption.maven {
+                font-size: 17px;
+                font-family: 'Maven Pro', sans-serif;
+                font-weight: bold; }
+          .coupon-zone section.members-benefit .section-content .table-wrap .table tbody tr:first-child th {
+            border-bottom-color: #acacac; }
+          .coupon-zone section.members-benefit .section-content .table-wrap .table tbody tr:first-child td {
+            border-bottom-color: #acacac; }
+      .coupon-zone section.members-benefit .section-content .attention {
+        font-size: 13px;
+        color: #666;
+        font-weight: 300;
+        line-height: 24px; }
+        .coupon-zone section.members-benefit .section-content .attention:before {
+          content: "※";
+          padding-right: 3px; }
+    .coupon-zone section.card-benefit {
+      padding-bottom: 0; }
+      .coupon-zone section.card-benefit .section-content .table-wrap .table {
+        border: 0;
+        margin: 0; }
+        .coupon-zone section.card-benefit .section-content .table-wrap .table thead tr th {
+          font-size: 15px;
+          color: #fff;
+          text-align: center;
+          vertical-align: middle;
+          font-weight: 400;
+          padding: 25px 0;
+          border: 0;
+          border-right: 1px solid #dfdfdf;
+          background-color: #595757; }
+          .coupon-zone section.card-benefit .section-content .table-wrap .table thead tr th:last-child {
+            border-right: 0; }
+          .coupon-zone section.card-benefit .section-content .table-wrap .table thead tr th:nth-of-type(1) {
+            width: 270px; }
+          .coupon-zone section.card-benefit .section-content .table-wrap .table thead tr th:nth-of-type(2) {
+            width: 430px; }
+        .coupon-zone section.card-benefit .section-content .table-wrap .table tbody tr td {
+          font-size: 14px;
+          color: #666;
+          vertical-align: middle;
+          text-align: left;
+          padding: 20px 0;
+          line-height: 25px;
+          padding-left: 50px;
+          border-bottom: 1px solid #dfdfdf;
+          border-right: 1px solid #dfdfdf; }
+          .coupon-zone section.card-benefit .section-content .table-wrap .table tbody tr td:first-child {
+            padding-left: 0;
+            text-align: center; }
+          .coupon-zone section.card-benefit .section-content .table-wrap .table tbody tr td .attention {
+            font-weight: 400;
+            color: #2b2b2b; }
+            .coupon-zone section.card-benefit .section-content .table-wrap .table tbody tr td .attention:before {
+              content: "※";
+              padding-right: 3px; }
+          .coupon-zone section.card-benefit .section-content .table-wrap .table tbody tr td .basic-list {
+            margin-top: 40px; }
+            .coupon-zone section.card-benefit .section-content .table-wrap .table tbody tr td .basic-list > li {
+              position: relative;
+              padding-left: 15px; }
+              .coupon-zone section.card-benefit .section-content .table-wrap .table tbody tr td .basic-list > li:before {
+                position: absolute;
+                top: -1px;
+                left: 0;
+                content: "-"; }
+          .coupon-zone section.card-benefit .section-content .table-wrap .table tbody tr td .dott-list > li {
+            position: relative;
+            padding-left: 15px; }
+            .coupon-zone section.card-benefit .section-content .table-wrap .table tbody tr td .dott-list > li:before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              content: "\E807";
+              font-family: "fontello"; }
+        .coupon-zone section.card-benefit .section-content .table-wrap .table tbody tr:first-child td:last-child {
+          padding-left: 70px;
+          border-right: 0; }
+
+#about #opening {
+  min-width: 1650px; }
+#about #footer {
+  min-width: 1650px; }
+#about section {
+  min-width: 1650px; }
+#about article {
+  min-width: 1650px; }
+#about .introduce {
+  padding-bottom: 170px;
+  background-image: url(/assets/images/board/about_header_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+  #about .introduce .page-header {
+    padding: 0;
+    margin: 0; }
+    #about .introduce .page-header figure {
+      display: inline-block;
+      text-align: right; }
+      #about .introduce .page-header figure img {
+        display: block; }
+        #about .introduce .page-header figure img.years {
+          display: inline-block;
+          margin-top: -25px;
+          margin-right: -50px; }
+  #about .introduce .about-playtex .article-header {
+    position: relative;
+    margin-top: -130px;
+    padding: 80px 0;
+    padding-left: 70px; }
+    #about .introduce .about-playtex .article-header:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: "";
+      height: 350px;
+      width: 1px;
+      border-left: 1px solid #000; }
+    #about .introduce .about-playtex .article-header h2 {
+      display: block; }
+      #about .introduce .about-playtex .article-header h2 img {
+        display: block; }
+    #about .introduce .about-playtex .article-header p {
+      font-size: 27px;
+      line-height: 35px;
+      font-weight: 400;
+      color: #2b2b2b;
+      margin-top: 50px; }
+      #about .introduce .about-playtex .article-header p strong {
+        display: block;
+        font-size: 30px; }
+  #about .introduce .about-playtex .article-content {
+    margin-top: 80px; }
+    #about .introduce .about-playtex .article-content .summary {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 30px;
+      color: #2b2b2b; }
+  #about .introduce .concept {
+    margin-top: 160px; }
+    #about .introduce .concept .article-header {
+      padding-bottom: 80px; }
+      #about .introduce .concept .article-header p {
+        font-size: 27px;
+        line-height: 35px;
+        font-weight: 400;
+        color: #2b2b2b;
+        margin-top: 25px; }
+    #about .introduce .concept .article-content > ul > li > div {
+      display: block;
+      width: 350px;
+      height: 350px;
+      margin: 0 auto;
+      padding-top: 50px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: rgba(225, 225, 225, 0);
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.15s;
+      transition-duration: 0.15s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+      #about .introduce .concept .article-content > ul > li > div:hover, #about .introduce .concept .article-content > ul > li > div:focus {
+        background-color: #e1e1e1; }
+      #about .introduce .concept .article-content > ul > li > div figure img {
+        display: block;
+        margin: 0 auto; }
+      #about .introduce .concept .article-content > ul > li > div .details {
+        margin-top: 40px; }
+        #about .introduce .concept .article-content > ul > li > div .details p {
+          font-size: 25px;
+          color: #333;
+          font-weight: 500;
+          font-family: 'Maven Pro', sans-serif; }
+        #about .introduce .concept .article-content > ul > li > div .details small {
+          display: block;
+          font-size: 16px;
+          color: #666;
+          margin-top: 25px;
+          font-weight: 300; }
+#about .keyword {
+  position: relative;
+  font-size: 0;
+  padding-bottom: 100px; }
+  #about .keyword .target, #about .keyword .images {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50%;
+    height: 100%;
+    z-index: 1; }
+  #about .keyword .target {
+    left: 0;
+    background-color: #eae1d5; }
+  #about .keyword .images {
+    right: 0;
+    background-color: #f1f1f1; }
+  #about .keyword .container {
+    position: relative;
+    z-index: 2; }
+    #about .keyword .container .section-header {
+      padding-top: 63px; }
+      #about .keyword .container .section-header h2 {
+        margin-left: -80px; }
+    #about .keyword .container .section-content {
+      margin-top: -35px; }
+      #about .keyword .container .section-content figure {
+        position: relative;
+        width: 1070px;
+        margin: 0 auto; }
+        #about .keyword .container .section-content figure figcaption dl {
+          position: absolute; }
+          #about .keyword .container .section-content figure figcaption dl dt {
+            font-size: 30px;
+            color: #222;
+            font-weight: bold;
+            line-height: 36px;
+            font-family: 'Maven Pro', sans-serif; }
+          #about .keyword .container .section-content figure figcaption dl dd {
+            font-size: 16px;
+            color: #666;
+            font-weight: 300;
+            line-height: 36px; }
+        #about .keyword .container .section-content figure figcaption .target-txt {
+          top: 50px;
+          left: 122px;
+          text-align: right; }
+        #about .keyword .container .section-content figure figcaption .images-txt {
+          bottom: 17px;
+          right: 320px; }
+#about .point {
+  padding: 110px 0; }
+  #about .point .section-header h2 img {
+    display: block; }
+  #about .point .section-content {
+    padding-left: 45px; }
+    #about .point .section-content ul {
+      overflow: hidden; }
+      #about .point .section-content ul li {
+        float: left;
+        position: relative;
+        font-size: 16px;
+        color: #333;
+        line-height: 40px;
+        font-weight: 300;
+        padding-left: 40px; }
+        #about .point .section-content ul li:before {
+          position: absolute;
+          top: 50%;
+          margin-top: -12.5px;
+          left: 0;
+          content: url(/assets/images/board/checking.gif);
+          font-family: "fontello"; }
+        #about .point .section-content ul li:nth-of-type(2n + 1) {
+          clear: both;
+          width: 306px; }
+        #about .point .section-content ul li:nth-of-type(2n + 2) {
+          margin-left: 45px; }
+#about .feature {
+  position: relative;
+  font-size: 0;
+  margin-bottom: 120px; }
+  #about .feature .left-bg, #about .feature .right-bg {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50%;
+    height: 100%;
+    z-index: 1; }
+  #about .feature .left-bg {
+    left: 0;
+    background-color: #d9d9e1; }
+  #about .feature .right-bg {
+    right: 0;
+    background-color: #f2e3d6; }
+  #about .feature .container-fluid {
+    min-width: 1650px;
+    font-size: 0;
+    padding: 0; }
+  #about .feature .front {
+    display: inline-block;
+    width: 50%;
+    text-align: left; }
+    #about .feature .front .figure {
+      position: relative;
+      display: inline-block;
+      z-index: 2; }
+      #about .feature .front .figure dl {
+        position: absolute; }
+        #about .feature .front .figure dl dt {
+          font-size: 15px;
+          color: #333;
+          font-weight: bold;
+          line-height: 24px; }
+          #about .feature .front .figure dl dt span {
+            font-family: 'Maven Pro', sans-serif; }
+        #about .feature .front .figure dl dd {
+          font-size: 14px;
+          color: #333;
+          font-weight: 300;
+          line-height: 24px; }
+        #about .feature .front .figure dl.volume {
+          top: 78px;
+          right: -183px; }
+        #about .feature .front .figure dl.wire {
+          top: 226px;
+          right: -160px; }
+  #about .feature .back-side {
+    display: inline-block;
+    width: 50%;
+    text-align: right; }
+    #about .feature .back-side .figure {
+      position: relative;
+      display: inline-block;
+      z-index: 2; }
+      #about .feature .back-side .figure img {
+        display: inline-block; }
+      #about .feature .back-side .figure dl {
+        position: absolute; }
+        #about .feature .back-side .figure dl dt {
+          font-size: 15px;
+          color: #333;
+          font-weight: bold;
+          line-height: 24px; }
+          #about .feature .back-side .figure dl dt span {
+            font-family: 'Maven Pro', sans-serif; }
+        #about .feature .back-side .figure dl dd {
+          font-size: 14px;
+          color: #333;
+          font-weight: 300;
+          line-height: 24px; }
+        #about .feature .back-side .figure dl.comfort {
+          top: 78px;
+          left: -153px; }
+        #about .feature .back-side .figure dl.line {
+          top: 207px;
+          left: -224px; }
 
 /*# sourceMappingURL=style.css.map */
