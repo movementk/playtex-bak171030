@@ -9,9 +9,9 @@
             <h2>ITEM</h2>
             <nav class="list-lnb">
                 <ul>
-                    <li class="active"><a href="/item/bra_list.php">BRA<span></span></a></li>
+                    <li><a href="/item/bra_list.php">BRA<span></span></a></li>
                     <li><a href="/item/panty_list.php">PANTY<span></span></a></li>
-                    <li><a href="/item/1set_list.php">1SET<span></span></a></li>
+                    <li class="active"><a href="/item/1set_list.php">1SET<span></span></a></li>
                     <li><a href="/item/2set_list.php">2SET<span></span></a></li>
                     <li><a href="/item/fullset_list.php">FULL SET<span></span></a></li>
                     <li><a href="/item/shaper_list.php">SHAPER<span></span></a></li>
@@ -21,7 +21,7 @@
         </div>
     </div>
     <!-- 페이지 Class -->
-    <main id="content" class="item-list bra-list">
+    <main id="content" class="item-list 1set-list">
         <article class="best-item">
             <div class="container">
                 <div class="row">

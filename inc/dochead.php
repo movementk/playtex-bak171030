@@ -7,7 +7,6 @@
         <title>플레이텍스</title>
         <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="/assets/fontello/css/fontello.css" rel="stylesheet">
-        <link href="/assets/css/common.css" rel="stylesheet">
         <link href="/assets/css/style.css" rel="stylesheet">
         
         <!--[if lt IE 9]>

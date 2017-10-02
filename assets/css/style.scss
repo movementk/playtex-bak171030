@@ -91,17 +91,19 @@ label {
     border-bottom: 1px solid #e5e5e5;
     .logo {
         position: absolute;
-        top: 50%;
+        top: 16px;
         left: 30px;
-        margin-top: -34px;
-        
+        @media(min-width: 1700px) {
+            left: 75px;
+        }
     }
     //헤더 네비
     #gnb {
         display: block;
-        margin-left: 220px;
+        width: 1200px;
+        margin-left: 190px;
         @media(min-width: 1600px) {
-            margin-left: 350px;
+            margin: 0 auto;
         }
         ul {
             font-size: 0;
@@ -113,7 +115,7 @@ label {
                     color: #2b2b2b;
                     font-weight: 400;
                     line-height: 100px;
-                    padding-right: 60px;
+                    padding: 0 30px;
                     text-decoration: none;
                 }
                 &:last-child {
@@ -123,25 +125,11 @@ label {
         }
     }
     
-    #gnb-full {
-        overflow: hidden;
-        width: 100%;
-        height: 0;
-        @include trans();
-        background-color: #fff;
-    }
-    
-    
-    
-    
-    
     //퀵네비
     #quick-nav {
-        text-align: right;
-        font-size: 0;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 150px;
         height: 100px;
         ul {
             display: inline-block;
@@ -156,36 +144,184 @@ label {
                 }
             }
         }
-        .global-search {
-            display: inline-block;
+    }
+    .global-search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        @include trans();
+        .search-link {
+            position: fixed;
+            top: 0;
+            right: 0;
+            display: block;
+            width: 100px;
+            height: 100px;
             vertical-align: top;
-            margin-left: 50px;
+            color: #fff;
+            line-height: 100px;
+            background-color: #2b2b2b;
+            z-index: 9999;
+            .icon-search {
+                font-size: 22px; 
+            }
+        }
+        .form-group {
+            position: relative;
+            font-size: 0;
+            .form-control {
+                color: #acacac;
+                display: none;
+                font-size: 15px;
+                width: 365px;
+                height: 100px;
+                padding-left: 40px;
+                padding-right: 40px;
+                border: 1px solid #2b2b2b;
+                background-color: #2b2b2b;
+            }
             .btn-search {
+                display: inline-block;
                 width: 100px;
                 height: 100px;
+                vertical-align: top;
                 color: #fff;
                 line-height: 100px;
                 background-color: #2b2b2b;
-                @include trans();
                 .icon-search {
-                    font-size: 22px;
+                    font-size: 22px; 
                 }
-                &:hover, &:focus {
-                    opacity: .8;
+            }
+        }
+        &.on {
+            width: 100%;
+            padding-left: 220px;
+            @media(min-width: 1600px) {
+                width: 465px;
+                padding-left: 0;
+            }
+            .search-link {
+                display: none;
+            }
+            .form-group {
+                width: 100%;
+                z-index: 99999;
+                .form-control {
+                    width: 100%;
+                    display: inline-block;
+                }
+                .btn-search {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
                 }
             }
         }
     }
 }
 // 헤더 이벤트 효과
+#gnb-full {
+    display: none;
+    width: 100%;
+    vertical-align: top;
+    border-top: 1px solid #e5e5e5;
+    > ul {
+        display: table;
+        width: 1200px;
+        margin-left: 190px;
+        @media(min-width: 1600px) {
+            margin: 0 auto;
+        }
+        > li {
+            display: table-cell;
+            font-size: 15px;
+//            width: 1%;
+            width: 200px;
+            padding: 50px 0 0 30px;
+            height: 305px;
+            @include trans();
+            @include maven();
+            border-right: 1px solid #e5e5e5;
+            &:first-child {
+                border-left: 1px solid #e5e5e5;
+                &:hover, &:focus {
+                    border-color: #d1c6b2;
+                }
+            }
+            &:hover, &:focus {
+                border-color: #d1c6b2;
+                background-color: #d1c6b2;
+                > ul {
+                    > li {
+                        > a {
+                            color: #fff;
+                            font-weight: bold;
+                            i {
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+            h2 {
+                font-size: 15px;
+                color: #2b2b2b;
+                font-weight: bold;
+                margin-bottom: 35px;
+                @include maven();
+            }
+            > ul {
+                > li {
+                    > a {
+                        position: relative;
+                        display: inline-block;
+                        font-size: 13px;
+                        color: #888;
+                        font-weight: 400;
+                        line-height: 25px;
+                        text-decoration: none;
+                        span {
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            width: 0;
+                            height: 1px;
+                            display: block;
+                            background-color: #333;
+                            @include trans();
+                        }
+                        i {
+                            font-style: normal;
+                            @include noto();
+                        }
+                        &:hover, &:focus {
+                            color: #333;
+                            span {
+                                width: 100%;
+                                margin-left: -50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
 .nav-expanded {
+    #header {
+        overflow: hidden;
+        height: 405px;
+        @include trans();
+        background-color: rgba(255, 255, 255, .9);
+    }
     #gnb-full {
-        position: relative;
-        height: 300px;
-        z-index: 9999999999;
+        display: block;
+        border-bottom: 1px solid #dfdfdf;
     }
 }
-
 
 
 // 푸터
@@ -1019,7 +1155,7 @@ label {
         width: 100%;
         height: 359px;
         text-align: center;
-        background-image: url(/assets/images/item/sub_visual_bg.jpg);
+        background-image: url(/assets/images/item/list_visual_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
@@ -1042,7 +1178,7 @@ label {
                 width: 100%;
                 li {
                     display: table-cell;
-                    width: 1%;
+                    width: 200px;
                     text-align: center;
                     a {
                         position: relative;
@@ -1050,7 +1186,7 @@ label {
                         font-size: 15px;
                         color: #333;
                         line-height: 70px;
-                        font-weight: bold;
+                        font-weight: 500;
                         @include maven();
                         text-decoration: none;
                         span {
@@ -1063,20 +1199,33 @@ label {
                             background-color: #8c6239;
                             @include trans();
                         }
+                        i {
+                            font-style: normal;
+                            @include noto();
+                            font-weight: 300;
+                        }
                         &:hover, &:focus {
                             color: #8c6239;
+                            font-weight: bold;
                             span {
                                 width: 100%;
                                 margin-left: -50%;
+                            }
+                            i {
+                                font-weight: 400;
                             }
                         }
                     }
                     &.active {
                         a {
+                            font-weight: bold;
                             color: #8c6239;
                             span {
                                 width: 100%;
                                 margin-left: -50%;
+                            }
+                            i {
+                                font-weight: 400;
                             }
                         }
                     }
@@ -1310,7 +1459,38 @@ label {
     }
 }
 
+// Item 
+.item.common-list {
+    .page-header {
+        .list-lnb {
+            li {
+                width: 171px !important;
+            }
+        }
+    }
+}
 
+// Size 
+.size.common-list {
+    .page-header {
+        .list-lnb {
+            li {
+                width: 300px !important;
+            }
+        }
+    }
+}
+
+// Color 
+.color.common-list {
+    .page-header {
+        .list-lnb {
+            li {
+                width: 240px !important;
+            }
+        }
+    }
+}
 
 
 
@@ -1318,10 +1498,11 @@ label {
 /*******************************  공통 Style View  *******************************/
 .common-view {
     .page-header {
+        position: relative;
         width: 100%;
         height: 359px;
         text-align: center;
-        background-image: url(/assets/images/item/sub_visual_bg.jpg);
+        background-image: url(/assets/images/item/view_visual_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
@@ -1396,7 +1577,10 @@ label {
                                                     color: #666;
                                                     font-weight: 400;
                                                     &:after {
+                                                        position: relative;
+                                                        top: -1px;
                                                         content: ":";
+                                                        padding-left: 3px;
                                                     }
                                                 }
                                                 > dd {

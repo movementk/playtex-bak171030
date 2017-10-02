@@ -64,15 +64,18 @@ label {
   border-bottom: 1px solid #e5e5e5; }
   #header .logo {
     position: absolute;
-    top: 50%;
-    left: 30px;
-    margin-top: -34px; }
+    top: 16px;
+    left: 30px; }
+    @media (min-width: 1700px) {
+      #header .logo {
+        left: 75px; } }
   #header #gnb {
     display: block;
-    margin-left: 220px; }
+    width: 1200px;
+    margin-left: 190px; }
     @media (min-width: 1600px) {
       #header #gnb {
-        margin-left: 350px; } }
+        margin: 0 auto; } }
     #header #gnb ul {
       font-size: 0; }
       #header #gnb ul li {
@@ -83,29 +86,14 @@ label {
           color: #2b2b2b;
           font-weight: 400;
           line-height: 100px;
-          padding-right: 60px;
+          padding: 0 30px;
           text-decoration: none; }
         #header #gnb ul li:last-child {
           margin-right: 0; }
-  #header #gnb-full {
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 0.15s;
-    transition-duration: 0.15s;
-    -webkit-transition-timing-function: linear;
-    transition-timing-function: linear;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-    background-color: #fff; }
   #header #quick-nav {
-    text-align: right;
-    font-size: 0;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 150px;
     height: 100px; }
     #header #quick-nav ul {
       display: inline-block;
@@ -117,33 +105,172 @@ label {
           font-size: 22px;
           color: #2b2b2b;
           line-height: 100px; }
-    #header #quick-nav .global-search {
-      display: inline-block;
+  #header .global-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+    #header .global-search .search-link {
+      position: fixed;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 100px;
+      height: 100px;
       vertical-align: top;
-      margin-left: 50px; }
-      #header #quick-nav .global-search .btn-search {
+      color: #fff;
+      line-height: 100px;
+      background-color: #2b2b2b;
+      z-index: 9999; }
+      #header .global-search .search-link .icon-search {
+        font-size: 22px; }
+    #header .global-search .form-group {
+      position: relative;
+      font-size: 0; }
+      #header .global-search .form-group .form-control {
+        color: #acacac;
+        display: none;
+        font-size: 15px;
+        width: 365px;
+        height: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: 1px solid #2b2b2b;
+        background-color: #2b2b2b; }
+      #header .global-search .form-group .btn-search {
+        display: inline-block;
         width: 100px;
         height: 100px;
+        vertical-align: top;
         color: #fff;
         line-height: 100px;
-        background-color: #2b2b2b;
-        -webkit-transition-property: all;
-        transition-property: all;
-        -webkit-transition-duration: 0.15s;
-        transition-duration: 0.15s;
-        -webkit-transition-timing-function: linear;
-        transition-timing-function: linear;
-        -webkit-transition-delay: 0s;
-        transition-delay: 0s; }
-        #header #quick-nav .global-search .btn-search .icon-search {
+        background-color: #2b2b2b; }
+        #header .global-search .form-group .btn-search .icon-search {
           font-size: 22px; }
-        #header #quick-nav .global-search .btn-search:hover, #header #quick-nav .global-search .btn-search:focus {
-          opacity: .8; }
+    #header .global-search.on {
+      width: 100%;
+      padding-left: 220px; }
+      @media (min-width: 1600px) {
+        #header .global-search.on {
+          width: 465px;
+          padding-left: 0; } }
+      #header .global-search.on .search-link {
+        display: none; }
+      #header .global-search.on .form-group {
+        width: 100%;
+        z-index: 99999; }
+        #header .global-search.on .form-group .form-control {
+          width: 100%;
+          display: inline-block; }
+        #header .global-search.on .form-group .btn-search {
+          position: absolute;
+          top: 0;
+          right: 0; }
 
+#gnb-full {
+  display: none;
+  width: 100%;
+  vertical-align: top;
+  border-top: 1px solid #e5e5e5; }
+  #gnb-full > ul {
+    display: table;
+    width: 1200px;
+    margin-left: 190px; }
+    @media (min-width: 1600px) {
+      #gnb-full > ul {
+        margin: 0 auto; } }
+    #gnb-full > ul > li {
+      display: table-cell;
+      font-size: 15px;
+      width: 200px;
+      padding: 50px 0 0 30px;
+      height: 305px;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.15s;
+      transition-duration: 0.15s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      font-family: 'Maven Pro', sans-serif;
+      border-right: 1px solid #e5e5e5; }
+      #gnb-full > ul > li:first-child {
+        border-left: 1px solid #e5e5e5; }
+        #gnb-full > ul > li:first-child:hover, #gnb-full > ul > li:first-child:focus {
+          border-color: #d1c6b2; }
+      #gnb-full > ul > li:hover, #gnb-full > ul > li:focus {
+        border-color: #d1c6b2;
+        background-color: #d1c6b2; }
+        #gnb-full > ul > li:hover > ul > li > a, #gnb-full > ul > li:focus > ul > li > a {
+          color: #fff;
+          font-weight: bold; }
+          #gnb-full > ul > li:hover > ul > li > a i, #gnb-full > ul > li:focus > ul > li > a i {
+            font-weight: 400; }
+      #gnb-full > ul > li h2 {
+        font-size: 15px;
+        color: #2b2b2b;
+        font-weight: bold;
+        margin-bottom: 35px;
+        font-family: 'Maven Pro', sans-serif; }
+      #gnb-full > ul > li > ul > li > a {
+        position: relative;
+        display: inline-block;
+        font-size: 13px;
+        color: #888;
+        font-weight: 400;
+        line-height: 25px;
+        text-decoration: none; }
+        #gnb-full > ul > li > ul > li > a span {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          height: 1px;
+          display: block;
+          background-color: #333;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+        #gnb-full > ul > li > ul > li > a i {
+          font-style: normal;
+          font-family: 'Noto Sans KR', sans-serif; }
+        #gnb-full > ul > li > ul > li > a:hover, #gnb-full > ul > li > ul > li > a:focus {
+          color: #333; }
+          #gnb-full > ul > li > ul > li > a:hover span, #gnb-full > ul > li > ul > li > a:focus span {
+            width: 100%;
+            margin-left: -50%; }
+
+.nav-expanded #header {
+  overflow: hidden;
+  height: 405px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  background-color: rgba(255, 255, 255, 0.9); }
 .nav-expanded #gnb-full {
-  position: relative;
-  height: 300px;
-  z-index: 9999999999; }
+  display: block;
+  border-bottom: 1px solid #dfdfdf; }
 
 #opening {
   width: 100%;
@@ -790,7 +917,7 @@ label {
   width: 100%;
   height: 359px;
   text-align: center;
-  background-image: url(/assets/images/item/sub_visual_bg.jpg);
+  background-image: url(/assets/images/item/list_visual_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
@@ -811,7 +938,7 @@ label {
       width: 100%; }
       .common-list .page-header .list-lnb ul li {
         display: table-cell;
-        width: 1%;
+        width: 200px;
         text-align: center; }
         .common-list .page-header .list-lnb ul li a {
           position: relative;
@@ -819,7 +946,7 @@ label {
           font-size: 15px;
           color: #333;
           line-height: 70px;
-          font-weight: bold;
+          font-weight: 500;
           font-family: 'Maven Pro', sans-serif;
           text-decoration: none; }
           .common-list .page-header .list-lnb ul li a span {
@@ -838,16 +965,26 @@ label {
             transition-timing-function: linear;
             -webkit-transition-delay: 0s;
             transition-delay: 0s; }
+          .common-list .page-header .list-lnb ul li a i {
+            font-style: normal;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 300; }
           .common-list .page-header .list-lnb ul li a:hover, .common-list .page-header .list-lnb ul li a:focus {
-            color: #8c6239; }
+            color: #8c6239;
+            font-weight: bold; }
             .common-list .page-header .list-lnb ul li a:hover span, .common-list .page-header .list-lnb ul li a:focus span {
               width: 100%;
               margin-left: -50%; }
+            .common-list .page-header .list-lnb ul li a:hover i, .common-list .page-header .list-lnb ul li a:focus i {
+              font-weight: 400; }
         .common-list .page-header .list-lnb ul li.active a {
+          font-weight: bold;
           color: #8c6239; }
           .common-list .page-header .list-lnb ul li.active a span {
             width: 100%;
             margin-left: -50%; }
+          .common-list .page-header .list-lnb ul li.active a i {
+            font-weight: 400; }
 .common-list .item-list {
   width: 100%;
   padding-bottom: 150px;
@@ -1011,12 +1148,22 @@ label {
 .common-list .paging {
   margin-top: 100px; }
 
+.item.common-list .page-header .list-lnb li {
+  width: 171px !important; }
+
+.size.common-list .page-header .list-lnb li {
+  width: 300px !important; }
+
+.color.common-list .page-header .list-lnb li {
+  width: 240px !important; }
+
 /*******************************  공통 Style View  *******************************/
 .common-view .page-header {
+  position: relative;
   width: 100%;
   height: 359px;
   text-align: center;
-  background-image: url(/assets/images/item/sub_visual_bg.jpg);
+  background-image: url(/assets/images/item/view_visual_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
@@ -1079,7 +1226,10 @@ label {
                     color: #666;
                     font-weight: 400; }
                     .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul > li > dl > dt:after {
-                      content: ":"; }
+                      position: relative;
+                      top: -1px;
+                      content: ":";
+                      padding-left: 3px; }
                   .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul > li > dl > dd {
                     display: inline-block;
                     color: #666; }

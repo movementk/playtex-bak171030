@@ -2,26 +2,25 @@
 </head>
 
 <!-- 대메뉴 Class -->
-<body class="item common-list">
+<body class="design common-list">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <div class="page-header">
         <div class="container">
-            <h2>ITEM</h2>
+            <h2>DESIGN</h2>
             <nav class="list-lnb">
                 <ul>
-                    <li class="active"><a href="/item/bra_list.php">BRA<span></span></a></li>
-                    <li><a href="/item/panty_list.php">PANTY<span></span></a></li>
-                    <li><a href="/item/1set_list.php">1SET<span></span></a></li>
-                    <li><a href="/item/2set_list.php">2SET<span></span></a></li>
-                    <li><a href="/item/fullset_list.php">FULL SET<span></span></a></li>
-                    <li><a href="/item/shaper_list.php">SHAPER<span></span></a></li>
-                    <li><a href="/item/etc_list.php">ETC<span></span></a></li>
+                    <li class="active"><a href="/design/18hour_list.php">18HOUR<span></span></a></li>
+                    <li><a href="/design/essential_list.php">ESSENTIAL<span></span></a></li>
+                    <li><a href="/design/ideal_beauty_list.php">IDEAL BEAUTY<span></span></a></li>
+                    <li><a href="/design/play_list.php">PLAY<span></span></a></li>
+                    <li><a href="/design/under_cover_list.php">UNDER COVER<span></span></a></li>
+                    <li><a href="/design/perfect_silhoustte_list.php">PERFECT SILHOUETTE<span></span></a></li>
                 </ul>
             </nav>
         </div>
     </div>
     <!-- 페이지 Class -->
-    <main id="content" class="item-list bra-list">
+    <main id="content" class="item-list 18hour-list">
         <article class="best-item">
             <div class="container">
                 <div class="row">

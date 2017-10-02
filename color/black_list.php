@@ -2,26 +2,24 @@
 </head>
 
 <!-- 대메뉴 Class -->
-<body class="item common-list">
+<body class="color common-list">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <div class="page-header">
         <div class="container">
-            <h2>ITEM</h2>
+            <h2>COLOR</h2>
             <nav class="list-lnb">
                 <ul>
-                    <li class="active"><a href="/item/bra_list.php">BRA<span></span></a></li>
-                    <li><a href="/item/panty_list.php">PANTY<span></span></a></li>
-                    <li><a href="/item/1set_list.php">1SET<span></span></a></li>
-                    <li><a href="/item/2set_list.php">2SET<span></span></a></li>
-                    <li><a href="/item/fullset_list.php">FULL SET<span></span></a></li>
-                    <li><a href="/item/shaper_list.php">SHAPER<span></span></a></li>
-                    <li><a href="/item/etc_list.php">ETC<span></span></a></li>
+                    <li><a href="/color/beige_list.php">BEIGE<span></span></a></li>
+                    <li><a href="/color/ivory_list.php">IVORY<span></span></a></li>
+                    <li class="active"><a href="/color/black_list.php">BLACK<span></span></a></li>
+                    <li><a href="/color/red_list.php">RED<span></span></a></li>
+                    <li><a href="/color/colorful_list.php">COLORFUL<span></span></a></li>
                 </ul>
             </nav>
         </div>
     </div>
     <!-- 페이지 Class -->
-    <main id="content" class="item-list bra-list">
+    <main id="content" class="item-list black-list">
         <article class="best-item">
             <div class="container">
                 <div class="row">

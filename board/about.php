@@ -145,7 +145,6 @@
         <article class="feature">
             <div class="left-bg"></div>
             <div class="right-bg"></div>
-            <div class="container-fluid">
                 <div class="front">
                     <div class="figure">
                         <img src="/assets/images/board/feature_img01.png" alt="">
@@ -178,7 +177,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </article>
     </main>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
