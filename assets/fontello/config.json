@@ -149,6 +149,18 @@
       "css": "trash",
       "code": 61944,
       "src": "fontawesome"
+    },
+    {
+      "uid": "2d76f2c8d13be40694ecadfea7fb83c3",
+      "css": "logout",
+      "code": 59410,
+      "src": "entypo"
+    },
+    {
+      "uid": "457c8e2b305e7af74c1be4f07a01ca92",
+      "css": "vcard",
+      "code": 59411,
+      "src": "entypo"
     }
   ]
 }
