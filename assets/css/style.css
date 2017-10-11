@@ -138,8 +138,8 @@ label {
       position: relative;
       font-size: 0; }
       #header .global-search .form-group .form-control {
-        color: #acacac;
         display: none;
+        color: #acacac;
         font-size: 15px;
         width: 365px;
         height: 100px;
@@ -148,13 +148,26 @@ label {
         border: 1px solid #2b2b2b;
         background-color: #2b2b2b; }
       #header .global-search .form-group .btn-search {
-        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100px;
         height: 100px;
         vertical-align: top;
         color: #fff;
         line-height: 100px;
+        z-index: 99;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
         background-color: #2b2b2b; }
+        #header .global-search .form-group .btn-search:hover, #header .global-search .form-group .btn-search:focus {
+          opacity: .7; }
         #header .global-search .form-group .btn-search .icon-search {
           font-size: 22px; }
     #header .global-search.on {
@@ -170,12 +183,12 @@ label {
         width: 100%;
         z-index: 99999; }
         #header .global-search.on .form-group .form-control {
-          width: 100%;
-          display: inline-block; }
-        #header .global-search.on .form-group .btn-search {
           position: absolute;
           top: 0;
-          right: 0; }
+          right: 0;
+          padding-left: 105px;
+          width: 100%;
+          display: inline-block; }
 
 #gnb-full {
   display: none;
