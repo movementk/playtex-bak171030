@@ -80,9 +80,39 @@
     </nav>
     <div id="quick-nav">
         <ul>
-            <li><a href="/member/login.php"><i class="icon-user"></i></a></li>
-            <li><a href="#"><i class="icon-lock"></i></a></li>
-            <li><a href="/mypage/cart_list.php"><i class="icon-cart"></i></a></li>
+            <li>
+                <a href="/member/join_form.php">
+                    <i class="icon-user"><span class="sr-only">회원가입</span></i>
+                </a>
+            </li>
+            <li>
+                <a href="/member/login.php">
+                    <i class="icon-lock"><span class="sr-only">로그인</span></i>
+                </a>
+            </li>
+            <li>
+                <a href="/mypage/cart_list.php">
+                    <i class="icon-cart"><span class="sr-only">장바구니</span></i>
+                </a>
+            </li>
+            
+            <!-- 로그인했을경우 
+            <li>
+                <a href="/mypage/profile_modify.php">
+                    <i class="icon-vcard"><span class="sr-only">정보변경</span></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-logout"><span class="sr-only">로그아웃</span></i>
+                </a>
+            </li>
+            <li>
+                <a href="/mypage/cart_list.php">
+                    <i class="icon-cart"><span class="sr-only">장바구니</span></i>
+                </a>
+            </li>
+           -->
         </ul>
     </div>
     <div class="global-search">
@@ -93,13 +123,13 @@
         </a>
         <form action="#">
             <div class="form-group">
-                <input type="text" id="global-search" class="form-control" placeholder="SEARCH">
                 <label for="global-search" sr-only>검색</label>
                 <button type="submit" class="btn btn-search" role="button">
                     <i class="icon-search">
                         <span class="sr-only">검색버튼</span>
                     </i>
                 </button>
+                <input type="text" id="global-search" class="form-control" placeholder="SEARCH">
             </div>
         </form>
     </div>
