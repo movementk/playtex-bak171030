@@ -215,11 +215,30 @@
         </article>
 
         <section id="item-characteristic">
-            <figure>
-                <img src="/assets/images/main/item_characteristic.jpg" class="img-responsive" alt="">
-            </figure>
+        	<div class="bg-panel top"></div>
+        	<div class="bg-panel bottom"></div>
+        	<div class="hours">
+        		<div class="arrow"></div>
+        		<div class="point">
+        			<div class="top"></div>
+        			<div class="right"></div>
+        			<div class="bottom"></div>
+        			<div class="left"></div>
+        		</div>
+        		<div class="count">18</div>
+        	</div>
+        	<div class="features woman left">
+        		<a class="feature-icon feature-animate feature-icon-1 feature-selected" href="#"><span class="sr-only">특징</span></a>
+        		<a class="feature-icon feature-animate feature-icon-2" href="#"><span class="sr-only">특징</span></a>
+        	</div>
+        	<div class="features woman right">
+        		<a class="feature-icon feature-animate feature-icon-3" href="#"><span class="sr-only">특징</span></a>
+        		<a class="feature-icon feature-animate feature-icon-4" href="#"><span class="sr-only">특징</span></a>
+        	</div>
         </section>
-
+        
+       	<button id="test-18h">모션</button>
+       	
         <section id="new-arrivals">
             <div class="container-fluid">
                 <div class="arrivals-list">
@@ -237,7 +256,7 @@
                                     <figcaption>
                                         <p>
                                             플레이텍스 에센셜 노와이어<br>
-                                            브라팬티 4종 PXW7E2527_T 
+                                            브라팬티 4종 PXW7E2527_T
                                         </p>
                                         <div class="label-area">
                                             <span class="label new">NEW</span>
@@ -525,5 +544,10 @@
             });
         })(jQuery);
     </script>
+    <script>
+		$("#test-18h").click(function() {
+			$("#item-characteristic").toggleClass("on");
+		});
+	</script>
 </body>
 </html>
