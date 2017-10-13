@@ -225,19 +225,34 @@
         			<div class="bottom"></div>
         			<div class="left"></div>
         		</div>
-        		<div class="count">18</div>
+        		<div class="count">0</div>
         	</div>
         	<div class="features woman left">
-        		<a class="feature-icon feature-animate feature-icon-1 feature-selected" href="#"><span class="sr-only">특징</span></a>
-        		<a class="feature-icon feature-animate feature-icon-2" href="#"><span class="sr-only">특징</span></a>
+        		<a class="feature-icon feature-animate feature-icon-1" href="#feature-item-1"><span 
+        		class="sr-only">특징</span></a>
+        		<a class="feature-icon feature-animate feature-icon-2" href="#feature-item-2"><span class="sr-only">특징</span></a>
+        		<div class="feature-item" id="feature-item-1">
+        			<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며
+					R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+        		</div>
+        		<div class="feature-item" id="feature-item-2">
+        			<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며
+					R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+        		</div>
         	</div>
         	<div class="features woman right">
-        		<a class="feature-icon feature-animate feature-icon-3" href="#"><span class="sr-only">특징</span></a>
-        		<a class="feature-icon feature-animate feature-icon-4" href="#"><span class="sr-only">특징</span></a>
+        		<a class="feature-icon feature-animate feature-icon-3" href="#feature-item-3"><span class="sr-only">특징</span></a>
+        		<a class="feature-icon feature-animate feature-icon-4" href="#feature-item-4"><span class="sr-only">특징</span></a>
+        		<div class="feature-item" id="feature-item-3">
+        			<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며
+					R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+        		</div>
+        		<div class="feature-item" id="feature-item-4">
+        			<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며
+					R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+        		</div>
         	</div>
         </section>
-        
-       	<button id="test-18h">모션</button>
        	
         <section id="new-arrivals">
             <div class="container-fluid">
@@ -518,6 +533,7 @@
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
     <script src="/assets/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script src="/assets/jquery.animateNumber.min.js"></script>
     <script>
         (function($) {
             $('.jumbotron > ul').bxSlider({
@@ -542,12 +558,38 @@
                 moveSlides: 1,
                 slideMargin: 36
             });
+			
+			// 18hour 모션 관련
+			
+			var is_18hour_motion_execute = false;
+			
+			$(window).on("scroll", function() {
+				//console.log($(this).scrollTop());
+				//console.log($("#item-characteristic").offset().top);
+				if ($(this).scrollTop() >= 1800) {
+					if (!is_18hour_motion_execute) {
+						
+						$("#item-characteristic").addClass("on");
+						
+						window.setTimeout(function() {
+							$("#item-characteristic .hours .count").animateNumber({
+								number: 18
+							}, 2000);
+						}, 2500);
+												
+						is_18hour_motion_execute = true;
+					}
+				}
+			});
+			$(document).on("click", "#item-characteristic .feature-icon", function(e) {
+				//console.log($(this).attr("href"));
+				$("#item-characteristic .feature-item.selected").removeClass("selected");
+				$("#item-characteristic").find($(this).attr("href")).addClass("selected");
+				$("#item-characteristic .feature-icon.selected").removeClass("selected");
+				$(this).addClass("selected");
+				e.preventDefault();
+			});
         })(jQuery);
     </script>
-    <script>
-		$("#test-18h").click(function() {
-			$("#item-characteristic").toggleClass("on");
-		});
-	</script>
 </body>
 </html>
