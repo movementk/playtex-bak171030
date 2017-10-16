@@ -230,3 +230,209 @@ a {
 		}
 	}
 }
+
+
+/////////////////////////// Sub 공통 Style ///////////////////////////
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+@mixin playfd() {
+	font-family: 'Playfair Display', serif;
+}
+.form-group {
+    margin: 0;
+}
+label {
+    font-weight: 400;
+    margin: 0;
+}
+.form-control {
+    width: 100%;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #ccc;
+    border-radius: 0;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    &:hover, &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn {
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+}
+
+.page-header {
+    text-align: center;
+    padding: 0;
+    margin: 40px 0 45px;
+    border-bottom: 0;
+    .title {
+        font-size: 26px;
+        color: #333;
+        font-style: italic;
+        @include playfd();
+    }
+}
+
+
+// Member 
+.member {
+    
+}
+
+// Login
+.login {
+    article {
+        .article-header {
+            .nav {
+                li {
+                    width: 50%;
+                    a {
+                        font-size: 14px;
+                        color: #888;
+                        font-weight: 300;
+                        text-align: center;
+                        line-height: 45px;
+                        padding: 0;
+                        margin: 0;
+                        border-radius: 0;
+                        border-color: #ebebeb;
+                        border-bottom: 1px solid #333;
+                        background: none;
+                    }
+                    &.active {
+                        a {
+                            font-weight: 500;
+                            color: #333;
+                            border-color: #333;
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                    &:nth-of-type(1) {
+                        a {
+                            border-right: 0;
+                        }
+                        &.active {
+                            border-right: 1px solid #333;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        a {
+                            border-left: 0;
+                        }
+                        &.active {
+                            border-left: 1px solid #333;
+                        }
+                    }
+                }
+            }
+        }
+        .article-content {
+            padding-top: 30px;
+            padding-bottom: 75px;
+            .tab-content {
+                .tab-pane {
+                    .summary {
+                        font-size: 14px;
+                        color: #2b2b2b;
+                        text-align: center;
+                        font-weight: 300;
+                        line-height: 24px;
+                        margin-bottom: 40px;
+                    }
+                    .login-form {
+                        .form-group {
+                            .form-control {
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .btn-area {
+                            text-align: center;
+                            margin-bottom: 15px;
+                            p {
+                                .btn-default {
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 45px;
+                                    font-size: 14px;
+                                    line-height: 45px;
+                                    color: #fff;
+                                    border: 0;
+                                    background-color: #333;
+                                }
+                            }
+                        }
+                        .check-box {
+                            text-align: right;
+                            label {
+                                font-size: 14px;
+                                color: #666;
+                                font-weight: 300;
+                                input {
+                                    position: relative;
+                                    top: 1px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
