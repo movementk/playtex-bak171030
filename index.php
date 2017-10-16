@@ -329,12 +329,27 @@
         <section id="video-promotion">
             <div class="container-fluid">
                 <div class="video-btn">
-                    <a href="" class="btn btn-play">
+                    <a href="#" class="btn btn-play" data-toggle="modal" data-target="#video-modal">
                         <span class="sr-only">플레이 버튼</span>
                     </a>
                 </div>
             </div>
         </section>
+        
+		<div id="video-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div id="video-player" class="embed-responsive embed-responsive-16by9"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <style>
+			#video-modal { z-index: 9999; }
+			#video-modal .modal-content { margin-top: 250px; border-radius: 0; box-shadow: none; background-color: #111;  border: 0; }
+		</style>
 
         <section id="editors-pick">
             <div class="container-fluid">
@@ -588,6 +603,15 @@
 				$("#item-characteristic .feature-icon.selected").removeClass("selected");
 				$(this).addClass("selected");
 				e.preventDefault();
+			});
+			
+			// 동영상 플레이 관련
+			$("#video-modal").on('show.bs.modal', function (e) {
+				var videoHtml = '<iframe width="600" src="https://www.youtube.com/embed/HeHiio1sTTI?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+				$(this).find("#video-player").html(videoHtml);
+			});
+			$("#video-modal").on('hidden.bs.modal', function (e) {
+				$(this).find("#video-player").html("");
 			});
         })(jQuery);
     </script>
