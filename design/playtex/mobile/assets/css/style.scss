@@ -1,0 +1,232 @@
+@import "common";
+
+html {
+	position: relative;
+	min-width: 320px;
+}
+
+body {
+	position: relative;
+	padding-top: 90px;
+	min-width: 320px;
+	@include noto();
+	font-size: 12px;
+	color: #333;
+}
+
+a {
+	color: #333;
+	&:hover, &:focus {
+		color: #333;
+		text-decoration: none;
+	}
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	background-color: #fff;
+	.util {
+		position: relative;
+		height: 50px;
+		border-bottom: 1px solid #2b2b2b;
+		.logo {
+			position: absolute;
+			top: 7px;
+			left: 10px;
+			width: 88px;
+			height: 38px;
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		ul {
+			float: right;
+			li {
+				float: left;
+				width: 50px;
+				height: 49px;
+				border-left: 1px solid #dfdfdf;
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					background-repeat: no-repeat;
+					background-position: 50% 50%;
+					&.cart {
+						background-image: url(/design/playtex/mobile/assets/images/ico_bag.png);
+						background-size: auto 23px;
+					}
+					&.search {
+						background-image: url(/design/playtex/mobile/assets/images/ico_magnifier.png);
+						background-size: auto 20.33333333px;
+					}
+					&.menu {
+						padding-top: 17px;
+						padding-left: 13px;
+						background-color: #2b2b2b;
+						.bar {
+							display: block;
+							width: 23px;
+							height: 2px;
+							background-color: #fff;
+							&.short {
+								width: 16px;
+							}
+							& + .bar {
+								margin-top: 5px;
+							}
+						}
+					}
+				}
+				&:last-child {
+					border-left: 0;
+				}
+			}
+		}
+	}
+	.category {
+		height: 40px;
+		border-bottom: 1px solid #dfdfdf;
+		ul {
+			li {
+				float: left;
+				width: 25%;
+				height: 39px;
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					line-height: 39px;
+					text-align: center;
+					font-size: 14px;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+#customer-care {
+	padding: 40px 10px;
+	background-color: #f1f1f1;
+	h5 {
+		margin-left: 10px;
+		margin-bottom: 20px;
+		@include maven();
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+	ul {
+		overflow: hidden;
+		li {
+			float: left;
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 50%;
+			a {
+				display: block;
+				width: 100%;
+				height: 35px;
+				border: 1px solid #ccc;
+				line-height: 33px;
+				font-size: 12px;
+				text-align: center;
+			}
+			&:nth-of-type(2) ~ li {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+#footer {
+	padding: 45px 10px;
+	background-color: #2b2b2b;
+	.company {
+		color: #999;
+		a {
+			color: #999;
+		}
+		dl {
+			text-align: center;
+			dt, dd {
+				display: inline;
+				line-height: 18px;
+			}
+			dt {
+				font-weight: normal;
+				&:after {
+					content: ":";
+				}
+				~ dt {
+					&:before {
+						margin-left: 2px;
+						margin-right: 5px;
+						vertical-align: 1px;
+						content: "|";
+						font-size: .9em;
+					}
+				}
+			}
+			dd {
+				address {
+					display: inline;
+				}
+			}
+		}
+	}
+	.contact {
+		margin-top: 20px;
+		p {
+			color: #fff;
+			font-size: 40px;
+			text-align: center;
+		}
+	}
+	.copyright {
+		margin-top: 15px;
+		p {
+			color: #666;
+			font-family: "Myriad Pro", sans-serif;
+			text-align: center;
+			line-height: 16px;
+			font-size: 11px;
+		}
+	}
+	.policy {
+		margin-top: 30px;
+		text-align: center;
+		ul {
+			display: inline-block;
+			li {
+				display: inline;
+				a {
+					float: left;
+					color: #666;
+					font-size: 11px;
+				}
+				& + li {
+					&:before {
+						float: left;
+						margin-left: 5px;
+						margin-right: 5px;
+						content: "·";
+						color: #666;
+					}
+				}
+			}
+		}
+	}
+}

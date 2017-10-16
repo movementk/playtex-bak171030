@@ -418,6 +418,19 @@ label {
       text-decoration: none; }
 
 /*******************************  Sub Page  *******************************/
+/*
+@-webkit-keyframes scale {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+*/
+@keyframes scaleCircle {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
 #content .jumbotron {
   padding: 0;
   margin: 0; }
@@ -447,7 +460,7 @@ label {
 #content #best-seller {
   max-width: 1860px;
   margin: 100px auto;
-  background-image: url(/assets/images/main/best_seller_bg.jpg);
+  background-image: url(/design/playtex/assets/images/main/best_seller_bg.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: auto; }
@@ -623,26 +636,351 @@ label {
                   line-height: 20px;
                   margin-top: 15px; }
       #content #playtex-line .article-content ul li:nth-of-type(1) {
-        background-image: url(/assets/images/main/line_bg01.jpg); }
+        background-image: url(/design/playtex/assets/images/main/line_bg01.jpg); }
       #content #playtex-line .article-content ul li:nth-of-type(2) {
-        background-image: url(/assets/images/main/line_bg04.jpg); }
+        background-image: url(/design/playtex/assets/images/main/line_bg04.jpg); }
       #content #playtex-line .article-content ul li:nth-of-type(3) {
-        background-image: url(/assets/images/main/line_bg03.jpg); }
+        background-image: url(/design/playtex/assets/images/main/line_bg03.jpg); }
       #content #playtex-line .article-content ul li:nth-of-type(4) {
-        background-image: url(/assets/images/main/line_bg04.jpg); }
+        background-image: url(/design/playtex/assets/images/main/line_bg04.jpg); }
       #content #playtex-line .article-content ul li:nth-of-type(5) {
-        background-image: url(/assets/images/main/line_bg05.jpg); }
+        background-image: url(/design/playtex/assets/images/main/line_bg05.jpg); }
       #content #playtex-line .article-content ul li:nth-of-type(6) {
-        background-image: url(/assets/images/main/line_bg06.jpg); }
+        background-image: url(/design/playtex/assets/images/main/line_bg06.jpg); }
 #content #item-characteristic {
+  overflow: hidden;
+  position: relative;
   max-width: 1860px;
+  height: 820px;
   margin: 0 auto; }
-  #content #item-characteristic .img-responsive {
-    margin: 0 auto; }
+  #content #item-characteristic .bg-panel {
+    position: absolute;
+    width: 100%;
+    height: 0; }
+    #content #item-characteristic .bg-panel.top {
+      top: 0;
+      background-color: #f1f1f1;
+      background-image: url(/design/playtex/assets/images/main/txt_18hours.png);
+      background-repeat: no-repeat;
+      background-position: 50% 0; }
+    #content #item-characteristic .bg-panel.bottom {
+      bottom: 0;
+      background-color: #eae1d5; }
+  #content #item-characteristic .hours {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -103px;
+    margin-left: -105px;
+    width: 210px;
+    height: 210px;
+    opacity: .1; }
+    #content #item-characteristic .hours .arrow {
+      width: 100%;
+      height: 100%;
+      background-image: url(/design/playtex/assets/images/main/ico_circle_arrow.png);
+      background-repeat: no-repeat;
+      transform: rotate(-360deg); }
+    #content #item-characteristic .hours .point {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      #content #item-characteristic .hours .point > div {
+        position: absolute;
+        background-color: #111; }
+      #content #item-characteristic .hours .point .top {
+        top: 20px;
+        left: 50%;
+        margin-left: -4px;
+        width: 8px;
+        height: 12px;
+        opacity: 0; }
+      #content #item-characteristic .hours .point .right {
+        top: 50%;
+        margin-top: -6px;
+        right: 20px;
+        width: 12px;
+        height: 8px;
+        opacity: 0; }
+      #content #item-characteristic .hours .point .bottom {
+        bottom: 20px;
+        left: 50%;
+        margin-left: -4px;
+        width: 8px;
+        height: 12px;
+        opacity: 0; }
+      #content #item-characteristic .hours .point .left {
+        top: 50%;
+        margin-top: -6px;
+        left: 20px;
+        width: 12px;
+        height: 8px;
+        opacity: 0; }
+    #content #item-characteristic .hours .count {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      line-height: 210px;
+      font-weight: 700;
+      color: #111;
+      font-size: 85px; }
+  #content #item-characteristic .woman {
+    position: absolute;
+    bottom: 0; }
+    #content #item-characteristic .woman.left {
+      left: -100%;
+      margin-left: -487px;
+      width: 447px;
+      height: 713px;
+      background-image: url(/design/playtex/assets/images/main/img_woman_left.png); }
+    #content #item-characteristic .woman.right {
+      right: -100%;
+      margin-right: -576px;
+      width: 566px;
+      height: 726px;
+      background-image: url(/design/playtex/assets/images/main/img_woman_right.png); }
+    #content #item-characteristic .woman .feature-icon {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #fff;
+      text-decoration: none;
+      text-align: center;
+      color: #111;
+      font-weight: bold; }
+      #content #item-characteristic .woman .feature-icon:before {
+        content: "+";
+        font-size: 20px;
+        line-height: 18px; }
+    #content #item-characteristic .woman .feature-icon-1 {
+      top: 300px;
+      left: 130px;
+      opacity: 0; }
+    #content #item-characteristic .woman .feature-icon-2 {
+      top: 390px;
+      left: 235px;
+      opacity: 0; }
+    #content #item-characteristic .woman .feature-icon-3 {
+      top: 310px;
+      left: 205px;
+      opacity: 0; }
+    #content #item-characteristic .woman .feature-icon-4 {
+      top: 560px;
+      left: 230px;
+      opacity: 0; }
+    #content #item-characteristic .woman .feature-item {
+      opacity: 0;
+      position: absolute;
+      padding: 15px 20px;
+      max-width: 400px;
+      background-color: #9b876e; }
+      #content #item-characteristic .woman .feature-item p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 25px; }
+    #content #item-characteristic .woman #feature-item-1 {
+      top: 200px;
+      left: -115px; }
+    #content #item-characteristic .woman #feature-item-2 {
+      top: 430px;
+      left: -115px; }
+    #content #item-characteristic .woman #feature-item-3 {
+      top: 200px;
+      right: -20px; }
+    #content #item-characteristic .woman #feature-item-4 {
+      top: 450px;
+      right: -20px; }
+  #content #item-characteristic.on .bg-panel.top {
+    height: 50%;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+  #content #item-characteristic.on .bg-panel.bottom {
+    height: 50%;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+  #content #item-characteristic.on .hours {
+    opacity: 1;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s; }
+    #content #item-characteristic.on .hours .arrow {
+      transform: rotate(0deg);
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 2s;
+      transition-duration: 2s;
+      -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      -webkit-transition-delay: 2.5s;
+      transition-delay: 2.5s; }
+    #content #item-characteristic.on .hours .point .top {
+      opacity: 1;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 1s;
+      transition-duration: 1s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 2s;
+      transition-delay: 2s; }
+    #content #item-characteristic.on .hours .point .right {
+      opacity: 1;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 1s;
+      transition-duration: 1s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 2.5s;
+      transition-delay: 2.5s; }
+    #content #item-characteristic.on .hours .point .bottom {
+      opacity: 1;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 1s;
+      transition-duration: 1s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 3s;
+      transition-delay: 3s; }
+    #content #item-characteristic.on .hours .point .left {
+      opacity: 1;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 1s;
+      transition-duration: 1s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 3.5s;
+      transition-delay: 3.5s; }
+  #content #item-characteristic.on .woman.left {
+    left: 50%;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0.15, 1.5);
+    transition-timing-function: cubic-bezier(0, 0, 0.15, 1.5);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s; }
+  #content #item-characteristic.on .woman.right {
+    right: 50%;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0.15, 1.5);
+    transition-timing-function: cubic-bezier(0, 0, 0.15, 1.5);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s; }
+  #content #item-characteristic.on .woman .feature-icon.selected {
+    width: 30px;
+    height: 30px;
+    -webkit-animation: inherit;
+    animation: inherit;
+    background-color: #9b876e;
+    line-height: 28px;
+    font-weight: normal;
+    color: #fff; }
+    #content #item-characteristic.on .woman .feature-icon.selected:before {
+      font-family: "fontello";
+      content: "\e814";
+      font-size: 15px;
+      line-height: 28px; }
+  #content #item-characteristic.on .woman .feature-icon-1 {
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 4s;
+    transition-delay: 4s; }
+    #content #item-characteristic.on .woman .feature-icon-1.selected {
+      top: 295px;
+      left: 125px; }
+  #content #item-characteristic.on .woman .feature-icon-2 {
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 4.25s;
+    transition-delay: 4.25s; }
+    #content #item-characteristic.on .woman .feature-icon-2.selected {
+      top: 385px;
+      left: 230px; }
+  #content #item-characteristic.on .woman .feature-icon-3 {
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 4.5s;
+    transition-delay: 4.5s; }
+    #content #item-characteristic.on .woman .feature-icon-3.selected {
+      top: 305px;
+      left: 200px; }
+  #content #item-characteristic.on .woman .feature-icon-4 {
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 4.75s;
+    transition-delay: 4.75s; }
+    #content #item-characteristic.on .woman .feature-icon-4.selected {
+      top: 555px;
+      left: 225px; }
+  #content #item-characteristic.on .woman .feature-animate {
+    -webkit-animation: scaleCircle 2s infinite;
+    animation: scaleCircle 2s infinite; }
+  #content #item-characteristic.on .woman .feature-item.selected {
+    opacity: 1;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
 #content #new-arrivals {
   max-width: 1860px;
   margin: 100px auto;
-  background-image: url(/assets/images/main/new_arrivals_bg.jpg);
+  background-image: url(/design/playtex/assets/images/main/new_arrivals_bg.jpg);
   background-repeat: no-repeat;
   background-position: 100% 0;
   background-size: auto; }
@@ -719,7 +1057,7 @@ label {
   max-width: 1890px;
   margin: 0 auto;
   height: 540px;
-  background-image: url(/assets/images/main/promotion_video_bg.jpg);
+  background-image: url(/design/playtex/assets/images/main/promotion_video_bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: auto 540px; }
@@ -727,7 +1065,7 @@ label {
     display: block;
     width: 100%;
     height: 540px;
-    background-image: url(/assets/images/main/btn_play.png);
+    background-image: url(/design/playtex/assets/images/main/btn_play.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-transition-property: all;
@@ -866,7 +1204,7 @@ label {
     line-height: 85px;
     margin-right: 15px; }
   .btn-area p .btn-lg {
-    width: 270px;
+    width: 265px;
     font-size: 20px;
     height: 85px;
     line-height: 85px;
@@ -931,7 +1269,7 @@ label {
   width: 100%;
   height: 359px;
   text-align: center;
-  background-image: url(/assets/images/item/list_visual_bg.jpg);
+  background-image: url(/design/playtex/assets/images/item/list_visual_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
@@ -1179,7 +1517,7 @@ label {
   width: 100%;
   height: 359px;
   text-align: center;
-  background-image: url(/assets/images/item/view_visual_bg.jpg);
+  background-image: url(/design/playtex/assets/images/item/view_visual_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
@@ -1258,6 +1596,55 @@ label {
                 .common-view .item-view .view-header .details .product-info .info-list > li > dl > dd > ul > li:last-child:after {
                   content: "";
                   padding: 0; }
+        .common-view .item-view .view-header .details .product-info .opt-wrap {
+          margin-top: 20px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-top: 1px solid #dfdfdf;
+          border-bottom: 1px solid #dfdfdf; }
+          .common-view .item-view .view-header .details .product-info .opt-wrap .tit {
+            display: none; }
+          .common-view .item-view .view-header .details .product-info .opt-wrap dl dt {
+            float: left;
+            width: 130px;
+            line-height: 30px;
+            font-weight: normal;
+            color: #333; }
+          .common-view .item-view .view-header .details .product-info .opt-wrap dl dd {
+            line-height: 30px; }
+            .common-view .item-view .view-header .details .product-info .opt-wrap dl dd select {
+              min-width: 235px;
+              height: 30px;
+              border: 1px solid #dfdfdf; }
+            .common-view .item-view .view-header .details .product-info .opt-wrap dl dd .opt-btns {
+              position: relative;
+              overflow: hidden; }
+              .common-view .item-view .view-header .details .product-info .opt-wrap dl dd .opt-btns input[type="text"] {
+                padding: 5px;
+                width: 85px;
+                height: 30px;
+                border: 1px solid #dfdfdf;
+                line-height: 20px; }
+              .common-view .item-view .view-header .details .product-info .opt-wrap dl dd .opt-btns .btn-up {
+                position: absolute;
+                top: 3px;
+                left: 90px; }
+              .common-view .item-view .view-header .details .product-info .opt-wrap dl dd .opt-btns .btn-dw {
+                position: absolute;
+                bottom: 3px;
+                left: 90px; }
+          .common-view .item-view .view-header .details .product-info .opt-wrap dl ~ dl {
+            margin-top: 10px; }
+        .common-view .item-view .view-header .details .product-info #MK_innerOptTotal {
+          margin-top: 10px; }
+          .common-view .item-view .view-header .details .product-info #MK_innerOptTotal dt {
+            font-size: 13px; }
+          .common-view .item-view .view-header .details .product-info #MK_innerOptTotal dd {
+            font-size: 13px; }
+            .common-view .item-view .view-header .details .product-info #MK_innerOptTotal dd #MK_p_total {
+              font-family: 'Maven Pro', sans-serif;
+              font-size: 18px;
+              font-weight: bold; }
         .common-view .item-view .view-header .details .product-info .product-opstion {
           margin: 25px 0;
           padding: 15px 100px 15px 0;
@@ -4814,7 +5201,7 @@ label {
   min-width: 1650px; }
 #about .introduce {
   padding-bottom: 170px;
-  background-image: url(/assets/images/board/about_header_bg.jpg);
+  background-image: url(/design/playtex/assets/images/board/about_header_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
@@ -4980,7 +5367,7 @@ label {
           top: 50%;
           margin-top: -12.5px;
           left: 0;
-          content: url(/assets/images/board/checking.gif);
+          content: url(/design/playtex/assets/images/board/checking.gif);
           font-family: "fontello"; }
         #about .point .section-content ul li:nth-of-type(2n + 1) {
           clear: both;

@@ -503,6 +503,19 @@ label {
 }
 
 /*******************************  Sub Page  *******************************/
+/*
+@-webkit-keyframes scale {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+*/
+
+@keyframes scaleCircle {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+
 #content {
     // 메인 슬라이드
     .jumbotron {
@@ -550,7 +563,7 @@ label {
 //        max-width: 1715px;
         max-width: 1860px;
         margin: 100px auto;
-        background-image: url(/assets/images/main/best_seller_bg.jpg);
+        background-image: url(/design/playtex/assets/images/main/best_seller_bg.jpg);
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: auto;
@@ -752,22 +765,22 @@ label {
                         }
                     }
                     &:nth-of-type(1) {
-                            background-image: url(/assets/images/main/line_bg01.jpg);
+                            background-image: url(/design/playtex/assets/images/main/line_bg01.jpg);
                     }
                     &:nth-of-type(2) {
-                            background-image: url(/assets/images/main/line_bg04.jpg);
+                            background-image: url(/design/playtex/assets/images/main/line_bg04.jpg);
                     }
                     &:nth-of-type(3) {
-                            background-image: url(/assets/images/main/line_bg03.jpg);
+                            background-image: url(/design/playtex/assets/images/main/line_bg03.jpg);
                     }
                     &:nth-of-type(4) {
-                            background-image: url(/assets/images/main/line_bg04.jpg);
+                            background-image: url(/design/playtex/assets/images/main/line_bg04.jpg);
                     }
                     &:nth-of-type(5) {
-                            background-image: url(/assets/images/main/line_bg05.jpg);
+                            background-image: url(/design/playtex/assets/images/main/line_bg05.jpg);
                     }
                     &:nth-of-type(6) {
-                            background-image: url(/assets/images/main/line_bg06.jpg);
+                            background-image: url(/design/playtex/assets/images/main/line_bg06.jpg);
                     }
                 }
             }
@@ -775,18 +788,297 @@ label {
     }
     // 아이템 효과
     #item-characteristic {
+		overflow: hidden;
+		position: relative;
         max-width: 1860px;
+		height: 820px;
         margin: 0 auto;
-        .img-responsive {
-            margin: 0 auto;
-        }
+		.bg-panel {
+			position: absolute;
+			width: 100%;
+			height: 0;
+			&.top {
+				top: 0;
+				background-color: #f1f1f1;
+				background-image: url(/design/playtex/assets/images/main/txt_18hours.png);
+				background-repeat: no-repeat;
+				background-position: 50% 0;
+			}
+			&.bottom {
+				bottom: 0;
+				background-color: #eae1d5;
+			}
+		}
+		.hours {
+			z-index: 1;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -103px;
+			margin-left: -105px;
+			width: 210px;
+			height: 210px;
+			opacity: .1;
+			.arrow {
+				width: 100%;
+				height: 100%;
+				background-image: url(/design/playtex/assets/images/main/ico_circle_arrow.png);
+				background-repeat: no-repeat;
+				//transform: rotate(-316deg);
+				transform: rotate(-360deg);
+			}
+			.point {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				> div {
+					position: absolute;
+					background-color: #111;
+				}
+				.top {
+					top: 20px;
+					left: 50%;
+					margin-left: -4px;
+					width: 8px;
+					height: 12px;
+					opacity: 0;
+				}
+				.right {
+					top: 50%;
+					margin-top: -6px;
+					right: 20px;
+					width: 12px;
+					height: 8px;
+					opacity: 0;
+				}
+				.bottom {
+					bottom: 20px;
+					left: 50%;
+					margin-left: -4px;
+					width: 8px;
+					height: 12px;
+					opacity: 0;
+				}
+				.left {
+					top: 50%;
+					margin-top: -6px;
+					left: 20px;
+					width: 12px;
+					height: 8px;
+					opacity: 0;
+				}
+			}
+			.count {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				@include lato();
+				text-align: center;
+				line-height: 210px;
+				font-weight: 700;
+				color: #111;
+				font-size: 85px;
+			}
+		}
+		.woman {
+			position: absolute;
+			bottom: 0;
+			&.left {
+				left: -100%;
+				margin-left: -487px;
+				width: 447px;
+				height: 713px;
+				background-image: url(/design/playtex/assets/images/main/img_woman_left.png);
+			}
+			&.right {
+				right: -100%;
+				margin-right: -576px;
+				width: 566px;
+				height: 726px;
+				background-image: url(/design/playtex/assets/images/main/img_woman_right.png);
+			}
+			.feature-icon {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background-color: #fff;
+				text-decoration: none;
+				text-align: center;
+				color: #111;
+				font-weight: bold;
+				&:before {
+					content: "+";
+					font-size: 20px;
+					line-height: 18px;
+				}
+			}
+			.feature-icon-1 {
+				top: 300px;
+    			left: 130px;
+				opacity: 0;
+			}
+			.feature-icon-2 {
+				top: 390px;
+    			left: 235px;
+				opacity: 0;
+			}
+			.feature-icon-3 {
+				top: 310px;
+    			left: 205px;
+				opacity: 0;
+			}
+			.feature-icon-4 {
+				top: 560px;
+    			left: 230px;
+				opacity: 0;
+			}
+			.feature-item {
+				opacity: 0;
+				position: absolute;
+				padding: 15px 20px;
+				max-width: 400px;
+				background-color: #9b876e;
+				p {
+					color: #fff;
+					font-size: 16px;
+					line-height: 25px;
+				}
+			}
+			#feature-item-1 {
+				top: 200px;
+    			left: -115px;
+			}
+			#feature-item-2 {
+				top: 430px;
+    			left: -115px;
+			}
+			#feature-item-3 {
+				top: 200px;
+    			right: -20px;
+			}
+			#feature-item-4 {
+				top: 450px;
+    			right: -20px;
+			}
+		}
+		&.on {
+			.bg-panel {
+				&.top {
+					height: 50%;
+					@include trans($sec: .5s, $timing: cubic-bezier(0, 0, 0.2, 1));
+				}
+				&.bottom {
+					height: 50%;
+					@include trans($sec: .5s, $timing: cubic-bezier(0, 0, 0.2, 1));
+				}
+			}
+			.hours {
+				opacity: 1;
+				@include trans($sec: 1s, $delay: 2s);
+				.arrow {
+					transform: rotate(0deg);
+					@include trans($sec: 2s, $delay: 2.5s, $timing: cubic-bezier(0, 0, 0.2, 1));
+				}
+				.point {
+					.top {
+						opacity: 1;
+						@include trans($sec: 1s, $delay: 2s);
+					}
+					.right {
+						opacity: 1;
+						@include trans($sec: 1s, $delay: 2.5s);
+					}
+					.bottom {
+						opacity: 1;
+						@include trans($sec: 1s, $delay: 3s);
+					}
+					.left {
+						opacity: 1;
+						@include trans($sec: 1s, $delay: 3.5s);
+					}
+				}
+			}
+			.woman {
+				&.left {
+					left: 50%;
+					//@include trans($sec: .5s, $timing: cubic-bezier(0, 0, 0.2, 1), $delay: .5s);
+					@include trans($sec: 1s, $timing: cubic-bezier(0, 0, 0.15, 1.5), $delay: .5s);
+				}
+				&.right {
+					right: 50%;
+					//@include trans($sec: .5s, $timing: cubic-bezier(0, 0, 0.2, 1), $delay: .5s);
+					@include trans($sec: 1s, $timing: cubic-bezier(0, 0, 0.15, 1.5), $delay: .5s);
+				}
+				.feature-icon.selected {
+					width: 30px;
+					height: 30px;
+					-webkit-animation: inherit;
+					animation: inherit;
+					background-color: #9b876e;
+					line-height: 28px;
+					font-weight: normal;
+					color: #fff;
+					&:before {
+						font-family: "fontello";
+						content: "\e814";
+						font-size: 15px;
+						line-height: 28px;
+					}
+				}
+				.feature-icon-1 {
+					opacity: 1;
+					@include trans($prop: opacity, $sec: .5s, $delay: 4s);
+					&.selected {
+						top: 295px;
+    					left: 125px;
+					}
+				}
+				.feature-icon-2 {
+					opacity: 1;
+					@include trans($prop: opacity, $sec: .5s, $delay: 4.25s);
+					&.selected {
+						top: 385px;
+    					left: 230px;
+					}
+				}
+				.feature-icon-3 {
+					opacity: 1;
+					@include trans($prop: opacity, $sec: .5s, $delay: 4.5s);
+					&.selected {
+						top: 305px;
+    					left: 200px;
+					}
+				}
+				.feature-icon-4 {
+					opacity: 1;
+					@include trans($prop: opacity, $sec: .5s, $delay: 4.75s);
+					&.selected {
+						top: 555px;
+    					left: 225px;
+					}
+				}
+				.feature-animate {
+					-webkit-animation: scaleCircle 2s infinite;
+    				animation: scaleCircle 2s infinite;
+				}
+				.feature-item.selected {
+					opacity: 1;
+					@include trans($sec: .5s, $timing: cubic-bezier(0, 0, 0.2, 1));
+				}
+			}
+		}
     }
     // new arrivals
     #new-arrivals {
 //        max-width: 1715px;
         max-width: 1860px;
         margin: 100px auto;
-        background-image: url(/assets/images/main/new_arrivals_bg.jpg);
+        background-image: url(/design/playtex/assets/images/main/new_arrivals_bg.jpg);
         background-repeat: no-repeat;
         background-position: 100% 0;
         background-size: auto;
@@ -895,7 +1187,7 @@ label {
         max-width: 1890px;
         margin: 0 auto;
         height: 540px;
-        background-image: url(/assets/images/main/promotion_video_bg.jpg);
+        background-image: url(/design/playtex/assets/images/main/promotion_video_bg.jpg);
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: auto 540px;
@@ -904,7 +1196,7 @@ label {
                 display: block;
                 width: 100%;
                 height: 540px;
-                background-image: url(/assets/images/main/btn_play.png);
+                background-image: url(/design/playtex/assets/images/main/btn_play.png);
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
                 @include trans();
@@ -1080,7 +1372,7 @@ label {
             margin-right: 15px;
         }
         .btn-lg {
-            width: 270px;
+            width: 265px;
             font-size: 20px;
             height: 85px;
             line-height: 85px;
@@ -1162,7 +1454,7 @@ label {
         width: 100%;
         height: 359px;
         text-align: center;
-        background-image: url(/assets/images/item/list_visual_bg.jpg);
+        background-image: url(/design/playtex/assets/images/item/list_visual_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
@@ -1512,7 +1804,7 @@ label {
         width: 100%;
         height: 359px;
         text-align: center;
-        background-image: url(/assets/images/item/view_visual_bg.jpg);
+        background-image: url(/design/playtex/assets/images/item/view_visual_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
@@ -1617,6 +1909,72 @@ label {
                             }
                         }
                     }
+					.opt-wrap {
+						margin-top: 20px;
+						padding-top: 15px;
+						padding-bottom: 15px;
+						border-top: 1px solid #dfdfdf;
+						border-bottom: 1px solid #dfdfdf;
+						.tit {
+							display: none;
+						}
+						dl {
+							dt {
+								float: left;
+								width: 130px;
+								line-height: 30px;
+								font-weight: normal;
+								color: #333;
+							}
+							dd {
+								line-height: 30px;
+								select {
+									min-width: 235px;
+									height: 30px;
+									border: 1px solid #dfdfdf;
+								}
+								.opt-btns {
+									position: relative;
+									overflow: hidden;
+									input[type="text"] {
+										padding: 5px;
+										width: 85px;
+										height: 30px;
+										border: 1px solid #dfdfdf;
+										line-height: 20px;
+									}
+									.btn-up {
+										position: absolute;
+										top: 3px;
+										left: 90px;
+									}
+									.btn-dw {
+										position: absolute;
+										bottom: 3px;
+										left: 90px;
+									}
+								}
+							}
+							& ~ dl {
+								margin-top: 10px;
+							}
+						}
+						
+					}
+					#MK_innerOptTotal {
+						margin-top: 10px;
+						dt {
+							font-size: 13px;
+						}
+						dd {
+							font-size: 13px;
+							#MK_p_total {
+								@include maven();
+								font-size: 18px;
+								font-weight: bold;
+							}
+						}
+					}
                     .product-opstion {
                         margin: 25px 0;
                         padding: 15px 100px 15px 0;
@@ -7142,7 +7500,7 @@ label {
     }
     .introduce {
         padding-bottom: 170px;
-        background-image: url(/assets/images/board/about_header_bg.jpg);
+        background-image: url(/design/playtex/assets/images/board/about_header_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
@@ -7354,7 +7712,7 @@ label {
                         top: 50%;
                         margin-top: -12.5px;
                         left: 0;
-                        content: url(/assets/images/board/checking.gif);
+                        content: url(/design/playtex/assets/images/board/checking.gif);
                         font-family: "fontello";
                     }
                     &:nth-of-type(2n + 1) {
@@ -7471,67 +7829,3 @@ label {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

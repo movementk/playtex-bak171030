@@ -161,6 +161,12 @@
       "css": "vcard",
       "code": 59411,
       "src": "entypo"
+    },
+    {
+      "uid": "14017aae737730faeda4a6fd8fb3a5f0",
+      "css": "check-1",
+      "code": 59412,
+      "src": "entypo"
     }
   ]
 }

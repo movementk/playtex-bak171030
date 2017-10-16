@@ -215,11 +215,45 @@
         </article>
 
         <section id="item-characteristic">
-            <figure>
-                <img src="/assets/images/main/item_characteristic.jpg" class="img-responsive" alt="">
-            </figure>
+        	<div class="bg-panel top"></div>
+        	<div class="bg-panel bottom"></div>
+        	<div class="hours">
+        		<div class="arrow"></div>
+        		<div class="point">
+        			<div class="top"></div>
+        			<div class="right"></div>
+        			<div class="bottom"></div>
+        			<div class="left"></div>
+        		</div>
+        		<div class="count">0</div>
+        	</div>
+        	<div class="features woman left">
+        		<a class="feature-icon feature-animate feature-icon-1" href="#feature-item-1"><span 
+        		class="sr-only">특징</span></a>
+        		<a class="feature-icon feature-animate feature-icon-2" href="#feature-item-2"><span class="sr-only">특징</span></a>
+        		<div class="feature-item" id="feature-item-1">
+        			<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며
+					R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+        		</div>
+        		<div class="feature-item" id="feature-item-2">
+        			<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며
+					R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+        		</div>
+        	</div>
+        	<div class="features woman right">
+        		<a class="feature-icon feature-animate feature-icon-3" href="#feature-item-3"><span class="sr-only">특징</span></a>
+        		<a class="feature-icon feature-animate feature-icon-4" href="#feature-item-4"><span class="sr-only">특징</span></a>
+        		<div class="feature-item" id="feature-item-3">
+        			<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며
+					R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+        		</div>
+        		<div class="feature-item" id="feature-item-4">
+        			<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며
+					R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+        		</div>
+        	</div>
         </section>
-
+       	
         <section id="new-arrivals">
             <div class="container-fluid">
                 <div class="arrivals-list">
@@ -237,7 +271,7 @@
                                     <figcaption>
                                         <p>
                                             플레이텍스 에센셜 노와이어<br>
-                                            브라팬티 4종 PXW7E2527_T 
+                                            브라팬티 4종 PXW7E2527_T
                                         </p>
                                         <div class="label-area">
                                             <span class="label new">NEW</span>
@@ -295,12 +329,27 @@
         <section id="video-promotion">
             <div class="container-fluid">
                 <div class="video-btn">
-                    <a href="" class="btn btn-play">
+                    <a href="#" class="btn btn-play" data-toggle="modal" data-target="#video-modal">
                         <span class="sr-only">플레이 버튼</span>
                     </a>
                 </div>
             </div>
         </section>
+        
+		<div id="video-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div id="video-player" class="embed-responsive embed-responsive-16by9"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <style>
+			#video-modal { z-index: 9999; }
+			#video-modal .modal-content { margin-top: 250px; border-radius: 0; box-shadow: none; background-color: #111;  border: 0; }
+		</style>
 
         <section id="editors-pick">
             <div class="container-fluid">
@@ -499,6 +548,7 @@
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
     <script src="/assets/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script src="/assets/jquery.animateNumber.min.js"></script>
     <script>
         (function($) {
             $('.jumbotron > ul').bxSlider({
@@ -523,6 +573,46 @@
                 moveSlides: 1,
                 slideMargin: 36
             });
+			
+			// 18hour 모션 관련
+			
+			var is_18hour_motion_execute = false;
+			
+			$(window).on("scroll", function() {
+				//console.log($(this).scrollTop());
+				//console.log($("#item-characteristic").offset().top);
+				if ($(this).scrollTop() >= 1800) {
+					if (!is_18hour_motion_execute) {
+						
+						$("#item-characteristic").addClass("on");
+						
+						window.setTimeout(function() {
+							$("#item-characteristic .hours .count").animateNumber({
+								number: 18
+							}, 2000);
+						}, 2500);
+												
+						is_18hour_motion_execute = true;
+					}
+				}
+			});
+			$(document).on("click", "#item-characteristic .feature-icon", function(e) {
+				//console.log($(this).attr("href"));
+				$("#item-characteristic .feature-item.selected").removeClass("selected");
+				$("#item-characteristic").find($(this).attr("href")).addClass("selected");
+				$("#item-characteristic .feature-icon.selected").removeClass("selected");
+				$(this).addClass("selected");
+				e.preventDefault();
+			});
+			
+			// 동영상 플레이 관련
+			$("#video-modal").on('show.bs.modal', function (e) {
+				var videoHtml = '<iframe width="600" src="https://www.youtube.com/embed/HeHiio1sTTI?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+				$(this).find("#video-player").html(videoHtml);
+			});
+			$("#video-modal").on('hidden.bs.modal', function (e) {
+				$(this).find("#video-player").html("");
+			});
         })(jQuery);
     </script>
 </body>
