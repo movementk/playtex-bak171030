@@ -1,0 +1,206 @@
+@charset "UTF-8";
+.noto {
+  font-family: 'Noto Sans KR', sans-serif; }
+
+.maven {
+  font-family: 'Maven Pro', sans-serif; }
+
+.lato {
+  font-family: 'Maven Pro', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+p {
+  margin-bottom: 0; }
+
+ul, ol {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+
+dl {
+  margin-bottom: 0; }
+
+address {
+  margin-bottom: 0; }
+
+html {
+  position: relative;
+  min-width: 320px; }
+
+body {
+  position: relative;
+  padding-top: 90px;
+  min-width: 320px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  color: #333; }
+
+a {
+  color: #333; }
+  a:hover, a:focus {
+    color: #333;
+    text-decoration: none; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #fff; }
+  #header .util {
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #2b2b2b; }
+    #header .util .logo {
+      position: absolute;
+      top: 7px;
+      left: 10px;
+      width: 88px;
+      height: 38px; }
+      #header .util .logo a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        #header .util .logo a img {
+          display: block;
+          width: 100%;
+          height: 100%; }
+    #header .util ul {
+      float: right; }
+      #header .util ul li {
+        float: left;
+        width: 50px;
+        height: 49px;
+        border-left: 1px solid #dfdfdf; }
+        #header .util ul li a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: 50% 50%; }
+          #header .util ul li a.cart {
+            background-image: url(/design/playtex/mobile/assets/images/ico_bag.png);
+            background-size: auto 23px; }
+          #header .util ul li a.search {
+            background-image: url(/design/playtex/mobile/assets/images/ico_magnifier.png);
+            background-size: auto 20.33333333px; }
+          #header .util ul li a.menu {
+            padding-top: 17px;
+            padding-left: 13px;
+            background-color: #2b2b2b; }
+            #header .util ul li a.menu .bar {
+              display: block;
+              width: 23px;
+              height: 2px;
+              background-color: #fff; }
+              #header .util ul li a.menu .bar.short {
+                width: 16px; }
+              #header .util ul li a.menu .bar + .bar {
+                margin-top: 5px; }
+        #header .util ul li:last-child {
+          border-left: 0; }
+  #header .category {
+    height: 40px;
+    border-bottom: 1px solid #dfdfdf; }
+    #header .category ul li {
+      float: left;
+      width: 25%;
+      height: 39px; }
+      #header .category ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 39px;
+        text-align: center;
+        font-size: 14px;
+        text-decoration: none; }
+
+#customer-care {
+  padding: 40px 10px;
+  background-color: #f1f1f1; }
+  #customer-care h5 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  #customer-care ul {
+    overflow: hidden; }
+    #customer-care ul li {
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 50%; }
+      #customer-care ul li a {
+        display: block;
+        width: 100%;
+        height: 35px;
+        border: 1px solid #ccc;
+        line-height: 33px;
+        font-size: 12px;
+        text-align: center; }
+      #customer-care ul li:nth-of-type(2) ~ li {
+        margin-top: 10px; }
+
+#footer {
+  padding: 45px 10px;
+  background-color: #2b2b2b; }
+  #footer .company {
+    color: #999; }
+    #footer .company a {
+      color: #999; }
+    #footer .company dl {
+      text-align: center; }
+      #footer .company dl dt, #footer .company dl dd {
+        display: inline;
+        line-height: 18px; }
+      #footer .company dl dt {
+        font-weight: normal; }
+        #footer .company dl dt:after {
+          content: ":"; }
+        #footer .company dl dt ~ dt:before {
+          margin-left: 2px;
+          margin-right: 5px;
+          vertical-align: 1px;
+          content: "|";
+          font-size: .9em; }
+      #footer .company dl dd address {
+        display: inline; }
+  #footer .contact {
+    margin-top: 20px; }
+    #footer .contact p {
+      color: #fff;
+      font-size: 40px;
+      text-align: center; }
+  #footer .copyright {
+    margin-top: 15px; }
+    #footer .copyright p {
+      color: #666;
+      font-family: "Myriad Pro", sans-serif;
+      text-align: center;
+      line-height: 16px;
+      font-size: 11px; }
+  #footer .policy {
+    margin-top: 30px;
+    text-align: center; }
+    #footer .policy ul {
+      display: inline-block; }
+      #footer .policy ul li {
+        display: inline; }
+        #footer .policy ul li a {
+          float: left;
+          color: #666;
+          font-size: 11px; }
+        #footer .policy ul li + li:before {
+          float: left;
+          margin-left: 5px;
+          margin-right: 5px;
+          content: "·";
+          color: #666; }
+
+/*# sourceMappingURL=style.css.map */
