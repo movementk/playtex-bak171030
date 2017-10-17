@@ -1,5 +1,8 @@
 <div id="customer-care">
-	<h5>CUSTOMER CARE</h5>
+    <div class="care-header">
+        <h5>CUSTOMER CARE</h5>
+        <span></span>
+    </div>
 	<ul>
 		<li><a href="#">주문조회</a></li>
 		<li><a href="#">1:1문의</a></li>
