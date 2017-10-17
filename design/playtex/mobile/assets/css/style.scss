@@ -1,4 +1,11 @@
 @import "common";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+@mixin playfd() {
+	font-family: 'Playfair Display', serif;
+}
+
+
 
 html {
 	position: relative;
@@ -29,6 +36,7 @@ a {
 	width: 100%;
 	height: 90px;
 	background-color: #fff;
+    z-index: 9999;
 	.util {
 		position: relative;
 		height: 50px;
@@ -120,14 +128,32 @@ a {
 #customer-care {
 	padding: 40px 10px;
 	background-color: #f1f1f1;
-	h5 {
-		margin-left: 10px;
-		margin-bottom: 20px;
-		@include maven();
-		font-size: 15px;
-		font-weight: bold;
-		letter-spacing: 1px;
-	}
+    .care-header {
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        padding-left: 150px;
+        h5 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 150px;
+            background-color: #f1f1f1;
+            @include maven();
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        span {
+            position: relative;
+            top: -4px;
+            width: 100%;
+            display: inline-block;
+            border-top: 1px solid #000;
+        }
+    }
 	ul {
 		overflow: hidden;
 		li {
@@ -193,6 +219,7 @@ a {
 			color: #fff;
 			font-size: 40px;
 			text-align: center;
+            font-style: italic;
 		}
 	}
 	.copyright {
@@ -233,11 +260,6 @@ a {
 
 
 /////////////////////////// Sub 공통 Style ///////////////////////////
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
-
-@mixin playfd() {
-	font-family: 'Playfair Display', serif;
-}
 .form-group {
     margin: 0;
 }
@@ -265,6 +287,7 @@ label {
     text-align: center;
 }
 
+
 .page-header {
     text-align: center;
     padding: 0;
@@ -276,8 +299,14 @@ label {
         font-style: italic;
         @include playfd();
     }
+    .summary {
+        font-size: 14px;
+        color: #2b2b2b;
+        font-weight: 300;
+        line-height: 24px;
+        margin-top: 43px;
+    }
 }
-
 
 // Member 
 .member {
@@ -354,6 +383,12 @@ label {
                             text-align: center;
                             margin-bottom: 15px;
                             p {
+                                .btn {
+                                    margin-bottom: 10px;
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
                                 .btn-default {
                                     display: inline-block;
                                     width: 100%;
@@ -363,6 +398,16 @@ label {
                                     color: #fff;
                                     border: 0;
                                     background-color: #333;
+                                }
+                                .btn-primary {
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 45px;
+                                    font-size: 14px;
+                                    color: #666;
+                                    line-height: 43px;
+                                    border: 1px solid #ddd;
+                                    background-color: #f7f7f7;
                                 }
                             }
                         }
@@ -380,26 +425,592 @@ label {
                             }
                         }
                     }
+                    .member-branch {
+                        margin-top: 25px;
+                        margin-bottom: 40px;
+                        padding: 30px 0;
+                        border-top: 1px solid #d8dce5;
+                        border-bottom: 1px solid #d8dce5;
+                        ul {
+                            li {
+                                padding: 0 10px;
+                                > a {
+                                    display: block;
+                                    text-align: center;
+                                    .figure {
+                                        line-height: 36px;
+                                        img {
+                                            display: inline-block;
+                                        }
+                                    }
+                                    .details {
+                                        font-size: 14px;
+                                        color: #666;
+                                        font-weight: 400;
+                                        margin-top: 10px;
+                                    }
+                                    &.join {
+                                        .figure {
+                                            img {
+                                                width: 37px;
+                                            }
+                                        }
+                                    }
+                                    &.id-find {
+                                        .figure {
+                                            img {
+                                                width: 38px;
+                                            }
+                                        }
+                                    }
+                                    &.pw-find {
+                                        .figure {
+                                            img {
+                                                width: 22px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sns-login {
+                        text-align: center;
+                        p {
+                            .btn {
+                                font-size: 13px;
+                                color: #fff;
+                                text-align: center;
+                                ~ .btn {
+                                    margin-top: 10px;
+                                }
+                                img {
+                                    display: inline-block;
+                                    margin-right: 10px;
+                                }
+                                &.btn-lg {
+                                    width: 100%;
+                                    height: 45px;
+                                    line-height: 45px;
+                                }
+                                &.facebook {
+                                    background-color: #3a589b;
+                                    img {
+                                        width: 16px;
+                                    }
+                                }
+                                &.naver {
+                                    background-color: #1ec700;
+                                    img {
+                                        width: 21px;
+                                    }
+                                }
+                                &.kakao {
+                                    background-color: #462527;
+                                    img {
+                                        width: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
 
+// 아이디 및 비밀번호 찾기
+.find-for {
+    article {
+        .article-content {
+            padding-bottom: 105px;
+            .form-group {
+                ~ .form-group {
+                    margin-top: 10px;
+                }
+            }
+            .btn-area {
+                margin-top: 30px;
+                p {
+                    .btn-default {
+                        font-size: 16px;
+                        color: #fff;
+                        width: 100%;
+                        height: 45px;
+                        line-height: 45px;
+                        text-align: center;
+                        border: 0;
+                        background-color: #333;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// step-list 
+.step-list {
+    position: relative;
+    font-size: 0;
+    margin: 0 10px;
+    padding-bottom: 70px;
+    &:after {
+        position: absolute;
+        top: 37px;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 1px;
+        z-index: 9;
+        background-color: #e5e5e5;
+    }
+    li {
+        position: relative;
+        z-index: 99;
+        display: inline-block;
+        width: 33.33%;
+        .figure {
+            display: inline-block;
+            width: 74px;
+            height: 74px;
+            line-height: 74px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #f1f1f1;
+            img {
+                display: inline-block;
+            }
+        }
+        .details {
+            display: inline-block;
+            width: 74px;
+            text-align: center;
+            font-size: 15px;
+            color: #bebebe;
+            font-weight: 500;
+            margin-top: 15px;
+            @include maven();
+        }
+        &.active {
+            .figure {
+                background-color: #af9f8b;
+            }
+            .details {
+                color: #2b2b2b;
+            }
+        }
+        &:nth-of-type(1) {
+            text-align: left;
+            .figure {
+                img {
+                    width: 28px;
+                }
+            }
+        }
+        &:nth-of-type(2) {
+            text-align: center;
+            .figure {
+                img {
+                    width: 25px;
+                }
+            }
+        }
+        &:nth-of-type(3) {
+            text-align: right;
+            .figure {
+                img {
+                    width: 24px;
+                }
+            }
+        }
+    }
+}
+// 회원 가입 약관 동의
+.agreement {
+    article {
+        .article-content {
+            .all-selection {
+                border: 1px solid #dfdfdf;
+                .selection-head {
+                    padding: 20px;
+                    background-color: #f1f1f1;
+                    border-bottom: 1px solid #dfdfdf;
+                    label {
+                        position: relative;
+                        font-size: 15px;
+                        color: #222;
+                        padding-left: 25px;
+                        input {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
+                .section-content {
+                    padding: 20px 20px 40px;
+                    .form-group {
+                        ~ .form-group {
+                            margin-top: 20px;
+                        }
+                        position: relative;
+                        min-height: 35px;
+                        padding-top: 10px;
+                        label {
+                            position: relative;
+                            font-size: 14px;
+                            color: #666;
+                            font-weight: 400;
+                            padding-left: 25px;
+                            input {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                        ul {
+                            margin-top: 5px;
+                            margin-left: 25px;
+                            &:before {
+                                content: "(";
+                                margin-right: 3px;
+                            }
+                            &:after {
+                                content: ")";
+                                margin-left: 3px;
+                            }
+                            li {
+                                display: inline-block;
+                                position: relative;
+                                top: 2px;
+                                &:first-child {
+                                    margin-right: 10px;
+                                }
+                                label {
+                                    font-weight: 300;
+                                    padding-left: 16px;
+                                }
+                            }
+                        }
+                        .more {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            .btn-xs {
+                                font-size: 13px;
+                                color: #666;
+                                width: 85px;
+                                height: 35px;
+                                font-weight: 300;
+                                line-height: 33px;
+                                text-align: center;
+                                border: 1px solid #ccc;
+                            }
+                        }
+                    }
+                    hr {
+                        width: 100%;
+                        margin: 40px 0;
+                        border-top: 1px solid #d8dce5;
+                    }
+                    .summary {
+                        font-size: 13px;
+                        color: #666;
+                        font-weight: 300;
+                        line-height: 25px;
+                    }
+                }
+            }
+            .btn-area {
+                margin-top: 30px;
+                p {
+                    .btn-default {
+                        width: 100%;
+                        height: 55px;
+                        font-size: 16px;
+                        color: #fff;
+                        font-weight: 300;
+                        line-height: 55px;
+                        text-align: center;
+                        border: 0;
+                        background-color: #333;
+                    }
+                }
+            }
+        }
+        &.terms {
+            margin-top: 60px;
+            border: 1px solid #dfdfdf;
+            .article-header {
+                padding: 20px;
+                border-bottom: 1px solid #dfdfdf;
+                background-color: #f1f1f1;
+                h3 {
+                    font-size: 15px;
+                    color: #222;
+                    font-weight: 400;
+                }
+            }
+            .article-content {
+                height: 360px;
+                font-size: 13px;
+                color: #666;
+                font-weight: 300;
+                line-height: 25px;
+                overflow-y: scroll;
+                padding: 40px 20px;
+            }
+        }
+        &.private {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            border: 1px solid #dfdfdf;
+            .article-header {
+                padding: 20px;
+                border-bottom: 1px solid #dfdfdf;
+                background-color: #f1f1f1;
+                h3 {
+                    font-size: 15px;
+                    color: #222;
+                    font-weight: 400;
+                }
+            }
+            .article-content {
+                height: 360px;
+                font-size: 13px;
+                color: #666;
+                font-weight: 300;
+                line-height: 25px;
+                overflow-y: scroll;
+                padding: 40px 20px;
+                .table-wrap {
+                    .table {
+                        tbody {
+                            tr {
+                                th {
+                                    font-size: 13px;
+                                    color: #2b2b2b;
+                                    font-weight: 400;
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    border-color: #dfdfdf;
+                                }
+                                td {
+                                    font-size: 13px;
+                                    color: #666;
+                                    font-weight: 300;
+                                    line-height: 18px;
+                                    letter-spacing: -1px;
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    padding: 20px 5px;
+                                    border-color: #dfdfdf;
+                                }
+                            }
+                        }
+                    }
+                }
+                p {
+                    font-size: 13px;
+                    color: #666;
+                    font-weight: 300;
+                    line-height: 21px;
+                    margin-top: 26px;
+                }
+            }
+        }
+    }
+}
+
+// 회원가입 
+.join {
+    .join-form {
+        padding-bottom: 100px;
+        .article-content {
+            .table-wrap {
+                .table {
+                    margin-bottom: 0;
+                    border: 0;
+                    border-top: 3px solid #949595;
+                    tbody {
+                        tr {
+                            th {
+                                width: 90px;
+                                font-size: 13px;
+                                color: #333;
+                                font-weight: 400;
+                                vertical-align: middle;
+                                padding-left: 16px;
+                                line-height: 22px;
+                                border: 0;
+                                border-bottom: 1px solid #ccc;
+                                background-color: #f8f8f8;
+                                label {
+                                    color: #333;
+                                    font-weight: 400;
+                                }
+                                &.v-align {
+                                    vertical-align: top;
+                                    padding-top: 22px;
+                                }
+                            }
+                            td {
+                                padding: 10px;
+                                font-size: 12px;
+                                font-weight: 300;
+                                border: 0;
+                                border-bottom: 1px solid #ccc;
+                                .form-group {
+                                    .form-control {
+                                        height: 40px;
+                                        border: 1px solid #dfdfdf;
+                                    }
+                                }
+                                .note {
+                                    font-size: 12px;
+                                    color: #666;
+                                    font-weight: 300;
+                                    line-height: 18px;
+                                    margin-top: 10px;
+                                }
+                                &.birthday {
+                                    .form-group {
+                                        font-size: 0;
+                                        .form-control {
+                                            width: 30%;
+                                            display: inline-block;
+                                            font-size: 12px;
+                                            margin-right: 5px;
+                                            padding-left: 5px;
+                                            padding-right: 5px;
+                                            &:first-child {
+                                                width: 31%;
+                                            }
+                                            &:last-child {
+                                                margin-right: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.certificate {
+                                    position: relative;
+                                    padding-right: 85px;
+                                    .btn-certificate {
+                                        position: absolute;
+                                        top: 10px;
+                                        right: 10px;
+                                        .btn-xs {
+                                            width: 65px;
+                                            height: 40px;
+                                            font-size: 13px;
+                                            color: #fff;
+                                            font-weight: 300;
+                                            line-height: 40px;
+                                            background-color: #aeaeaf;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .check-box {
+                    margin-top: 25px;
+                    margin-bottom: 45px;
+                    label {
+                        font-size: 14px;
+                        color: #333;
+                        font-weight: 400;
+                        input {
+                            position: relative;
+                            top: 1px;
+                            margin-right: 5px;
+                        }
+                    }
+                    p {
+                        font-size: 13px;
+                        color: #666;
+                        font-weight: 300;
+                        line-height: 21px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .btn-area {
+                text-align: center;
+                p {
+                    font-size: 0;
+                    .btn-sm {
+                        display: inline-block;
+                        width: 145px;
+                        height: 45px;
+                        line-height: 45px;
+                        font-size: 14px;
+                        color: #fff;
+                        font-weight: 300;
+                        margin-right: 10px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &.btn-gray {
+                            background-color: #999;
+                        }
+                        &.btn-black {
+                            background-color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 공통 nav
+.product-list {
+    font-size: 0;
+    li {
+        display: inline-block;
+        width: 33.33%;
+        a {
+            text-align: center;
+            display: block;
+            font-size: 13px;
+            color: #333;
+        }
+    }
+}
+
+.product {
+    .page-header {
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 55px 0;
+        background-image: url(/design/playtex/mobile/assets/images/item/page_header_bra.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        .title {
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+    .common-list {
+        article {
+            .article-header {
+                
+            }
+        }
+    }
+}
+
+// 공통 상품 리스트
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+// 공통 상품 뷰
 
 
 
