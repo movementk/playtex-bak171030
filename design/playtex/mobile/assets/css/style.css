@@ -713,16 +713,69 @@ label {
         .join .join-form .article-content .btn-area p .btn-sm.btn-black {
           background-color: #333; }
 
-.product-list {
+.product-nav ul {
   font-size: 0; }
-  .product-list li {
+  .product-nav ul li {
     display: inline-block;
     width: 33.33%; }
-    .product-list li a {
+    .product-nav ul li a {
+      position: relative;
       text-align: center;
       display: block;
       font-size: 13px;
-      color: #333; }
+      color: #333;
+      font-weight: 500;
+      padding: 14px 0;
+      font-family: 'Maven Pro', sans-serif;
+      z-index: 99;
+      border-right: 1px solid #b5b5b5;
+      border-bottom: 1px solid #b5b5b5; }
+    .product-nav ul li:nth-of-type(1) a {
+      border-top: 1px solid #b5b5b5; }
+    .product-nav ul li:nth-of-type(2) a {
+      border-top: 1px solid #b5b5b5; }
+    .product-nav ul li:nth-of-type(3) a {
+      border-top: 1px solid #b5b5b5; }
+    .product-nav ul li.active a {
+      color: #fff;
+      font-weight: bold;
+      border-color: #2b2b2b;
+      background-color: #2b2b2b; }
+    .product-nav ul li:nth-of-type(3n + 1) a {
+      border-left: 1px solid #b5b5b5; }
+    .product-nav ul li:nth-of-type(3n + 1).active {
+      border-color: #2b2b2b; }
+      .product-nav ul li:nth-of-type(3n + 1).active a {
+        border-left: 1px solid #2b2b2b; }
+    .product-nav ul li:nth-of-type(3n + 2).active a {
+      margin-left: -1px; }
+    .product-nav ul li:nth-of-type(3n + 3).active a {
+      margin-left: -1px; }
+
+.recommend-list {
+  font-size: 0;
+  text-align: center; }
+  .recommend-list li {
+    display: inline-block;
+    width: 35px;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: .5px;
+    margin-right: 5px;
+    font-family: 'Maven Pro', sans-serif;
+    border-radius: 3px; }
+    .recommend-list li:last-child {
+      margin-right: 0; }
+    .recommend-list li.md {
+      background-color: #f08501; }
+    .recommend-list li.hot {
+      background-color: #e61937; }
+    .recommend-list li.new {
+      color: #333;
+      background-color: #a0e4e7; }
 
 .product .page-header {
   margin: 0;
@@ -735,5 +788,149 @@ label {
   .product .page-header .title {
     font-size: 30px;
     color: #fff; }
+.product .common-list article .article-header {
+  padding: 50px 0 30px; }
+  .product .common-list article .article-header .article-title {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lato', sans-serif; }
+  .product .common-list article .article-header .summary {
+    font-size: 13px;
+    color: #333;
+    line-height: 21px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 33px; }
+  .product .common-list article .article-header .best-product {
+    margin-top: 40px; }
+    .product .common-list article .article-header .best-product .bx-wrapper .bx-viewport ul li a {
+      display: block; }
+      .product .common-list article .article-header .best-product .bx-wrapper .bx-viewport ul li a figure {
+        position: relative; }
+        .product .common-list article .article-header .best-product .bx-wrapper .bx-viewport ul li a figure .img-responsive {
+          margin: 0 auto; }
+        .product .common-list article .article-header .best-product .bx-wrapper .bx-viewport ul li a figure figcaption {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: block;
+          width: 55px;
+          height: 55px;
+          color: #fff;
+          text-align: center;
+          padding: 6px 0;
+          font-family: 'Maven Pro', sans-serif;
+          background-color: rgba(155, 135, 110, 0.8); }
+          .product .common-list article .article-header .best-product .bx-wrapper .bx-viewport ul li a figure figcaption small {
+            font-size: 11px;
+            font-weight: 300;
+            letter-spacing: 1px; }
+          .product .common-list article .article-header .best-product .bx-wrapper .bx-viewport ul li a figure figcaption .number {
+            font-size: 25px;
+            font-weight: 500;
+            letter-spacing: -.5px;
+            line-height: 24px; }
+      .product .common-list article .article-header .best-product .bx-wrapper .bx-viewport ul li a .details {
+        text-align: center;
+        padding: 20px 0 30px; }
+        .product .common-list article .article-header .best-product .bx-wrapper .bx-viewport ul li a .details .product-title {
+          font-size: 12px;
+          color: #333;
+          font-weight: 300;
+          margin-bottom: 10px; }
+        .product .common-list article .article-header .best-product .bx-wrapper .bx-viewport ul li a .details .payment {
+          font-size: 18px;
+          color: #333;
+          font-weight: bold;
+          letter-spacing: .5px;
+          font-family: 'Maven Pro', sans-serif;
+          margin-top: 20px; }
+    .product .common-list article .article-header .best-product .bx-wrapper .bx-controls .bx-pager {
+      height: 12px;
+      text-align: center; }
+      .product .common-list article .article-header .best-product .bx-wrapper .bx-controls .bx-pager .bx-pager-item {
+        display: inline-block;
+        margin: 0 4px;
+        text-indent: -99999999px; }
+        .product .common-list article .article-header .best-product .bx-wrapper .bx-controls .bx-pager .bx-pager-item a {
+          display: block;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 1px solid #7d7d7d; }
+          .product .common-list article .article-header .best-product .bx-wrapper .bx-controls .bx-pager .bx-pager-item a.active {
+            background-color: #7d7d7d; }
+.product .common-list article .article-content {
+  padding-top: 33px;
+  padding-bottom: 60px;
+  background-color: #fbfbfb; }
+  .product .common-list article .article-content .select-menu {
+    text-align: right;
+    margin-bottom: 20px; }
+    .product .common-list article .article-content .select-menu .dropdown {
+      display: inline-block;
+      width: 150px;
+      background-color: #fbfbfb; }
+      .product .common-list article .article-content .select-menu .dropdown .dropdown-toggle {
+        position: relative;
+        width: 150px;
+        font-size: 12px;
+        color: #2b2b2b;
+        text-align: left;
+        padding: 10px 20px;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        background-color: #fbfbfb; }
+        .product .common-list article .article-content .select-menu .dropdown .dropdown-toggle .caret {
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          margin-top: -2px; }
+      .product .common-list article .article-content .select-menu .dropdown .dropdown-menu {
+        border: 0;
+        margin: 0;
+        border-radius: 0;
+        background-color: rgba(247, 247, 247, 0.9); }
+        .product .common-list article .article-content .select-menu .dropdown .dropdown-menu li a {
+          font-size: 12px;
+          color: #666;
+          padding: 10px 20px; }
+  .product .common-list article .article-content .product-list > ul {
+    overflow: hidden; }
+    .product .common-list article .article-content .product-list > ul > li {
+      float: left;
+      width: 50%;
+      margin-top: 20px;
+      text-align: center; }
+      .product .common-list article .article-content .product-list > ul > li:nth-of-type(1) {
+        margin-top: 0; }
+      .product .common-list article .article-content .product-list > ul > li:nth-of-type(2) {
+        margin-top: 0; }
+      .product .common-list article .article-content .product-list > ul > li:nth-of-type(2n + 1) {
+        clear: both;
+        padding-right: 5px; }
+      .product .common-list article .article-content .product-list > ul > li:nth-of-type(2n + 2) {
+        padding-left: 5px; }
+      .product .common-list article .article-content .product-list > ul > li a {
+        display: block; }
+        .product .common-list article .article-content .product-list > ul > li a .figure .img-responsive {
+          margin: 0 auto; }
+        .product .common-list article .article-content .product-list > ul > li a .details {
+          margin-top: 20px; }
+          .product .common-list article .article-content .product-list > ul > li a .details .product-title {
+            font-size: 12px;
+            color: #333;
+            font-weight: 300;
+            line-height: 16px; }
+          .product .common-list article .article-content .product-list > ul > li a .details .recommend-list {
+            margin: 10px 0 16px; }
+          .product .common-list article .article-content .product-list > ul > li a .details .payment {
+            font-size: 13px;
+            color: #333;
+            font-weight: bold;
+            letter-spacing: .5px;
+            font-family: 'Maven Pro', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
