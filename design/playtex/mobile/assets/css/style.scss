@@ -967,20 +967,111 @@ label {
 }
 
 // 공통 nav
-.product-list {
-    font-size: 0;
-    li {
-        display: inline-block;
-        width: 33.33%;
-        a {
-            text-align: center;
-            display: block;
-            font-size: 13px;
-            color: #333;
+.product-nav {
+    ul {
+        font-size: 0;
+        li {
+            display: inline-block;
+            width: 33.33%;
+            a {
+                position: relative;
+                text-align: center;
+                display: block;
+                font-size: 13px;
+                color: #333;
+                font-weight: 500;
+                padding: 14px 0;
+                @include maven();
+                z-index: 99;
+                border-right: 1px solid #b5b5b5;
+                border-bottom: 1px solid #b5b5b5;
+            }
+            &:nth-of-type(1) {
+                a {
+                    border-top: 1px solid #b5b5b5;
+                }
+            }
+            &:nth-of-type(2) {
+                a {
+                    border-top: 1px solid #b5b5b5;
+                }
+            }
+            &:nth-of-type(3) {
+                a {
+                    border-top: 1px solid #b5b5b5;
+                }
+            }
+            &.active {
+                a {
+                    color: #fff;
+                    font-weight: bold;
+                    border-color: #2b2b2b;
+                    background-color: #2b2b2b;
+                }
+            }
+            &:nth-of-type(3n + 1) {
+                a {
+                    border-left: 1px solid #b5b5b5;
+                }
+                &.active {
+                    border-color: #2b2b2b;
+                    a {
+                        border-left: 1px solid #2b2b2b;
+                    }
+                }
+            }
+            &:nth-of-type(3n + 2) {
+                &.active {
+                    a {
+                        margin-left: -1px;
+                    }
+                }
+            }
+            &:nth-of-type(3n + 3) {
+                &.active {
+                    a {
+                        margin-left: -1px;
+                    }
+                }
+            }
         }
     }
 }
 
+// 추천 라벨
+.recommend-list {
+    font-size: 0;
+    text-align: center;
+    li {
+        display: inline-block;
+        width: 35px;
+        font-size: 10px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: .5px;
+        margin-right: 5px;
+        @include maven();
+        border-radius: 3px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.md {
+            background-color: #f08501;
+        }
+        &.hot {
+            background-color: #e61937;
+        }
+        &.new {
+            color: #333;
+            background-color: #a0e4e7;
+        }
+    }
+}
+
+
+// 공통 상품 리스트
 .product {
     .page-header {
         margin: 0;
@@ -998,13 +1089,205 @@ label {
     .common-list {
         article {
             .article-header {
-                
+                padding: 50px 0 30px;
+                .article-title {
+                    font-size: 30px;
+                    color: #333;
+                    font-weight: bold;
+                    text-align: center;
+                    @include lato();
+                }
+                .summary {
+                    font-size: 13px;
+                    color: #333;
+                    line-height: 21px;
+                    font-weight: 300;
+                    text-align: center;
+                    margin-top: 33px;
+                }
+                .best-product {
+                    margin-top: 40px;
+                    .bx-wrapper {
+                        .bx-viewport {
+                            ul {
+                                li {
+                                    a {
+                                        display: block;
+                                        figure {
+                                            position: relative;
+                                            .img-responsive {
+                                                margin: 0 auto;
+                                            }
+                                            figcaption {
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                display: block;
+                                                width: 55px;
+                                                height: 55px;
+                                                color: #fff;
+                                                text-align: center;
+                                                padding: 6px 0;
+                                                @include maven();
+                                                background-color: rgba(155, 135, 110, .8);
+                                                small {
+                                                    font-size: 11px;
+                                                    font-weight: 300;
+                                                    letter-spacing: 1px;
+                                                }
+                                                .number {
+                                                    font-size: 25px;
+                                                    font-weight: 500;
+                                                    letter-spacing: -.5px;
+                                                    line-height: 24px;
+                                                }
+                                            }
+                                        }
+                                        .details {
+                                            text-align: center;
+                                            padding: 20px 0 30px;
+                                            .product-title {
+                                                font-size: 12px;
+                                                color: #333;
+                                                font-weight: 300;
+                                                margin-bottom: 10px;
+                                            }
+                                            .payment {
+                                                font-size: 18px;
+                                                color: #333;
+                                                font-weight: bold;
+                                                letter-spacing: .5px;
+                                                @include maven();
+                                                margin-top: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .bx-controls {
+                            .bx-pager {
+                                height: 12px;
+                                text-align: center;
+                                .bx-pager-item {
+                                    display: inline-block;
+                                    margin: 0 4px;
+                                    text-indent: -99999999px;
+                                    a {
+                                        display: block;
+                                        width: 12px;
+                                        height: 12px;
+                                        border-radius: 50%;
+                                        border: 1px solid #7d7d7d;
+                                        &.active {
+                                            background-color: #7d7d7d;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .article-content {
+                padding-top: 33px;
+                padding-bottom: 60px;
+                background-color: #fbfbfb;
+                .select-menu {
+                    text-align: right;
+                    margin-bottom: 20px;
+                    .dropdown {
+                        display: inline-block;
+                        width: 150px;
+                        background-color: #fbfbfb;
+                        .dropdown-toggle {
+                            position: relative;
+                            width: 150px;
+                            font-size: 12px;
+                            color: #2b2b2b;
+                            text-align: left;
+                            padding: 10px 20px;
+                            border: 0;
+                            border-bottom: 1px solid #ccc;
+                            background-color: #fbfbfb;
+                            .caret {
+                                position: absolute;
+                                top: 50%;
+                                right: 20px;
+                                margin-top: -2px;
+                            }
+                        }
+                        .dropdown-menu {
+                            border: 0;
+                            margin: 0;
+                            border-radius: 0;
+                            background-color: rgba(247, 247, 247, .9);
+                            li {
+                                a {
+                                    font-size: 12px;
+                                    color: #666;
+                                    padding: 10px 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .product-list {
+                    > ul {
+                        overflow: hidden;
+                        > li {
+                            float: left;
+                            width: 50%;
+                            margin-top: 20px;
+                            text-align: center;
+                            &:nth-of-type(1) {
+                                margin-top: 0;
+                            }
+                            &:nth-of-type(2) {
+                                margin-top: 0;
+                            }
+                            &:nth-of-type(2n + 1) {
+                                clear: both;
+                                padding-right: 5px;
+                            }
+                            &:nth-of-type(2n + 2) {
+                                padding-left: 5px;
+                            }
+                            a {
+                                display: block;
+                                .figure {
+                                    .img-responsive {
+                                        margin: 0 auto;
+                                    }
+                                }
+                                .details {
+                                    margin-top: 20px;
+                                    .product-title {
+                                        font-size: 12px;
+                                        color: #333;
+                                        font-weight: 300;
+                                        line-height: 16px;
+                                    }
+                                    .recommend-list {
+                                        margin: 10px 0 16px;
+                                    }
+                                    .payment {
+                                        font-size: 13px;
+                                        color: #333;
+                                        font-weight: bold;
+                                        letter-spacing: .5px;
+                                        @include maven();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-// 공통 상품 리스트
 
 
 
