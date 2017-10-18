@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-xs-7">
                 <p class="call-number">
-                    <img src="/assets/images/main/call_num.jpg" alt="">
+                    <img src="/design/playtex/assets/images/main/call_num.jpg" alt="">
                 </p>
                 <p class="opening-hours">
                     월~목요일 10:00~17:00 (점심시간 11:40~13:00)<br>
@@ -55,7 +55,7 @@
                 </p>
             </div>
             <div class="col-xs-4">
-                <h2 class="logo"><img src="/assets/images/main/foot_logo.png" alt="playtex logo"></h2>
+                <h2 class="logo"><img src="/design/playtex/assets/images/main/foot_logo.png" alt="playtex logo"></h2>
                 <p class="copyright">
                     COPYRIGHT (C) 2017 playtex. ALL RIGHTS RESERVED.<br>
                     <a href="http://www.movementk.com" target="_blank">SITE BY MOVEMENT K GROUP.</a>

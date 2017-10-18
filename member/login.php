@@ -48,7 +48,7 @@
                                 <li class="col-xs-4">
                                     <a href="#">
                                         <p class="figure">
-                                            <img src="/assets/images/member/link_img01.png" alt="회원가입">
+                                            <img src="/design/playtex/assets/images/member/link_img01.png" alt="회원가입">
                                         </p>
                                         <p class="details">회원가입</p>
                                     </a>
@@ -56,7 +56,7 @@
                                 <li class="col-xs-4">
                                     <a href="#">
                                         <p class="figure">
-                                            <img src="/assets/images/member/link_img02.png" alt="아이디찾기">
+                                            <img src="/design/playtex/assets/images/member/link_img02.png" alt="아이디찾기">
                                         </p>
                                         <p class="details">아이디찾기</p>
                                     </a>
@@ -64,7 +64,7 @@
                                 <li class="col-xs-4">
                                     <a href="#">
                                         <p class="figure">
-                                            <img src="/assets/images/member/link_img03.png" alt="비밀번호 찾기">
+                                            <img src="/design/playtex/assets/images/member/link_img03.png" alt="비밀번호 찾기">
                                         </p>
                                         <p class="details">비밀번호 찾기</p>
                                     </a>
@@ -75,19 +75,19 @@
                             <ul>
                                 <li>
                                     <a href="#" class="face-book">
-                                        <img src="/assets/images/member/icon_facebook.gif" alt="face book">
+                                        <img src="/design/playtex/assets/images/member/icon_facebook.gif" alt="face book">
                                         페이스북으로 로그인
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="naver">
-                                        <img src="/assets/images/member/icon_naver.gif" alt="face book">
+                                        <img src="/design/playtex/assets/images/member/icon_naver.gif" alt="face book">
                                         네이버로 로그인
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="kakao">
-                                        <img src="/assets/images/member/icon_kakao.gif" alt="face book">
+                                        <img src="/design/playtex/assets/images/member/icon_kakao.gif" alt="face book">
                                         카카오로 로그인
                                     </a>
                                 </li>

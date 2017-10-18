@@ -230,7 +230,7 @@
                                                         <td class="item-details">
                                                             <a href="#">
                                                                 <p class="item">
-                                                                    <img src="/assets/images/mypage/order_list_img01.jpg" alt="">
+                                                                    <img src="/design/playtex/assets/images/mypage/order_list_img01.jpg" alt="">
                                                                 </p>
                                                                 <p class="item-title">
                                                                     ★80%할인★[Playtex]플레이텍스 
@@ -331,7 +331,7 @@
                                                         <td class="item-details">
                                                             <a href="#">
                                                                 <p class="item">
-                                                                    <img src="/assets/images/mypage/order_list_img01.jpg" alt="">
+                                                                    <img src="/design/playtex/assets/images/mypage/order_list_img01.jpg" alt="">
                                                                 </p>
                                                                 <p class="item-title">
                                                                     ★80%할인★[Playtex]플레이텍스 

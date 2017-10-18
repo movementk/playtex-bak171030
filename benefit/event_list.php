@@ -17,7 +17,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img01.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img01.jpg" alt="">
                                     <figcaption>선착순 1만명! 회원가입 이벤트</figcaption>
                                 </figure>
                             </a>
@@ -25,7 +25,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img02.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img02.jpg" alt="">
                                     <figcaption>4주간의 특별구성</figcaption>
                                 </figure>
                             </a>
@@ -33,7 +33,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img03.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img03.jpg" alt="">
                                     <figcaption>SNS 이벤트 홍보 미션</figcaption>
                                 </figure>
                             </a>
@@ -41,7 +41,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img01.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img01.jpg" alt="">
                                     <figcaption>선착순 1만명! 회원가입 이벤트</figcaption>
                                 </figure>
                             </a>
@@ -49,7 +49,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img02.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img02.jpg" alt="">
                                     <figcaption>4주간의 특별구성</figcaption>
                                 </figure>
                             </a>
@@ -57,7 +57,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img03.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img03.jpg" alt="">
                                     <figcaption>SNS 이벤트 홍보 미션</figcaption>
                                 </figure>
                             </a>
@@ -65,7 +65,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img01.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img01.jpg" alt="">
                                     <figcaption>선착순 1만명! 회원가입 이벤트</figcaption>
                                 </figure>
                             </a>
@@ -73,7 +73,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img02.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img02.jpg" alt="">
                                     <figcaption>4주간의 특별구성</figcaption>
                                 </figure>
                             </a>
@@ -81,7 +81,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img03.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img03.jpg" alt="">
                                     <figcaption>SNS 이벤트 홍보 미션</figcaption>
                                 </figure>
                             </a>
@@ -89,7 +89,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img01.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img01.jpg" alt="">
                                     <figcaption>선착순 1만명! 회원가입 이벤트</figcaption>
                                 </figure>
                             </a>
@@ -97,7 +97,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img02.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img02.jpg" alt="">
                                     <figcaption>4주간의 특별구성</figcaption>
                                 </figure>
                             </a>
@@ -105,7 +105,7 @@
                         <li class="col-xs-4">
                             <a href="/benefit/event_view.php">
                                 <figure>
-                                    <img src="/assets/images/benefit/event_list_img03.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/benefit/event_list_img03.jpg" alt="">
                                     <figcaption>SNS 이벤트 홍보 미션</figcaption>
                                 </figure>
                             </a>

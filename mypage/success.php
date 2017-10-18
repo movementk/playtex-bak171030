@@ -19,7 +19,7 @@
                                 <li>
                                     <div>
                                         <p class="figure">
-                                            <img src="/assets/images/mypage/step_img01.png" alt="STEP 01">
+                                            <img src="/design/playtex/assets/images/mypage/step_img01.png" alt="STEP 01">
                                         </p>
                                         <p class="details">STEP 01</p>
                                     </div>
@@ -27,7 +27,7 @@
                                 <li>
                                     <div>
                                         <p class="figure">
-                                            <img src="/assets/images/mypage/step_img02.png" alt="STEP 02">
+                                            <img src="/design/playtex/assets/images/mypage/step_img02.png" alt="STEP 02">
                                         </p>
                                         <p class="details">STEP 02</p>
                                     </div>
@@ -35,7 +35,7 @@
                                 <li class="active">
                                     <div>
                                         <p class="figure">
-                                            <img src="/assets/images/mypage/step_active_img03.png" alt="STEP 03">
+                                            <img src="/design/playtex/assets/images/mypage/step_active_img03.png" alt="STEP 03">
                                         </p>
                                         <p class="details">STEP 03</p>
                                     </div>
@@ -61,7 +61,7 @@
                                         <td class="item-details">
                                             <a href="#">
                                                 <p class="item">
-                                                    <img src="/assets/images/mypage/wisi_list_img01.jpg" alt="">
+                                                    <img src="/design/playtex/assets/images/mypage/wisi_list_img01.jpg" alt="">
                                                 </p>
                                                 <p class="item-title">★80%할인★[Playtex]플레이텍스 에센셜 노와이어 30종 택1_PXI_SELECT10</p>
                                             </a>
@@ -74,7 +74,7 @@
                                         <td class="item-details">
                                             <a href="#">
                                                 <p class="item">
-                                                    <img src="/assets/images/mypage/wisi_list_img02.jpg" alt="">
+                                                    <img src="/design/playtex/assets/images/mypage/wisi_list_img02.jpg" alt="">
                                                 </p>
                                                 <p class="item-title">★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트</p>
                                             </a>

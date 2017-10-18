@@ -88,7 +88,7 @@ label {
         width: 100%;
         height: 127px;
         display: block;
-        background-image: url(/assets/images/top_bn_img.jpg);
+        background-image: url(/design/playtex/assets/images/top_bn_img.jpg);
         background-size: auto 127px;
         background-position: 50% 0;
         background-repeat: no-repeat;
@@ -369,7 +369,6 @@ label {
 #opening {
     width: 100%;
     height: 60px;
-    padding: 30px 0;
     border-top: 1px solid #dfdfdf;
     border-bottom: 1px solid #dfdfdf;
     .call-number {
@@ -1499,7 +1498,7 @@ label {
         }
         h2 {
             font-size: 80px;
-            color: #333;
+            color: #fff;
             line-height: 289px;
             font-style: italic;
             @include playfd();

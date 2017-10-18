@@ -25,7 +25,7 @@
                             <article>
                                 <h4>플레이텍스몰<strong>회원가입하기</strong></h4>
                                 <figure>
-                                    <img src="/assets/images/benefit/login_coupon.jpg" alt="회원가입 쿠폰">
+                                    <img src="/design/playtex/assets/images/benefit/login_coupon.jpg" alt="회원가입 쿠폰">
                                 </figure>
                                 <p class="btn-benefit">
                                     <a href="#" class="btn btn-lg btn-white" role="button">회원가입하러가기</a>
@@ -36,14 +36,14 @@
                             <article>
                                 <h4>앱다운로드 후<strong>로그인하기</strong></h4>
                                 <figure>
-                                    <img src="/assets/images/benefit/app_coupon.jpg" alt="앱 다운로드 쿠폰">
+                                    <img src="/design/playtex/assets/images/benefit/app_coupon.jpg" alt="앱 다운로드 쿠폰">
                                 </figure>
                                 <p class="btn-benefit">
                                     <a href="#" class="btn btn-white btn-md" role="button">
-                                        <img src="/assets/images/benefit/googleplay_logo.jpg" alt="google play">
+                                        <img src="/design/playtex/assets/images/benefit/googleplay_logo.jpg" alt="google play">
                                     </a>
                                     <a href="#" class="btn btn-white btn-md" role="button">
-                                        <img src="/assets/images/benefit/appstore_logo.jpg" alt="app store">
+                                        <img src="/design/playtex/assets/images/benefit/appstore_logo.jpg" alt="app store">
                                     </a>
                                 </p>
                             </article>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="section-content">
                     <figure>
-                        <img src="/assets/images/benefit/special_discount_coupon.jpg" alt="특별할인 쿠폰">
+                        <img src="/design/playtex/assets/images/benefit/special_discount_coupon.jpg" alt="특별할인 쿠폰">
                     </figure>
                     <div class="btn-down">
                         <a href="#" class="btn btn-lg" role="button">쿠폰 다운로드</a>
@@ -102,31 +102,31 @@
                                     <th>등급명</th>
                                     <td>
                                         <figure>
-                                            <img src="/assets/images/benefit/diamond_icon.gif" alt="다이아몬드">
+                                            <img src="/design/playtex/assets/images/benefit/diamond_icon.gif" alt="다이아몬드">
                                             <figcaption class="maven">Diamond</figcaption>
                                         </figure>
                                     </td>
                                     <td>
                                         <figure>
-                                            <img src="/assets/images/benefit/gold_icon.gif" alt="골드">
+                                            <img src="/design/playtex/assets/images/benefit/gold_icon.gif" alt="골드">
                                             <figcaption class="maven">Gold</figcaption>
                                         </figure>
                                     </td>
                                     <td>
                                         <figure>
-                                            <img src="/assets/images/benefit/silver_icon.gif" alt="실버">
+                                            <img src="/design/playtex/assets/images/benefit/silver_icon.gif" alt="실버">
                                             <figcaption class="maven">Silver</figcaption>
                                         </figure>
                                     </td>
                                     <td>
                                         <figure>
-                                            <img src="/assets/images/benefit/new_icon.gif" alt="신규회원">
+                                            <img src="/design/playtex/assets/images/benefit/new_icon.gif" alt="신규회원">
                                             <figcaption>신규회원</figcaption>
                                         </figure>
                                     </td>
                                     <td>
                                         <figure>
-                                            <img src="/assets/images/benefit/none_icon.gif" alt="비회원">
+                                            <img src="/design/playtex/assets/images/benefit/none_icon.gif" alt="비회원">
                                             <figcaption>비회원</figcaption>
                                         </figure>
                                     </td>

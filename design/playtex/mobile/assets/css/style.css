@@ -1016,5 +1016,14 @@ label {
       margin: 0 auto; }
   .product .common-view .view .view-details {
     border-top: 1px solid #dfdfdf; }
+    .product .common-view .view .view-details .payment {
+      padding: 30px 0; }
+      .product .common-view .view .view-details .payment ul li dl {
+        overflow: hidden; }
+        .product .common-view .view .view-details .payment ul li dl dt {
+          float: left;
+          width: 110px; }
+        .product .common-view .view .view-details .payment ul li dl dd {
+          display: inline; }
 
 /*# sourceMappingURL=style.css.map */

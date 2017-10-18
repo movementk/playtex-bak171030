@@ -30,7 +30,7 @@
                 </div>
                 <div class="article-content">
                     <figure>
-                        <img src="/assets/images/mypage/rock_img.gif" alt="">
+                        <img src="/design/playtex/assets/images/mypage/rock_img.gif" alt="">
                         <figcaption>
                             저희 쇼핑몰에서는 회원님의 소중한 개인정보를 안전하게 보호하고 <br>
                             개인정보 도용으로 인한 피해를 예방하기 위하여 비밀번호를 확인합니다. <br>

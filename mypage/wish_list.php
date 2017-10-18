@@ -56,7 +56,7 @@
                                     <td class="item-details">
                                         <a href="#">
                                             <p class="item">
-                                                <img src="/assets/images/mypage/wisi_list_img01.jpg" alt="">
+                                                <img src="/design/playtex/assets/images/mypage/wisi_list_img01.jpg" alt="">
                                             </p>
                                             <p class="item-title">★80%할인★[Playtex]플레이텍스 에센셜 노와이어 30종 택1_PXI_SELECT10</p>
                                         </a>
@@ -85,7 +85,7 @@
                                     <td class="item-details">
                                         <a href="#">
                                             <p class="item">
-                                                <img src="/assets/images/mypage/wisi_list_img02.jpg" alt="">
+                                                <img src="/design/playtex/assets/images/mypage/wisi_list_img02.jpg" alt="">
                                             </p>
                                             <p class="item-title">★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트</p>
                                         </a>
@@ -114,7 +114,7 @@
                                     <td class="item-details">
                                         <a href="#">
                                             <p class="item">
-                                                <img src="/assets/images/mypage/wisi_list_img03.jpg" alt="">
+                                                <img src="/design/playtex/assets/images/mypage/wisi_list_img03.jpg" alt="">
                                             </p>
                                             <p class="item-title">[Playtex] 플레이텍스 2종세트 12스타일택1 PX_SELECT464815</p>
                                         </a>
