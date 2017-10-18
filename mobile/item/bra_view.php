@@ -3,28 +3,30 @@
 <body class="product item">
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/header.php"); ?>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/nav.php"); ?>
-	<main id="content" class="common-list bra-list">
-		<div class="page-header">
-		    <h2 class="title">ITEM</h2>
-		</div>
-        
-        <nav class="product-nav">
-            <div class="container">
-                <ul>
-                    <li class="active"><a href="/mobile/item/bra_list.php">BRA</a></li>
-                    <li><a href="/mobile/item/panty_list.php">PANTY</a></li>
-                    <li><a href="/mobile/item/1set_list.php">1SET</a></li>
-                    <li><a href="/mobile/item/2set_list.php">2SET</a></li>
-                    <li><a href="/mobile/item/fullset_list.php">FULL SET</a></li>
-                    <li><a href="/mobile/item/shaper_list.php">SHAPER</a></li>
-                    <li><a href="/mobile/item/etc_list.php">ETC</a></li>
-                </ul>
-            </div>
-        </nav>
-        
+	<main id="content" class="common-view bra-view">
         <div class="container">
-            <article>
-                
+            <article class="view">
+                <div class="view-header">
+                    <h3 class="product-title">
+                        프리 플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI02_14
+                        <span class="md">MD</span>
+                        <span class="hot">HOT</span>
+                        <span class="new">NEW</span>
+                    </h3>
+                    <figure>
+                        <img src="/design/playtex/mobile/assets/images/item/view_header_img.jpg" class="img-responsive" alt="">
+                    </figure>
+                </div>
+                <div class="view-details">
+                    <div class="payment">
+                        <dl>
+                            <dt>정상가</dt>
+                            <dd class="price">169,000원</dd>
+                            <dt>할인판매가</dt>
+                            <dd class="discount">78,900원</dd>
+                        </dl>
+                    </div>
+                </div>
             </article>
         </div>
 	</main>

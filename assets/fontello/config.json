@@ -167,6 +167,12 @@
       "css": "check-1",
       "code": 59412,
       "src": "entypo"
+    },
+    {
+      "uid": "06301c50d89b5d3e651bd07ebd6d7de7",
+      "css": "cancel",
+      "code": 59413,
+      "src": "mfglabs"
     }
   ]
 }
