@@ -29,6 +29,9 @@ a {
 	}
 }
 
+.container {
+    padding: 0 10px;
+}
 #header {
 	position: fixed;
 	top: 0;
@@ -1409,18 +1412,408 @@ label {
             }
             .view-details {
                 border-top: 1px solid #dfdfdf;
+                border-bottom: 1px solid #dfdfdf;
                 .payment {
                     padding: 30px 0;
                     ul {
                         li {
+                            ~ li {
+                                margin-top: 10px;
+                            }
                             dl {
                                 overflow: hidden;
                                 dt {
                                     float: left;
                                     width: 110px;
+                                    font-size: 14px;
+                                    color: #333;
+                                    font-weight: 400;
+                                    line-height: 22px;
                                 }
                                 dd {
                                     display: inline;
+                                    line-height: 22px;
+                                    &.price {
+                                        font-size: 14px;
+                                        color: #666;
+                                        font-weight: 300;
+                                        text-decoration: line-through;
+                                    }
+                                    &.discount {
+                                        font-size: 16px;
+                                        color: #333;
+                                        font-weight: 500;
+                                        span {
+                                            font-weight: 600;
+                                            @include maven();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .information {
+                padding: 30px 0;
+                border-bottom: 1px solid #dfdfdf;
+                .table-wrap {
+                    .table {
+                        margin: 0;
+                        tbody {
+                            tr {
+                                th {
+                                    width: 110px;
+                                    font-size: 14px;
+                                    color: #333;
+                                    font-weight: 400;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    border: 0;
+                                    line-height: 24px;
+                                    padding: 2px 0;
+                                }
+                                td {
+                                    font-size: 14px;
+                                    color: #666;
+                                    font-weight: 300;
+                                    border: 0;
+                                    line-height: 24px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    padding: 2px 0;
+                                    ul {
+                                        font-size: 0;
+                                        li {
+                                            display: inline-block;
+                                            font-size: 14px;
+                                            &:after {
+                                                position: relative;
+                                                top: -2px;
+                                                font-size: 12px;
+                                                content: "|";
+                                                margin: 0 8px;
+                                            }
+                                            &:last-child {
+                                                &:after {
+                                                    content: "";
+                                                    margin: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .product-option {
+                padding: 20px 0;
+                border-bottom: 1px solid #dfdfdf;
+                ul {
+                    li {
+                        ~ li {
+                            margin-top: 10px;
+                        }
+                        dl {
+                            position: relative;
+                            padding-left: 60px;
+                            dt {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 60px;
+                                font-size: 13px;
+                                color: #333;
+                                font-weight: 400;
+                                line-height: 34px;
+                                padding-left: 10px;
+                                label {
+                                    font-weight: 400;
+                                }
+                            }
+                            dd {
+                                font-size: 13px;
+                                color: #666;
+                                line-height: 34px;
+                                .form-group {
+                                    .form-control {
+                                        font-size: 13px;
+                                        color: #666;
+                                        height: 34px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .total {
+                margin-top: 25px;
+                dl {
+                    font-size: 0;
+                    text-align: right;
+                    dt {
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #333;
+                        font-weight: 400;
+                        margin-right: 30px;
+                    }
+                    dd {
+                        display: inline-block;
+                        font-weight: 500;
+                        font-size: 14px;
+                        span {
+                            font-size: 16px;
+                            @include maven();
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                margin-top: 50px;
+                margin-bottom: 30px;
+                text-align: center;
+                p {
+                    font-size: 0;
+                    ~ p {
+                        margin-top: 10px;
+                    }
+                    .btn {
+                        font-size: 13px;
+                        color: #fff;
+                        line-height: 45px;
+                        border: 0;
+                        margin-right: 10px;
+                        i {
+                            margin-right: 10px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &.btn-lg {
+                            width: 300px;
+                            background-color: #333;
+                        }
+                        &.btn-sm {
+                            width: 145px;
+                            background-color: #999;
+                        }
+                    }
+                }
+            }
+            .naver-pay {
+                .img-responsive {
+                    margin: 0 auto;
+                }
+            }
+        }
+        .product-detils {
+            margin-top: 20px;
+            .collapse-content {
+                .btn-primary {
+                    position: relative;
+                    width: 100%;
+                    font-size: 14px;
+                    color: #8c6239;
+                    text-align: left;
+                    font-weight: 400;
+                    padding: 20px 10px;
+                    background-color: #fff;
+                    border: 0;
+                    box-shadow: none;
+                    border-bottom: 1px solid #dfdfdf;
+                    &:after {
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        font-size: 13px;
+                        color: #aaa;
+                        margin-top: -9px;
+                        content: "\E80F";
+                        font-family: "fontello";
+                    }
+                    &.collapsed {
+                        color: #333;
+                        &:after {
+                            content: "\E810";
+                            color: #2b2b2b;
+                        }
+                    }
+                }
+                
+                .well {
+                    font-size: 13px;
+                    color: #666;
+                    font-weight: 300;
+                    padding: 30px 10px;
+                    border: 0;
+                    border-radius: 0;
+                    box-shadow: none;
+                    background-color: #f1f1f1;
+                    .table-wrap {
+                        .table {
+                            table-layout: fixed;
+                            margin: 0;
+                            tbody {
+                                tr {
+                                    td {
+                                        font-size: 13px;
+                                        color: #666;
+                                        font-weight: 300;
+                                        padding: 15px 0;
+                                        border: 0;
+                                        &.num {
+                                            width: 30px;
+                                            font-weight: 500;
+                                            @include maven();
+                                        }
+                                        &.subject {
+                                            padding-left: 10px;
+                                            padding-right: 10px;
+                                            a {
+                                                display: block;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                white-space: nowrap;
+                                            }
+                                        }
+                                        &.user-name {
+                                            width: 50px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .paging {
+                        margin-top: 30px;
+                        margin-left: -10px;
+                        margin-right: -10px;
+                    }
+                    .btn-area {
+                        text-align: center;
+                        margin-left: -10px;
+                        margin-right: -10px;
+                        margin-top: 30px;
+                        p {
+                            font-size: 0;
+                            .btn {
+                                display: inline-block;
+                                font-size: 13px;
+                                color: #fff;
+                                line-height: 45px;
+                                width: 145px;
+                                margin-right: 10px;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                &.btn-gray {
+                                    background-color: #999;
+                                }
+                                &.btn-black {
+                                    background-color: #333;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                &.exchange {
+                    .well {
+                        h4 {
+                            & ~ h4 {
+                                margin-top: 50px;
+                            }
+                            font-size: 15px;
+                            color: #333;
+                            font-weight: 400;
+                            margin-bottom: 25px;
+                        }
+                        p {
+                            font-size: 13px;
+                            color: #666;
+                            font-weight: 300;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+        .recommend {
+            margin-top: 40px;
+            .article-header {
+                position: relative;
+                text-align: center;
+                margin-bottom: 25px;
+                h3 {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 15px;
+                    color: #333;
+                    font-weight: 400;
+                    padding: 0 15px;
+                    z-index: 99;
+                    background-color: #fff;
+                }
+                span {
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #666;
+                }
+            }
+            .article-content {
+                > ul {
+                    overflow: hidden;
+                    > li {
+                        float: left;
+                        width: 50%;
+                        margin-top: 20px;
+                        text-align: center;
+                        &:nth-of-type(1) {
+                            margin-top: 0;
+                        }
+                        &:nth-of-type(2) {
+                            margin-top: 0;
+                        }
+                        &:nth-of-type(2n + 1) {
+                            clear: both;
+                            padding-right: 5px;
+                        }
+                        &:nth-of-type(2n + 2) {
+                            padding-left: 5px;
+                        }
+                        a {
+                            display: block;
+                            .figure {
+                                .img-responsive {
+                                    margin: 0 auto;
+                                }
+                            }
+                            .details {
+                                margin-top: 20px;
+                                .product-title {
+                                    font-size: 12px;
+                                    color: #333;
+                                    font-weight: 300;
+                                    line-height: 16px;
+                                }
+                                .recommend-list {
+                                    margin: 10px 0 16px;
+                                }
+                                .payment {
+                                    font-size: 13px;
+                                    color: #333;
+                                    font-weight: bold;
+                                    letter-spacing: .5px;
+                                    @include maven();
                                 }
                             }
                         }
@@ -1430,12 +1823,6 @@ label {
         }
     }
 }
-
-
-
-
-
-
 
 
 
