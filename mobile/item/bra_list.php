@@ -113,7 +113,7 @@
                     <div class="product-list">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/assets/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                     </p>
@@ -127,7 +127,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/assets/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                     </p>
@@ -141,7 +141,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/assets/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                     </p>
@@ -155,7 +155,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/assets/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                     </p>
@@ -169,7 +169,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/assets/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                     </p>
@@ -183,7 +183,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/assets/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                     </p>
@@ -202,36 +202,42 @@
                         <ul class="pagination">
                             <li class="first">
                                 <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
+                                    <i class="icon-angle-double-left">
+                                        <span class="sr-only">first</span>
+                                    </i>
                                 </a>
                             </li>
                             <li class="prev">
                                 <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
+                                    <i class="icon-angle-left">
+                                        <span class="sr-only">prev</span>
+                                    </i>
                                 </a>
                             </li>
-                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
                             <li><a href="#">5</a></li>
                             <li class="next">
                                 <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
+                                    <i class="icon-angle-right">
+                                        <span class="sr-only">next</span>
+                                    </i>
                                 </a>
                             </li>
                             <li class="last">
                                 <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
+                                    <i class="icon-angle-double-right">
+                                        <span class="sr-only">last</span>
+                                    </i>
                                 </a>
                             </li>
                         </ul>
                     </nav>
-                    
                 </div>
             </div>
         </article>
-
 	</main>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/footer.php"); ?>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/docfoot.php"); ?>
