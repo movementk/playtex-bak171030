@@ -5,7 +5,7 @@
 			<li><a class="cart" href="#"><span class="sr-only">장바구니</span></a></li>
 			<li><a class="search" href="#"><span class="sr-only">검색</span></a></li>
 			<li>
-				<a class="menu" href="#nav">
+				<a id="btn-open-nav" class="menu" href="#nav">
 					<span class="sr-only">메뉴보기</span>
 					<span class="bar"></span>
 					<span class="bar short"></span>
