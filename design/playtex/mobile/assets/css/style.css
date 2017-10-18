@@ -751,44 +751,47 @@ label {
         .join .join-form .article-content .btn-area p .btn-sm.btn-black {
           background-color: #333; }
 
-.product-nav ul {
-  font-size: 0; }
-  .product-nav ul li {
-    display: inline-block;
-    width: 33.33%; }
-    .product-nav ul li a {
-      position: relative;
-      text-align: center;
-      display: block;
-      font-size: 13px;
-      color: #333;
-      font-weight: 500;
-      padding: 14px 0;
-      font-family: 'Maven Pro', sans-serif;
-      z-index: 99;
-      border-right: 1px solid #b5b5b5;
-      border-bottom: 1px solid #b5b5b5; }
-    .product-nav ul li:nth-of-type(1) a {
-      border-top: 1px solid #b5b5b5; }
-    .product-nav ul li:nth-of-type(2) a {
-      border-top: 1px solid #b5b5b5; }
-    .product-nav ul li:nth-of-type(3) a {
-      border-top: 1px solid #b5b5b5; }
-    .product-nav ul li.active a {
-      color: #fff;
-      font-weight: bold;
-      border-color: #2b2b2b;
-      background-color: #2b2b2b; }
-    .product-nav ul li:nth-of-type(3n + 1) a {
-      border-left: 1px solid #b5b5b5; }
-    .product-nav ul li:nth-of-type(3n + 1).active {
-      border-color: #2b2b2b; }
-      .product-nav ul li:nth-of-type(3n + 1).active a {
-        border-left: 1px solid #2b2b2b; }
-    .product-nav ul li:nth-of-type(3n + 2).active a {
-      margin-left: -1px; }
-    .product-nav ul li:nth-of-type(3n + 3).active a {
-      margin-left: -1px; }
+.product-nav {
+  position: relative;
+  z-index: 1; }
+  .product-nav ul {
+    font-size: 0; }
+    .product-nav ul li {
+      display: inline-block;
+      width: 33.33%; }
+      .product-nav ul li a {
+        position: relative;
+        text-align: center;
+        display: block;
+        font-size: 13px;
+        color: #333;
+        font-weight: 500;
+        padding: 14px 0;
+        font-family: 'Maven Pro', sans-serif;
+        z-index: 99;
+        border-right: 1px solid #b5b5b5;
+        border-bottom: 1px solid #b5b5b5; }
+      .product-nav ul li:nth-of-type(1) a {
+        border-top: 1px solid #b5b5b5; }
+      .product-nav ul li:nth-of-type(2) a {
+        border-top: 1px solid #b5b5b5; }
+      .product-nav ul li:nth-of-type(3) a {
+        border-top: 1px solid #b5b5b5; }
+      .product-nav ul li.active a {
+        color: #fff;
+        font-weight: bold;
+        border-color: #2b2b2b;
+        background-color: #2b2b2b; }
+      .product-nav ul li:nth-of-type(3n + 1) a {
+        border-left: 1px solid #b5b5b5; }
+      .product-nav ul li:nth-of-type(3n + 1).active {
+        border-color: #2b2b2b; }
+        .product-nav ul li:nth-of-type(3n + 1).active a {
+          border-left: 1px solid #2b2b2b; }
+      .product-nav ul li:nth-of-type(3n + 2).active a {
+        margin-left: -1px; }
+      .product-nav ul li:nth-of-type(3n + 3).active a {
+        margin-left: -1px; }
 
 .recommend-list {
   font-size: 0;
@@ -972,5 +975,46 @@ label {
             font-family: 'Maven Pro', sans-serif; }
   .product .common-list article .article-content .paging {
     margin-top: 45px; }
+
+.product .common-view {
+  padding-bottom: 65px; }
+  .product .common-view .view .view-header {
+    text-align: center;
+    padding: 55px 0 15px 0; }
+    .product .common-view .view .view-header .product-title {
+      font-size: 16px;
+      color: #333;
+      font-weight: 500;
+      margin-bottom: 40px;
+      line-height: 28px; }
+      .product .common-view .view .view-header .product-title span {
+        position: relative;
+        top: -2px;
+        display: inline-block;
+        width: 35px;
+        font-size: 10px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: .5px;
+        margin-right: 2px;
+        font-family: 'Maven Pro', sans-serif;
+        border-radius: 3px; }
+        .product .common-view .view .view-header .product-title span:first-child {
+          margin-left: 8px; }
+        .product .common-view .view .view-header .product-title span:last-child {
+          margin-right: 0; }
+        .product .common-view .view .view-header .product-title span.md {
+          background-color: #f08501; }
+        .product .common-view .view .view-header .product-title span.hot {
+          background-color: #e61937; }
+        .product .common-view .view .view-header .product-title span.new {
+          color: #333;
+          background-color: #a0e4e7; }
+    .product .common-view .view .view-header figure .img-responsive {
+      margin: 0 auto; }
+  .product .common-view .view .view-details {
+    border-top: 1px solid #dfdfdf; }
 
 /*# sourceMappingURL=style.css.map */

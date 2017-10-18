@@ -1,3 +1,11 @@
+<div id="top-bn">
+    <a href="#"></a>
+    <button type="button" class="btn close-btn">
+        <i class="icon-cancel">
+            <span class="sr-only">배너 닫기</span>
+        </i>
+    </button>
+</div>
 <header id="header">
     <h1 class="logo">
         <a href="/"><img src="/assets/images/main/logo.png" alt="playtex logo"></a>

@@ -1030,6 +1030,8 @@ label {
 
 // 공통 nav
 .product-nav {
+    position: relative;
+    z-index: 1;
     ul {
         font-size: 0;
         li {
@@ -1353,13 +1355,67 @@ label {
     }
 }
 
-
-
-
-
-
 // 공통 상품 뷰
-
+.product {
+    .common-view {
+        padding-bottom: 65px;
+        .view {
+            .view-header {
+                text-align: center;
+                padding: 55px 0 15px 0;
+                .product-title {
+                    font-size: 16px;
+                    color: #333;
+                    font-weight: 500;
+                    margin-bottom: 40px;
+                    line-height: 28px;
+                    span {
+                        position: relative;
+                        top: -2px;
+                        display: inline-block;
+                        width: 35px;
+                        font-size: 10px;
+                        color: #fff;
+                        font-weight: 500;
+                        line-height: 16px;
+                        text-align: center;
+                        letter-spacing: .5px;
+                        margin-right: 2px;
+                        @include maven();
+                        border-radius: 3px;
+                        &:first-child {
+                            margin-left: 8px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &.md {
+                            background-color: #f08501;
+                        }
+                        &.hot {
+                            background-color: #e61937;
+                        }
+                        &.new {
+                            color: #333;
+                            background-color: #a0e4e7;
+                        }
+                    }
+                }
+                figure {
+                    .img-responsive {
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .view-details {
+                border-top: 1px solid #dfdfdf;
+                .payment {
+//                    padding: 
+                }
+            }
+        }
+    }
+}
 
 
 
