@@ -13,7 +13,7 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <figure>
-                            <img src="/assets/images/item/item_veiw_img01.jpg" alt="">
+                            <img src="/design/playtex/assets/images/item/item_veiw_img01.jpg" alt="">
                         </figure>
                     </div>
                     <div class="col-xs-5 col-xs-offset-1">
@@ -121,7 +121,7 @@
                         <div class="col-xs-3">
                             <div class="naver-pay">
                                 <p>
-                                    <img src="/assets/images/item/naver_pay_img.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/item/naver_pay_img.jpg" alt="">
                                 </p>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/item/recommend_img01.jpg" alt="">
+                                <img src="/design/playtex/assets/images/item/recommend_img01.jpg" alt="">
                                 <figcaption>
                                     <p class="product-title">
                                         플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T 
@@ -158,7 +158,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/item/recommend_img02.jpg" alt="">
+                                <img src="/design/playtex/assets/images/item/recommend_img02.jpg" alt="">
                                 <figcaption>
                                     <p class="product-title">
                                         플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T 
@@ -171,7 +171,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/item/recommend_img03.jpg" alt="">
+                                <img src="/design/playtex/assets/images/item/recommend_img03.jpg" alt="">
                                 <figcaption>
                                     <p class="product-title">
                                         플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T 
@@ -184,7 +184,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/item/recommend_img04.jpg" alt="">
+                                <img src="/design/playtex/assets/images/item/recommend_img04.jpg" alt="">
                                 <figcaption>
                                     <p class="product-title">
                                         플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T 

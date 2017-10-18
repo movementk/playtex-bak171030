@@ -47,7 +47,7 @@
                                     <td class="num">123</td>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/qna_list_img01.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/qna_list_img01.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">
@@ -67,7 +67,7 @@
                                     </td>
                                     <td>
                                         <figure>
-                                            <img src="/assets/images/board/playtex_logo.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/playtex_logo.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="date">2017-08-01</td>
@@ -91,7 +91,7 @@
                                     </td>
                                     <td>
                                         <figure>
-                                            <img src="/assets/images/board/playtex_logo.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/playtex_logo.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="date">2017-08-01</td>
@@ -101,7 +101,7 @@
                                     <td class="num">123</td>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/qna_list_img02.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/qna_list_img02.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">
@@ -116,7 +116,7 @@
                                     <td class="num">123</td>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/qna_list_img03.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/qna_list_img03.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">
@@ -131,7 +131,7 @@
                                     <td class="num">123</td>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/qna_list_img04.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/qna_list_img04.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">

@@ -48,7 +48,7 @@
                                 <tr>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/review_img01.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/review_img01.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">
@@ -61,7 +61,7 @@
                                 <tr>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/review_img02.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/review_img02.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">
@@ -74,7 +74,7 @@
                                 <tr>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/review_img03.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/review_img03.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">
@@ -87,7 +87,7 @@
                                 <tr>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/review_img04.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/review_img04.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">
@@ -100,7 +100,7 @@
                                 <tr>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/review_img01.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/review_img01.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">
@@ -113,7 +113,7 @@
                                 <tr>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/review_img02.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/review_img02.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">
@@ -126,7 +126,7 @@
                                 <tr>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/review_img03.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/review_img03.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">
@@ -139,7 +139,7 @@
                                 <tr>
                                     <td class="product">
                                         <figure>
-                                            <img src="/assets/images/board/review_img04.jpg" alt="">
+                                            <img src="/design/playtex/assets/images/board/review_img04.jpg" alt="">
                                         </figure>
                                     </td>
                                     <td class="title">

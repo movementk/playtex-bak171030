@@ -1410,7 +1410,21 @@ label {
             .view-details {
                 border-top: 1px solid #dfdfdf;
                 .payment {
-//                    padding: 
+                    padding: 30px 0;
+                    ul {
+                        li {
+                            dl {
+                                overflow: hidden;
+                                dt {
+                                    float: left;
+                                    width: 110px;
+                                }
+                                dd {
+                                    display: inline;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -19,7 +19,7 @@
                                 <li class="active">
                                     <div>
                                         <p class="figure">
-                                            <img src="/assets/images/member/step_active_img01.png" alt="STEP 01">
+                                            <img src="/design/playtex/assets/images/member/step_active_img01.png" alt="STEP 01">
                                         </p>
                                         <p class="details">STEP 01</p>
                                     </div>
@@ -27,7 +27,7 @@
                                 <li>
                                     <div>
                                         <p class="figure">
-                                            <img src="/assets/images/member/step_img02.png" alt="STEP 02">
+                                            <img src="/design/playtex/assets/images/member/step_img02.png" alt="STEP 02">
                                         </p>
                                         <p class="details">STEP 02</p>
                                     </div>
@@ -35,7 +35,7 @@
                                 <li>
                                     <div>
                                         <p class="figure">
-                                            <img src="/assets/images/member/step_img03.png" alt="STEP 03">
+                                            <img src="/design/playtex/assets/images/member/step_img03.png" alt="STEP 03">
                                         </p>
                                         <p class="details">STEP 03</p>
                                     </div>

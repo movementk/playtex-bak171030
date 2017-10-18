@@ -25,7 +25,7 @@
                         <div class="view-content">
                             <a href="#">
                                 <div class="item">
-                                    <img src="/assets/images/board/review_view_img.jpg" alt="">
+                                    <img src="/design/playtex/assets/images/board/review_view_img.jpg" alt="">
                                 </div>
                                 <div class="details">
                                     <p class="title">★80%할인★[Playtex]플레이텍스 에센셜 노와이어 30종 택1_PXI_SELECT10</p>

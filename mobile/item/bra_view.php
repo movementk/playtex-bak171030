@@ -19,12 +19,20 @@
                 </div>
                 <div class="view-details">
                     <div class="payment">
-                        <dl>
-                            <dt>정상가</dt>
-                            <dd class="price">169,000원</dd>
-                            <dt>할인판매가</dt>
-                            <dd class="discount">78,900원</dd>
-                        </dl>
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>정상가</dt>
+                                    <dd class="price">169,000원</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>할인판매가</dt>
+                                    <dd class="discount">78,900원</dd>
+                                </dl>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </article>

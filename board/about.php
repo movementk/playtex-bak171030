@@ -9,14 +9,14 @@
         <section class="introduce">
             <div class="page-header">
                 <figure>
-                    <img src="/assets/images/board/about_header_img.png" alt="">
-                    <img src="/assets/images/board/1932_img.jpg" alt="" class="years">
+                    <img src="/design/playtex/assets/images/board/about_header_img.png" alt="">
+                    <img src="/design/playtex/assets/images/board/1932_img.jpg" alt="" class="years">
                 </figure>
             </div>
             <article class="about-playtex">
                 <div class="container">
                     <div class="article-header">
-                        <h2><img src="/assets/images/board/about_playtex_txt.png" alt="about playtex"></h2>
+                        <h2><img src="/design/playtex/assets/images/board/about_playtex_txt.png" alt="about playtex"></h2>
                         <p>
                             <strong>NO WIRE! NO STRESS<i>!</i></strong>
                             최적의 편안한! 노와이어의 원조, 플레이텍스!
@@ -52,7 +52,7 @@
             <article class="concept">
                 <div class="container">
                     <div class="article-header">
-                        <h2><img src="/assets/images/board/concept_txt.png" alt="brand concept"></h2>
+                        <h2><img src="/design/playtex/assets/images/board/concept_txt.png" alt="brand concept"></h2>
                         <p class="summary">지금까지 없었던 Solution을 제안하는 신개념의 언더웨어</p>
                     </div>
                     <div class="article-content">
@@ -60,7 +60,7 @@
                             <li class="col-xs-4">
                                 <div class="solution">
                                     <p class="figure">
-                                        <img src="/assets/images/board/concept_img01.png" alt="">
+                                        <img src="/design/playtex/assets/images/board/concept_img01.png" alt="">
                                     </p>
                                     <div class="details">
                                         <p>Solution</p>
@@ -71,7 +71,7 @@
                             <li class="col-xs-4">
                                 <div class="stress-free">
                                     <p class="figure">
-                                        <img src="/assets/images/board/concept_img02.png" alt="">
+                                        <img src="/design/playtex/assets/images/board/concept_img02.png" alt="">
                                     </p>
                                     <div class="details">
                                         <p>Stress Free</p>
@@ -82,7 +82,7 @@
                             <li class="col-xs-4">
                                 <div class="comfort-beauty">
                                     <p class="figure">
-                                        <img src="/assets/images/board/concept_img03.png" alt="">
+                                        <img src="/design/playtex/assets/images/board/concept_img03.png" alt="">
                                     </p>
                                     <div class="details">
                                         <p>Comfort &amp; Beauty</p>
@@ -100,11 +100,11 @@
             <div class="images"></div>
             <div class="container">
                 <div class="section-header">
-                    <h2><img src="/assets/images/board/keyword_txt.png" alt="keyword"></h2>
+                    <h2><img src="/design/playtex/assets/images/board/keyword_txt.png" alt="keyword"></h2>
                 </div>
                 <div class="section-content">
                     <figure>
-                        <img src="/assets/images/board/keyword_img.png" alt="">
+                        <img src="/design/playtex/assets/images/board/keyword_img.png" alt="">
                         <figcaption>
                             <dl class="target-txt">
                                 <dt>Target</dt>
@@ -124,7 +124,7 @@
                 <div class="row">
                     <div class="col-xs-3">
                         <div class="section-header">
-                            <h2><img src="/assets/images/board/point_txt.png" alt=""></h2>
+                            <h2><img src="/design/playtex/assets/images/board/point_txt.png" alt=""></h2>
                         </div>
                     </div>
                     <div class="col-xs-9">
@@ -147,7 +147,7 @@
             <div class="right-bg"></div>
                 <div class="front">
                     <div class="figure">
-                        <img src="/assets/images/board/feature_img01.png" alt="">
+                        <img src="/design/playtex/assets/images/board/feature_img01.png" alt="">
                         <dl class="volume">
                             <dt><span>R-Volume</span> 몰드</dt>
                             <dd>모아주고 잡아주고 올려주어<br>이상적인 가슴라인을 연출해줌</dd>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="back-side">
                     <div class="figure">
-                        <img src="/assets/images/board/feature_img02.png" alt="">
+                        <img src="/design/playtex/assets/images/board/feature_img02.png" alt="">
                         <div class="details">
                             <dl class="comfort">
                                 <dt><span>Comfort</span> 스트랩</dt>

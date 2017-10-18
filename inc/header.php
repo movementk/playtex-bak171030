@@ -8,7 +8,7 @@
 </div>
 <header id="header">
     <h1 class="logo">
-        <a href="/"><img src="/assets/images/main/logo.png" alt="playtex logo"></a>
+        <a href="/"><img src="/design/playtex/assets/images/main/logo.png" alt="playtex logo"></a>
     </h1>
     <nav id="gnb">
         <ul>

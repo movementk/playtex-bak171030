@@ -20,11 +20,11 @@
                         </div>
                         <div class="view-content">
                             <figure>
-                                <img src="/assets/images/benefit/event_view_img.jpg" alt="">
+                                <img src="/design/playtex/assets/images/benefit/event_view_img.jpg" alt="">
                             </figure>
                             <br><br><br>
                             <figure>
-                                <img src="/assets/images/benefit/event_benefit_img.jpg" alt="">
+                                <img src="/design/playtex/assets/images/benefit/event_benefit_img.jpg" alt="">
                             </figure>
                         </div>
                     </div>

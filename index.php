@@ -10,22 +10,22 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="/assets/images/main/jumbo_img01.jpg" class="img-responsive" alt="">
+                        <img src="/design/playtex/assets/images/main/jumbo_img01.jpg" class="img-responsive" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="/assets/images/main/jumbo_img01.jpg" class="img-responsive" alt="">
+                        <img src="/design/playtex/assets/images/main/jumbo_img01.jpg" class="img-responsive" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="/assets/images/main/jumbo_img01.jpg" class="img-responsive" alt="">
+                        <img src="/design/playtex/assets/images/main/jumbo_img01.jpg" class="img-responsive" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="/assets/images/main/jumbo_img01.jpg" class="img-responsive" alt="">
+                        <img src="/design/playtex/assets/images/main/jumbo_img01.jpg" class="img-responsive" alt="">
                     </a>
                 </li>
             </ul>
@@ -36,13 +36,13 @@
                 <div class="best-list">
                     <div class="section-title">
                         <hr>
-                        <h3><img src="/assets/images/main/best_seller_title.png" alt=""></h3>
+                        <h3><img src="/design/playtex/assets/images/main/best_seller_title.png" alt=""></h3>
                     </div>
                     <ul>
                         <li>
                             <a href="#">
                                 <figure>
-                                    <img src="/assets/images/main/best_seller_img01.jpg" class="img-responsive" alt="aa">
+                                    <img src="/design/playtex/assets/images/main/best_seller_img01.jpg" class="img-responsive" alt="aa">
                                     <figcaption>
                                         <p>
                                             플레이텍스 에센셜 노와이어<br>
@@ -61,7 +61,7 @@
                         <li>
                             <a href="#">
                                 <figure>
-                                    <img src="/assets/images/main/best_seller_img02.jpg" class="img-responsive" alt="aa">
+                                    <img src="/design/playtex/assets/images/main/best_seller_img02.jpg" class="img-responsive" alt="aa">
                                     <figcaption>
                                         <p>
                                             플레이텍스 에센셜 노와이어<br>
@@ -80,7 +80,7 @@
                         <li>
                             <a href="#">
                                 <figure>
-                                    <img src="/assets/images/main/best_seller_img03.jpg" class="img-responsive" alt="aa">
+                                    <img src="/design/playtex/assets/images/main/best_seller_img03.jpg" class="img-responsive" alt="aa">
                                     <figcaption>
                                         <p>
                                             플레이텍스 에센셜 노와이어<br>
@@ -113,7 +113,7 @@
                             <strong>18HOUR</strong>
                             <div class="details">
                                 <figure>
-                                    <img src="/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
+                                    <img src="/design/playtex/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
                                     <figcaption>
                                         <b>18HOUR</b>
                                         <p>
@@ -130,7 +130,7 @@
                             <strong>ESSENTIAL</strong>
                             <div class="details">
                                 <figure>
-                                    <img src="/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
+                                    <img src="/design/playtex/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
                                     <figcaption>
                                         <b>ESSENTIAL</b>
                                         <p>
@@ -147,7 +147,7 @@
                             <strong>IDEAL BEAUTY</strong>
                             <div class="details">
                                 <figure>
-                                    <img src="/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
+                                    <img src="/design/playtex/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
                                     <figcaption>
                                         <b>IDEAL BEAUTY</b>
                                         <p>
@@ -164,7 +164,7 @@
                             <strong>PLAY</strong>
                             <div class="details">
                                 <figure>
-                                    <img src="/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
+                                    <img src="/design/playtex/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
                                     <figcaption>
                                         <b>PLAY</b>
                                         <p>
@@ -181,7 +181,7 @@
                             <strong>UNDER COVER</strong>
                             <div class="details">
                                 <figure>
-                                    <img src="/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
+                                    <img src="/design/playtex/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
                                     <figcaption>
                                         <b>UNDER COVER</b>
                                         <p>
@@ -198,7 +198,7 @@
                             <strong>PERFECT SILHOUETTE</strong>
                             <div class="details">
                                 <figure>
-                                    <img src="/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
+                                    <img src="/design/playtex/assets/images/main/line_hover_img01.png" class="img-responsive" alt="">
                                     <figcaption>
                                         <b>PERFECT SILHOUETTE</b>
                                         <p>
@@ -259,7 +259,7 @@
                 <div class="arrivals-list">
                     <div class="section-title">
                         <h3>
-                            <img src="/assets/images/main/new_arrivals_title.png" alt="new arrivals">
+                            <img src="/design/playtex/assets/images/main/new_arrivals_title.png" alt="new arrivals">
                         </h3>
                         <hr>
                     </div>
@@ -267,7 +267,7 @@
                         <li>
                             <a href="#">
                                 <figure>
-                                    <img src="/assets/images/main/best_seller_img01.jpg" class="img-responsive" alt="aa">
+                                    <img src="/design/playtex/assets/images/main/best_seller_img01.jpg" class="img-responsive" alt="aa">
                                     <figcaption>
                                         <p>
                                             플레이텍스 에센셜 노와이어<br>
@@ -286,7 +286,7 @@
                         <li>
                             <a href="#">
                                 <figure>
-                                    <img src="/assets/images/main/best_seller_img02.jpg" class="img-responsive" alt="aa">
+                                    <img src="/design/playtex/assets/images/main/best_seller_img02.jpg" class="img-responsive" alt="aa">
                                     <figcaption>
                                         <p>
                                             플레이텍스 에센셜 노와이어<br>
@@ -305,7 +305,7 @@
                         <li>
                             <a href="#">
                                 <figure>
-                                    <img src="/assets/images/main/best_seller_img03.jpg" class="img-responsive" alt="aa">
+                                    <img src="/design/playtex/assets/images/main/best_seller_img03.jpg" class="img-responsive" alt="aa">
                                     <figcaption>
                                         <p>
                                             플레이텍스 에센셜 노와이어<br>
@@ -361,7 +361,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/main/editors_img01.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/editors_img01.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <p>
                                         플레이텍스 에센셜 노와이어<br>
@@ -381,7 +381,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/main/editors_img02.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/editors_img02.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <p>
                                         플레이텍스 에센셜 노와이어<br>
@@ -401,7 +401,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/main/editors_img03.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/editors_img03.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <p>
                                         플레이텍스 에센셜 노와이어<br>
@@ -421,7 +421,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/main/editors_img04.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/editors_img04.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <p>
                                         플레이텍스 에센셜 노와이어<br>
@@ -440,7 +440,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/main/editors_img05.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/editors_img05.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <p>
                                         플레이텍스 에센셜 노와이어<br>
@@ -460,7 +460,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/main/editors_img06.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/editors_img06.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <p>
                                         플레이텍스 에센셜 노와이어<br>
@@ -480,7 +480,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/main/editors_img07.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/editors_img07.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <p>
                                         플레이텍스 에센셜 노와이어<br>
@@ -500,7 +500,7 @@
                     <li class="col-xs-3">
                         <a href="#">
                             <figure>
-                                <img src="/assets/images/main/editors_img08.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/editors_img08.jpg" class="img-responsive" alt="">
                                 <figcaption>
                                     <p>
                                         플레이텍스 에센셜 노와이어<br>
@@ -526,17 +526,17 @@
                     <ul class="row">
                         <li class="col-xs-4">
                             <a href="#">
-                                <img src="/assets/images/main/event_img01.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/event_img01.jpg" class="img-responsive" alt="">
                             </a>
                         </li>
                         <li class="col-xs-4">
                             <a href="#">
-                                <img src="/assets/images/main/event_img02.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/event_img02.jpg" class="img-responsive" alt="">
                             </a>
                         </li>
                         <li class="col-xs-4">
                             <a href="#">
-                                <img src="/assets/images/main/event_img03.jpg" class="img-responsive" alt="">
+                                <img src="/design/playtex/assets/images/main/event_img03.jpg" class="img-responsive" alt="">
                             </a>
                         </li>
                     </ul>
@@ -547,8 +547,8 @@
     </main>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
-    <script src="/assets/jquery.bxslider/jquery.bxslider.min.js"></script>
-    <script src="/assets/jquery.animateNumber.min.js"></script>
+    <script src="/design/playtex/assets/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script src="/design/playtex/assets/jquery.animateNumber.min.js"></script>
     <script>
         (function($) {
             $('.jumbotron > ul').bxSlider({
