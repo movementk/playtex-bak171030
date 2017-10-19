@@ -48,6 +48,121 @@
                                     </div>
                                 </a>
 		                    </div>
+		                    <div class="details">
+		                        <ul>
+		                            <li>
+		                                <dl>
+		                                    <dt>수량</dt>
+		                                    <dd>
+		                                        <div class="form-group">
+		                                            <input type="text" id="p-count" class="form-control">
+		                                            <label for="p-count" class="sr-only">수량</label>
+		                                        </div>
+		                                        <p class="count-modify">
+		                                            <a href="#" class="btn btn-xs" role="button">수정</a>
+		                                        </p>
+		                                    </dd>
+		                                </dl>
+		                            </li>
+		                            <li>
+		                                <dl>
+		                                    <dt>가격</dt>
+		                                    <dd>71,900</dd>
+		                                </dl>
+		                            </li>
+		                            <li>
+		                                <dl>
+		                                    <dt>적립금</dt>
+		                                    <dd>630</dd>
+		                                </dl>
+		                            </li>
+		                            <li>
+		                                <dl>
+		                                    <dt>배송비</dt>
+		                                    <dd>[기본배송] 무료</dd>
+		                                </dl>
+		                            </li>
+		                        </ul>
+		                        <div class="details-btn">
+		                            <a href="#" class="btn btn-white" role="button">삭제하기</a>
+		                            <a href="#" class="btn btn-beige" role="button">관심상품</a>
+		                        </div>
+		                    </div>
+		                    <div class="total">
+		                        <p class="purchase">총 구매금액 <b>71,900</b></p>
+		                        <p class="total-pay">총 결제금액 <b>71,900</b>원 <small>적립금<i>980</i>원</small></p>
+		                    </div>
+		                </div>
+		                <div class="btn-area">
+		                    <p>
+		                        <a href="#" class="btn btn-lg" role="button">주문하기</a>
+		                    </p>
+		                    <p>
+		                        <a href="#" class="btn btn-sm" role="button">장바구니 비우기</a>
+		                        <a href="#" class="btn btn-sm" role="button">계속 쇼핑하기</a>
+		                    </p>
+		                </div>
+		            </div>
+		            <div class="interest-product">
+		                <h3>관심상품</h3>
+		                <div class="table-wrap">
+		                    <table class="table">
+		                        <thead>
+		                            <tr>
+		                                <th>
+                                            <p class="checking">
+		                                        <input type="checkbox">
+		                                    </p>
+		                                </th>
+		                                <th>상품명</th>
+		                            </tr>
+		                        </thead>
+		                        <tbody>
+		                            <tr>
+		                                <td>
+		                                    <p class="checking">
+		                                        <input type="checkbox">
+		                                    </p>
+		                                </td>
+		                                <td>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="/design/playtex/mobile/images/mypage/details_info_img.gif" alt="">
+                                                </figure>
+                                                <p class="title">★57%+세컨3종증정★[Playtex]플레이 텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08 </p>
+                                            </a>
+		                                    <div class="details">
+		                                        <ul>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>수량</dt>
+		                                                    <dd>1</dd>
+		                                                </dl>
+		                                            </li>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>재고</dt>
+		                                                    <dd>있음</dd>
+		                                                </dl>
+		                                            </li>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>적립금</dt>
+		                                                    <dd>630</dd>
+		                                                </dl>
+		                                            </li>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>가격</dt>
+		                                                    <dd>71,900</dd>
+		                                                </dl>
+		                                            </li>
+		                                        </ul>
+		                                    </div>
+		                                </td>
+		                            </tr>
+		                        </tbody>
+		                    </table>
 		                </div>
 		            </div>
 		        </div>
