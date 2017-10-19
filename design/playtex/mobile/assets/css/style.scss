@@ -1826,6 +1826,355 @@ label {
 
 
 
+// my page 
+.mypage {
+    .order-nav {
+        margin-bottom: 60px;
+        li {
+            width: 50%;
+            a {
+                font-size: 14px;
+                color: #888;
+                font-weight: 300;
+                text-align: center;
+                line-height: 45px;
+                padding: 0;
+                margin: 0;
+                border-radius: 0;
+                border-color: #ebebeb;
+                border-bottom: 1px solid #333;
+                background: none;
+            }
+            &.active {
+                a {
+                    font-weight: 500;
+                    color: #333;
+                    border-color: #333;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+            &:nth-of-type(1) {
+                a {
+                    border-right: 0;
+                }
+                &.active {
+                    border-right: 1px solid #333;
+                }
+            }
+            &:nth-of-type(2) {
+                a {
+                    border-left: 0;
+                }
+                &.active {
+                    border-left: 1px solid #333;
+                }
+            }
+        }
+    }
+}
+// 공통 
+.mypage-nav {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+    ul {
+        font-size: 0;
+        li {
+            display: inline-block;
+            width: 33.33%;
+            vertical-align: top;
+            a {
+                position: relative;
+                text-align: center;
+                display: block;
+                font-size: 13px;
+                color: #666;
+                line-height: 16px;
+                font-weight: 300;
+                padding: 14px 0;
+                z-index: 99;
+                border-right: 1px solid #b5b5b5;
+                border-bottom: 1px solid #b5b5b5;
+            }
+            &.space {
+                a {
+                    padding: 6px 0;
+                }
+            }
+            &:nth-of-type(1) {
+                a {
+                    border-top: 1px solid #b5b5b5;
+                }
+            }
+            &:nth-of-type(2) {
+                a {
+                    border-top: 1px solid #b5b5b5;
+                }
+            }
+            &:nth-of-type(3) {
+                a {
+                    border-top: 1px solid #b5b5b5;
+                }
+            }
+            &.active {
+                a {
+                    color: #fff;
+                    border-color: #2b2b2b;
+                    background-color: #2b2b2b;
+                }
+            }
+            &:nth-of-type(3n + 1) {
+                a {
+                    border-left: 1px solid #b5b5b5;
+                }
+                &.active {
+                    border-color: #2b2b2b;
+                    a {
+                        border-left: 1px solid #2b2b2b;
+                    }
+                }
+            }
+            &:nth-of-type(3n + 2) {
+                &.active {
+                    a {
+                        margin-left: -1px;
+                    }
+                }
+            }
+            &:nth-of-type(3n + 3) {
+                &.active {
+                    a {
+                        margin-left: -1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 주문 리스트
+.order-list {
+    padding-bottom: 100px;
+    .order-info {
+        border-top: 1px solid #8d8d8d;
+        .list {
+            > li {
+                padding: 30px 0;
+                border-bottom: 1px solid #ccc;
+                .p-title {
+                    font-size: 14px;
+                    color: #333;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-bottom: 30px;
+                }
+                dl {
+                    overflow: hidden;
+                    dt {
+                        float: left;
+                        clear: both;
+                        font-size: 13px;
+                        color: #777;
+                        font-weight: 400;
+                        line-height: 24px;
+                        &:after {
+                            content: ":";
+                            padding: 0 4px;
+                        }
+                    }
+                    dd {
+                        float: left;
+                        font-size: 13px;
+                        color: #777;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+                .inquire-btn {
+                    float: right;
+                    > .btn {
+                        width: 80px;
+                        height: 30px;
+                        display: block;
+                        font-size: 12px;
+                        color: #fff;
+                        font-weight: 300;
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &.btn-gray {
+                            background-color: #999;
+                        }
+                        &.btn-beige {
+                            background-color: #998675;
+                        }
+                    }
+                }
+            }
+        }
+        .paging {
+            margin-top: 30px;
+        }
+        .attention {
+            margin-top: 30px;
+            > ul {
+                li {
+                    & ~ li {
+                        margin-top: 20px;
+                    }
+                    position: relative;
+                    font-size: 13px;
+                    color: #666;
+                    font-weight: 300;
+                    line-height: 24px;
+                    padding-left: 25px;
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 15px;
+                        color: #998675;
+                        content: "\E808";
+                        font-family: "fontello";
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 주문 상세
+.order-details {
+    .page-header {
+        .summary {
+            b {
+                font-weight: 400;
+                color: #a67c52;
+                &:before {
+                    content: "[";
+                    padding-right: 3px;
+                }
+                &:after {
+                    content: "]";
+                    padding-left: 3px;
+                }
+            }
+        }
+    }
+    section {
+        .section-content {
+            padding-bottom: 100px;
+            article {
+                & ~ article {
+                    margin-top: 50px;
+                }
+                h3 {
+                    font-size: 15px;
+                    color: #222;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+                .table-wrap {
+                    .table {
+                        margin: 0;
+                        border: 0;
+                        border-top: 2px solid #000;
+                        tbody {
+                            tr {
+                                th {
+                                    font-size: 13px;
+                                    width: 120px;
+                                    color: #333;
+                                    font-weight: 400;
+                                    vertical-align: middle;
+                                    padding-left: 10px;
+                                    border: 0;
+                                    border-bottom: 1px solid #dfdfdf;
+                                    background-color: #f8f8f8;
+                                }
+                                td {
+                                    padding: 20px 10px;
+                                    font-size: 13px;
+                                    color: #666;
+                                    font-weight: 300;
+                                    vertical-align: middle;
+                                    border: 0;
+                                    border-bottom: 1px solid #dfdfdf;
+                                }
+                            }
+                        }
+                    }
+                }
+                .info-content {
+                    border-top: 2px solid #000;
+                    padding-top: 30px;
+                    .p-title {
+                        font-size: 14px;
+                        color: #333;
+                        font-weight: 400;
+                        line-height: 24px;
+                        margin-left: -10px;
+                    }
+                    .details {
+                        margin-top: 25px;
+                        ul {
+                            li {
+                                dl {
+                                    dt {
+                                        
+                                    }
+                                    dd {
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
