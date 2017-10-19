@@ -10,6 +10,10 @@
 	font-family: 'Lato', sans-serif;
 }
 
+@mixin playfd() {
+	font-family: 'Playfair Display', serif;
+}
+
 .noto {
 	@include noto();
 }
@@ -20,6 +24,10 @@
 
 .lato {
 	@include maven();
+}
+
+.playfd {
+	@include playfd();
 }
 
 h1, h2, h3,h4, h5, h6 {

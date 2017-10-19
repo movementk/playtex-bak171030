@@ -7,6 +7,7 @@
 	<title>플레이텍스</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 	<link href="//fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
 	<link href="/design/playtex/mobile/fontello/css/fontello.css" rel="stylesheet">
 	<link href="/design/playtex/mobile/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
