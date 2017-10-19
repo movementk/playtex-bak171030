@@ -88,10 +88,10 @@ a {
           background-repeat: no-repeat;
           background-position: 50% 50%; }
           #header .util ul li a.cart {
-            background-image: url(/design/playtex/mobile/assets/images/ico_bag.png);
+            background-image: url(/design/playtex/mobile/images/ico_bag.png);
             background-size: auto 23px; }
           #header .util ul li a.search {
-            background-image: url(/design/playtex/mobile/assets/images/ico_magnifier.png);
+            background-image: url(/design/playtex/mobile/images/ico_magnifier.png);
             background-size: auto 20.33333333px; }
           #header .util ul li a.menu {
             padding-top: 17px;
@@ -825,7 +825,7 @@ label {
   margin: 0;
   margin-bottom: 25px;
   padding: 55px 0;
-  background-image: url(/design/playtex/mobile/assets/images/item/page_header_bra.jpg);
+  background-image: url(/design/playtex/mobile/images/item/page_header_bra.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover; }

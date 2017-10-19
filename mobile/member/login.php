@@ -54,7 +54,7 @@
                                     <li class="col-xs-4">
                                         <a href="/mobile/member/join.php" class="join">
                                             <p class="figure">
-                                                <img src="/design/playtex/mobile/assets/images/member/icon_join.gif" alt="">
+                                                <img src="/design/playtex/mobile/images/member/icon_join.gif" alt="">
                                             </p>
                                             <p class="details">회원가입</p>
                                         </a>
@@ -62,7 +62,7 @@
                                     <li class="col-xs-4">
                                         <a href="/mobile/member/find_for.php" class="id-find">
                                             <p class="figure">
-                                                <img src="/design/playtex/mobile/assets/images/member/icon_id_find.gif" alt="">
+                                                <img src="/design/playtex/mobile/images/member/icon_id_find.gif" alt="">
                                             </p>
                                             <p class="details">아이디찾기</p>
                                         </a>
@@ -70,7 +70,7 @@
                                     <li class="col-xs-4">
                                         <a href="/mobile/member/find_for.php" class="pw-find">
                                             <p class="figure">
-                                                <img src="/design/playtex/mobile/assets/images/member/icon_pw_find.gif" alt="">
+                                                <img src="/design/playtex/mobile/images/member/icon_pw_find.gif" alt="">
                                             </p>
                                             <p class="details">비밀번호 찾기</p>
                                         </a>
@@ -80,13 +80,13 @@
                             <div class="sns-login">
                                 <p>
                                     <a href="#" class="btn btn-lg facebook" role="button">
-                                        <img src="/design/playtex/mobile/assets/images/member/icon_facebook.gif" alt=""> 페이스북으로 로그인
+                                        <img src="/design/playtex/mobile/images/member/icon_facebook.gif" alt=""> 페이스북으로 로그인
                                     </a>
                                     <a href="#" class="btn btn-lg naver" role="button">
-                                        <img src="/design/playtex/mobile/assets/images/member/icon_naver.gif" alt=""> 네이버로 로그인
+                                        <img src="/design/playtex/mobile/images/member/icon_naver.gif" alt=""> 네이버로 로그인
                                     </a>
                                     <a href="#" class="btn btn-lg kakao" role="button">
-                                        <img src="/design/playtex/mobile/assets/images/member/icon_kakao.gif" alt=""> 카카오로 로그인
+                                        <img src="/design/playtex/mobile/images/member/icon_kakao.gif" alt=""> 카카오로 로그인
                                     </a>
                                 </p>
                             </div>
@@ -117,7 +117,7 @@
                                     <li class="col-xs-4">
                                         <a href="/mobile/member/join.php" class="join">
                                             <p class="figure">
-                                                <img src="/design/playtex/mobile/assets/images/member/icon_join.gif" alt="">
+                                                <img src="/design/playtex/mobile/images/member/icon_join.gif" alt="">
                                             </p>
                                             <p class="details">회원가입</p>
                                         </a>
@@ -125,7 +125,7 @@
                                     <li class="col-xs-4">
                                         <a href="/mobile/member/find_for.php" class="id-find">
                                             <p class="figure">
-                                                <img src="/design/playtex/mobile/assets/images/member/icon_id_find.gif" alt="">
+                                                <img src="/design/playtex/mobile/images/member/icon_id_find.gif" alt="">
                                             </p>
                                             <p class="details">아이디찾기</p>
                                         </a>
@@ -133,7 +133,7 @@
                                     <li class="col-xs-4">
                                         <a href="/mobile/member/find_for.php" class="pw-find">
                                             <p class="figure">
-                                                <img src="/design/playtex/mobile/assets/images/member/icon_pw_find.gif" alt="">
+                                                <img src="/design/playtex/mobile/images/member/icon_pw_find.gif" alt="">
                                             </p>
                                             <p class="details">비밀번호 찾기</p>
                                         </a>
@@ -143,13 +143,13 @@
                             <div class="sns-login">
                                 <p>
                                     <a href="#" class="btn btn-lg facebook" role="button">
-                                        <img src="/design/playtex/mobile/assets/images/member/icon_facebook.gif" alt=""> 페이스북으로 로그인
+                                        <img src="/design/playtex/mobile/images/member/icon_facebook.gif" alt=""> 페이스북으로 로그인
                                     </a>
                                     <a href="#" class="btn btn-lg naver" role="button">
-                                        <img src="/design/playtex/mobile/assets/images/member/icon_naver.gif" alt=""> 네이버로 로그인
+                                        <img src="/design/playtex/mobile/images/member/icon_naver.gif" alt=""> 네이버로 로그인
                                     </a>
                                     <a href="#" class="btn btn-lg kakao" role="button">
-                                        <img src="/design/playtex/mobile/assets/images/member/icon_kakao.gif" alt=""> 카카오로 로그인
+                                        <img src="/design/playtex/mobile/images/member/icon_kakao.gif" alt=""> 카카오로 로그인
                                     </a>
                                 </p>
                             </div>

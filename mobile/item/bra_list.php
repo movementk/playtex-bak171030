@@ -35,7 +35,7 @@
                             <li>
                                 <a href="#">
                                     <figure>
-                                        <img src="/design/playtex/mobile/assets/images/item/slider_img01.jpg" class="img-responsive" alt="">
+                                        <img src="/design/playtex/mobile/images/item/slider_img01.jpg" class="img-responsive" alt="">
                                         <figcaption>
                                             <small>BEST</small>
                                             <p class="number">01</p>
@@ -55,7 +55,7 @@
                             <li>
                                 <a href="#">
                                     <figure>
-                                        <img src="/design/playtex/mobile/assets/images/item/slider_img01.jpg" class="img-responsive" alt="">
+                                        <img src="/design/playtex/mobile/images/item/slider_img01.jpg" class="img-responsive" alt="">
                                         <figcaption>
                                             <small>BEST</small>
                                             <p class="number">02</p>
@@ -75,7 +75,7 @@
                             <li>
                                 <a href="#">
                                     <figure>
-                                        <img src="/design/playtex/mobile/assets/images/item/slider_img01.jpg" class="img-responsive" alt="">
+                                        <img src="/design/playtex/mobile/images/item/slider_img01.jpg" class="img-responsive" alt="">
                                         <figcaption>
                                             <small>BEST</small>
                                             <p class="number">03</p>
@@ -115,7 +115,7 @@
                             <li>
                                 <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
-                                        <img src="/design/playtex/mobile/assets/images/item/product_list_img01.jpg" class="img-responsive" alt="">
+                                        <img src="/design/playtex/mobile/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                     </p>
                                     <div class="details">
                                         <p class="product-title">플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T </p>
@@ -129,7 +129,7 @@
                             <li>
                                 <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
-                                        <img src="/design/playtex/mobile/assets/images/item/product_list_img02.jpg" class="img-responsive" alt="">
+                                        <img src="/design/playtex/mobile/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                     </p>
                                     <div class="details">
                                         <p class="product-title">플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T </p>
@@ -143,7 +143,7 @@
                             <li>
                                 <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
-                                        <img src="/design/playtex/mobile/assets/images/item/product_list_img01.jpg" class="img-responsive" alt="">
+                                        <img src="/design/playtex/mobile/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                     </p>
                                     <div class="details">
                                         <p class="product-title">플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T </p>
@@ -157,7 +157,7 @@
                             <li>
                                 <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
-                                        <img src="/design/playtex/mobile/assets/images/item/product_list_img02.jpg" class="img-responsive" alt="">
+                                        <img src="/design/playtex/mobile/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                     </p>
                                     <div class="details">
                                         <p class="product-title">플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T </p>
@@ -171,7 +171,7 @@
                             <li>
                                 <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
-                                        <img src="/design/playtex/mobile/assets/images/item/product_list_img01.jpg" class="img-responsive" alt="">
+                                        <img src="/design/playtex/mobile/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                     </p>
                                     <div class="details">
                                         <p class="product-title">플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T </p>
@@ -185,7 +185,7 @@
                             <li>
                                 <a href="/mobile/item/bra_view.php">
                                     <p class="figure">
-                                        <img src="/design/playtex/mobile/assets/images/item/product_list_img02.jpg" class="img-responsive" alt="">
+                                        <img src="/design/playtex/mobile/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                     </p>
                                     <div class="details">
                                         <p class="product-title">플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T </p>
@@ -241,7 +241,7 @@
 	</main>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/footer.php"); ?>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/docfoot.php"); ?>
-	<script src="/design/playtex/mobile/assets/jquery.bxslider/jquery.bxslider.min.js"></script>
+	<script src="/design/playtex/mobile/jquery.bxslider/jquery.bxslider.min.js"></script>
     <script>
         (function($) {
             $('.best-product > ul').bxSlider({

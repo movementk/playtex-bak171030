@@ -14,7 +14,7 @@
                         <span class="new">NEW</span>
                     </h3>
                     <figure>
-                        <img src="/design/playtex/mobile/assets/images/item/view_header_img.jpg" class="img-responsive" alt="">
+                        <img src="/design/playtex/mobile/images/item/view_header_img.jpg" class="img-responsive" alt="">
                     </figure>
                 </div>
                 <div class="view-details">
@@ -115,7 +115,7 @@
                     </p>
                 </div>
                 <div class="naver-pay">
-                    <img src="/design/playtex/mobile/assets/images/item/n_pay_area.gif" class="img-responsive" alt="">
+                    <img src="/design/playtex/mobile/images/item/n_pay_area.gif" class="img-responsive" alt="">
                 </div>
             </article>
             <article class="product-detils">
@@ -345,7 +345,7 @@
                         <li>
                             <a href="/mobile/item/bra_view.php">
                                 <p class="figure">
-                                    <img src="/design/playtex/mobile/assets/images/item/product_list_img01.jpg" class="img-responsive" alt="">
+                                    <img src="/design/playtex/mobile/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                 </p>
                                 <div class="details">
                                     <p class="product-title">플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T </p>
@@ -359,7 +359,7 @@
                         <li>
                             <a href="/mobile/item/bra_view.php">
                                 <p class="figure">
-                                    <img src="/design/playtex/mobile/assets/images/item/product_list_img02.jpg" class="img-responsive" alt="">
+                                    <img src="/design/playtex/mobile/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                 </p>
                                 <div class="details">
                                     <p class="product-title">플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T </p>
@@ -373,7 +373,7 @@
                         <li>
                             <a href="/mobile/item/bra_view.php">
                                 <p class="figure">
-                                    <img src="/design/playtex/mobile/assets/images/item/product_list_img01.jpg" class="img-responsive" alt="">
+                                    <img src="/design/playtex/mobile/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                 </p>
                                 <div class="details">
                                     <p class="product-title">플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T </p>
@@ -387,7 +387,7 @@
                         <li>
                             <a href="/mobile/item/bra_view.php">
                                 <p class="figure">
-                                    <img src="/design/playtex/mobile/assets/images/item/product_list_img02.jpg" class="img-responsive" alt="">
+                                    <img src="/design/playtex/mobile/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                 </p>
                                 <div class="details">
                                     <p class="product-title">플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T </p>
