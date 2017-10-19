@@ -3,42 +3,55 @@
 <body class="mypage">
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/header.php"); ?>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/nav.php"); ?>
-	<main id="content" class="mileage">
+	<main id="content" class="inquiry-list">
 		<div class="page-header">
-		    <h2 class="title">Mileage</h2>
+		    <h2 class="title">Inquiry</h2>
 		</div>
         <nav class="mypage-nav">
             <div class="container">
                 <ul>
                     <li class="space"><a href="/mobile/mypage/order_list.php">주문내역/<br>배송조회</a></li>
-                    <li class="active"><a href="/mobile/mypage/mileage.php">적립금</a></li>
+                    <li><a href="/mobile/mypage/mileage.php">적립금</a></li>
                     <li><a href="/mobile/mypage/coupon.php">할인쿠폰</a></li>
                     <li><a href="/mobile/mypage/wish_list.php">위시리스트</a></li>
                     <li><a href="/mobile/mypage/viewed_items.php">최근 본 상품</a></li>
                     <li><a href="#">Q&amp;A</a></li>
-                    <li><a href="/mobile/mypage/inquiry_list.php">1:1 문의</a></li>
+                    <li class="active"><a href="/mobile/mypage/inquiry_list.php">1:1 문의</a></li>
                     <li><a href="/mobile/mypage/pw_confirm.php">회원정보 수정</a></li>
                     <li><a href="/mobile/mypage/cart_list.php">장바구니</a></li>
                 </ul>
             </div>
         </nav>
         <div class="container">
-		    <article class="mileage-info">
+		    <article>
 		        <ul class="list">
 		            <li>
-		                <h3 class="m-title">관리자가 임의로 적립금 수정(우수고객등)</h3>
-		                <p class="date">2017-08-01</p>
-		                <p class="mileage-pay">5,000</p>
+                        <a href="/mobile/mypage/inquiry_view.php">
+                            <h3 class="title">[배송문의] 언제 배송 받을까요 ㅠㅠ</h3>
+                            <p class="date">2017-08-01</p>
+                            <p class="reply waiting">답변대기</p>
+		                </a>
 		            </li>
 		            <li>
-		                <h3 class="m-title">관리자가 임의로 적립금 수정(우수고객등)</h3>
-		                <p class="date">2017-08-01</p>
-		                <p class="mileage-pay minus">3,000</p>
+                        <a href="/mobile/mypage/inquiry_view.php">
+                            <h3 class="title">[상품문의] 그럼 이렇게 주문하면 괜찮을까요?</h3>
+                            <p class="date">2017-08-01</p>
+                            <p class="reply">답변완료</p>
+		                </a>
 		            </li>
 		            <li>
-		                <h3 class="m-title">추천인 적립금입니다.</h3>
-		                <p class="date">2017-08-01</p>
-		                <p class="mileage-pay">3,000</p>
+                        <a href="/mobile/mypage/inquiry_view.php">
+                            <h3 class="title">[상품문의] 그럼 이렇게 주문하면 괜찮을까요?</h3>
+                            <p class="date">2017-08-01</p>
+                            <p class="reply">답변완료</p>
+		                </a>
+		            </li>
+		            <li>
+                        <a href="/mobile/mypage/inquiry_view.php">
+                            <h3 class="title">[상품문의] 그럼 이렇게 주문하면 괜찮을까요?</h3>
+                            <p class="date">2017-08-01</p>
+                            <p class="reply">답변완료</p>
+		                </a>
 		            </li>
 		        </ul>
 		        <nav class="paging" aria-label="Page navigation">
@@ -78,19 +91,6 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="attention">
-                    <ul>
-                        <li>
-                            적립된 금액이 0원 이상 누적되었을 때, 사용하실 수 있습니다.
-                        </li>
-                        <li>
-                            결제 시 적립금 사용 여부를 확인할 수 있는 안내문이 나옵니다.
-                        </li>
-                        <li>
-                            플레이텍스몰의 회원등급 유지기간은 해당연도 까지 이며, 매년 1월 1일 적립금은 소멸되어 회원등급은 신규회원으로 리셋됩니다.
-                        </li>
-                    </ul>
-                </div>
 		    </article>
         </div>
 	</main>

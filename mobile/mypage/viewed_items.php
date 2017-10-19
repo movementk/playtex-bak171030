@@ -3,9 +3,9 @@
 <body class="mypage">
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/header.php"); ?>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/nav.php"); ?>
-	<main id="content" class="wish-list">
+	<main id="content" class="viewed-items">
 		<div class="page-header">
-		    <h2 class="title">Wish List</h2>
+		    <h2 class="title">Viewed Items</h2>
 		</div>
         <nav class="mypage-nav">
             <div class="container">
@@ -13,8 +13,8 @@
                     <li class="space"><a href="/mobile/mypage/order_list.php">주문내역/<br>배송조회</a></li>
                     <li><a href="/mobile/mypage/mileage.php">적립금</a></li>
                     <li><a href="/mobile/mypage/coupon.php">할인쿠폰</a></li>
-                    <li class="active"><a href="/mobile/mypage/wish_list.php">위시리스트</a></li>
-                    <li><a href="/mobile/mypage/viewed_items.php">최근 본 상품</a></li>
+                    <li><a href="/mobile/mypage/wish_list.php">위시리스트</a></li>
+                    <li class="active"><a href="/mobile/mypage/viewed_items.php">최근 본 상품</a></li>
                     <li><a href="#">Q&amp;A</a></li>
                     <li><a href="/mobile/mypage/inquiry_list.php">1:1 문의</a></li>
                     <li><a href="/mobile/mypage/pw_confirm.php">회원정보 수정</a></li>
@@ -61,7 +61,6 @@
                             <div class="btn-area">
                                 <p>
                                     <a href="#" class="btn btn-gray" role="button">장바구니 담기</a>
-                                    <a href="#" class="btn btn-beige" role="button">삭제하기</a>
                                 </p>
                             </div>
                         </div>
@@ -94,7 +93,6 @@
                             <div class="btn-area">
                                 <p>
                                     <a href="#" class="btn btn-gray" role="button">장바구니 담기</a>
-                                    <a href="#" class="btn btn-beige" role="button">삭제하기</a>
                                 </p>
                             </div>
                         </div>
@@ -127,7 +125,6 @@
                             <div class="btn-area">
                                 <p>
                                     <a href="#" class="btn btn-gray" role="button">장바구니 담기</a>
-                                    <a href="#" class="btn btn-beige" role="button">삭제하기</a>
                                 </p>
                             </div>
                         </div>
