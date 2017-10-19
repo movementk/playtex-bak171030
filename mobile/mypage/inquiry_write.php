@@ -17,7 +17,7 @@
                     <li><a href="/mobile/mypage/viewed_items.php">최근 본 상품</a></li>
                     <li><a href="#">Q&amp;A</a></li>
                     <li class="active"><a href="/mobile/mypage/inquiry_list.php">1:1 문의</a></li>
-                    <li><a href="/mobile/mypage/profile_modify.php">회원정보 수정</a></li>
+                    <li><a href="/mobile/mypage/pw_confirm.php">회원정보 수정</a></li>
                     <li><a href="/mobile/mypage/cart_list.php">장바구니</a></li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
                                     <th><label for="subject">제목</label></th>
                                     <td>
                                         <div class="form-group">
-                                            <input type="text" id="u-phone" class="form-control">
+                                            <input type="text" id="subject" class="form-control">
                                         </div>
                                     </td>
                                 </tr>
@@ -91,7 +91,10 @@
                         </table>
                     </div>
                     <div class="btn-area">
-
+                        <p>
+                            <a href="#" class="btn btn-gray" role="button">취소</a>
+                            <button type="submit" class="btn btn-black">등록하기</button>
+                        </p>
                     </div>
                 </form>
             </article>

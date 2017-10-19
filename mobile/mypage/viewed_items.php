@@ -17,7 +17,7 @@
                     <li class="active"><a href="/mobile/mypage/viewed_items.php">최근 본 상품</a></li>
                     <li><a href="#">Q&amp;A</a></li>
                     <li><a href="/mobile/mypage/inquiry_list.php">1:1 문의</a></li>
-                    <li><a href="/mobile/mypage/profile_modify.php">회원정보 수정</a></li>
+                    <li><a href="/mobile/mypage/pw_confirm.php">회원정보 수정</a></li>
                     <li><a href="/mobile/mypage/cart_list.php">장바구니</a></li>
                 </ul>
             </div>
