@@ -31,6 +31,10 @@ a {
 
 .container {
     padding: 0 10px;
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
 }
 #header {
 	position: fixed;
@@ -2121,13 +2125,138 @@ label {
                         margin-top: 25px;
                         ul {
                             li {
+                                & ~ li {
+                                    margin-top: 5px;
+                                }
                                 dl {
+                                    overflow: hidden;
                                     dt {
-                                        
+                                        float: left;
+                                        clear: both;
+                                        font-size: 13px;
+                                        color: #777;
+                                        font-weight: 400;
+                                        line-height: 30px;
+                                        &:after {
+                                            content: ":";
+                                            padding: 0 3px;
+                                        }
                                     }
                                     dd {
-                                        
+                                        float: left;
+                                        font-size: 13px;
+                                        color: #777;
+                                        font-weight: 400;
+                                        line-height: 30px;
+                                        .form-group {
+                                            .form-control {
+                                                width: 50px;
+                                                height: 30px;
+                                                margin-left: 10px;
+                                            }
+                                        }
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+                .total-pay {
+                    text-align: right;
+                    padding: 15px 10px;
+                    border-top: 1px solid #dfdfdf;
+                    border-bottom: 1px solid #dfdfdf;
+                    background-color: #f1f1f1;
+                    p {
+                        & ~ p {
+                            margin-top: 10px;
+                        }
+                        b {
+                            @include maven();
+                        }
+                        &.summary {
+                            font-size: 13px;
+                            color: #666;
+                            font-weight: 300;
+                            b {
+                                font-weight: 500;
+                            }
+                        }
+                        &.amount {
+                            font-size: 14px;
+                            color: #2b2b2b;
+                            font-weight: 400;
+                            b {
+                                font-size: 16px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                &.payment-info {
+                    .table-wrap {
+                        .table {
+                            table-layout: fixed;
+                            thead {
+                                tr {
+                                    th {
+                                        font-size: 13px;
+                                        color: #333;
+                                        font-weight: 400;
+                                        vertical-align: middle;
+                                        padding: 20px 5px;
+                                        text-align: center;
+                                        background-color: #fff;
+                                        border: 0;
+                                        border-bottom: 1px solid #dfdfdf;
+                                    }
+                                }
+                            }
+                            tbody {
+                                tr {
+                                    td {
+                                        text-align: center;
+                                        padding-left: 5px;
+                                        padding-right: 5px;
+                                        b {
+                                            font-weight: 500;
+                                            @include maven();
+                                        }
+                                        &:first-child {
+                                            color: #333;
+                                            font-weight: 400;
+                                            background-color: #f8f8f8;
+                                        }
+                                    }
+                                    &:last-child {
+                                        td {
+                                            color: #a67c52;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btn-area {
+                        margin-top: 30px;
+                        text-align: center;
+                        p {
+                            font-size: 0;
+                            .btn {
+                                display: inline-block;
+                                color: #fff;
+                                width: 145px;
+                                line-height: 45px;
+                                border: 0;
+                                margin-right: 10px;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                &.btn-gray {
+                                    background-color: #999;
+                                }
+                                &.btn-black {
+                                    background-color: #333;
                                 }
                             }
                         }
@@ -2138,12 +2267,349 @@ label {
     }
 }
 
+// 후기등록
+.product-review {
+    padding-bottom: 100px;
+    section {
+        .section-content {
+            .order-info {
+                padding: 30px 0 35px;
+                border-top: 2px solid #000;
+                border-bottom: 1px solid #dfdfdf;
+                .p-title {
+                    font-size: 14px;
+                    color: #333;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-left: -10px;
+                }
+                .details {
+                    position: relative;
+                    margin-top: 25px;
+                    ul {
+                        li {
+                            & ~ li {
+                                margin-top: 10px;
+                            }
+                            dl {
+                                overflow: hidden;
+                                dt {
+                                    float: left;
+                                    clear: both;
+                                    font-size: 13px;
+                                    color: #777;
+                                    font-weight: 400;
+                                    line-height: 30px;
+                                    &:after {
+                                        content: ":";
+                                        padding: 0 3px;
+                                    }
+                                }
+                                dd {
+                                    float: left;
+                                    font-size: 13px;
+                                    color: #777;
+                                    font-weight: 400;
+                                    line-height: 30px;
+                                    .form-group {
+                                        .form-control {
+                                            width: 50px;
+                                            height: 30px;
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .review-btn {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        .btn-sm {
+                            width: 80px;
+                            line-height: 30px;
+                            color: #fff;
+                            background-color: #999;
+                        }
+                    }
+                }
+            }
+            .review-write {
+                margin-top: 50px;
+                h3 {
+                    font-size: 15px;
+                    color: #222;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+                .table-wrap {
+                    .table {
+                        margin: 0;
+                        border: 0;
+                        border-top: 2px solid #000;
+                        tbody {
+                            tr {
+                                th {
+                                    font-size: 13px;
+                                    width: 90px;
+                                    color: #333;
+                                    font-weight: 400;
+                                    vertical-align: middle;
+                                    padding-left: 10px;
+                                    border: 0;
+                                    border-bottom: 1px solid #dfdfdf;
+                                    background-color: #f8f8f8;
+                                    label {
+                                        font-weight: 400;
+                                    }
+                                    &.v-align {
+                                        vertical-align: top;
+                                        padding-top: 20px;
+                                    }
+                                }
+                                td {
+                                    height: 56px;
+                                    font-size: 13px;
+                                    color: #666;
+                                    font-weight: 300;
+                                    vertical-align: middle;
+                                    padding: 10px;
+                                    border: 0;
+                                    border-bottom: 1px solid #dfdfdf;
+                                    .form-group {
+                                        .form-control {
+                                            height: 35px;
+                                        }
+                                        textarea {
+                                            height: 130px !important;
+                                        }
+                                    }
+                                    &.grade {
+                                        padding: 20px 10px;
+                                        .form-group {
+                                            label {
+                                                & ~ label {
+                                                    margin-top: 5px;
+                                                }
+                                                display: block;
+                                                i {
+                                                    color: #f0c419;
+                                                    &:before {
+                                                        margin: 0;
+                                                    }
+                                                }
+                                                input {
+                                                    position: relative;
+                                                    top: 2px;
+                                                    margin-right: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.file {
+                                        .form-group {
+                                            position: relative;
+                                            padding-right: 90px;
+                                            label {
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 85px;
+                                                height: 35px;
+                                                color: #fff;
+                                                text-align: center;
+                                                line-height: 35px;
+                                                background-color: #999;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-area {
+                    text-align: center;
+                    margin-top: 30px;
+                    p {
+                        font-size: 0;
+                        .btn {
+                            width: 145px;
+                            line-height: 45px;
+                            font-size: 14px;
+                            color: #fff;
+                            margin-right: 10px;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            &.btn-gray {
+                                background-color: #999;
+                            }
+                            &.btn-black {
+                                background-color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+// 적립금 
+.mileage {
+    padding-bottom: 90px;
+    .mileage-info {
+        border-top: 2px solid #000;
+        .list {
+            li {
+                font-size: 0;
+                padding: 20px 0;
+                border-bottom: 1px solid #dfdfdf;
+                .m-title {
+                    font-size: 13px;
+                    color: #666;
+                    font-weight: 300;
+                    margin-bottom: 15px;
+                }
+                p {
+                    display: inline-block;
+                    width: 50%;
+                    font-size: 13px;
+                    color: #666;
+                    font-weight: 500;
+                    @include maven();
+                    &.date {
+                        text-align: left;
+                    }
+                    &.mileage-pay {
+                        text-align: right;
+                    }
+                    &.minus {
+                        color: #e61937;
+                        &:before {
+                            content: "-";
+                        }
+                    }
+                }
+            }
+        }
+        .paging {
+            margin-top: 40px;
+        }
+        .attention {
+            margin-top: 50px;
+            > ul {
+                li {
+                    & ~ li {
+                        margin-top: 20px;
+                    }
+                    position: relative;
+                    font-size: 13px;
+                    color: #666;
+                    font-weight: 300;
+                    line-height: 24px;
+                    padding-left: 25px;
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 15px;
+                        color: #998675;
+                        content: "\E808";
+                        font-family: "fontello";
+                    }
+                }
+            }
+        }
+    }
+}
 
+// 할인쿠폰 
+.coupon {
+    padding-bottom: 90px;
+    .coupon-info {
+        border-top: 2px solid #000;
+        .list {
+            li {
+                font-size: 0;
+                padding: 25px 0;
+                border-bottom: 1px solid #dfdfdf;
+                .c-title {
+                    font-size: 15px;
+                    color: #333;
+                    font-weight: 400;
+                    margin-bottom: 30px;
+                }
+                dl {
+                    overflow: hidden;
+                    dt {
+                        float: left;
+                        clear: both;
+                        font-size: 13px;
+                        color: #777;
+                        line-height: 24px;
+                        font-weight: 400;
+                        &:after {
+                            content: ":";
+                            padding: 0 3px;
+                        }
+                    }
+                    dd {
+                        float: left;
+                        font-size: 13px;
+                        color: #777;
+                        line-height: 24px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        .paging {
+            margin-top: 40px;
+        }
+        .attention {
+            margin-top: 50px;
+            h4 {
+                font-size: 15px;
+                color: #2b2b2b;
+                font-weight: 400;
+                margin-bottom: 20px;
+                & ~ h4 {
+                    margin-top: 60px;
+                }
+            }
+            > ul {
+                li {
+                    & ~ li {
+                        margin-top: 15px;
+                    }
+                    position: relative;
+                    font-size: 13px;
+                    color: #666;
+                    font-weight: 300;
+                    line-height: 24px;
+                    padding-left: 25px;
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 15px;
+                        color: #998675;
+                        content: "\E808";
+                        font-family: "fontello";
+                    }
+                }
+            }
+        }
+    }
+}
 
-
-
-
+// 위시리스트
+.wish-list {
+    padding-bottom: 100px;
+}
 
 
 
