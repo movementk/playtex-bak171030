@@ -14,26 +14,111 @@
 				<li><a href="#"><img class="img-responsive" src="/design/playtex/mobile/images/main/img_visual.jpg" alt=""></a></li>
 			</ul>
 		</div>
-		<section id="best-seller">
-			<div class="container">
-				<header>
-					<h4>Best Seller</h4>
-					<ul>
-						<li><a href="#">1<span class="sr-only">1열로 보기</span></a></li>
-						<li><a href="#">2<span class="sr-only">2열로 보기</span></a></li>
-						<li><a href="#">3<span class="sr-only">3열로 보기</span></a></li>
-					</ul>
-				</header>
-				<ul class="row">
-					<li class="col-xs-12">
-						<a href="#">
-							<figure>
-								<p></p>
-							</figure>
-						</a>
-					</li>
+		<section id="best-seller" class="product-content">
+			<header>
+				<h4>Best Seller</h4>
+				<ul class="sorter">
+					<li><a class="column column-1 selected" href="#"><span class="sr-only">1열로 보기</span></a></li>
+					<li><a class="column column-2" href="#"><span class="sr-only">2열로 보기</span></a></li>
+					<li><a class="column column-3" href="#"><span class="sr-only">3열로 보기</span></a></li>
 				</ul>
-			</div>
+			</header>
+			<ul class="product-list product-list-1">
+				<li>
+					<a class="product-item" href="#">
+						<figure>
+							<img class="img-responsive" src="/design/playtex/mobile/images/main/img_product.jpg">
+							<figcaption>
+								<h5>플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T 플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T</h5>
+								<p class="category">
+									<span class="label label-hot">HOT</span>
+								</p>
+								<p class="price">
+									39,000
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+			<a class="more" href="#">더보기 +</a>
+		</section>
+		<section id="new-arrivals" class="product-content">
+			<header>
+				<h4>New Arrivals</h4>
+				<ul class="sorter">
+					<li><a class="column column-1" href="#"><span class="sr-only">1열로 보기</span></a></li>
+					<li><a class="column column-2 selected" href="#"><span class="sr-only">2열로 보기</span></a></li>
+					<li><a class="column column-3" href="#"><span class="sr-only">3열로 보기</span></a></li>
+				</ul>
+			</header>
+			<ul class="product-list product-list-2">
+				<li>
+					<a class="product-item" href="#">
+						<figure>
+							<img class="img-responsive" src="/design/playtex/mobile/images/main/img_product.jpg">
+							<figcaption>
+								<h5>플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T 플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T</h5>
+								<p class="category">
+									<span class="label label-hot">HOT</span>
+								</p>
+								<p class="price">
+									39,000
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a class="product-item" href="#">
+						<figure>
+							<img class="img-responsive" src="/design/playtex/mobile/images/main/img_product.jpg">
+							<figcaption>
+								<h5>플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T</h5>
+								<p class="category">
+									<span class="label label-hot">HOT</span>
+								</p>
+								<p class="price">
+									39,000
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a class="product-item" href="#">
+						<figure>
+							<img class="img-responsive" src="/design/playtex/mobile/images/main/img_product.jpg">
+							<figcaption>
+								<h5>플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T 플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T</h5>
+								<p class="category">
+									<span class="label label-hot">HOT</span>
+								</p>
+								<p class="price">
+									39,000
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a class="product-item" href="#">
+						<figure>
+							<img class="img-responsive" src="/design/playtex/mobile/images/main/img_product.jpg">
+							<figcaption>
+								<h5>플레이텍스 에센셜 노와이어 브라팬티 4종 PXW7E2527_T</h5>
+								<p class="category">
+									<span class="label label-hot">HOT</span>
+								</p>
+								<p class="price">
+									39,000
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+			<a class="more" href="#">더보기 +</a>
 		</section>
 	</main>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/footer.php"); ?>
