@@ -11,14 +11,14 @@
             <div class="container">
                 <ul>
                     <li class="active space"><a href="/mobile/mypage/order_list.php">주문내역/<br>배송조회</a></li>
-                    <li><a href="#">적립금</a></li>
-                    <li><a href="#">할인쿠폰</a></li>
-                    <li><a href="#">위시리스트</a></li>
-                    <li><a href="#">최근 본 상품</a></li>
+                    <li><a href="/mobile/mypage/mileage.php">적립금</a></li>
+                    <li><a href="/mobile/mypage/coupon.php">할인쿠폰</a></li>
+                    <li><a href="/mobile/mypage/wish_list.php">위시리스트</a></li>
+                    <li><a href="/mobile/mypage/viewed_items.php">최근 본 상품</a></li>
                     <li><a href="#">Q&amp;A</a></li>
-                    <li><a href="#">1:1 문의</a></li>
-                    <li><a href="#">회원정보 수정</a></li>
-                    <li><a href="#">장바구니</a></li>
+                    <li><a href="/mobile/mypage/inquiry_list.php">1:1 문의</a></li>
+                    <li><a href="/mobile/mypage/profile_modify.php">회원정보 수정</a></li>
+                    <li><a href="/mobile/mypage/cart_list.php">장바구니</a></li>
                 </ul>
             </div>
         </nav>

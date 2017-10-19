@@ -47,6 +47,9 @@ a {
 
 .container {
   padding: 0 10px; }
+  .container .row {
+    margin-left: -10px;
+    margin-right: -10px; }
 
 #header {
   position: fixed;
@@ -1510,5 +1513,340 @@ label {
       margin-left: -10px; }
     .order-details section .section-content article .info-content .details {
       margin-top: 25px; }
+      .order-details section .section-content article .info-content .details ul li ~ li {
+        margin-top: 5px; }
+      .order-details section .section-content article .info-content .details ul li dl {
+        overflow: hidden; }
+        .order-details section .section-content article .info-content .details ul li dl dt {
+          float: left;
+          clear: both;
+          font-size: 13px;
+          color: #777;
+          font-weight: 400;
+          line-height: 30px; }
+          .order-details section .section-content article .info-content .details ul li dl dt:after {
+            content: ":";
+            padding: 0 3px; }
+        .order-details section .section-content article .info-content .details ul li dl dd {
+          float: left;
+          font-size: 13px;
+          color: #777;
+          font-weight: 400;
+          line-height: 30px; }
+          .order-details section .section-content article .info-content .details ul li dl dd .form-group .form-control {
+            width: 50px;
+            height: 30px;
+            margin-left: 10px; }
+  .order-details section .section-content article .total-pay {
+    text-align: right;
+    padding: 15px 10px;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #f1f1f1; }
+    .order-details section .section-content article .total-pay p ~ p {
+      margin-top: 10px; }
+    .order-details section .section-content article .total-pay p b {
+      font-family: 'Maven Pro', sans-serif; }
+    .order-details section .section-content article .total-pay p.summary {
+      font-size: 13px;
+      color: #666;
+      font-weight: 300; }
+      .order-details section .section-content article .total-pay p.summary b {
+        font-weight: 500; }
+    .order-details section .section-content article .total-pay p.amount {
+      font-size: 14px;
+      color: #2b2b2b;
+      font-weight: 400; }
+      .order-details section .section-content article .total-pay p.amount b {
+        font-size: 16px;
+        font-weight: bold; }
+  .order-details section .section-content article.payment-info .table-wrap .table {
+    table-layout: fixed; }
+    .order-details section .section-content article.payment-info .table-wrap .table thead tr th {
+      font-size: 13px;
+      color: #333;
+      font-weight: 400;
+      vertical-align: middle;
+      padding: 20px 5px;
+      text-align: center;
+      background-color: #fff;
+      border: 0;
+      border-bottom: 1px solid #dfdfdf; }
+    .order-details section .section-content article.payment-info .table-wrap .table tbody tr td {
+      text-align: center;
+      padding-left: 5px;
+      padding-right: 5px; }
+      .order-details section .section-content article.payment-info .table-wrap .table tbody tr td b {
+        font-weight: 500;
+        font-family: 'Maven Pro', sans-serif; }
+      .order-details section .section-content article.payment-info .table-wrap .table tbody tr td:first-child {
+        color: #333;
+        font-weight: 400;
+        background-color: #f8f8f8; }
+    .order-details section .section-content article.payment-info .table-wrap .table tbody tr:last-child td {
+      color: #a67c52; }
+  .order-details section .section-content article.payment-info .btn-area {
+    margin-top: 30px;
+    text-align: center; }
+    .order-details section .section-content article.payment-info .btn-area p {
+      font-size: 0; }
+      .order-details section .section-content article.payment-info .btn-area p .btn {
+        display: inline-block;
+        color: #fff;
+        width: 145px;
+        line-height: 45px;
+        border: 0;
+        margin-right: 10px; }
+        .order-details section .section-content article.payment-info .btn-area p .btn:last-child {
+          margin-right: 0; }
+        .order-details section .section-content article.payment-info .btn-area p .btn.btn-gray {
+          background-color: #999; }
+        .order-details section .section-content article.payment-info .btn-area p .btn.btn-black {
+          background-color: #333; }
+
+.product-review {
+  padding-bottom: 100px; }
+  .product-review section .section-content .order-info {
+    padding: 30px 0 35px;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #dfdfdf; }
+    .product-review section .section-content .order-info .p-title {
+      font-size: 14px;
+      color: #333;
+      font-weight: 400;
+      line-height: 24px;
+      margin-left: -10px; }
+    .product-review section .section-content .order-info .details {
+      position: relative;
+      margin-top: 25px; }
+      .product-review section .section-content .order-info .details ul li ~ li {
+        margin-top: 10px; }
+      .product-review section .section-content .order-info .details ul li dl {
+        overflow: hidden; }
+        .product-review section .section-content .order-info .details ul li dl dt {
+          float: left;
+          clear: both;
+          font-size: 13px;
+          color: #777;
+          font-weight: 400;
+          line-height: 30px; }
+          .product-review section .section-content .order-info .details ul li dl dt:after {
+            content: ":";
+            padding: 0 3px; }
+        .product-review section .section-content .order-info .details ul li dl dd {
+          float: left;
+          font-size: 13px;
+          color: #777;
+          font-weight: 400;
+          line-height: 30px; }
+          .product-review section .section-content .order-info .details ul li dl dd .form-group .form-control {
+            width: 50px;
+            height: 30px;
+            margin-left: 10px; }
+      .product-review section .section-content .order-info .details .review-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+        .product-review section .section-content .order-info .details .review-btn .btn-sm {
+          width: 80px;
+          line-height: 30px;
+          color: #fff;
+          background-color: #999; }
+  .product-review section .section-content .review-write {
+    margin-top: 50px; }
+    .product-review section .section-content .review-write h3 {
+      font-size: 15px;
+      color: #222;
+      font-weight: 400;
+      margin-bottom: 20px; }
+    .product-review section .section-content .review-write .table-wrap .table {
+      margin: 0;
+      border: 0;
+      border-top: 2px solid #000; }
+      .product-review section .section-content .review-write .table-wrap .table tbody tr th {
+        font-size: 13px;
+        width: 90px;
+        color: #333;
+        font-weight: 400;
+        vertical-align: middle;
+        padding-left: 10px;
+        border: 0;
+        border-bottom: 1px solid #dfdfdf;
+        background-color: #f8f8f8; }
+        .product-review section .section-content .review-write .table-wrap .table tbody tr th label {
+          font-weight: 400; }
+        .product-review section .section-content .review-write .table-wrap .table tbody tr th.v-align {
+          vertical-align: top;
+          padding-top: 20px; }
+      .product-review section .section-content .review-write .table-wrap .table tbody tr td {
+        height: 56px;
+        font-size: 13px;
+        color: #666;
+        font-weight: 300;
+        vertical-align: middle;
+        padding: 10px;
+        border: 0;
+        border-bottom: 1px solid #dfdfdf; }
+        .product-review section .section-content .review-write .table-wrap .table tbody tr td .form-group .form-control {
+          height: 35px; }
+        .product-review section .section-content .review-write .table-wrap .table tbody tr td .form-group textarea {
+          height: 130px !important; }
+        .product-review section .section-content .review-write .table-wrap .table tbody tr td.grade {
+          padding: 20px 10px; }
+          .product-review section .section-content .review-write .table-wrap .table tbody tr td.grade .form-group label {
+            display: block; }
+            .product-review section .section-content .review-write .table-wrap .table tbody tr td.grade .form-group label ~ label {
+              margin-top: 5px; }
+            .product-review section .section-content .review-write .table-wrap .table tbody tr td.grade .form-group label i {
+              color: #f0c419; }
+              .product-review section .section-content .review-write .table-wrap .table tbody tr td.grade .form-group label i:before {
+                margin: 0; }
+            .product-review section .section-content .review-write .table-wrap .table tbody tr td.grade .form-group label input {
+              position: relative;
+              top: 2px;
+              margin-right: 5px; }
+        .product-review section .section-content .review-write .table-wrap .table tbody tr td.file .form-group {
+          position: relative;
+          padding-right: 90px; }
+          .product-review section .section-content .review-write .table-wrap .table tbody tr td.file .form-group label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 85px;
+            height: 35px;
+            color: #fff;
+            text-align: center;
+            line-height: 35px;
+            background-color: #999; }
+    .product-review section .section-content .review-write .btn-area {
+      text-align: center;
+      margin-top: 30px; }
+      .product-review section .section-content .review-write .btn-area p {
+        font-size: 0; }
+        .product-review section .section-content .review-write .btn-area p .btn {
+          width: 145px;
+          line-height: 45px;
+          font-size: 14px;
+          color: #fff;
+          margin-right: 10px; }
+          .product-review section .section-content .review-write .btn-area p .btn:last-child {
+            margin-right: 0; }
+          .product-review section .section-content .review-write .btn-area p .btn.btn-gray {
+            background-color: #999; }
+          .product-review section .section-content .review-write .btn-area p .btn.btn-black {
+            background-color: #333; }
+
+.mileage {
+  padding-bottom: 90px; }
+  .mileage .mileage-info {
+    border-top: 2px solid #000; }
+    .mileage .mileage-info .list li {
+      font-size: 0;
+      padding: 20px 0;
+      border-bottom: 1px solid #dfdfdf; }
+      .mileage .mileage-info .list li .m-title {
+        font-size: 13px;
+        color: #666;
+        font-weight: 300;
+        margin-bottom: 15px; }
+      .mileage .mileage-info .list li p {
+        display: inline-block;
+        width: 50%;
+        font-size: 13px;
+        color: #666;
+        font-weight: 500;
+        font-family: 'Maven Pro', sans-serif; }
+        .mileage .mileage-info .list li p.date {
+          text-align: left; }
+        .mileage .mileage-info .list li p.mileage-pay {
+          text-align: right; }
+        .mileage .mileage-info .list li p.minus {
+          color: #e61937; }
+          .mileage .mileage-info .list li p.minus:before {
+            content: "-"; }
+    .mileage .mileage-info .paging {
+      margin-top: 40px; }
+    .mileage .mileage-info .attention {
+      margin-top: 50px; }
+      .mileage .mileage-info .attention > ul li {
+        position: relative;
+        font-size: 13px;
+        color: #666;
+        font-weight: 300;
+        line-height: 24px;
+        padding-left: 25px; }
+        .mileage .mileage-info .attention > ul li ~ li {
+          margin-top: 20px; }
+        .mileage .mileage-info .attention > ul li:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 15px;
+          color: #998675;
+          content: "\E808";
+          font-family: "fontello"; }
+
+.coupon {
+  padding-bottom: 90px; }
+  .coupon .coupon-info {
+    border-top: 2px solid #000; }
+    .coupon .coupon-info .list li {
+      font-size: 0;
+      padding: 25px 0;
+      border-bottom: 1px solid #dfdfdf; }
+      .coupon .coupon-info .list li .c-title {
+        font-size: 15px;
+        color: #333;
+        font-weight: 400;
+        margin-bottom: 30px; }
+      .coupon .coupon-info .list li dl {
+        overflow: hidden; }
+        .coupon .coupon-info .list li dl dt {
+          float: left;
+          clear: both;
+          font-size: 13px;
+          color: #777;
+          line-height: 24px;
+          font-weight: 400; }
+          .coupon .coupon-info .list li dl dt:after {
+            content: ":";
+            padding: 0 3px; }
+        .coupon .coupon-info .list li dl dd {
+          float: left;
+          font-size: 13px;
+          color: #777;
+          line-height: 24px;
+          font-weight: 400; }
+    .coupon .coupon-info .paging {
+      margin-top: 40px; }
+    .coupon .coupon-info .attention {
+      margin-top: 50px; }
+      .coupon .coupon-info .attention h4 {
+        font-size: 15px;
+        color: #2b2b2b;
+        font-weight: 400;
+        margin-bottom: 20px; }
+        .coupon .coupon-info .attention h4 ~ h4 {
+          margin-top: 60px; }
+      .coupon .coupon-info .attention > ul li {
+        position: relative;
+        font-size: 13px;
+        color: #666;
+        font-weight: 300;
+        line-height: 24px;
+        padding-left: 25px; }
+        .coupon .coupon-info .attention > ul li ~ li {
+          margin-top: 15px; }
+        .coupon .coupon-info .attention > ul li:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 15px;
+          color: #998675;
+          content: "\E808";
+          font-family: "fontello"; }
+
+.wish-list {
+  padding-bottom: 100px; }
 
 /*# sourceMappingURL=style.css.map */
