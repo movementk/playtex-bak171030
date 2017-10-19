@@ -146,5 +146,6 @@
 body.nav-opened {
 	#nav {
 		right: 0;
+		@include transition();
 	}
 }
