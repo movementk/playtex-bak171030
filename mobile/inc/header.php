@@ -1,3 +1,6 @@
+<div id="top-banner">
+	<a href="#"><span class="sr-only">배너링크 이동</span></a>
+</div>
 <header id="header">
 	<div class="util">
 		<h1 class="logo"><a href="/mobile/"><img src="/design/playtex/mobile/images/logo.png" alt="플레이텍스"></a></h1>
