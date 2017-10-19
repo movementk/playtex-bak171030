@@ -953,6 +953,7 @@ label {
                                 border-bottom: 1px solid #ccc;
                                 .form-group {
                                     .form-control {
+                                        color: #333;
                                         height: 40px;
                                         border: 1px solid #dfdfdf;
                                     }
@@ -2708,12 +2709,233 @@ label {
                     p {
                         .btn {
                             display: block;
+                            width: 90px;
+                            height: 30px;
+                            font-size: 12px;
+                            color: #fff;
+                            line-height: 30px;
+                            border: 0;
                             margin-bottom: 5px;
                             &:last-child {
                                 margin-bottom: 0;
                             }
-                            
+                            &.btn-gray {
+                                background-color: #999;
+                            }
+                            &.btn-beige {
+                                background-color: #998675;
+                            }
                         }
+                    }
+                }
+            }
+        }
+    }
+    .paging {
+        margin-top: 40px;
+    }
+}
+
+
+// 최근본상품
+.viewed-items {
+    padding-bottom: 100px;
+    .selection-all {
+        margin-bottom: 10px;
+        .checking {
+            display: inline-block;
+            margin-right: 8px;
+            input {
+                position: relative;
+                top: 2px;
+                margin-top: 0;
+            }
+        }
+        .selection-btn {
+            display: inline-block;
+            .btn-xs {
+                display: block;
+                width: 70px;
+                height: 30px;
+                font-size: 12px;
+                color: #666;
+                line-height: 28px;
+                border: 1px solid #bcbcbc;
+            }
+        }
+    }
+    .list {
+        border-top: 1px solid #8d8d8d;
+        > li {
+            position: relative;
+            padding: 30px 10px 30px 30px;
+            border-bottom: 1px solid #ccc;
+            .checking {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                margin-top: -7px;
+            }
+            figure {
+                margin-left: -5px;
+                margin-right: -10px;
+            }
+            .p-title {
+                font-size: 14px;
+                color: #333;
+                font-weight: 400;
+                line-height: 20px;
+            }
+            .product-info {
+                position: relative;
+                margin-top: 20px;
+                dl {
+                    overflow: hidden;
+                    dt {
+                        float: left;
+                        clear: both;
+                        font-size: 13px;
+                        color: #777;
+                        font-weight: 400;
+                        line-height: 24px;
+                        &:after {
+                            content: ":";
+                            padding: 0 3px;
+                        }
+                    }
+                    dd {
+                        float: left;
+                        font-size: 13px;
+                        color: #777;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+                .btn-area {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    p {
+                        .btn {
+                            display: block;
+                            width: 90px;
+                            height: 30px;
+                            font-size: 12px;
+                            color: #fff;
+                            line-height: 30px;
+                            border: 0;
+                            &.btn-gray {
+                                background-color: #999;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .paging {
+        margin-top: 40px;
+    }
+}
+
+// 1:1 문의 리스트
+.inquiry-list {
+    padding-bottom: 70px;
+    article {
+        border-top: 2px solid #000;
+        .list {
+            li {
+                font-size: 0;
+                padding: 20px 0;
+                border-bottom: 1px solid #dfdfdf;
+                a {
+                    display: block;
+                    .title {
+                        font-size: 13px;
+                        color: #666;
+                        font-weight: 300;
+                        margin-bottom: 15px;
+                    }
+                    p {
+                        display: inline-block;
+                        width: 50%;
+                        color: #666;
+                        font-size: 13px;
+                        &.date {
+                            @include maven();
+                            text-align: left;
+                            font-weight: 500;
+                        }
+                        &.reply {
+                            font-weight: 300;
+                            text-align: right;
+                        }
+                        &.waiting {
+                            color: #c7b299;
+                        }
+                    }
+                }
+            }
+        }
+        .paging {
+            margin-top: 40px;
+        }
+    }
+}
+
+// 1:1 문의 보기
+.inquiry-view {
+    padding-bottom: 70px;
+    article {
+        .article-header {
+            padding: 15px 10px;
+            background-color: #8d8d8d;
+            h3 {
+                font-size: 13px;
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+        .article-content {
+            font-size: 13px;
+            color: #666;
+            font-weight: 300;
+            line-height: 24px;
+            padding: 25px 10px 35px;
+            border-bottom: 1px solid #dfdfdf;
+            .date {
+                color: #8d8d8d;
+                font-weight: 500;
+                text-align: right;
+                @include maven();
+                margin-bottom: 40px;
+            }
+        }
+        .btn-area {
+            margin-top: 35px;
+            text-align: center;
+            p {
+                & ~ p {
+                    margin-top: 10px;
+                }
+                font-size: 0;
+                .btn {
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #fff;
+                    line-height: 45px;
+                    margin-right: 10px;
+                    border: 0;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &.btn-lg {
+                        width: 300px;
+                        background-color: #333;
+                    }
+                    &.btn-sm {
+                        width: 145px;
+                        background-color: #999;
                     }
                 }
             }
@@ -2721,7 +2943,78 @@ label {
     }
 }
 
-
+// 1:1 문의 쓰기
+.inquiry-write {
+    padding-bottom: 100px;
+    article {
+        .table-wrap {
+            border-top: 2px solid #949595;
+            .table {
+                margin: 0;
+                border: 0;
+                border-top: 2px solid #000;
+                tbody {
+                    tr {
+                        th {
+                            font-size: 13px;
+                            width: 90px;
+                            color: #333;
+                            font-weight: 400;
+                            vertical-align: middle;
+                            padding-left: 10px;
+                            border: 0;
+                            border-bottom: 1px solid #dfdfdf;
+                            background-color: #f8f8f8;
+                            label {
+                                font-weight: 400;
+                            }
+                            &.v-align {
+                                vertical-align: top;
+                                padding-top: 20px;
+                            }
+                        }
+                        td {
+                            height: 56px;
+                            font-size: 13px;
+                            color: #666;
+                            font-weight: 300;
+                            vertical-align: middle;
+                            padding: 10px;
+                            border: 0;
+                            border-bottom: 1px solid #dfdfdf;
+                            .form-group {
+                                .form-control {
+                                    color: #333;
+                                    height: 35px;
+                                }
+                                textarea {
+                                    height: 240px !important;
+                                }
+                            }
+                            &.file {
+                                .form-group {
+                                    position: relative;
+                                    padding-right: 90px;
+                                    label {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        width: 85px;
+                                        height: 35px;
+                                        color: #fff;
+                                        text-align: center;
+                                        line-height: 35px;
+                                        background-color: #999;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

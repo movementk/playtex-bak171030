@@ -703,6 +703,7 @@ label {
       border: 0;
       border-bottom: 1px solid #ccc; }
       .join .join-form .article-content .table-wrap .table tbody tr td .form-group .form-control {
+        color: #333;
         height: 40px;
         border: 1px solid #dfdfdf; }
       .join .join-form .article-content .table-wrap .table tbody tr td .note {
@@ -1932,8 +1933,226 @@ label {
           right: 0; }
           .wish-list .list > li .product-info .btn-area p .btn {
             display: block;
+            width: 90px;
+            height: 30px;
+            font-size: 12px;
+            color: #fff;
+            line-height: 30px;
+            border: 0;
             margin-bottom: 5px; }
             .wish-list .list > li .product-info .btn-area p .btn:last-child {
               margin-bottom: 0; }
+            .wish-list .list > li .product-info .btn-area p .btn.btn-gray {
+              background-color: #999; }
+            .wish-list .list > li .product-info .btn-area p .btn.btn-beige {
+              background-color: #998675; }
+  .wish-list .paging {
+    margin-top: 40px; }
+
+.viewed-items {
+  padding-bottom: 100px; }
+  .viewed-items .selection-all {
+    margin-bottom: 10px; }
+    .viewed-items .selection-all .checking {
+      display: inline-block;
+      margin-right: 8px; }
+      .viewed-items .selection-all .checking input {
+        position: relative;
+        top: 2px;
+        margin-top: 0; }
+    .viewed-items .selection-all .selection-btn {
+      display: inline-block; }
+      .viewed-items .selection-all .selection-btn .btn-xs {
+        display: block;
+        width: 70px;
+        height: 30px;
+        font-size: 12px;
+        color: #666;
+        line-height: 28px;
+        border: 1px solid #bcbcbc; }
+  .viewed-items .list {
+    border-top: 1px solid #8d8d8d; }
+    .viewed-items .list > li {
+      position: relative;
+      padding: 30px 10px 30px 30px;
+      border-bottom: 1px solid #ccc; }
+      .viewed-items .list > li .checking {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -7px; }
+      .viewed-items .list > li figure {
+        margin-left: -5px;
+        margin-right: -10px; }
+      .viewed-items .list > li .p-title {
+        font-size: 14px;
+        color: #333;
+        font-weight: 400;
+        line-height: 20px; }
+      .viewed-items .list > li .product-info {
+        position: relative;
+        margin-top: 20px; }
+        .viewed-items .list > li .product-info dl {
+          overflow: hidden; }
+          .viewed-items .list > li .product-info dl dt {
+            float: left;
+            clear: both;
+            font-size: 13px;
+            color: #777;
+            font-weight: 400;
+            line-height: 24px; }
+            .viewed-items .list > li .product-info dl dt:after {
+              content: ":";
+              padding: 0 3px; }
+          .viewed-items .list > li .product-info dl dd {
+            float: left;
+            font-size: 13px;
+            color: #777;
+            font-weight: 400;
+            line-height: 24px; }
+        .viewed-items .list > li .product-info .btn-area {
+          position: absolute;
+          bottom: 0;
+          right: 0; }
+          .viewed-items .list > li .product-info .btn-area p .btn {
+            display: block;
+            width: 90px;
+            height: 30px;
+            font-size: 12px;
+            color: #fff;
+            line-height: 30px;
+            border: 0; }
+            .viewed-items .list > li .product-info .btn-area p .btn.btn-gray {
+              background-color: #999; }
+  .viewed-items .paging {
+    margin-top: 40px; }
+
+.inquiry-list {
+  padding-bottom: 70px; }
+  .inquiry-list article {
+    border-top: 2px solid #000; }
+    .inquiry-list article .list li {
+      font-size: 0;
+      padding: 20px 0;
+      border-bottom: 1px solid #dfdfdf; }
+      .inquiry-list article .list li a {
+        display: block; }
+        .inquiry-list article .list li a .title {
+          font-size: 13px;
+          color: #666;
+          font-weight: 300;
+          margin-bottom: 15px; }
+        .inquiry-list article .list li a p {
+          display: inline-block;
+          width: 50%;
+          color: #666;
+          font-size: 13px; }
+          .inquiry-list article .list li a p.date {
+            font-family: 'Maven Pro', sans-serif;
+            text-align: left;
+            font-weight: 500; }
+          .inquiry-list article .list li a p.reply {
+            font-weight: 300;
+            text-align: right; }
+          .inquiry-list article .list li a p.waiting {
+            color: #c7b299; }
+    .inquiry-list article .paging {
+      margin-top: 40px; }
+
+.inquiry-view {
+  padding-bottom: 70px; }
+  .inquiry-view article .article-header {
+    padding: 15px 10px;
+    background-color: #8d8d8d; }
+    .inquiry-view article .article-header h3 {
+      font-size: 13px;
+      color: #fff;
+      font-weight: 400; }
+  .inquiry-view article .article-content {
+    font-size: 13px;
+    color: #666;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 25px 10px 35px;
+    border-bottom: 1px solid #dfdfdf; }
+    .inquiry-view article .article-content .date {
+      color: #8d8d8d;
+      font-weight: 500;
+      text-align: right;
+      font-family: 'Maven Pro', sans-serif;
+      margin-bottom: 40px; }
+  .inquiry-view article .btn-area {
+    margin-top: 35px;
+    text-align: center; }
+    .inquiry-view article .btn-area p {
+      font-size: 0; }
+      .inquiry-view article .btn-area p ~ p {
+        margin-top: 10px; }
+      .inquiry-view article .btn-area p .btn {
+        display: inline-block;
+        font-size: 14px;
+        color: #fff;
+        line-height: 45px;
+        margin-right: 10px;
+        border: 0; }
+        .inquiry-view article .btn-area p .btn:last-child {
+          margin-right: 0; }
+        .inquiry-view article .btn-area p .btn.btn-lg {
+          width: 300px;
+          background-color: #333; }
+        .inquiry-view article .btn-area p .btn.btn-sm {
+          width: 145px;
+          background-color: #999; }
+
+.inquiry-write {
+  padding-bottom: 100px; }
+  .inquiry-write article .table-wrap {
+    border-top: 2px solid #949595; }
+    .inquiry-write article .table-wrap .table {
+      margin: 0;
+      border: 0;
+      border-top: 2px solid #000; }
+      .inquiry-write article .table-wrap .table tbody tr th {
+        font-size: 13px;
+        width: 90px;
+        color: #333;
+        font-weight: 400;
+        vertical-align: middle;
+        padding-left: 10px;
+        border: 0;
+        border-bottom: 1px solid #dfdfdf;
+        background-color: #f8f8f8; }
+        .inquiry-write article .table-wrap .table tbody tr th label {
+          font-weight: 400; }
+        .inquiry-write article .table-wrap .table tbody tr th.v-align {
+          vertical-align: top;
+          padding-top: 20px; }
+      .inquiry-write article .table-wrap .table tbody tr td {
+        height: 56px;
+        font-size: 13px;
+        color: #666;
+        font-weight: 300;
+        vertical-align: middle;
+        padding: 10px;
+        border: 0;
+        border-bottom: 1px solid #dfdfdf; }
+        .inquiry-write article .table-wrap .table tbody tr td .form-group .form-control {
+          color: #333;
+          height: 35px; }
+        .inquiry-write article .table-wrap .table tbody tr td .form-group textarea {
+          height: 240px !important; }
+        .inquiry-write article .table-wrap .table tbody tr td.file .form-group {
+          position: relative;
+          padding-right: 90px; }
+          .inquiry-write article .table-wrap .table tbody tr td.file .form-group label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 85px;
+            height: 35px;
+            color: #fff;
+            text-align: center;
+            line-height: 35px;
+            background-color: #999; }
 
 /*# sourceMappingURL=style.css.map */

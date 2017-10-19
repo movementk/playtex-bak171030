@@ -5,7 +5,7 @@
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/nav.php"); ?>
 	<main id="content" class="coupon">
 		<div class="page-header">
-		    <h2 class="title">Mileage</h2>
+		    <h2 class="title">Coupon</h2>
 		</div>
         <nav class="mypage-nav">
             <div class="container">
