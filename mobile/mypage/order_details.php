@@ -100,10 +100,49 @@
 		                            <li>
 		                                <dl>
 		                                    <dt>상품별주문번호</dt>
-		                                    <dd>21017125754548-45826784287_(1)</dd>
+		                                    <dd>210171754548-458264287_(1)</dd>
+		                                </dl>
+		                            </li>
+		                            <li>
+		                                <dl>
+		                                    <dt>수량</dt>
+		                                    <dd>
+		                                        <div class="form-group">
+		                                            <input type="text" id="p-count" class="form-control">
+		                                            <label for="p-count" class="sr-only">수량</label>
+		                                        </div>
+		                                    </dd>
+		                                </dl>
+		                            </li>
+		                            <li>
+		                                <dl>
+		                                    <dt>가격</dt>
+		                                    <dd>71,900</dd>
+		                                </dl>
+		                            </li>
+		                            <li>
+		                                <dl>
+		                                    <dt>적립금</dt>
+		                                    <dd>630</dd>
+		                                </dl>
+		                            </li>
+		                            <li>
+		                                <dl>
+		                                    <dt>처리상태</dt>
+		                                    <dd>결제대기</dd>
+		                                </dl>
+		                            </li>
+		                            <li>
+		                                <dl>
+		                                    <dt>배송번호</dt>
+		                                    <dd>S-45804193-54821464-00</dd>
 		                                </dl>
 		                            </li>
 		                        </ul>
+		                    </div>
+		                    <div class="total-pay">
+		                        <p class="summary"><b>71,900</b>원(상품구매금액) (할인/추가금액)</p>
+		                        <p class="amount"><b>71,900</b>원</p>
 		                    </div>
 		                </div>
 		            </article>
@@ -113,34 +152,40 @@
 		                    <table class="table">
                                 <thead>
                                     <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
+                                        <th>결제방법</th>
+                                        <th>결제금액</th>
+                                        <th>세부내역</th>
                                     </tr>
                                 </thead>
 		                        <tbody>
 		                            <tr>
-		                                <td></td>
-		                                <td></td>
-		                                <td></td>
-		                            </tr>
-		                            <tr>
-		                                <td></td>
-		                                <td></td>
+		                                <td>사용한 적립금</td>
+		                                <td><b>0</b> 원</td>
 		                                <td></td>
 		                            </tr>
 		                            <tr>
-		                                <td></td>
-		                                <td></td>
+		                                <td>사용한 예치금</td>
+		                                <td><b>0</b> 원</td>
 		                                <td></td>
 		                            </tr>
 		                            <tr>
-		                                <td></td>
-		                                <td></td>
-		                                <td></td>
+		                                <td>무통장</td>
+		                                <td>
+		                                    <b>59,900</b> 원<br>
+		                                    (미입금)
+		                                </td>
+		                                <td>
+		                                    우리은행 (가상) 128964868318 무브먼트케이
+		                                </td>
 		                            </tr>
 		                        </tbody>
 		                    </table>
+		                </div>
+		                <div class="btn-area">
+		                    <p>
+		                        <a href="#" class="btn btn-gray" role="button">주문취소</a>
+		                        <a href="#" class="btn btn-black" role="button">확인</a>
+		                    </p>
 		                </div>
 		            </article>
 		        </div>
