@@ -1848,5 +1848,73 @@ label {
 
 .wish-list {
   padding-bottom: 100px; }
+  .wish-list .selection-all {
+    margin-bottom: 10px; }
+    .wish-list .selection-all .checking {
+      display: inline-block;
+      margin-right: 8px; }
+      .wish-list .selection-all .checking input {
+        position: relative;
+        top: 2px;
+        margin-top: 0; }
+    .wish-list .selection-all .selection-btn {
+      display: inline-block; }
+      .wish-list .selection-all .selection-btn .btn-xs {
+        display: block;
+        width: 70px;
+        height: 30px;
+        font-size: 12px;
+        color: #666;
+        line-height: 28px;
+        border: 1px solid #bcbcbc; }
+  .wish-list .list {
+    border-top: 1px solid #8d8d8d; }
+    .wish-list .list > li {
+      position: relative;
+      padding: 30px 10px 30px 30px;
+      border-bottom: 1px solid #ccc; }
+      .wish-list .list > li .checking {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -7px; }
+      .wish-list .list > li figure {
+        margin-left: -5px;
+        margin-right: -10px; }
+      .wish-list .list > li .p-title {
+        font-size: 14px;
+        color: #333;
+        font-weight: 400;
+        line-height: 20px; }
+      .wish-list .list > li .product-info {
+        position: relative;
+        margin-top: 20px; }
+        .wish-list .list > li .product-info dl {
+          overflow: hidden; }
+          .wish-list .list > li .product-info dl dt {
+            float: left;
+            clear: both;
+            font-size: 13px;
+            color: #777;
+            font-weight: 400;
+            line-height: 24px; }
+            .wish-list .list > li .product-info dl dt:after {
+              content: ":";
+              padding: 0 3px; }
+          .wish-list .list > li .product-info dl dd {
+            float: left;
+            font-size: 13px;
+            color: #777;
+            font-weight: 400;
+            line-height: 24px; }
+        .wish-list .list > li .product-info .btn-area {
+          position: absolute;
+          bottom: 0;
+          right: 0; }
+          .wish-list .list > li .product-info .btn-area p .btn {
+            display: block;
+            margin-bottom: 5px; }
+            .wish-list .list > li .product-info .btn-area p .btn:last-child {
+              margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
