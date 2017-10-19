@@ -1,6 +1,6 @@
 <header id="header">
 	<div class="util">
-		<h1 class="logo"><a href="/mobile/"><img src="/design/playtex/mobile/assets/images/logo.png" alt="플레이텍스"></a></h1>
+		<h1 class="logo"><a href="/mobile/"><img src="/design/playtex/mobile/images/logo.png" alt="플레이텍스"></a></h1>
 		<ul>
 			<li><a class="cart" href="#"><span class="sr-only">장바구니</span></a></li>
 			<li><a class="search" href="#"><span class="sr-only">검색</span></a></li>

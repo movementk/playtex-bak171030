@@ -1,9 +1,9 @@
 <nav id="nav">
 	<header>
 		<div class="logo">
-			<h1><a href="#"><img src="/design/playtex/mobile/assets/images/logo.png" alt="플레이텍스"></a></h1>
+			<h1><a href="#"><img src="/design/playtex/mobile/images/logo.png" alt="플레이텍스"></a></h1>
 			<button id="btn-close-nav" class="btn btn-link" type="button">
-				<img src="/design/playtex/mobile/assets/images/ico_close.png" alt="메뉴 닫기">
+				<img src="/design/playtex/mobile/images/ico_close.png" alt="메뉴 닫기">
 			</button>
 		</div>
 		<div class="util">
@@ -57,5 +57,5 @@
 	</div>
 </nav>
 <style>
-	@import url(/design/playtex/mobile/assets/css/nav.css);
+	@import url(/design/playtex/mobile/css/nav.css);
 </style>

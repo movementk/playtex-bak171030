@@ -13,19 +13,19 @@
                     <ul class="step-list">
                         <li class="active">
                             <p class="figure">
-                                <img src="/design/playtex/mobile/assets/images/member/step_active_img01.png" alt="STEP 01">
+                                <img src="/design/playtex/mobile/images/member/step_active_img01.png" alt="STEP 01">
                             </p>
                             <p class="details">STEP 01</p>
                         </li>
                         <li>
                             <p class="figure">
-                                <img src="/design/playtex/mobile/assets/images/member/step_img02.png" alt="STEP 02">
+                                <img src="/design/playtex/mobile/images/member/step_img02.png" alt="STEP 02">
                             </p>
                             <p class="details">STEP 02</p>
                         </li>
                         <li>
                             <p class="figure">
-                                <img src="/design/playtex/mobile/assets/images/member/step_img03.png" alt="STEP 03">
+                                <img src="/design/playtex/mobile/images/member/step_img03.png" alt="STEP 03">
                             </p>
                             <p class="details">STEP 03</p>
                         </li>

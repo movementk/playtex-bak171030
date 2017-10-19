@@ -88,7 +88,7 @@
 		                    <div class="row">
 		                        <div class="col-xs-5">
 		                            <figure>
-		                                <img src="/design/playtex/mobile/assets/images/mypage/details_info_img.gif" class="img-responsive" alt="">
+		                                <img src="/design/playtex/mobile/images/mypage/details_info_img.gif" class="img-responsive" alt="">
 		                            </figure>
 		                        </div>
 		                        <div class="col-xs-7">
