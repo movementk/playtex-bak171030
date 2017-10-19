@@ -24,7 +24,7 @@
 					<li><a href="#">PANTY</a></li>
 				</ul>
 			</li>
-			<li class="active">
+			<li>
 				<a href="#">DESIGN</a>
 				<ul>
 					<li><a href="#"><span>BRA</span></a></li>
@@ -56,3 +56,6 @@
 		</ul>
 	</div>
 </nav>
+<style>
+	@import url(/design/playtex/mobile/assets/css/nav.css);
+</style>

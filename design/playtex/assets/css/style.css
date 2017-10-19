@@ -11,7 +11,9 @@ body {
   color: #666;
   font-weight: 300;
   font-family: 'Noto Sans KR', sans-serif;
-  padding-top: 227px; }
+  padding-top: 100px; }
+  body.has-top-banner {
+    padding-top: 227px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -52,6 +54,7 @@ label {
     box-shadow: none; }
 
 #top-bn {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -81,8 +84,9 @@ label {
 
 /*******************************  공통 Style  *******************************/
 #header {
+  overflow: hidden;
   position: fixed;
-  top: 127px;
+  top: 0;
   left: 0;
   width: 100%;
   min-width: 1200px;
@@ -149,8 +153,8 @@ label {
     -webkit-transition-delay: 0s;
     transition-delay: 0s; }
     #header .global-search .search-link {
-      position: fixed;
-      top: 127px;
+      position: absolute;
+      top: 0;
       right: 0;
       display: block;
       width: 100px;
@@ -217,6 +221,10 @@ label {
           padding-left: 105px;
           width: 100%;
           display: inline-block; }
+
+body.has-top-banner #header {
+  position: absolute;
+  top: 127px; }
 
 #gnb-full {
   display: none;
@@ -960,8 +968,8 @@ label {
     transition-duration: 0.5s;
     -webkit-transition-timing-function: linear;
     transition-timing-function: linear;
-    -webkit-transition-delay: 4.25s;
-    transition-delay: 4.25s; }
+    -webkit-transition-delay: 4.5s;
+    transition-delay: 4.5s; }
     #content #item-characteristic.on .woman .feature-icon-2.selected {
       top: 385px;
       left: 230px; }
@@ -973,8 +981,8 @@ label {
     transition-duration: 0.5s;
     -webkit-transition-timing-function: linear;
     transition-timing-function: linear;
-    -webkit-transition-delay: 4.5s;
-    transition-delay: 4.5s; }
+    -webkit-transition-delay: 5s;
+    transition-delay: 5s; }
     #content #item-characteristic.on .woman .feature-icon-3.selected {
       top: 305px;
       left: 200px; }
@@ -986,8 +994,8 @@ label {
     transition-duration: 0.5s;
     -webkit-transition-timing-function: linear;
     transition-timing-function: linear;
-    -webkit-transition-delay: 4.75s;
-    transition-delay: 4.75s; }
+    -webkit-transition-delay: 5.5s;
+    transition-delay: 5.5s; }
     #content #item-characteristic.on .woman .feature-icon-4.selected {
       top: 555px;
       left: 225px; }

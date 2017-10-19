@@ -2,7 +2,7 @@
 </head>
 
 <!-- 대메뉴 Class -->
-<body class="main">
+<body class="main has-top-banner">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <!-- 페이지 Class -->
     <main id="content">
@@ -613,6 +613,54 @@
 			$("#video-modal").on('hidden.bs.modal', function (e) {
 				$(this).find("#video-player").html("");
 			});
+			
+			// 상단띠배너 닫기
+			$(document).on("click", "#top-bn .close-btn", function() {
+				$("#top-bn").remove();
+				$("body").removeClass("has-top-banner");
+			});
+			
+			// 상단띠배너 관련
+			$(window).on("load scroll", function() {
+				if ($("body").hasClass("has-top-banner")) {
+					if ($(window).scrollTop() >= 127) {
+						$("#header").css({ "position": "fixed", "top": 0 });
+					} else {
+						$("#header").removeAttr("style");
+					}
+				}
+			});
+			/*
+			// 상단띠배너 닫기
+			$(document).on("click", "#top-bn .close-btn", function() {
+				$('body').animate({ "padding-top": 100 }, 300);
+				$('#header').animate({ "top": 0 }, 300);
+				$('#header .global-search .search-link').animate({ "top": 0 }, 300);
+				$('#top-bn').animate({ height: 0 }, 300, function() {
+					$(this).remove();
+				});
+			});
+			
+			// 상단띠배너 관련
+			$(window).on("load scroll", function() {
+				//if ($("#top-bn").is())
+				//console.log($("#top-bn1").length);
+				if ($("#top-bn").length < 1) { // 탑배너가 없을 경우
+					$('body').css({ "padding-top" : 100 });
+					$("#header").css({ "position" : "fixed", "top" : 0 });
+						$("#header .global-search .search-link").css({ "position" : "fixed", "top" : 0 });
+				} else { // 탑배너가 있을 경우
+					//console.log($("#top-bn").height());
+					if ($(window).scrollTop() < $("#top-bn").height()) {
+						$("#header").css({ "position" : "absolute", "top" : $("#top-bn").height() });
+						$("#header .global-search .search-link").css({ "position" : "absolute", "top" : $("#top-bn").height() });
+					} else {
+						$("#header").css({ "position" : "fixed", "top" : 0 });
+						$("#header .global-search .search-link").css({ "position" : "fixed", "top" : 0 });
+					}
+				}
+			});
+			*/
         })(jQuery);
     </script>
 </body>

@@ -24,8 +24,11 @@ body {
     color: #666;
     font-weight: 300;
     @include noto();
-    padding-top: 227px;
-//    padding-top: 100px;
+    //padding-top: 227px;
+    padding-top: 100px;
+	&.has-top-banner {
+		padding-top: 227px;
+	}
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
@@ -78,6 +81,7 @@ label {
 }
 
 #top-bn {
+	overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -114,8 +118,11 @@ label {
 /*******************************  공통 Style  *******************************/
 //헤더
 #header {
-    position: fixed;
-    top: 127px;
+    //position: absolute;
+    //top: 127px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
     left: 0;
     width: 100%;
     min-width: 1200px;
@@ -188,9 +195,9 @@ label {
         height: 100px;
         @include trans();
         .search-link {
-            position: fixed;
-//            top: 0;
-            top: 127px;
+            position: absolute;
+            top: 0;
+            //top: 127px;
             right: 0;
             display: block;
             width: 100px;
@@ -262,6 +269,12 @@ label {
             }
         }
     }
+}
+body.has-top-banner {
+	#header {
+		position: absolute;
+		top: 127px;
+	}
 }
 // 헤더 이벤트 효과
 #gnb-full {
@@ -1074,7 +1087,7 @@ label {
 				}
 				.feature-icon-2 {
 					opacity: 1;
-					@include trans($prop: opacity, $sec: .5s, $delay: 4.25s);
+					@include trans($prop: opacity, $sec: .5s, $delay: 4.5s);
 					&.selected {
 						top: 385px;
     					left: 230px;
@@ -1082,7 +1095,7 @@ label {
 				}
 				.feature-icon-3 {
 					opacity: 1;
-					@include trans($prop: opacity, $sec: .5s, $delay: 4.5s);
+					@include trans($prop: opacity, $sec: .5s, $delay: 5s);
 					&.selected {
 						top: 305px;
     					left: 200px;
@@ -1090,7 +1103,7 @@ label {
 				}
 				.feature-icon-4 {
 					opacity: 1;
-					@include trans($prop: opacity, $sec: .5s, $delay: 4.75s);
+					@include trans($prop: opacity, $sec: .5s, $delay: 5.5s);
 					&.selected {
 						top: 555px;
     					left: 225px;
