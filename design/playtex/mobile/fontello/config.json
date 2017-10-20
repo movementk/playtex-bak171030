@@ -131,6 +131,24 @@
       "css": "level-down",
       "code": 59405,
       "src": "entypo"
+    },
+    {
+      "uid": "76f961b11f65300838a5a78856aca30f",
+      "css": "th-large",
+      "code": 59406,
+      "src": "elusive"
+    },
+    {
+      "uid": "93faa7cec68bf69ec455bbab61e58e48",
+      "css": "th",
+      "code": 59409,
+      "src": "elusive"
+    },
+    {
+      "uid": "e25c28400dafedf82c27c46ccd6a49a7",
+      "css": "stop-1",
+      "code": 59410,
+      "src": "iconic"
     }
   ]
 }
