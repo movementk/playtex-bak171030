@@ -144,6 +144,7 @@
 }
 
 body.nav-opened {
+	overflow: hidden;
 	#nav {
 		right: 0;
 		@include transition();

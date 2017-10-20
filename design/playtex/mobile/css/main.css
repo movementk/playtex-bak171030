@@ -154,8 +154,8 @@ body.nav-opened #nav {
         display: inline; }
         #visual .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link {
           float: left;
-          width: 10px;
-          height: 10px;
+          width: 11px;
+          height: 11px;
           border: 1px solid #fff;
           border-radius: 50%; }
           #visual .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link.active {
@@ -188,33 +188,37 @@ body.nav-opened #nav {
         .product-content header .sorter li .column.selected:before {
           color: #998675; }
         .product-content header .sorter li .column-1:before {
-          content: "\E80E";
+          content: "\E812";
           font-size: 18px; }
         .product-content header .sorter li .column-2:before {
-          content: "\E809";
+          content: "\E80E";
           font-size: 16px; }
         .product-content header .sorter li .column-3:before {
-          content: "\E80D";
+          content: "\E811";
           font-size: 16px; }
         .product-content header .sorter li + li {
           margin-left: 7px; }
   .product-content .product-list {
     margin-bottom: 15px; }
-    .product-content .product-list li .product-item figure .img-responsive {
-      margin: 0 auto; }
-    .product-content .product-list li .product-item figure figcaption {
-      margin-top: 15px;
-      text-align: center; }
-      .product-content .product-list li .product-item figure figcaption h5 {
-        font-size: 12px;
-        line-height: 16px;
-        font-weight: normal;
-        color: #333; }
-      .product-content .product-list li .product-item figure figcaption .price {
-        font-family: 'Maven Pro', sans-serif;
-        font-size: 12px;
-        font-weight: bold;
-        color: #333; }
+    .product-content .product-list li {
+      margin-bottom: 20px; }
+      .product-content .product-list li .product-item figure .img-responsive {
+        margin: 0 auto; }
+      .product-content .product-list li .product-item figure figcaption {
+        margin-top: 15px;
+        text-align: center; }
+        .product-content .product-list li .product-item figure figcaption h5 {
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: normal;
+          color: #333; }
+        .product-content .product-list li .product-item figure figcaption .price {
+          font-family: 'Maven Pro', sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          color: #333; }
+      .product-content .product-list li.hidden {
+        display: none; }
     .product-content .product-list.product-list-1 {
       padding-left: 10px;
       padding-right: 10px; }
@@ -224,7 +228,6 @@ body.nav-opened #nav {
       padding-right: 10px; }
       .product-content .product-list.product-list-2 li {
         float: left;
-        margin-bottom: 15px;
         padding-left: 5px;
         padding-right: 5px;
         width: 50%; }
@@ -236,7 +239,6 @@ body.nav-opened #nav {
       padding-right: 10px; }
       .product-content .product-list.product-list-3 li {
         float: left;
-        margin-bottom: 15px;
         padding-left: 5px;
         padding-right: 5px;
         width: 33.33%; }
@@ -284,7 +286,7 @@ body.nav-opened #nav {
       #design-line ul li a.line-up-1 {
         background-image: url(/design/playtex/mobile/images/main/img_lineup_1.jpg); }
       #design-line ul li a.line-up-2 {
-        background-image: url(/design/playtex/mobile/images/main/img_lineup_1.jpg); }
+        background-image: url(/design/playtex/mobile/images/main/img_lineup_2.jpg); }
       #design-line ul li a.line-up-3 {
         background-image: url(/design/playtex/mobile/images/main/img_lineup_3.jpg); }
       #design-line ul li a.line-up-4 {
