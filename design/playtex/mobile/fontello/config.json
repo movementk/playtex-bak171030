@@ -115,22 +115,22 @@
       "src": "fontawesome"
     },
     {
-      "uid": "76f961b11f65300838a5a78856aca30f",
-      "css": "th-large",
+      "uid": "62b0580ee8edc3a3edfbf68a47c852d5",
+      "css": "pencil",
       "code": 59401,
       "src": "elusive"
     },
     {
-      "uid": "93faa7cec68bf69ec455bbab61e58e48",
-      "css": "th",
-      "code": 59405,
-      "src": "elusive"
+      "uid": "bbfb51903f40597f0b70fd75bc7b5cac",
+      "css": "trash",
+      "code": 61944,
+      "src": "fontawesome"
     },
     {
-      "uid": "e25c28400dafedf82c27c46ccd6a49a7",
-      "css": "stop-1",
-      "code": 59406,
-      "src": "iconic"
+      "uid": "fa0118a65fc8dee739469f6901bbd189",
+      "css": "level-down",
+      "code": 59405,
+      "src": "entypo"
     }
   ]
 }
