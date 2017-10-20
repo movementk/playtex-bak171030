@@ -149,6 +149,12 @@
       "css": "stop-1",
       "code": 59410,
       "src": "iconic"
+    },
+    {
+      "uid": "d2c6b59d9a239140cb76be0627480855",
+      "css": "dot",
+      "code": 59411,
+      "src": "entypo"
     }
   ]
 }
