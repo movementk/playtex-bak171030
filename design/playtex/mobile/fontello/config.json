@@ -155,6 +155,12 @@
       "css": "dot",
       "code": 59411,
       "src": "entypo"
+    },
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search",
+      "code": 59412,
+      "src": "fontawesome"
     }
   ]
 }
