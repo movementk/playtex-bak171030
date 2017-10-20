@@ -158,6 +158,104 @@
 		                                                </dl>
 		                                            </li>
 		                                        </ul>
+		                                        <div class="cart-btn">
+		                                            <a href="#" class="btn btn-gray" role="button">장바구니 담기</a>
+		                                            <a href="#" class="btn btn-beige" role="button">삭제하기</a>
+		                                        </div>
+		                                    </div>
+		                                </td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <p class="checking">
+		                                        <input type="checkbox">
+		                                    </p>
+		                                </td>
+		                                <td>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="/design/playtex/mobile/images/mypage/details_info_img.gif" alt="">
+                                                </figure>
+                                                <p class="title">★57%+세컨3종증정★[Playtex]플레이 텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08 </p>
+                                            </a>
+		                                    <div class="details">
+		                                        <ul>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>수량</dt>
+		                                                    <dd>1</dd>
+		                                                </dl>
+		                                            </li>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>재고</dt>
+		                                                    <dd>있음</dd>
+		                                                </dl>
+		                                            </li>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>적립금</dt>
+		                                                    <dd>630</dd>
+		                                                </dl>
+		                                            </li>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>가격</dt>
+		                                                    <dd>71,900</dd>
+		                                                </dl>
+		                                            </li>
+		                                        </ul>
+		                                        <div class="cart-btn">
+		                                            <a href="#" class="btn btn-gray" role="button">장바구니 담기</a>
+		                                            <a href="#" class="btn btn-beige" role="button">삭제하기</a>
+		                                        </div>
+		                                    </div>
+		                                </td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <p class="checking">
+		                                        <input type="checkbox">
+		                                    </p>
+		                                </td>
+		                                <td>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="/design/playtex/mobile/images/mypage/details_info_img.gif" alt="">
+                                                </figure>
+                                                <p class="title">★57%+세컨3종증정★[Playtex]플레이 텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08 </p>
+                                            </a>
+		                                    <div class="details">
+		                                        <ul>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>수량</dt>
+		                                                    <dd>1</dd>
+		                                                </dl>
+		                                            </li>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>재고</dt>
+		                                                    <dd>있음</dd>
+		                                                </dl>
+		                                            </li>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>적립금</dt>
+		                                                    <dd>630</dd>
+		                                                </dl>
+		                                            </li>
+		                                            <li>
+		                                                <dl>
+		                                                    <dt>가격</dt>
+		                                                    <dd>71,900</dd>
+		                                                </dl>
+		                                            </li>
+		                                        </ul>
+		                                        <div class="cart-btn">
+		                                            <a href="#" class="btn btn-gray" role="button">장바구니 담기</a>
+		                                            <a href="#" class="btn btn-beige" role="button">삭제하기</a>
+		                                        </div>
 		                                    </div>
 		                                </td>
 		                            </tr>
