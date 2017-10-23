@@ -161,6 +161,12 @@
       "css": "search",
       "code": 59412,
       "src": "fontawesome"
+    },
+    {
+      "uid": "15739f3032c2aa3df67efc96b3ffef56",
+      "css": "cancel-circle",
+      "code": 59413,
+      "src": "websymbols"
     }
   ]
 }
