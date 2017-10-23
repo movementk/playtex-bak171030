@@ -1062,6 +1062,7 @@ label {
         li {
             display: inline-block;
             width: 33.33%;
+            vertical-align: top;
             a {
                 position: relative;
                 text-align: center;
@@ -1074,6 +1075,9 @@ label {
                 z-index: 99;
                 border-right: 1px solid #b5b5b5;
                 border-bottom: 1px solid #b5b5b5;
+                span {
+                    @include noto();
+                }
             }
             &:nth-of-type(1) {
                 a {
@@ -1096,6 +1100,11 @@ label {
                     font-weight: bold;
                     border-color: #2b2b2b;
                     background-color: #2b2b2b;
+                }
+            }
+            &.space {
+                a {
+                    padding: 5px 0;
                 }
             }
             &:nth-of-type(3n + 1) {
@@ -1666,7 +1675,6 @@ label {
                         }
                     }
                 }
-                
                 .well {
                     font-size: 13px;
                     color: #666;
@@ -5337,6 +5345,7 @@ label {
         }
     }
 }
+
 //qna list
 .qna-list {
     padding-bottom: 65px;
@@ -5372,6 +5381,9 @@ label {
                         }
                     }
                     .subject {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                         font-size: 15px;
                         color: #2b2b2b;
                         font-weight: 300;
@@ -5396,7 +5408,151 @@ label {
                     }
                     &.reply {
                         .subject {
-                            
+                            position: relative;
+                            padding-left: 25px;
+                            &:before {
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                color: #888;
+                                margin-top: -10px;
+                                font-size: 15px;
+                                content: "\E80D";
+                                font-family: "fontello";
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                text-align: center;
+                margin-top: 20px;
+                p {
+                    .btn-lg {
+                        width: 300px;
+                        font-size: 13px;
+                        color: #fff;
+                        line-height: 40px;
+                        border: 0;
+                        background-color: #333;
+                    }
+                }
+            }
+            .paging {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+//board-view 
+.board-view {
+    padding-bottom: 80px;
+    article {
+        .article-header {
+            padding: 15px 10px;
+            background-color: #8d8d8d;
+            .view-title {
+                font-size: 13px;
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+        .article-content {
+            .view-content {
+                font-size: 13px;
+                color: #666;
+                font-weight: 300;
+                line-height: 24px;
+                padding: 25px 0 30px;
+                border-bottom: 1px solid #dfdfdf;
+                .date {
+                    font-size: 13px;
+                    color: #8d8d8d;
+                    text-align: right;
+                    font-weight: 500;
+                    margin-bottom: 40px;
+                    @include maven();
+                }
+            }
+            .btn-area {
+                margin-top: 30px;
+                text-align: center;
+                p {
+                    font-size: 0;
+                    ~ p {
+                        margin-top: 10px;
+                    }
+                    .btn {
+                        font-size: 13px;
+                        color: #fff;
+                        line-height: 45px;
+                        border: 0;
+                        margin-right: 10px;
+                        i {
+                            margin-right: 10px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &.btn-lg {
+                            width: 300px;
+                            background-color: #333;
+                        }
+                        &.btn-sm {
+                            width: 145px;
+                            background-color: #999;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+// 비밀번호 확인
+.board {
+    .pw-confirm {
+        .page-header {
+            figure {
+                margin-top: 50px;
+                img {
+                    width: 52px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            .summary {
+                margin-top: 30px;
+            }
+        }
+        article {
+            .article-content {
+                padding-bottom: 0;
+                .btn-area {
+                    text-align: center;
+                    p {
+                        font-size: 0;
+                        .btn-sm {
+                            display: inline-block;
+                            width: 145px;
+                            height: 45px;
+                            line-height: 45px;
+                            font-size: 14px;
+                            color: #fff;
+                            font-weight: 300;
+                            margin-right: 10px;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            &.btn-gray {
+                                background-color: #999;
+                            }
+                            &.btn-black {
+                                background-color: #333;
+                            }
                         }
                     }
                 }
@@ -5405,24 +5561,612 @@ label {
     }
 }
 
+// qna 쓰기 
+.qna-write {
+    article {
+        padding-bottom: 100px;
+        .article-content {
+            .table-wrap {
+                .table {
+                    margin-bottom: 0;
+                    border: 0;
+                    border-top: 3px solid #949595;
+                    tbody {
+                        tr {
+                            th {
+                                width: 90px;
+                                font-size: 13px;
+                                color: #333;
+                                font-weight: 400;
+                                vertical-align: middle;
+                                padding-left: 16px;
+                                line-height: 22px;
+                                border: 0;
+                                border-bottom: 1px solid #ccc;
+                                background-color: #f8f8f8;
+                                label {
+                                    color: #333;
+                                    font-weight: 400;
+                                }
+                                &.v-align {
+                                    vertical-align: top;
+                                    padding-top: 22px;
+                                }
+                            }
+                            td {
+                                padding: 10px;
+                                font-size: 12px;
+                                font-weight: 300;
+                                border: 0;
+                                border-bottom: 1px solid #ccc;
+                                .checking {
+                                    font-size: 14px;
+                                    color: #666;
+                                    font-weight: 300;
+                                    margin-top: 10px;
+                                    input[type="checkbox"] {
+                                        position: relative;
+                                        top: 2px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                                .form-group {
+                                    .form-control {
+                                        color: #333;
+                                        height: 40px;
+                                        border: 1px solid #dfdfdf;
+                                    }
+                                    textarea {
+                                        height: 285px !important;
+                                    }
+                                }
+                                &.file {
+                                    .form-group {
+                                        position: relative;
+                                        padding-right: 90px;
+                                        label {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            width: 85px;
+                                            height: 40px;
+                                            color: #fff;
+                                            text-align: center;
+                                            line-height: 40px;
+                                            background-color: #999;
+                                        }
+                                    }
+                                }
+                                &.subject {
+                                    select {
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                margin-top: 30px;
+                text-align: center;
+                p {
+                    font-size: 0;
+                    .btn-sm {
+                        display: inline-block;
+                        width: 145px;
+                        height: 45px;
+                        line-height: 45px;
+                        font-size: 14px;
+                        color: #fff;
+                        font-weight: 300;
+                        margin-right: 10px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &.btn-gray {
+                            background-color: #999;
+                        }
+                        &.btn-black {
+                            background-color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//faq-list 
+.faq {
+    padding-bottom: 70px;
+    .faq-nav {
+        margin-top: 30px;
+        ul {
+            li {
+                vertical-align: top;
+                &.space {
+                    a {
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+    article {
+        padding-top: 30px;
+        .faq-list {
+            border-top: 1px solid #dfdfdf;
+            li {
+                border-bottom: 1px solid #dfdfdf;
+                .collapse-content {
+                    border: 0;
+                    .btn-primary {
+                        position: relative;
+                        width: 100%;
+                        font-size: 14px;
+                        text-align: left;
+                        font-weight: 400;
+                        padding: 20px 10px;
+                        background-color: #fff;
+                        border: 0;
+                        box-shadow: none;
+                        &:after {
+                            position: absolute;
+                            top: 50%;
+                            right: 10px;
+                            font-size: 13px;
+                            color: #aaa;
+                            margin-top: -9px;
+                            content: "\E80F";
+                            font-family: "fontello";
+                        }
+                        .faq-title {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #8c6239;
+                            b {
+                                font-size: 16px;
+                                font-weight: bold;
+                                @include maven();
+                                margin-right: 10px;
+                            }
+                        }
+                        .subject {
+                            font-size: 14px;
+                            color: #2b2b2b;
+                            margin-top: 10px;
+                        }
+                        &.collapsed {
+                            &:after {
+                                content: "\E810";
+                            }
+                        }
+                    }
+                    .well {
+                        position: relative;
+                        font-size: 14px;
+                        line-height: 28px;
+                        color: #666;
+                        font-weight: 300;
+                        margin: 0;
+                        padding: 30px 10px 30px 70px;
+                        border: 0;
+                        border-top: 1px solid #dfdfdf;
+                        box-shadow: none;
+                        background-color: #f1f1f1;
+                        b {
+                            position: absolute;
+                            top: 30px;
+                            left: 20px;
+                            width: 30px;
+                            height: 30px;
+                            text-align: center;
+                            line-height: 29px;
+                            font-size: 16px;
+                            color: #fff;
+                            font-weight: bold;
+                            border-radius: 50%;
+                            background-color: #998675;
+                            @include maven();
+                        }
+                    }
+                }
+            }
+        }
+        .paging {
+            margin-top: 30px;
+        }
+    }
+}
 
 
+//review list
+.review-list {
+    padding-bottom: 55px;
+    article {
+        .article-content {
+            margin-top: 20px;
+            .list {
+                border-top: 1px solid #8d8d8d;
+                li {
+                    padding: 20px 0;
+                    border-bottom: 1px solid #ccc;
+                    .title {
+                        .row {
+                            .col-xs-5 {
+                                padding: 0 10px;
+                            }
+                            .col-xs-7 {
+                                padding: 0 10px;
+                            }
+                            .col-xs-12 {
+                                padding: 0 10px;
+                            }
+                        }
+                        figure {
+                            margin-bottom: 30px;
+                        }
+                        .p-title {
+                            font-size: 13px;
+                            color: #999;
+                            font-weight: 300;
+                            line-height: 21px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .subject {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-size: 15px;
+                        color: #2b2b2b;
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                    }
+                    .board-info {
+                        p {
+                            display: inline-block;
+                            font-size: 14px;
+                            color: #666;
+                            &.user {
+                                margin-right: 20px;
+                                img {
+                                    width: 51px;
+                                }
+                            }
+                            &.date {
+                                font-weight: 500;
+                                @include maven();
+                            }
+                        }
+                    }
+                }
+            }
+            .paging {
+                margin-top: 35px;
+            }
+        }
+    }
+}
 
+//review-view 
+.review-view {
+    padding-bottom: 90px;
+    article {
+        .article-header {
+            padding: 15px 10px;
+            background-color: #8d8d8d;
+            .view-title {
+                font-size: 13px;
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+        .article-content {
+            .product-info {
+                padding: 20px 10px;
+                border-bottom: 1px solid #dfdfdf;
+                .row {
+                    .col-xs-5 {
+                        padding: 0 10px;
+                    }
+                    .col-xs-7 {
+                        padding: 0 10px;
+                    }
+                    .col-xs-12 {
+                        padding: 0 10px;
+                    }
+                }
+                .p-title {
+                    font-size: 13px;
+                    color: #999;
+                    font-weight: 300;
+                    line-height: 21px;
+                }
+                .payment {
+                    font-size: 17px;
+                    color: #333;
+                    font-weight: 500;
+                    @include maven();
+                    margin-top: 20px;
+                }
+            }
+            .text-view {
+                font-size: 13px;
+                color: #666;
+                font-weight: 300;
+                line-height: 24px;
+                padding: 15px 0 30px;
+                border-bottom: 1px solid #dfdfdf;
+                .date {
+                    font-size: 13px;
+                    color: #8d8d8d;
+                    text-align: right;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                    @include maven();
+                }
+            }
+            .btn-area {
+                margin-top: 30px;
+                text-align: center;
+                p {
+                    font-size: 0;
+                    ~ p {
+                        margin-top: 10px;
+                    }
+                    .btn {
+                        font-size: 13px;
+                        color: #fff;
+                        line-height: 45px;
+                        border: 0;
+                        margin-right: 10px;
+                        i {
+                            margin-right: 10px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &.btn-lg {
+                            width: 300px;
+                            background-color: #333;
+                        }
+                        &.btn-sm {
+                            width: 145px;
+                            background-color: #999;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
 
+//notice list
+.notice-list {
+    padding-bottom: 70px;
+    article {
+        .article-content {
+            margin-top: 20px;
+            .list {
+                border-top: 1px solid #8d8d8d;
+                li {
+                    padding: 20px 0;
+                    border-bottom: 1px solid #ccc;
+                    .subject {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-size: 15px;
+                        color: #2b2b2b;
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                    }
+                    .board-info {
+                        p {
+                            display: inline-block;
+                            font-size: 14px;
+                            color: #666;
+                            &.user {
+                                margin-right: 20px;
+                                img {
+                                    width: 51px;
+                                }
+                            }
+                            &.date {
+                                font-weight: 500;
+                                @include maven();
+                            }
+                        }
+                    }
+                }
+            }
+            .paging {
+                margin-top: 45px;
+            }
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 검색 페이지 
+.global-search {
+    #content {
+        padding-bottom: 55px;
+    }
+    .search-area {
+        padding: 20px 0;
+        background-color: #f8f8f8;
+        .form-group {
+            & ~ .form-group {
+                overflow: hidden;
+                margin-top: 10px;
+                p {
+                    position: relative;
+                    float: left;
+                    width: 50%;
+                    label {
+                        position: absolute;
+                        top: 0;
+                        font-size: 12px;
+                        color: #666;
+                        font-weight: 400;
+                        line-height: 40px;
+                    }
+                    &:nth-of-type(1) {
+                        padding-right: 40px;
+                        label {
+                            right: 10px;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        padding-right: 15px;
+                        label {
+                            right: 0;
+                        }
+                    }
+                }
+            }
+            .form-control {
+                height: 40px;
+            }
+        }
+        .search-btn {
+            margin-top: 10px;
+            .btn-default {
+                width: 100%;
+                font-size: 14px;
+                color: #fff;
+                height: 40px;
+                border: 0;
+                line-height: 40px;
+                @include maven();
+                background-color: #333;
+            }
+        }
+    }
+    .search-list {
+        width: 100%;
+        padding-top: 20px;
+        border-top: 1px solid #dfdfdf;
+        .item-choice {
+            padding-right: 5px;
+        }
+        .conditioned-choice {
+            padding-left: 5px;
+        }
+        .choice-list {
+            width: 100%;
+            .btn-default {
+                position: relative;
+                width: 100%;
+                font-size: 12px;
+                color: #2b2b2b;
+                font-weight: 300;
+                text-align: left;
+                border: 0;
+                border-bottom: 1px solid #ccc;
+                padding: 13px 10px 13px 15px;
+                background: none !important;
+                box-shadow: none !important;
+                z-index: 2;
+                .caret {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    margin-top: -2px;
+                }
+            }
+            .dropdown-menu {
+                margin: 0;
+                margin-top: -1px;
+                padding: 0;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                min-width: 100%;
+                z-index: 1;
+                background-color: rgba(247, 247, 247, .9);
+                li {
+                    a {
+                        display: block;
+                        font-size: 12px;
+                        color: #666;
+                        font-weight: 300;
+                        line-height: 30px;
+                        padding: 0;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        background: none !important;
+                    }
+                }
+            }
+        }
+    }
+    .result {
+        margin-top: 20px;
+        .none-search {
+            padding: 30px 0 60px;
+            font-size: 16px;
+            color: #333;
+            font-weight: 300;
+            text-align: center;
+        }
+        .result-list {
+            overflow: hidden;
+            > li {
+                float: left;
+                width: 50%;
+                padding: 0 5px;
+                margin-top: 20px;
+                &:nth-of-type(1) {
+                    margin-top: 0;
+                }
+                &:nth-of-type(2) {
+                    margin-top: 0;
+                }
+                &:nth-of-type(2n + 1) {
+                    clear: both;
+                }
+                a {
+                    display: block;
+                    figure {
+                        .img-responsive {
+                            margin: 0 auto;
+                        }
+                    }
+                    .details {
+                        text-align: center;
+                        margin-top: 20px;
+                        .title {
+                            font-size: 12px;
+                            color: #333;
+                            font-weight: 300;
+                            line-height: 16px;
+                        }
+                        .recommend-list {
+                            margin-top: 10px;
+                        }
+                        b {
+                            display: inline-block;
+                            font-size: 13px;
+                            color: #333;
+                            font-weight: 600;
+                            margin-top: 15px;
+                            @include maven();
+                        }
+                    }
+                }
+            }
+        }
+        .paging {
+            margin-top: 45px;
+        }
+    }
+}
 
 
 

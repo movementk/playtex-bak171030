@@ -3,9 +3,9 @@
 <body class="board">
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/header.php"); ?>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/nav.php"); ?>
-	<main id="content" class="qna-list">
+	<main id="content" class="notice-list">
 		<div class="page-header">
-		    <h2 class="title">Q&amp;A</h2>
+		    <h2 class="title">Notice</h2>
 		</div>
         <div class="container">
 		    <article>
@@ -31,35 +31,7 @@
 		            <ul class="list">
 		                <li>
                             <a href="#">
-		                        <div class="title">
-                                    <div class="row">
-                                        <div class="col-xs-5">
-                                            <figure>
-                                                <img src="/design/playtex/mobile/images/board/qna_list_img.jpg" class="img-responsive" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="col-xs-7">
-                                            <h3 class="p-title">★80%할인★[Playtex] 플레이텍스 에센셜 노와이어 30종 택1_PXI_SELECT10</h3>
-                                        </div>
-                                    </div>
-		                        </div>
-                                <p class="subject">[상품문의] 구성품이 어떻게 되나요?</p>
-                                <div class="board-info">
-                                    <p class="user">송혜*</p>
-                                    <p class="date">2017-08-01</p>
-                                </div>
-                            </a>
-		                </li>
-		                <li class="reply">
-                            <a href="#">
-		                        <div class="title">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <h3 class="p-title">★80%할인★[Playtex] 플레이텍스 에센셜 노와이어 30종 택1_PXI_SELECT10</h3>
-                                        </div>
-                                    </div>
-		                        </div>
-                                <p class="subject">[상품문의] 구성품이 어떻게 되나요?</p>
+                                <p class="subject">회원등급 업그레이드 안내</p>
                                 <div class="board-info">
                                     <p class="user"><img src="/design/playtex/mobile/images/board/logo.jpg" alt=""></p>
                                     <p class="date">2017-08-01</p>
@@ -68,30 +40,7 @@
 		                </li>
 		                <li>
                             <a href="#">
-		                        <div class="title">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <h3 class="p-title">[배송문의] 언제쯤 배송이 될까요?</h3>
-                                        </div>
-                                    </div>
-		                        </div>
-                                <p class="subject">[상품문의] 구성품이 어떻게 되나요?</p>
-                                <div class="board-info">
-                                    <p class="user">송혜*</p>
-                                    <p class="date">2017-08-01</p>
-                                </div>
-                            </a>
-		                </li>
-		                <li class="reply">
-                            <a href="#">
-		                        <div class="title">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <h3 class="p-title">[배송문의] 언제쯤 배송이 될까요?</h3>
-                                        </div>
-                                    </div>
-		                        </div>
-                                <p class="subject">[상품문의] 구성품이 어떻게 되나요?</p>
+                                <p class="subject">플레이텍스몰 1주년 기념 무상팬티 배송안내</p>
                                 <div class="board-info">
                                     <p class="user"><img src="/design/playtex/mobile/images/board/logo.jpg" alt=""></p>
                                     <p class="date">2017-08-01</p>
@@ -100,58 +49,50 @@
 		                </li>
 		                <li>
                             <a href="#">
-		                        <div class="title">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <h3 class="p-title">[배송문의] 언제쯤 배송이 될까요?</h3>
-                                        </div>
-                                    </div>
-		                        </div>
-                                <p class="subject">[상품문의] 구성품이 어떻게 되나요?</p>
+                                <p class="subject">5월 첫 주 황금연휴 고객센터/배송안내</p>
                                 <div class="board-info">
-                                    <p class="user">송혜*</p>
+                                    <p class="user"><img src="/design/playtex/mobile/images/board/logo.jpg" alt=""></p>
                                     <p class="date">2017-08-01</p>
                                 </div>
                             </a>
 		                </li>
 		                <li>
                             <a href="#">
-		                        <div class="title">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <h3 class="p-title">[배송문의] 언제쯤 배송이 될까요?</h3>
-                                        </div>
-                                    </div>
-		                        </div>
-                                <p class="subject">[상품문의] 구성품이 어떻게 되나요?</p>
+                                <p class="subject">2017년 구정연휴 고객센터/배송 안내</p>
                                 <div class="board-info">
-                                    <p class="user">송혜*</p>
+                                    <p class="user"><img src="/design/playtex/mobile/images/board/logo.jpg" alt=""></p>
                                     <p class="date">2017-08-01</p>
                                 </div>
                             </a>
 		                </li>
 		                <li>
                             <a href="#">
-		                        <div class="title">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <h3 class="p-title">[배송문의] 언제쯤 배송이 될까요?</h3>
-                                        </div>
-                                    </div>
-		                        </div>
-                                <p class="subject">[상품문의] 구성품이 어떻게 되나요?</p>
+                                <p class="subject">플레이텍스몰 10월27일(목) 물류센터 휴무 안내</p>
                                 <div class="board-info">
-                                    <p class="user">송혜*</p>
+                                    <p class="user"><img src="/design/playtex/mobile/images/board/logo.jpg" alt=""></p>
+                                    <p class="date">2017-08-01</p>
+                                </div>
+                            </a>
+		                </li>
+		                <li>
+                            <a href="#">
+                                <p class="subject">플레이텍스몰 10월14일(금) 임시휴무 안내</p>
+                                <div class="board-info">
+                                    <p class="user"><img src="/design/playtex/mobile/images/board/logo.jpg" alt=""></p>
+                                    <p class="date">2017-08-01</p>
+                                </div>
+                            </a>
+		                </li>
+		                <li>
+                            <a href="#">
+                                <p class="subject">플레이텍스몰 ★추석연휴★ 배송안내</p>
+                                <div class="board-info">
+                                    <p class="user"><img src="/design/playtex/mobile/images/board/logo.jpg" alt=""></p>
                                     <p class="date">2017-08-01</p>
                                 </div>
                             </a>
 		                </li>
 		            </ul>
-		            <div class="btn-area">
-		                <p>
-		                    <a href="#" class="btn btn-lg" role="button">문의하기</a>
-		                </p>
-		            </div>
 		            <nav class="paging" aria-label="Page navigation">
                         <ul class="pagination">
                             <li class="first">

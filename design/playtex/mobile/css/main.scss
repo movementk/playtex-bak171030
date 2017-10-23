@@ -174,8 +174,8 @@ body.nav-opened {
 					display: inline;
 					.bx-pager-link {
 						float: left;
-						width: 10px;
-						height: 10px;
+						width: 11px;
+						height: 11px;
 						border: 1px solid #fff;
 						border-radius: 50%;
 						&.active {
@@ -227,19 +227,19 @@ body.nav-opened {
 				.column-1 {
 					&:before {
 						
-						content: "\E80E";
+						content: "\E812";
 						font-size: 18px;
 					}
 				}
 				.column-2 {
 					&:before {
-						content: "\E809";
+						content: "\E80E";
 						font-size: 16px;
 					}
 				}
 				.column-3 {
 					&:before {
-						content: "\E80D";
+						content: "\E811";
 						font-size: 16px;
 					}
 				}
@@ -252,6 +252,7 @@ body.nav-opened {
 	.product-list {
 		margin-bottom: 15px;
 		li {
+			margin-bottom: 20px;
 			.product-item {
 				figure {
 					.img-responsive {
@@ -275,6 +276,9 @@ body.nav-opened {
 					}
 				}
 			}
+			&.hidden {
+				display: none;
+			}
 		}
 		&.product-list-1 {
 			padding-left: 10px;
@@ -286,7 +290,6 @@ body.nav-opened {
 			padding-right: 10px;
 			li {
 				float: left;
-				margin-bottom: 15px;
 				padding-left: 5px;
 				padding-right: 5px;
 				width: 50%;
@@ -301,7 +304,6 @@ body.nav-opened {
 			padding-right: 10px;
 			li {
 				float: left;
-				margin-bottom: 15px;
 				padding-left: 5px;
 				padding-right: 5px;
 				width: 33.33%;
@@ -359,7 +361,7 @@ body.nav-opened {
 					background-image: url(/design/playtex/mobile/images/main/img_lineup_1.jpg);
 				}
 				&.line-up-2 {
-					background-image: url(/design/playtex/mobile/images/main/img_lineup_1.jpg);
+					background-image: url(/design/playtex/mobile/images/main/img_lineup_2.jpg);
 				}
 				&.line-up-3 {
 					background-image: url(/design/playtex/mobile/images/main/img_lineup_3.jpg);

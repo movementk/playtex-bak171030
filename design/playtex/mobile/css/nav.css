@@ -136,15 +136,17 @@ address {
     #nav > .menu > ul > li.active > ul {
       display: block; }
 
-body.nav-opened #nav {
-  right: 0;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s; }
+body.nav-opened {
+  overflow: hidden; }
+  body.nav-opened #nav {
+    right: 0;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
 
 /*# sourceMappingURL=nav.css.map */
