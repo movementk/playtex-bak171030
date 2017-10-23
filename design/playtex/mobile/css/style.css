@@ -787,7 +787,8 @@ label {
     font-size: 0; }
     .product-nav ul li {
       display: inline-block;
-      width: 33.33%; }
+      width: 33.33%;
+      vertical-align: top; }
       .product-nav ul li a {
         position: relative;
         text-align: center;
@@ -800,6 +801,8 @@ label {
         z-index: 99;
         border-right: 1px solid #b5b5b5;
         border-bottom: 1px solid #b5b5b5; }
+        .product-nav ul li a span {
+          font-family: 'Noto Sans KR', sans-serif; }
       .product-nav ul li:nth-of-type(1) a {
         border-top: 1px solid #b5b5b5; }
       .product-nav ul li:nth-of-type(2) a {
@@ -811,6 +814,8 @@ label {
         font-weight: bold;
         border-color: #2b2b2b;
         background-color: #2b2b2b; }
+      .product-nav ul li.space a {
+        padding: 5px 0; }
       .product-nav ul li:nth-of-type(3n + 1) a {
         border-left: 1px solid #b5b5b5; }
       .product-nav ul li:nth-of-type(3n + 1).active {
@@ -3835,6 +3840,9 @@ label {
           line-height: 21px;
           margin-bottom: 20px; }
         .qna-list article .article-content .list li .subject {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
           font-size: 15px;
           color: #2b2b2b;
           font-weight: 300;
@@ -3850,5 +3858,543 @@ label {
           .qna-list article .article-content .list li .board-info p.date {
             font-weight: 500;
             font-family: 'Maven Pro', sans-serif; }
+        .qna-list article .article-content .list li.reply .subject {
+          position: relative;
+          padding-left: 25px; }
+          .qna-list article .article-content .list li.reply .subject:before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            color: #888;
+            margin-top: -10px;
+            font-size: 15px;
+            content: "\E80D";
+            font-family: "fontello"; }
+    .qna-list article .article-content .btn-area {
+      text-align: center;
+      margin-top: 20px; }
+      .qna-list article .article-content .btn-area p .btn-lg {
+        width: 300px;
+        font-size: 13px;
+        color: #fff;
+        line-height: 40px;
+        border: 0;
+        background-color: #333; }
+    .qna-list article .article-content .paging {
+      margin-top: 40px; }
+
+.board-view {
+  padding-bottom: 80px; }
+  .board-view article .article-header {
+    padding: 15px 10px;
+    background-color: #8d8d8d; }
+    .board-view article .article-header .view-title {
+      font-size: 13px;
+      color: #fff;
+      font-weight: 400; }
+  .board-view article .article-content .view-content {
+    font-size: 13px;
+    color: #666;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 25px 0 30px;
+    border-bottom: 1px solid #dfdfdf; }
+    .board-view article .article-content .view-content .date {
+      font-size: 13px;
+      color: #8d8d8d;
+      text-align: right;
+      font-weight: 500;
+      margin-bottom: 40px;
+      font-family: 'Maven Pro', sans-serif; }
+  .board-view article .article-content .btn-area {
+    margin-top: 30px;
+    text-align: center; }
+    .board-view article .article-content .btn-area p {
+      font-size: 0; }
+      .board-view article .article-content .btn-area p ~ p {
+        margin-top: 10px; }
+      .board-view article .article-content .btn-area p .btn {
+        font-size: 13px;
+        color: #fff;
+        line-height: 45px;
+        border: 0;
+        margin-right: 10px; }
+        .board-view article .article-content .btn-area p .btn i {
+          margin-right: 10px; }
+        .board-view article .article-content .btn-area p .btn:last-child {
+          margin-right: 0; }
+        .board-view article .article-content .btn-area p .btn.btn-lg {
+          width: 300px;
+          background-color: #333; }
+        .board-view article .article-content .btn-area p .btn.btn-sm {
+          width: 145px;
+          background-color: #999; }
+
+.board .pw-confirm .page-header figure {
+  margin-top: 50px; }
+  .board .pw-confirm .page-header figure img {
+    width: 52px;
+    display: block;
+    margin: 0 auto; }
+.board .pw-confirm .page-header .summary {
+  margin-top: 30px; }
+.board .pw-confirm article .article-content {
+  padding-bottom: 0; }
+  .board .pw-confirm article .article-content .btn-area {
+    text-align: center; }
+    .board .pw-confirm article .article-content .btn-area p {
+      font-size: 0; }
+      .board .pw-confirm article .article-content .btn-area p .btn-sm {
+        display: inline-block;
+        width: 145px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 300;
+        margin-right: 10px; }
+        .board .pw-confirm article .article-content .btn-area p .btn-sm:last-child {
+          margin-right: 0; }
+        .board .pw-confirm article .article-content .btn-area p .btn-sm.btn-gray {
+          background-color: #999; }
+        .board .pw-confirm article .article-content .btn-area p .btn-sm.btn-black {
+          background-color: #333; }
+
+.qna-write article {
+  padding-bottom: 100px; }
+  .qna-write article .article-content .table-wrap .table {
+    margin-bottom: 0;
+    border: 0;
+    border-top: 3px solid #949595; }
+    .qna-write article .article-content .table-wrap .table tbody tr th {
+      width: 90px;
+      font-size: 13px;
+      color: #333;
+      font-weight: 400;
+      vertical-align: middle;
+      padding-left: 16px;
+      line-height: 22px;
+      border: 0;
+      border-bottom: 1px solid #ccc;
+      background-color: #f8f8f8; }
+      .qna-write article .article-content .table-wrap .table tbody tr th label {
+        color: #333;
+        font-weight: 400; }
+      .qna-write article .article-content .table-wrap .table tbody tr th.v-align {
+        vertical-align: top;
+        padding-top: 22px; }
+    .qna-write article .article-content .table-wrap .table tbody tr td {
+      padding: 10px;
+      font-size: 12px;
+      font-weight: 300;
+      border: 0;
+      border-bottom: 1px solid #ccc; }
+      .qna-write article .article-content .table-wrap .table tbody tr td .checking {
+        font-size: 14px;
+        color: #666;
+        font-weight: 300;
+        margin-top: 10px; }
+        .qna-write article .article-content .table-wrap .table tbody tr td .checking input[type="checkbox"] {
+          position: relative;
+          top: 2px;
+          margin-right: 5px; }
+      .qna-write article .article-content .table-wrap .table tbody tr td .form-group .form-control {
+        color: #333;
+        height: 40px;
+        border: 1px solid #dfdfdf; }
+      .qna-write article .article-content .table-wrap .table tbody tr td .form-group textarea {
+        height: 285px !important; }
+      .qna-write article .article-content .table-wrap .table tbody tr td.file .form-group {
+        position: relative;
+        padding-right: 90px; }
+        .qna-write article .article-content .table-wrap .table tbody tr td.file .form-group label {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 85px;
+          height: 40px;
+          color: #fff;
+          text-align: center;
+          line-height: 40px;
+          background-color: #999; }
+      .qna-write article .article-content .table-wrap .table tbody tr td.subject select {
+        margin-bottom: 10px; }
+  .qna-write article .article-content .btn-area {
+    margin-top: 30px;
+    text-align: center; }
+    .qna-write article .article-content .btn-area p {
+      font-size: 0; }
+      .qna-write article .article-content .btn-area p .btn-sm {
+        display: inline-block;
+        width: 145px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 300;
+        margin-right: 10px; }
+        .qna-write article .article-content .btn-area p .btn-sm:last-child {
+          margin-right: 0; }
+        .qna-write article .article-content .btn-area p .btn-sm.btn-gray {
+          background-color: #999; }
+        .qna-write article .article-content .btn-area p .btn-sm.btn-black {
+          background-color: #333; }
+
+.faq {
+  padding-bottom: 70px; }
+  .faq .faq-nav {
+    margin-top: 30px; }
+    .faq .faq-nav ul li {
+      vertical-align: top; }
+      .faq .faq-nav ul li.space a {
+        padding: 5px 0; }
+  .faq article {
+    padding-top: 30px; }
+    .faq article .faq-list {
+      border-top: 1px solid #dfdfdf; }
+      .faq article .faq-list li {
+        border-bottom: 1px solid #dfdfdf; }
+        .faq article .faq-list li .collapse-content {
+          border: 0; }
+          .faq article .faq-list li .collapse-content .btn-primary {
+            position: relative;
+            width: 100%;
+            font-size: 14px;
+            text-align: left;
+            font-weight: 400;
+            padding: 20px 10px;
+            background-color: #fff;
+            border: 0;
+            box-shadow: none; }
+            .faq article .faq-list li .collapse-content .btn-primary:after {
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              font-size: 13px;
+              color: #aaa;
+              margin-top: -9px;
+              content: "\E80F";
+              font-family: "fontello"; }
+            .faq article .faq-list li .collapse-content .btn-primary .faq-title {
+              font-size: 14px;
+              font-weight: 400;
+              color: #8c6239; }
+              .faq article .faq-list li .collapse-content .btn-primary .faq-title b {
+                font-size: 16px;
+                font-weight: bold;
+                font-family: 'Maven Pro', sans-serif;
+                margin-right: 10px; }
+            .faq article .faq-list li .collapse-content .btn-primary .subject {
+              font-size: 14px;
+              color: #2b2b2b;
+              margin-top: 10px; }
+            .faq article .faq-list li .collapse-content .btn-primary.collapsed:after {
+              content: "\E810"; }
+          .faq article .faq-list li .collapse-content .well {
+            position: relative;
+            font-size: 14px;
+            line-height: 28px;
+            color: #666;
+            font-weight: 300;
+            margin: 0;
+            padding: 30px 10px 30px 70px;
+            border: 0;
+            border-top: 1px solid #dfdfdf;
+            box-shadow: none;
+            background-color: #f1f1f1; }
+            .faq article .faq-list li .collapse-content .well b {
+              position: absolute;
+              top: 30px;
+              left: 20px;
+              width: 30px;
+              height: 30px;
+              text-align: center;
+              line-height: 29px;
+              font-size: 16px;
+              color: #fff;
+              font-weight: bold;
+              border-radius: 50%;
+              background-color: #998675;
+              font-family: 'Maven Pro', sans-serif; }
+    .faq article .paging {
+      margin-top: 30px; }
+
+.review-list {
+  padding-bottom: 55px; }
+  .review-list article .article-content {
+    margin-top: 20px; }
+    .review-list article .article-content .list {
+      border-top: 1px solid #8d8d8d; }
+      .review-list article .article-content .list li {
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc; }
+        .review-list article .article-content .list li .title .row .col-xs-5 {
+          padding: 0 10px; }
+        .review-list article .article-content .list li .title .row .col-xs-7 {
+          padding: 0 10px; }
+        .review-list article .article-content .list li .title .row .col-xs-12 {
+          padding: 0 10px; }
+        .review-list article .article-content .list li .title figure {
+          margin-bottom: 30px; }
+        .review-list article .article-content .list li .title .p-title {
+          font-size: 13px;
+          color: #999;
+          font-weight: 300;
+          line-height: 21px;
+          margin-bottom: 20px; }
+        .review-list article .article-content .list li .subject {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 15px;
+          color: #2b2b2b;
+          font-weight: 300;
+          margin-bottom: 10px; }
+        .review-list article .article-content .list li .board-info p {
+          display: inline-block;
+          font-size: 14px;
+          color: #666; }
+          .review-list article .article-content .list li .board-info p.user {
+            margin-right: 20px; }
+            .review-list article .article-content .list li .board-info p.user img {
+              width: 51px; }
+          .review-list article .article-content .list li .board-info p.date {
+            font-weight: 500;
+            font-family: 'Maven Pro', sans-serif; }
+    .review-list article .article-content .paging {
+      margin-top: 35px; }
+
+.review-view {
+  padding-bottom: 90px; }
+  .review-view article .article-header {
+    padding: 15px 10px;
+    background-color: #8d8d8d; }
+    .review-view article .article-header .view-title {
+      font-size: 13px;
+      color: #fff;
+      font-weight: 400; }
+  .review-view article .article-content .product-info {
+    padding: 20px 10px;
+    border-bottom: 1px solid #dfdfdf; }
+    .review-view article .article-content .product-info .row .col-xs-5 {
+      padding: 0 10px; }
+    .review-view article .article-content .product-info .row .col-xs-7 {
+      padding: 0 10px; }
+    .review-view article .article-content .product-info .row .col-xs-12 {
+      padding: 0 10px; }
+    .review-view article .article-content .product-info .p-title {
+      font-size: 13px;
+      color: #999;
+      font-weight: 300;
+      line-height: 21px; }
+    .review-view article .article-content .product-info .payment {
+      font-size: 17px;
+      color: #333;
+      font-weight: 500;
+      font-family: 'Maven Pro', sans-serif;
+      margin-top: 20px; }
+  .review-view article .article-content .text-view {
+    font-size: 13px;
+    color: #666;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 15px 0 30px;
+    border-bottom: 1px solid #dfdfdf; }
+    .review-view article .article-content .text-view .date {
+      font-size: 13px;
+      color: #8d8d8d;
+      text-align: right;
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-family: 'Maven Pro', sans-serif; }
+  .review-view article .article-content .btn-area {
+    margin-top: 30px;
+    text-align: center; }
+    .review-view article .article-content .btn-area p {
+      font-size: 0; }
+      .review-view article .article-content .btn-area p ~ p {
+        margin-top: 10px; }
+      .review-view article .article-content .btn-area p .btn {
+        font-size: 13px;
+        color: #fff;
+        line-height: 45px;
+        border: 0;
+        margin-right: 10px; }
+        .review-view article .article-content .btn-area p .btn i {
+          margin-right: 10px; }
+        .review-view article .article-content .btn-area p .btn:last-child {
+          margin-right: 0; }
+        .review-view article .article-content .btn-area p .btn.btn-lg {
+          width: 300px;
+          background-color: #333; }
+        .review-view article .article-content .btn-area p .btn.btn-sm {
+          width: 145px;
+          background-color: #999; }
+
+.notice-list {
+  padding-bottom: 70px; }
+  .notice-list article .article-content {
+    margin-top: 20px; }
+    .notice-list article .article-content .list {
+      border-top: 1px solid #8d8d8d; }
+      .notice-list article .article-content .list li {
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc; }
+        .notice-list article .article-content .list li .subject {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 15px;
+          color: #2b2b2b;
+          font-weight: 300;
+          margin-bottom: 10px; }
+        .notice-list article .article-content .list li .board-info p {
+          display: inline-block;
+          font-size: 14px;
+          color: #666; }
+          .notice-list article .article-content .list li .board-info p.user {
+            margin-right: 20px; }
+            .notice-list article .article-content .list li .board-info p.user img {
+              width: 51px; }
+          .notice-list article .article-content .list li .board-info p.date {
+            font-weight: 500;
+            font-family: 'Maven Pro', sans-serif; }
+    .notice-list article .article-content .paging {
+      margin-top: 45px; }
+
+.global-search #content {
+  padding-bottom: 55px; }
+.global-search .search-area {
+  padding: 20px 0;
+  background-color: #f8f8f8; }
+  .global-search .search-area .form-group ~ .form-group {
+    overflow: hidden;
+    margin-top: 10px; }
+    .global-search .search-area .form-group ~ .form-group p {
+      position: relative;
+      float: left;
+      width: 50%; }
+      .global-search .search-area .form-group ~ .form-group p label {
+        position: absolute;
+        top: 0;
+        font-size: 12px;
+        color: #666;
+        font-weight: 400;
+        line-height: 40px; }
+      .global-search .search-area .form-group ~ .form-group p:nth-of-type(1) {
+        padding-right: 40px; }
+        .global-search .search-area .form-group ~ .form-group p:nth-of-type(1) label {
+          right: 10px; }
+      .global-search .search-area .form-group ~ .form-group p:nth-of-type(2) {
+        padding-right: 15px; }
+        .global-search .search-area .form-group ~ .form-group p:nth-of-type(2) label {
+          right: 0; }
+  .global-search .search-area .form-group .form-control {
+    height: 40px; }
+  .global-search .search-area .search-btn {
+    margin-top: 10px; }
+    .global-search .search-area .search-btn .btn-default {
+      width: 100%;
+      font-size: 14px;
+      color: #fff;
+      height: 40px;
+      border: 0;
+      line-height: 40px;
+      font-family: 'Maven Pro', sans-serif;
+      background-color: #333; }
+.global-search .search-list {
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #dfdfdf; }
+  .global-search .search-list .item-choice {
+    padding-right: 5px; }
+  .global-search .search-list .conditioned-choice {
+    padding-left: 5px; }
+  .global-search .search-list .choice-list {
+    width: 100%; }
+    .global-search .search-list .choice-list .btn-default {
+      position: relative;
+      width: 100%;
+      font-size: 12px;
+      color: #2b2b2b;
+      font-weight: 300;
+      text-align: left;
+      border: 0;
+      border-bottom: 1px solid #ccc;
+      padding: 13px 10px 13px 15px;
+      background: none !important;
+      box-shadow: none !important;
+      z-index: 2; }
+      .global-search .search-list .choice-list .btn-default .caret {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        margin-top: -2px; }
+    .global-search .search-list .choice-list .dropdown-menu {
+      margin: 0;
+      margin-top: -1px;
+      padding: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      min-width: 100%;
+      z-index: 1;
+      background-color: rgba(247, 247, 247, 0.9); }
+      .global-search .search-list .choice-list .dropdown-menu li a {
+        display: block;
+        font-size: 12px;
+        color: #666;
+        font-weight: 300;
+        line-height: 30px;
+        padding: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: none !important; }
+.global-search .result {
+  margin-top: 20px; }
+  .global-search .result .none-search {
+    padding: 30px 0 60px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 300;
+    text-align: center; }
+  .global-search .result .result-list {
+    overflow: hidden; }
+    .global-search .result .result-list > li {
+      float: left;
+      width: 50%;
+      padding: 0 5px;
+      margin-top: 20px; }
+      .global-search .result .result-list > li:nth-of-type(1) {
+        margin-top: 0; }
+      .global-search .result .result-list > li:nth-of-type(2) {
+        margin-top: 0; }
+      .global-search .result .result-list > li:nth-of-type(2n + 1) {
+        clear: both; }
+      .global-search .result .result-list > li a {
+        display: block; }
+        .global-search .result .result-list > li a figure .img-responsive {
+          margin: 0 auto; }
+        .global-search .result .result-list > li a .details {
+          text-align: center;
+          margin-top: 20px; }
+          .global-search .result .result-list > li a .details .title {
+            font-size: 12px;
+            color: #333;
+            font-weight: 300;
+            line-height: 16px; }
+          .global-search .result .result-list > li a .details .recommend-list {
+            margin-top: 10px; }
+          .global-search .result .result-list > li a .details b {
+            display: inline-block;
+            font-size: 13px;
+            color: #333;
+            font-weight: 600;
+            margin-top: 15px;
+            font-family: 'Maven Pro', sans-serif; }
+  .global-search .result .paging {
+    margin-top: 45px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,22 +1,20 @@
 <?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/dochead.php"); ?>
 </head>
-<body class="product design">
+<body class="product size">
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/header.php"); ?>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/nav.php"); ?>
-	<main id="content" class="common-list 18hour-list">
+	<main id="content" class="common-list ccup-list">
 		<div class="page-header">
-		    <h2 class="title">DESIGN</h2>
+		    <h2 class="title">SIZE</h2>
 		</div>
         
         <nav class="product-nav">
             <div class="container">
                 <ul>
-                    <li class="active"><a href="/mobile/design/18hour_list.php">18HOUR</a></li>
-                    <li><a href="/mobile/design/essential_list.php">ESSENTIAL</a></li>
-                    <li class="space"><a href="/mobile/design/ideal_beauty_list.php">IDEAL<br>BEAUTY</a></li>
-                    <li><a href="/mobile/design/play_list.php">PLAY</a></li>
-                    <li class="space"><a href="/mobile/design/under_cover_list.php">UNDER<br>COVER</a></li>
-                    <li class="space"><a href="/mobile/design/perfect_silhoustte_list.php">PERFECT<br>SILHOUETTE</a></li>
+                    <li><a href="/mobile/size/acup_list.php">A<span>컵</span></a></li>
+                    <li><a href="/mobile/size/bcup_list.php">B<span>컵</span></a></li>
+                    <li class="active"><a href="/mobile/size/ccup_list.php">C<span>컵</span></a></li>
+                    <li><a href="/mobile/size/dcup_list.php">D<span>컵</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -24,7 +22,7 @@
         <article>
             <div class="article-header">
                 <div class="container">
-                    <h3 class="article-title">18HOUR</h3>
+                    <h3 class="article-title">C컵</h3>
                     <p class="summary">
                         18시간의 자유로움, 스트레스프리<br>
                         노와이어 기술력의 집약체
@@ -112,7 +110,7 @@
                     <div class="product-list">
                         <ul>
                             <li>
-                                <a href="/mobile/design/18hour_view.php">
+                                <a href="/mobile/size/acup_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                     </p>
@@ -126,7 +124,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/mobile/design/18hour_view.php">
+                                <a href="/mobile/size/acup_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                     </p>
@@ -140,7 +138,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/mobile/design/18hour_view.php">
+                                <a href="/mobile/size/acup_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                     </p>
@@ -154,7 +152,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/mobile/design/18hour_view.php">
+                                <a href="/mobile/size/acup_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                     </p>
@@ -168,7 +166,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/mobile/design/18hour_view.php">
+                                <a href="/mobile/size/acup_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/images/item/product_list_img01.jpg" class="img-responsive" alt="">
                                     </p>
@@ -182,7 +180,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/mobile/design/18hour_view.php">
+                                <a href="/mobile/size/acup_view.php">
                                     <p class="figure">
                                         <img src="/design/playtex/mobile/images/item/product_list_img02.jpg" class="img-responsive" alt="">
                                     </p>
