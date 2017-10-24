@@ -10,7 +10,7 @@
         <nav class="mypage-nav">
             <div class="container">
                 <ul>
-                    <li class="active space"><a href="/mobile/mypage/order_list.php">주문내역/<br>배송조회</a></li>
+                    <li class="active space"><a href="/mobile/mypage/order_list.php">주문내역/<br>주문조회</a></li>
                     <li><a href="/mobile/mypage/mileage.php">적립금</a></li>
                     <li><a href="/mobile/mypage/coupon.php">할인쿠폰</a></li>
                     <li><a href="/mobile/mypage/wish_list.php">위시리스트</a></li>
@@ -24,89 +24,171 @@
         </nav>
         <div class="container">
 		    <article class="order-info">
+                <dl class="order-num">
+                    <dt>주문번호</dt>
+                    <dd>20171024151857-91474702545</dd>
+                </dl>
 		        <ul class="list">
 		            <li>
-		                <h3 class="p-title">★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08</h3>
-		                <div class="row">
-		                    <div class="col-xs-8">
-		                        <dl>
-		                            <dt>주문일자</dt>
-		                            <dd>2017-08-01</dd>
-		                            <dt>결제금액</dt>
-		                            <dd>39,900원</dd>
-		                            <dt>주문현황</dt>
-		                            <dd>배송완료</dd>
-		                        </dl>
-		                    </div>
-		                    <div class="col-xs-4">
-		                        <p class="inquire-btn">
-                                    <a href="#" class="btn btn-gray" role="button">주문조회</a>
-                                    <a href="#" class="btn btn-beige" role="button">배송조회</a>
-		                        </p>
-		                    </div>
+		                <h3 class="p-title">
+		                    <span class="waiting">결제대기</span> ★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08
+		                </h3>
+		                <div class="details">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <dl>
+                                        <dt>사이즈</dt>
+                                        <dd>75C(90)</dd>
+                                        <dt>수량</dt>
+                                        <dd>1</dd>
+                                        <dt>상태</dt>
+                                        <dd>배송완료</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p class="inquire-btn">
+                                        <a href="#" class="btn btn-gray" role="button">리뷰작성</a>
+                                        <a href="#" class="btn btn-beige" role="button">주문조회</a>
+                                    </p>
+                                </div>
+                            </div>
 		                </div>
 		            </li>
 		            <li>
-		                <h3 class="p-title">★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08</h3>
-		                <div class="row">
-		                    <div class="col-xs-8">
-		                        <dl>
-		                            <dt>주문일자</dt>
-		                            <dd>2017-08-01</dd>
-		                            <dt>결제금액</dt>
-		                            <dd>39,900원</dd>
-		                            <dt>주문현황</dt>
-		                            <dd>배송완료</dd>
-		                        </dl>
-		                    </div>
-		                    <div class="col-xs-4">
-		                        <p class="inquire-btn">
-                                    <a href="#" class="btn btn-gray" role="button">주문조회</a>
-                                    <a href="#" class="btn btn-beige" role="button">배송조회</a>
-		                        </p>
-		                    </div>
+		                <h3 class="p-title">
+		                    <span class="waiting">결제대기</span> ★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08
+		                </h3>
+		                <div class="details">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <dl>
+                                        <dt>사이즈</dt>
+                                        <dd>75C(90)</dd>
+                                        <dt>수량</dt>
+                                        <dd>1</dd>
+                                        <dt>상태</dt>
+                                        <dd>배송완료</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p class="inquire-btn">
+                                        <a href="#" class="btn btn-gray" role="button">리뷰작성</a>
+                                        <a href="#" class="btn btn-beige" role="button">주문조회</a>
+                                    </p>
+                                </div>
+                            </div>
+		                </div>
+		            </li>
+		        </ul>
+		        <dl class="order-num">
+                    <dt>주문번호</dt>
+                    <dd>20171024151857-91474702545</dd>
+                </dl>
+		        <ul class="list">
+		            <li>
+		                <h3 class="p-title">
+		                    <span class="waiting">결제대기</span> ★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08
+		                </h3>
+		                <div class="details">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <dl>
+                                        <dt>사이즈</dt>
+                                        <dd>75C(90)</dd>
+                                        <dt>수량</dt>
+                                        <dd>1</dd>
+                                        <dt>상태</dt>
+                                        <dd>배송완료</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p class="inquire-btn">
+                                        <a href="#" class="btn btn-gray" role="button">리뷰작성</a>
+                                        <a href="#" class="btn btn-beige" role="button">주문조회</a>
+                                    </p>
+                                </div>
+                            </div>
+		                </div>
+		            </li>
+		        </ul>
+		        <dl class="order-num">
+                    <dt>주문번호</dt>
+                    <dd>20171024151857-91474702545</dd>
+                </dl>
+		        <ul class="list">
+		            <li>
+		                <h3 class="p-title">
+		                    <span class="waiting">결제대기</span> ★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08
+		                </h3>
+		                <div class="details">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <dl>
+                                        <dt>사이즈</dt>
+                                        <dd>75C(90)</dd>
+                                        <dt>수량</dt>
+                                        <dd>1</dd>
+                                        <dt>상태</dt>
+                                        <dd>배송완료</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p class="inquire-btn">
+                                        <a href="#" class="btn btn-gray" role="button">리뷰작성</a>
+                                        <a href="#" class="btn btn-beige" role="button">주문조회</a>
+                                    </p>
+                                </div>
+                            </div>
 		                </div>
 		            </li>
 		            <li>
-		                <h3 class="p-title">★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08</h3>
-		                <div class="row">
-		                    <div class="col-xs-8">
-		                        <dl>
-		                            <dt>주문일자</dt>
-		                            <dd>2017-08-01</dd>
-		                            <dt>결제금액</dt>
-		                            <dd>39,900원</dd>
-		                            <dt>주문현황</dt>
-		                            <dd>배송완료</dd>
-		                        </dl>
-		                    </div>
-		                    <div class="col-xs-4">
-		                        <p class="inquire-btn">
-                                    <a href="#" class="btn btn-gray" role="button">주문조회</a>
-                                    <a href="#" class="btn btn-beige" role="button">배송조회</a>
-		                        </p>
-		                    </div>
+		                <h3 class="p-title">
+		                    <span class="waiting">결제대기</span> ★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08
+		                </h3>
+		                <div class="details">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <dl>
+                                        <dt>사이즈</dt>
+                                        <dd>75C(90)</dd>
+                                        <dt>수량</dt>
+                                        <dd>1</dd>
+                                        <dt>상태</dt>
+                                        <dd>배송완료</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p class="inquire-btn">
+                                        <a href="#" class="btn btn-gray" role="button">리뷰작성</a>
+                                        <a href="#" class="btn btn-beige" role="button">주문조회</a>
+                                    </p>
+                                </div>
+                            </div>
 		                </div>
 		            </li>
 		            <li>
-		                <h3 class="p-title">★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08</h3>
-		                <div class="row">
-		                    <div class="col-xs-8">
-		                        <dl>
-		                            <dt>주문일자</dt>
-		                            <dd>2017-08-01</dd>
-		                            <dt>결제금액</dt>
-		                            <dd>39,900원</dd>
-		                            <dt>주문현황</dt>
-		                            <dd>배송완료</dd>
-		                        </dl>
-		                    </div>
-		                    <div class="col-xs-4">
-		                        <p class="inquire-btn">
-                                    <a href="#" class="btn btn-gray" role="button">주문조회</a>
-                                    <a href="#" class="btn btn-beige" role="button">배송조회</a>
-		                        </p>
-		                    </div>
+		                <h3 class="p-title">
+		                    <span class="waiting">결제대기</span> ★57%+세컨3종증정★[Playtex]플레이텍스 에센셜 노와이어 브라팬티 11종세트 PXI03_08
+		                </h3>
+		                <div class="details">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <dl>
+                                        <dt>사이즈</dt>
+                                        <dd>75C(90)</dd>
+                                        <dt>수량</dt>
+                                        <dd>1</dd>
+                                        <dt>상태</dt>
+                                        <dd>배송완료</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p class="inquire-btn">
+                                        <a href="#" class="btn btn-gray" role="button">리뷰작성</a>
+                                        <a href="#" class="btn btn-beige" role="button">주문조회</a>
+                                    </p>
+                                </div>
+                            </div>
 		                </div>
 		            </li>
 		        </ul>
