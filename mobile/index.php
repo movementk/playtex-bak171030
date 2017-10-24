@@ -628,9 +628,61 @@
 				<li><a class="line-up-6" href="#">PERFECT SILHOUETTE</a></li>
 			</ul>
 		</section>
-		<div id="hours">
-			
-		</div>
+		<section id="eighteen-hours">
+        	<div class="bg-panel top"></div>
+        	<div class="bg-panel bottom"></div>
+        	<div class="hours">
+        		<div class="arrow"></div>
+        		<div class="point">
+        			<div class="top"></div>
+        			<div class="right"></div>
+        			<div class="bottom"></div>
+        			<div class="left"></div>
+        		</div>
+        		<div class="count">0</div>
+        	</div>
+        	<div class="features woman left">
+        		<a class="feature-icon feature-animate feature-icon-1" href="#feature-item-1"><span 
+        		class="sr-only">특징</span></a>
+        		<a class="feature-icon feature-animate feature-icon-2" href="#feature-item-2"><span class="sr-only">특징</span></a>
+        	</div>
+        	<div class="features woman right">
+        		<a class="feature-icon feature-animate feature-icon-3" href="#feature-item-3"><span class="sr-only">특징</span></a>
+        		<a class="feature-icon feature-animate feature-icon-4" href="#feature-item-4"><span class="sr-only">특징</span></a>
+        	</div>
+        	<div class="feature-item" id="feature-item-1">
+        		<div class="feature-content">
+					<div class="feature-body">
+						<button class="btn btn-link btn-close"><i class="icon-cancel-circle"></i><span class="sr-only">닫기</span></button>
+						<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며 R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="feature-item" id="feature-item-2">
+        		<div class="feature-content">
+					<div class="feature-body">
+						<button class="btn btn-link btn-close"><i class="icon-cancel-circle"></i><span class="sr-only">닫기</span></button>
+						<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며 R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+					</div>
+				</div>
+			</div>
+       		<div class="feature-item" id="feature-item-3">
+        		<div class="feature-content">
+					<div class="feature-body">
+						<button class="btn btn-link btn-close"><i class="icon-cancel-circle"></i><span class="sr-only">닫기</span></button>
+						<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며 R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+					</div>
+				</div>
+			</div>
+       		<div class="feature-item" id="feature-item-4">
+        		<div class="feature-content">
+					<div class="feature-body">
+						<button class="btn btn-link btn-close"><i class="icon-cancel-circle"></i><span class="sr-only">닫기</span></button>
+						<p>처지고 퍼지는 가슴구조를 'M'구조로 모아주고 올려주며 R 몰드로 더욱 젊고 아름다운 볼륨감 제공합니다.</p>
+					</div>
+				</div>
+			</div>
+        </section>
 		<section id="editors-pick" class="product-content" data-columns="3" data-rows="2" data-shown="6"  data-max="18">
 			<header>
 				<h4>EDITORS PICK</h4>
@@ -943,6 +995,7 @@
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/footer.php"); ?>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/docfoot.php"); ?>
 	<script src="/design/playtex/mobile/jquery.bxslider/jquery.bxslider.min.js"></script>
+	<script src="/design/playtex/mobile/js/jquery.animateNumber.min.js"></script>
 	<style>
 		@import url(/design/playtex/mobile/css/main.css);
 	</style>
@@ -1028,6 +1081,34 @@
 				}
 				console.log(count, rows);
 				e.preventDefault();
+			});
+			
+			// 18시간 영역 관련 모션 & 기능
+			var is_18hour_motion_execute = false;
+			
+			$(window).on("scroll", function() {
+				if ($(this).scrollTop() >= 3200) {
+					if (!is_18hour_motion_execute) {
+						
+						$("#eighteen-hours").addClass("on");
+						
+						window.setTimeout(function() {
+							$("#eighteen-hours .hours .count").animateNumber({
+								number: 18
+							}, 2000);
+						}, 2500);
+												
+						is_18hour_motion_execute = true;
+					}
+				}
+			});
+			$(document).on("click", "#eighteen-hours .feature-icon", function(e) {
+				$("#eighteen-hours .feature-item.selected").removeClass("selected");
+				$("#eighteen-hours").find($(this).attr("href")).addClass("selected");
+				e.preventDefault();
+			});
+			$(document).on("click", "#eighteen-hours .feature-item .btn-close", function(e) {
+				$(this).parents(".feature-item").eq(0).removeClass("selected");
 			});
 			
 		})(jQuery);
