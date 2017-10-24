@@ -1642,26 +1642,75 @@ label {
                 }
             }
 			.quickbuy-content {
+				display: none;
 				z-index: 101;
 				position: fixed;
 				bottom: 0;
 				left: 0;
 				width: 100%;
 				height: 237px;
+				padding: 10px;
 				border-top: 2px solid #333;
-				background-color: #fff;
+				background-color: #f1f1f1;
 				.btn-close-quickbuy {
 					position: absolute;
 					top: 0;
-					left: 0;
+					left: 50%;
+					margin-left: -25px;
+					margin-top: -18px;
 					width: 50px;
 					height: 18px;
 					background-image: url(/design/playtex/mobile/images/item/btn_close_quickbuy.png);
 					background-repeat: no-repeat;
 					background-size: auto 100%;
-					font-size: 18px;
+					background-position: 50% 0;
+					font-size: 10px;
 					text-align: center;
-					line-height: 18px;
+					line-height: 16px;
+					color: #fff;
+					text-decoration: none;
+				}
+				.options {
+					height: 140px;
+					background-color: blue;
+				}
+				.total {
+					margin-top: 0;
+					height: 35px;
+					background-color: orange;
+				}
+				.btns {
+					margin-left: -5px;
+					margin-right: -5px;
+					ul {
+						display: table;
+						content: " ";
+						table-layout: fixed;	
+						width: 100%;
+						height: 40px;
+						li {
+							display: table-cell;
+							width: 1%;
+							padding-left: 5px;
+							padding-right: 5px;
+							a {
+								display: block;
+								width: 100%;
+								height: 40px;
+								background-color: #929292;
+								color: #fff;
+								line-height: 40px;
+								font-size: 12px;
+								text-align: center;
+								&.btn-buy {
+									background-color: #2b2b2b;
+								}
+							}
+							& + p {
+								margin-left: 10px;
+							}
+						}
+					}
 				}
 			}
 			.quickbuy-nav {
