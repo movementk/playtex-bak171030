@@ -167,6 +167,12 @@
       "css": "cancel-circle",
       "code": 59413,
       "src": "websymbols"
+    },
+    {
+      "uid": "2a3cd95de2621bd87479396f236fd2a4",
+      "css": "heart",
+      "code": 59414,
+      "src": "websymbols"
     }
   ]
 }

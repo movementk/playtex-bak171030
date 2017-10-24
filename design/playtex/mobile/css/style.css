@@ -1190,6 +1190,57 @@ label {
           background-color: #999; }
   .product .common-view .view .naver-pay .img-responsive {
     margin: 0 auto; }
+  .product .common-view .view .quickbuy-content {
+    z-index: 101;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 237px;
+    border-top: 2px solid #333;
+    background-color: #fff; }
+    .product .common-view .view .quickbuy-content .btn-close-quickbuy {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 18px;
+      background-image: url(/design/playtex/mobile/images/item/btn_close_quickbuy.png);
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      font-size: 18px;
+      text-align: center;
+      line-height: 18px; }
+  .product .common-view .view .quickbuy-nav {
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 67px;
+    padding: 10px;
+    border-top: 2px solid #333;
+    background-color: #fff; }
+    .product .common-view .view .quickbuy-nav p {
+      position: relative;
+      padding-right: 60px; }
+      .product .common-view .view .quickbuy-nav p .btn-buy {
+        height: 45px;
+        background-color: #333;
+        color: #fff;
+        line-height: 45px;
+        font-size: 15px; }
+      .product .common-view .view .quickbuy-nav p .btn-favor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 45px;
+        background-color: #999;
+        line-height: 42px;
+        font-size: 16px; }
+        .product .common-view .view .quickbuy-nav p .btn-favor i {
+          color: #fff; }
   .product .common-view .product-detils {
     margin-top: 20px; }
     .product .common-view .product-detils .collapse-content .btn-primary {

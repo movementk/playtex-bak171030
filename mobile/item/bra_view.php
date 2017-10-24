@@ -73,6 +73,27 @@
                         </table>
                     </div>
                 </div>
+                <div class="quickbuy-content">
+                	<button class="btn btn-link btn-close-quickbuy">
+                		<i class="icon-down-open-big"></i>
+                		<span class="sr-only">퀵 바이 닫기</span>
+                	</button>
+                	<div class="options">
+					</div>
+                	<div class="total">
+					</div>
+                </div>
+                <div class="quickbuy-nav">
+                	<p>
+                		<a href="#" class="btn btn-lg btn-block btn-buy" role="button">바로 구매하기</a>
+                		<a href="#" class="btn btn-lg btn-favor" role="button">
+                			<i class="icon-heart-empty"></i><!-- 아직 찜하지 않았을 경우 -->
+                			<!-- <i class="icon-heart"></i> --><!-- 찜했을 경우 -->
+                			<span class="sr-only">찜하기</span>
+                		</a>
+                	</p>
+                </div>
+                <!--
                 <div class="product-option">
                     <ul>
                         <li>
@@ -114,6 +135,7 @@
                         <a href="#" class="btn btn-sm" role="button"><i class="icon-heart-empty"></i>찜하기</a>
                     </p>
                 </div>
+                -->
                 <div class="naver-pay">
                     <img src="/design/playtex/mobile/images/item/n_pay_area.gif" class="img-responsive" alt="">
                 </div>
