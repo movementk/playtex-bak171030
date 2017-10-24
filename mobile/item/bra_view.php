@@ -82,6 +82,16 @@
 					</div>
                 	<div class="total">
 					</div>
+               		<div class="btns">
+               			<ul>
+							<li>
+								<a class="btn-buy" href="#">바로 구매하기</a>
+							</li>
+							<li>
+								<a href="#">장바구니 담기</a>
+							</li>
+               			</ul>
+               		</div>
                 </div>
                 <div class="quickbuy-nav">
                 	<p>
@@ -427,5 +437,18 @@
 	</main>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/footer.php"); ?>
 	<?php require_once($_SERVER["DOCUMENT_ROOT"]."/mobile/inc/docfoot.php"); ?>
+	<script>
+		(function($) {
+			// 퀵바이 옵션 열기 and 닫기
+			$(document).on("click", ".quickbuy-nav .btn-buy", function(e) {
+				$(".quickbuy-content").show();
+				e.preventDefault();
+			});
+			$(document).on("click", ".quickbuy-content .btn-close-quickbuy", function(e) {
+				$(".quickbuy-content").hide();
+				e.preventDefault();
+			});
+		})(jQuery);
+	</script>
 </body>
 </html>
