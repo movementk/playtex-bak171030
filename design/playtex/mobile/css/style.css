@@ -1473,73 +1473,99 @@ label {
 
 .order-list {
   padding-bottom: 100px; }
-  .order-list .order-info {
-    border-top: 1px solid #8d8d8d; }
-    .order-list .order-info .list > li {
-      padding: 30px 0;
+  .order-list .order-info .order-num {
+    padding: 15px 10px;
+    overflow: hidden;
+    background-color: #2b2b2b; }
+    .order-list .order-info .order-num ~ .order-num {
+      margin-top: 30px; }
+    .order-list .order-info .order-num > dt {
+      float: left;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      margin-right: 20px; }
+    .order-list .order-info .order-num > dd {
+      float: left;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff; }
+  .order-list .order-info .list > li {
+    padding: 30px 10px 0;
+    background-color: #f7f7f7; }
+    .order-list .order-info .list > li .details {
+      padding-bottom: 30px;
       border-bottom: 1px solid #ccc; }
-      .order-list .order-info .list > li .p-title {
-        font-size: 14px;
-        color: #333;
-        font-weight: 400;
-        line-height: 24px;
-        margin-bottom: 30px; }
-      .order-list .order-info .list > li dl {
-        overflow: hidden; }
-        .order-list .order-info .list > li dl dt {
-          float: left;
-          clear: both;
-          font-size: 13px;
-          color: #777;
-          font-weight: 400;
-          line-height: 24px; }
-          .order-list .order-info .list > li dl dt:after {
-            content: ":";
-            padding: 0 4px; }
-        .order-list .order-info .list > li dl dd {
-          float: left;
-          font-size: 13px;
-          color: #777;
-          font-weight: 400;
-          line-height: 24px; }
-      .order-list .order-info .list > li .inquire-btn {
-        float: right; }
-        .order-list .order-info .list > li .inquire-btn > .btn {
-          width: 80px;
-          height: 30px;
-          display: block;
-          font-size: 12px;
-          color: #fff;
-          font-weight: 300;
-          line-height: 30px;
-          margin-bottom: 10px; }
-          .order-list .order-info .list > li .inquire-btn > .btn:last-child {
-            margin-bottom: 0; }
-          .order-list .order-info .list > li .inquire-btn > .btn.btn-gray {
-            background-color: #999; }
-          .order-list .order-info .list > li .inquire-btn > .btn.btn-beige {
-            background-color: #998675; }
-    .order-list .order-info .paging {
-      margin-top: 30px; }
-    .order-list .order-info .attention {
-      margin-top: 30px; }
-      .order-list .order-info .attention > ul li {
-        position: relative;
+    .order-list .order-info .list > li:last-child .details {
+      border-bottom: 0; }
+    .order-list .order-info .list > li .p-title {
+      font-size: 14px;
+      color: #333;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 30px; }
+      .order-list .order-info .list > li .p-title .waiting {
+        color: #d90909; }
+        .order-list .order-info .list > li .p-title .waiting:before {
+          content: "("; }
+        .order-list .order-info .list > li .p-title .waiting:after {
+          content: ")"; }
+    .order-list .order-info .list > li dl {
+      overflow: hidden; }
+      .order-list .order-info .list > li dl dt {
+        float: left;
+        clear: both;
         font-size: 13px;
-        color: #666;
+        color: #777;
+        font-weight: 400;
+        line-height: 24px; }
+        .order-list .order-info .list > li dl dt:after {
+          content: ":";
+          padding: 0 4px; }
+      .order-list .order-info .list > li dl dd {
+        float: left;
+        font-size: 13px;
+        color: #777;
+        font-weight: 400;
+        line-height: 24px; }
+    .order-list .order-info .list > li .inquire-btn {
+      float: right; }
+      .order-list .order-info .list > li .inquire-btn > .btn {
+        width: 80px;
+        height: 30px;
+        display: block;
+        font-size: 12px;
+        color: #fff;
         font-weight: 300;
-        line-height: 24px;
-        padding-left: 25px; }
-        .order-list .order-info .attention > ul li ~ li {
-          margin-top: 20px; }
-        .order-list .order-info .attention > ul li:before {
-          position: absolute;
-          top: 0;
-          left: 0;
-          font-size: 15px;
-          color: #998675;
-          content: "\E808";
-          font-family: "fontello"; }
+        line-height: 30px;
+        margin-bottom: 10px; }
+        .order-list .order-info .list > li .inquire-btn > .btn:last-child {
+          margin-bottom: 0; }
+        .order-list .order-info .list > li .inquire-btn > .btn.btn-gray {
+          background-color: #999; }
+        .order-list .order-info .list > li .inquire-btn > .btn.btn-beige {
+          background-color: #998675; }
+  .order-list .order-info .paging {
+    margin-top: 30px; }
+  .order-list .order-info .attention {
+    margin-top: 30px; }
+    .order-list .order-info .attention > ul li {
+      position: relative;
+      font-size: 13px;
+      color: #666;
+      font-weight: 300;
+      line-height: 24px;
+      padding-left: 25px; }
+      .order-list .order-info .attention > ul li ~ li {
+        margin-top: 20px; }
+      .order-list .order-info .attention > ul li:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 15px;
+        color: #998675;
+        content: "\E808";
+        font-family: "fontello"; }
 
 .order-details .page-header .summary b {
   font-weight: 400;
