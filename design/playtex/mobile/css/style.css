@@ -961,9 +961,34 @@ label {
   padding-top: 33px;
   padding-bottom: 60px;
   background-color: #fbfbfb; }
+  .product .common-list article .article-content .view-type {
+    float: left; }
+    .product .common-list article .article-content .view-type li {
+      float: left; }
+      .product .common-list article .article-content .view-type li .column {
+        line-height: 38px; }
+        .product .common-list article .article-content .view-type li .column:before {
+          font-family: "fontello";
+          color: #c6c6c7;
+          line-height: 16px; }
+        .product .common-list article .article-content .view-type li .column.selected:before {
+          color: #998675; }
+      .product .common-list article .article-content .view-type li .column-1:before {
+        content: "\E812";
+        font-size: 18px; }
+      .product .common-list article .article-content .view-type li .column-2:before {
+        content: "\E80E";
+        font-size: 16px; }
+      .product .common-list article .article-content .view-type li .column-3:before {
+        content: "\E811";
+        font-size: 16px; }
+      .product .common-list article .article-content .view-type li + li {
+        margin-left: 7px; }
   .product .common-list article .article-content .select-menu {
+    float: right;
     text-align: right;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    width: 150px; }
     .product .common-list article .article-content .select-menu .dropdown {
       display: inline-block;
       width: 150px;
@@ -992,24 +1017,13 @@ label {
           font-size: 12px;
           color: #666;
           padding: 10px 20px; }
-  .product .common-list article .article-content .product-list > ul {
-    overflow: hidden; }
-    .product .common-list article .article-content .product-list > ul > li {
-      float: left;
-      width: 50%;
-      margin-top: 20px;
-      text-align: center; }
-      .product .common-list article .article-content .product-list > ul > li:nth-of-type(1) {
-        margin-top: 0; }
-      .product .common-list article .article-content .product-list > ul > li:nth-of-type(2) {
-        margin-top: 0; }
-      .product .common-list article .article-content .product-list > ul > li:nth-of-type(2n + 1) {
-        clear: both;
-        padding-right: 5px; }
-      .product .common-list article .article-content .product-list > ul > li:nth-of-type(2n + 2) {
-        padding-left: 5px; }
+  .product .common-list article .article-content .product-list {
+    clear: both; }
+    .product .common-list article .article-content .product-list > ul {
+      overflow: hidden; }
       .product .common-list article .article-content .product-list > ul > li a {
-        display: block; }
+        display: block;
+        text-align: center; }
         .product .common-list article .article-content .product-list > ul > li a .figure .img-responsive {
           margin: 0 auto; }
         .product .common-list article .article-content .product-list > ul > li a .details {
@@ -1027,6 +1041,37 @@ label {
             font-weight: bold;
             letter-spacing: .5px;
             font-family: 'Maven Pro', sans-serif; }
+    .product .common-list article .article-content .product-list.product-list-1 > ul > li {
+      float: none;
+      width: 100%; }
+      .product .common-list article .article-content .product-list.product-list-1 > ul > li + li {
+        margin-top: 20px; }
+    .product .common-list article .article-content .product-list.product-list-2 > ul {
+      margin-left: -5px;
+      margin-right: -5px; }
+      .product .common-list article .article-content .product-list.product-list-2 > ul > li {
+        float: left;
+        width: 50%;
+        padding-left: 5px;
+        padding-right: 5px; }
+        .product .common-list article .article-content .product-list.product-list-2 > ul > li:nth-of-type(2n+1) {
+          clear: both; }
+        .product .common-list article .article-content .product-list.product-list-2 > ul > li:nth-of-type(2) ~ li {
+          margin-top: 20px; }
+    .product .common-list article .article-content .product-list.product-list-3 > ul {
+      margin-left: -5px;
+      margin-right: -5px; }
+      .product .common-list article .article-content .product-list.product-list-3 > ul > li {
+        float: left;
+        width: 33.33%;
+        padding-left: 5px;
+        padding-right: 5px; }
+        .product .common-list article .article-content .product-list.product-list-3 > ul > li:nth-of-type(2n+1) {
+          clear: none; }
+        .product .common-list article .article-content .product-list.product-list-3 > ul > li:nth-of-type(3n+1) {
+          clear: both; }
+        .product .common-list article .article-content .product-list.product-list-3 > ul > li:nth-of-type(3n) ~ li {
+          margin-top: 20px; }
   .product .common-list article .article-content .paging {
     margin-top: 45px; }
 

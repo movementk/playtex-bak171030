@@ -98,6 +98,13 @@
             </div>
             <div class="article-content">
                 <div class="container">
+                   	<div class="view-type">
+                   		<ul>
+                   			<li><a class="column column-1 selected" href="#"><span class="sr-only">1열보기</span></a></li>
+                   			<li><a class="column column-2" href="#"><span class="sr-only">2열보기</span></a></li>
+                   			<li><a class="column column-3" href="#"><span class="sr-only">3열보기</span></a></li>
+                   		</ul>
+                   	</div>
                     <div class="select-menu">
                         <div class="dropdown">
                             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -110,7 +117,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="product-list">
+                    <div class="product-list product-list-1">
                         <ul>
                             <li>
                                 <a href="/mobile/item/bra_view.php">
@@ -248,6 +255,14 @@
                 //auto: true,
                 controls: false
             });
+			$(document).on("click", ".article-content .view-type > ul > li > a", function(e) {
+				$(this).parents(".view-type").eq(0).find(".selected").removeClass("selected");
+				$(this).addClass("selected");
+				$(this).parents(".article-content").eq(0).find(".product-list").eq(0)
+					.removeClass("product-list-1 product-list-2 product-list-3")
+					.addClass("product-list-"+ ($(this).parent().index()+1) );
+				e.preventDefault();
+			});
         })(jQuery);
     </script>
 </body>
