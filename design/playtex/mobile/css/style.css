@@ -1012,276 +1012,311 @@ label {
 
 .product .common-view {
   padding-bottom: 65px; }
-  .product .common-view .view .view-header {
-    text-align: center;
-    padding: 55px 0 15px 0; }
-    .product .common-view .view .view-header .product-title {
-      font-size: 16px;
-      color: #333;
-      font-weight: 500;
-      margin-bottom: 40px;
-      line-height: 28px; }
-      .product .common-view .view .view-header .product-title span {
-        position: relative;
-        top: -2px;
-        display: inline-block;
-        width: 35px;
-        font-size: 10px;
-        color: #fff;
+  .product .common-view .view {
+    /*
+    .total {
+        margin-top: 25px;
+        dl {
+            font-size: 0;
+            text-align: right;
+            dt {
+                display: inline-block;
+                font-size: 14px;
+                color: #333;
+                font-weight: 400;
+                margin-right: 30px;
+            }
+            dd {
+                display: inline-block;
+                font-weight: 500;
+                font-size: 14px;
+                span {
+                    font-size: 16px;
+                    @include maven();
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    */ }
+    .product .common-view .view .view-header {
+      text-align: center;
+      padding: 55px 0 15px 0; }
+      .product .common-view .view .view-header .product-title {
+        font-size: 16px;
+        color: #333;
         font-weight: 500;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: .5px;
-        margin-right: 2px;
-        font-family: 'Maven Pro', sans-serif;
-        border-radius: 3px; }
-        .product .common-view .view .view-header .product-title span:first-child {
-          margin-left: 8px; }
-        .product .common-view .view .view-header .product-title span:last-child {
-          margin-right: 0; }
-        .product .common-view .view .view-header .product-title span.md {
-          background-color: #f08501; }
-        .product .common-view .view .view-header .product-title span.hot {
-          background-color: #e61937; }
-        .product .common-view .view .view-header .product-title span.new {
-          color: #333;
-          background-color: #a0e4e7; }
-    .product .common-view .view .view-header figure .img-responsive {
-      margin: 0 auto; }
-  .product .common-view .view .view-details {
-    border-top: 1px solid #dfdfdf;
-    border-bottom: 1px solid #dfdfdf; }
-    .product .common-view .view .view-details .payment {
-      padding: 30px 0; }
-      .product .common-view .view .view-details .payment ul li ~ li {
-        margin-top: 10px; }
-      .product .common-view .view .view-details .payment ul li dl {
-        overflow: hidden; }
-        .product .common-view .view .view-details .payment ul li dl dt {
-          float: left;
+        margin-bottom: 40px;
+        line-height: 28px; }
+        .product .common-view .view .view-header .product-title span {
+          position: relative;
+          top: -2px;
+          display: inline-block;
+          width: 35px;
+          font-size: 10px;
+          color: #fff;
+          font-weight: 500;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: .5px;
+          margin-right: 2px;
+          font-family: 'Maven Pro', sans-serif;
+          border-radius: 3px; }
+          .product .common-view .view .view-header .product-title span:first-child {
+            margin-left: 8px; }
+          .product .common-view .view .view-header .product-title span:last-child {
+            margin-right: 0; }
+          .product .common-view .view .view-header .product-title span.md {
+            background-color: #f08501; }
+          .product .common-view .view .view-header .product-title span.hot {
+            background-color: #e61937; }
+          .product .common-view .view .view-header .product-title span.new {
+            color: #333;
+            background-color: #a0e4e7; }
+      .product .common-view .view .view-header figure .img-responsive {
+        margin: 0 auto; }
+    .product .common-view .view .view-details {
+      border-top: 1px solid #dfdfdf;
+      border-bottom: 1px solid #dfdfdf; }
+      .product .common-view .view .view-details .payment {
+        padding: 30px 0; }
+        .product .common-view .view .view-details .payment ul li ~ li {
+          margin-top: 10px; }
+        .product .common-view .view .view-details .payment ul li dl {
+          overflow: hidden; }
+          .product .common-view .view .view-details .payment ul li dl dt {
+            float: left;
+            width: 110px;
+            font-size: 14px;
+            color: #333;
+            font-weight: 400;
+            line-height: 22px; }
+          .product .common-view .view .view-details .payment ul li dl dd {
+            display: inline;
+            line-height: 22px; }
+            .product .common-view .view .view-details .payment ul li dl dd.price {
+              font-size: 14px;
+              color: #666;
+              font-weight: 300;
+              text-decoration: line-through; }
+            .product .common-view .view .view-details .payment ul li dl dd.discount {
+              font-size: 16px;
+              color: #333;
+              font-weight: 500; }
+              .product .common-view .view .view-details .payment ul li dl dd.discount span {
+                font-weight: 600;
+                font-family: 'Maven Pro', sans-serif; }
+    .product .common-view .view .information {
+      padding: 30px 0;
+      border-bottom: 1px solid #dfdfdf; }
+      .product .common-view .view .information .table-wrap .table {
+        margin: 0; }
+        .product .common-view .view .information .table-wrap .table tbody tr th {
           width: 110px;
           font-size: 14px;
           color: #333;
           font-weight: 400;
-          line-height: 22px; }
-        .product .common-view .view .view-details .payment ul li dl dd {
-          display: inline;
-          line-height: 22px; }
-          .product .common-view .view .view-details .payment ul li dl dd.price {
-            font-size: 14px;
-            color: #666;
-            font-weight: 300;
-            text-decoration: line-through; }
-          .product .common-view .view .view-details .payment ul li dl dd.discount {
-            font-size: 16px;
-            color: #333;
-            font-weight: 500; }
-            .product .common-view .view .view-details .payment ul li dl dd.discount span {
-              font-weight: 600;
-              font-family: 'Maven Pro', sans-serif; }
-  .product .common-view .view .information {
-    padding: 30px 0;
-    border-bottom: 1px solid #dfdfdf; }
-    .product .common-view .view .information .table-wrap .table {
-      margin: 0; }
-      .product .common-view .view .information .table-wrap .table tbody tr th {
-        width: 110px;
-        font-size: 14px;
-        color: #333;
-        font-weight: 400;
-        text-align: left;
-        vertical-align: top;
-        border: 0;
-        line-height: 24px;
-        padding: 2px 0; }
-      .product .common-view .view .information .table-wrap .table tbody tr td {
-        font-size: 14px;
-        color: #666;
-        font-weight: 300;
-        border: 0;
-        line-height: 24px;
-        text-align: left;
-        vertical-align: top;
-        padding: 2px 0; }
-        .product .common-view .view .information .table-wrap .table tbody tr td ul {
-          font-size: 0; }
-          .product .common-view .view .information .table-wrap .table tbody tr td ul li {
-            display: inline-block;
-            font-size: 14px; }
-            .product .common-view .view .information .table-wrap .table tbody tr td ul li:after {
-              position: relative;
-              top: -2px;
-              font-size: 12px;
-              content: "|";
-              margin: 0 8px; }
-            .product .common-view .view .information .table-wrap .table tbody tr td ul li:last-child:after {
-              content: "";
-              margin: 0; }
-  .product .common-view .view .product-option {
-    padding: 20px 0;
-    border-bottom: 1px solid #dfdfdf; }
-    .product .common-view .view .product-option ul li ~ li {
-      margin-top: 10px; }
-    .product .common-view .view .product-option ul li dl {
-      position: relative;
-      padding-left: 60px; }
-      .product .common-view .view .product-option ul li dl dt {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 60px;
-        font-size: 13px;
-        color: #333;
-        font-weight: 400;
-        line-height: 34px;
-        padding-left: 10px; }
-        .product .common-view .view .product-option ul li dl dt label {
-          font-weight: 400; }
-      .product .common-view .view .product-option ul li dl dd {
-        font-size: 13px;
-        color: #666;
-        line-height: 34px; }
-        .product .common-view .view .product-option ul li dl dd .form-group .form-control {
+          text-align: left;
+          vertical-align: top;
+          border: 0;
+          line-height: 24px;
+          padding: 2px 0; }
+        .product .common-view .view .information .table-wrap .table tbody tr td {
+          font-size: 14px;
+          color: #666;
+          font-weight: 300;
+          border: 0;
+          line-height: 24px;
+          text-align: left;
+          vertical-align: top;
+          padding: 2px 0; }
+          .product .common-view .view .information .table-wrap .table tbody tr td ul {
+            font-size: 0; }
+            .product .common-view .view .information .table-wrap .table tbody tr td ul li {
+              display: inline-block;
+              font-size: 14px; }
+              .product .common-view .view .information .table-wrap .table tbody tr td ul li:after {
+                position: relative;
+                top: -2px;
+                font-size: 12px;
+                content: "|";
+                margin: 0 8px; }
+              .product .common-view .view .information .table-wrap .table tbody tr td ul li:last-child:after {
+                content: "";
+                margin: 0; }
+    .product .common-view .view .product-option {
+      padding: 20px 0;
+      border-bottom: 1px solid #dfdfdf; }
+      .product .common-view .view .product-option ul li ~ li {
+        margin-top: 10px; }
+      .product .common-view .view .product-option ul li dl {
+        position: relative;
+        padding-left: 60px; }
+        .product .common-view .view .product-option ul li dl dt {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 60px;
+          font-size: 13px;
+          color: #333;
+          font-weight: 400;
+          line-height: 34px;
+          padding-left: 10px; }
+          .product .common-view .view .product-option ul li dl dt label {
+            font-weight: 400; }
+        .product .common-view .view .product-option ul li dl dd {
           font-size: 13px;
           color: #666;
-          height: 34px; }
-  .product .common-view .view .total {
-    margin-top: 25px; }
-    .product .common-view .view .total dl {
-      font-size: 0;
-      text-align: right; }
-      .product .common-view .view .total dl dt {
-        display: inline-block;
-        font-size: 14px;
-        color: #333;
-        font-weight: 400;
-        margin-right: 30px; }
-      .product .common-view .view .total dl dd {
-        display: inline-block;
-        font-weight: 500;
-        font-size: 14px; }
-        .product .common-view .view .total dl dd span {
-          font-size: 16px;
-          font-family: 'Maven Pro', sans-serif;
-          font-weight: bold; }
-  .product .common-view .view .btn-area {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    text-align: center; }
-    .product .common-view .view .btn-area p {
-      font-size: 0; }
-      .product .common-view .view .btn-area p ~ p {
-        margin-top: 10px; }
-      .product .common-view .view .btn-area p .btn {
-        font-size: 13px;
-        color: #fff;
-        line-height: 45px;
-        border: 0;
-        margin-right: 10px; }
-        .product .common-view .view .btn-area p .btn i {
+          line-height: 34px; }
+          .product .common-view .view .product-option ul li dl dd .form-group .form-control {
+            font-size: 13px;
+            color: #666;
+            height: 34px; }
+    .product .common-view .view .btn-area {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      text-align: center; }
+      .product .common-view .view .btn-area p {
+        font-size: 0; }
+        .product .common-view .view .btn-area p ~ p {
+          margin-top: 10px; }
+        .product .common-view .view .btn-area p .btn {
+          font-size: 13px;
+          color: #fff;
+          line-height: 45px;
+          border: 0;
           margin-right: 10px; }
-        .product .common-view .view .btn-area p .btn:last-child {
-          margin-right: 0; }
-        .product .common-view .view .btn-area p .btn.btn-lg {
-          width: 300px;
-          background-color: #333; }
-        .product .common-view .view .btn-area p .btn.btn-sm {
-          width: 145px;
-          background-color: #999; }
-  .product .common-view .view .naver-pay .img-responsive {
-    margin: 0 auto; }
-  .product .common-view .view .quickbuy-content {
-    display: none;
-    z-index: 101;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 237px;
-    padding: 10px;
-    border-top: 2px solid #333;
-    background-color: #f1f1f1; }
-    .product .common-view .view .quickbuy-content .btn-close-quickbuy {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -25px;
-      margin-top: -18px;
-      width: 50px;
-      height: 18px;
-      background-image: url(/design/playtex/mobile/images/item/btn_close_quickbuy.png);
-      background-repeat: no-repeat;
-      background-size: auto 100%;
-      background-position: 50% 0;
-      font-size: 10px;
-      text-align: center;
-      line-height: 16px;
-      color: #fff;
-      text-decoration: none; }
-    .product .common-view .view .quickbuy-content .options {
-      height: 140px;
-      background-color: blue; }
-    .product .common-view .view .quickbuy-content .total {
-      margin-top: 0;
-      height: 35px;
-      background-color: orange; }
-    .product .common-view .view .quickbuy-content .btns {
-      margin-left: -5px;
-      margin-right: -5px; }
-      .product .common-view .view .quickbuy-content .btns ul {
-        display: table;
-        content: " ";
-        table-layout: fixed;
-        width: 100%;
-        height: 40px; }
-        .product .common-view .view .quickbuy-content .btns ul li {
-          display: table-cell;
-          width: 1%;
-          padding-left: 5px;
-          padding-right: 5px; }
-          .product .common-view .view .quickbuy-content .btns ul li a {
-            display: block;
-            width: 100%;
-            height: 40px;
-            background-color: #929292;
-            color: #fff;
-            line-height: 40px;
-            font-size: 12px;
-            text-align: center; }
-            .product .common-view .view .quickbuy-content .btns ul li a.btn-buy {
-              background-color: #2b2b2b; }
-          .product .common-view .view .quickbuy-content .btns ul li + p {
-            margin-left: 10px; }
-  .product .common-view .view .quickbuy-nav {
-    z-index: 100;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 67px;
-    padding: 10px;
-    border-top: 2px solid #333;
-    background-color: #fff; }
-    .product .common-view .view .quickbuy-nav p {
-      position: relative;
-      padding-right: 60px; }
-      .product .common-view .view .quickbuy-nav p .btn-buy {
-        height: 45px;
-        background-color: #333;
-        color: #fff;
-        line-height: 45px;
-        font-size: 15px; }
-      .product .common-view .view .quickbuy-nav p .btn-favor {
+          .product .common-view .view .btn-area p .btn i {
+            margin-right: 10px; }
+          .product .common-view .view .btn-area p .btn:last-child {
+            margin-right: 0; }
+          .product .common-view .view .btn-area p .btn.btn-lg {
+            width: 300px;
+            background-color: #333; }
+          .product .common-view .view .btn-area p .btn.btn-sm {
+            width: 145px;
+            background-color: #999; }
+    .product .common-view .view .naver-pay .img-responsive {
+      margin: 0 auto; }
+    .product .common-view .view .quickbuy-content {
+      display: none;
+      z-index: 101;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 197px;
+      padding: 10px;
+      border-top: 2px solid #333;
+      background-color: #f1f1f1; }
+      .product .common-view .view .quickbuy-content .btn-close-quickbuy {
         position: absolute;
         top: 0;
-        right: 0;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -18px;
         width: 50px;
-        height: 45px;
-        background-color: #999;
-        line-height: 42px;
-        font-size: 16px; }
-        .product .common-view .view .quickbuy-nav p .btn-favor i {
-          color: #fff; }
+        height: 18px;
+        background-image: url(/design/playtex/mobile/images/item/btn_close_quickbuy.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: 50% 0;
+        font-size: 10px;
+        text-align: center;
+        line-height: 16px;
+        color: #fff;
+        text-decoration: none; }
+      .product .common-view .view .quickbuy-content .options {
+        height: 100px; }
+        .product .common-view .view .quickbuy-content .options ul li dl dt {
+          display: none; }
+        .product .common-view .view .quickbuy-content .options ul li dl dd select,
+        .product .common-view .view .quickbuy-content .options ul li dl dd input[type="text"],
+        .product .common-view .view .quickbuy-content .options ul li dl dd input[type="tel"] {
+          display: block;
+          height: 40px;
+          width: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
+          border: 1px solid #ccc;
+          color: #333; }
+        .product .common-view .view .quickbuy-content .options ul li ~ li {
+          margin-top: 10px; }
+      .product .common-view .view .quickbuy-content .total {
+        margin-top: 0;
+        height: 35px;
+        border-top: 1px solid #ccc; }
+        .product .common-view .view .quickbuy-content .total dl {
+          overflow: hidden; }
+          .product .common-view .view .quickbuy-content .total dl dt, .product .common-view .view .quickbuy-content .total dl dd {
+            float: left;
+            width: 50%;
+            line-height: 35px;
+            font-size: 12px;
+            font-weight: normal; }
+          .product .common-view .view .quickbuy-content .total dl dd {
+            text-align: right; }
+            .product .common-view .view .quickbuy-content .total dl dd #MK_p_total {
+              font-size: 14px;
+              font-weight: bold;
+              font-family: 'Maven Pro', sans-serif; }
+      .product .common-view .view .quickbuy-content .btns {
+        margin-left: -5px;
+        margin-right: -5px; }
+        .product .common-view .view .quickbuy-content .btns ul {
+          display: table;
+          content: " ";
+          table-layout: fixed;
+          width: 100%;
+          height: 40px; }
+          .product .common-view .view .quickbuy-content .btns ul li {
+            display: table-cell;
+            width: 1%;
+            padding-left: 5px;
+            padding-right: 5px; }
+            .product .common-view .view .quickbuy-content .btns ul li a {
+              display: block;
+              width: 100%;
+              height: 40px;
+              background-color: #929292;
+              color: #fff;
+              line-height: 40px;
+              font-size: 12px;
+              text-align: center; }
+              .product .common-view .view .quickbuy-content .btns ul li a.btn-buy {
+                background-color: #2b2b2b; }
+            .product .common-view .view .quickbuy-content .btns ul li + p {
+              margin-left: 10px; }
+    .product .common-view .view .quickbuy-nav {
+      z-index: 100;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 67px;
+      padding: 10px;
+      border-top: 2px solid #333;
+      background-color: #fff; }
+      .product .common-view .view .quickbuy-nav p {
+        position: relative;
+        padding-right: 60px; }
+        .product .common-view .view .quickbuy-nav p .btn-buy {
+          height: 45px;
+          background-color: #333;
+          color: #fff;
+          line-height: 45px;
+          font-size: 15px; }
+        .product .common-view .view .quickbuy-nav p .btn-favor {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50px;
+          height: 45px;
+          background-color: #999;
+          line-height: 42px;
+          font-size: 16px; }
+          .product .common-view .view .quickbuy-nav p .btn-favor i {
+            color: #fff; }
   .product .common-view .product-detils {
     margin-top: 20px; }
     .product .common-view .product-detils .collapse-content .btn-primary {

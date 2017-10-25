@@ -1644,6 +1644,7 @@ label {
                     }
                 }
             }
+            /*
             .total {
                 margin-top: 25px;
                 dl {
@@ -1668,6 +1669,7 @@ label {
                     }
                 }
             }
+            */
             .btn-area {
                 margin-top: 50px;
                 margin-bottom: 30px;
@@ -1712,7 +1714,7 @@ label {
 				bottom: 0;
 				left: 0;
 				width: 100%;
-				height: 237px;
+				height: 197px;
 				padding: 10px;
 				border-top: 2px solid #333;
 				background-color: #f1f1f1;
@@ -1735,13 +1737,55 @@ label {
 					text-decoration: none;
 				}
 				.options {
-					height: 140px;
-					background-color: blue;
+					height: 100px;
+					ul {
+						li {
+							dl {
+								dt {
+									display: none;
+								}
+								dd {
+									select,
+									input[type="text"],
+									input[type="tel"] {
+										display: block;
+										height: 40px;
+										width: 100%;
+										padding-left: 10px;
+										padding-right: 10px;
+										border: 1px solid #ccc;
+										color: #333;
+									}
+								}
+							}
+							& ~ li {
+								margin-top: 10px;
+							}
+						}
+					}
 				}
 				.total {
 					margin-top: 0;
 					height: 35px;
-					background-color: orange;
+					border-top: 1px solid #ccc;
+					dl {
+						overflow: hidden;
+						dt, dd {
+							float: left;
+							width: 50%;
+							line-height: 35px;
+							font-size: 12px;
+							font-weight: normal;
+						}
+						dd {
+							text-align: right;
+							#MK_p_total {
+								font-size: 14px;
+								font-weight: bold;
+								@include maven();
+							}
+						}
+					}
 				}
 				.btns {
 					margin-left: -5px;
