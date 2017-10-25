@@ -716,7 +716,27 @@ label {
         line-height: 18px;
         margin-top: 10px; }
       .join .join-form .article-content .table-wrap .table tbody tr td.birthday .form-group {
-        font-size: 0; }
+        font-size: 12px; }
+        .join .join-form .article-content .table-wrap .table tbody tr td.birthday .form-group input[type="radio"] {
+          position: relative;
+          top: 2px;
+          margin-right: 3px;
+          display: inline-block; }
+          .join .join-form .article-content .table-wrap .table tbody tr td.birthday .form-group input[type="radio"]:nth-of-type(2) {
+            margin-left: 15px; }
+        .join .join-form .article-content .table-wrap .table tbody tr td.birthday .form-group select {
+          width: 30%;
+          height: 40px;
+          display: inline-block;
+          font-size: 12px;
+          margin-right: 5px;
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-bottom: 10px;
+          color: #333;
+          border: 1px solid #dfdfdf; }
+          .join .join-form .article-content .table-wrap .table tbody tr td.birthday .form-group select:last-child {
+            margin-right: 0; }
         .join .join-form .article-content .table-wrap .table tbody tr td.birthday .form-group .form-control {
           width: 30%;
           display: inline-block;
