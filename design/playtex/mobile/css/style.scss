@@ -6401,7 +6401,237 @@ label {
     }
 }
 
-
+.about {
+    .about-playtex {
+        background-image: url(/design/playtex/mobile/images/board/about_playtex_bg.gif);
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: cover;
+        .article-header {
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 10px;
+                width: 2px;
+                height: 98%;
+                z-index: 1;
+                border-left: 2px solid #000;
+            }
+            figure {
+                position: relative;
+                z-index: 2;
+                .img-responsive {
+                    width: 100%;
+                }
+            }
+            .title {
+                padding-top: 60px;
+                padding-left: 20px;
+                img {
+                    width: 195px;
+                }
+                small {
+                    display: block;
+                    font-size: 21px;
+                    color: #2b2b2b;
+                    font-weight: 500;
+                    margin-top: 25px;
+                    @include maven();
+                }
+            }
+        }
+        .article-content {
+            padding-top: 23px;
+            b {
+                display: inline-block;
+                font-size: 15px;
+                color: #2b2b2b;
+                font-weight: 400;
+                line-height: 24px;
+                padding-left: 20px;
+            }
+            p {
+                font-size: 13px;
+                color: #2b2b2b;
+                font-weight: 300;
+                line-height: 24px;
+                margin-top: 60px;
+                & ~ p {
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+    .brand-concept {
+        padding-bottom: 80px;
+        margin-top: 90px;
+        .title {
+            img {
+                width: 195px;
+            }
+        }
+        .summary {
+            font-size: 18px;
+            color: #2b2b2b;
+            line-height: 30px;
+            margin-top: 25px;
+        }
+        .concept-list {
+            margin-top: 110px;
+            li {
+                text-align: center;
+                & ~ li {
+                    margin-top: 70px;
+                }
+                figure {
+                    img {
+                        display: inline-block;
+                    }
+                    figcaption {
+                        dl {
+                            margin-top: 25px;
+                            dt {
+                                font-size: 19px;
+                                @include maven();
+                                font-weight: 500;
+                                color: #333;
+                            }
+                            dd {
+                                font-size: 13px;
+                                color: #666;
+                                font-weight: 300;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(1) {
+                    figure {
+                        img {
+                            width: 138px;
+                        }
+                    }
+                }
+                &:nth-of-type(2) {
+                    figure {
+                        img {
+                            width: 171px;
+                        }
+                    }
+                }
+                &:nth-of-type(3) {
+                    figure {
+                        img {
+                            width: 169px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .keyword {
+        padding-top: 60px;
+        background-color: #eae1d5;
+        .title {
+            img {
+                width: 225px;
+            }
+        }
+        .target {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            figure {
+                .img-responsive {
+                    margin: 0 auto;
+                }
+                figcaption {
+                    padding-right: 30px;
+                    dl {
+                        margin-top: 18px;
+                        text-align: right;
+                        dt {
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #2b2b2b;
+                            @include maven();
+                        }
+                        dd {
+                            font-size: 13px;
+                            color: #666;
+                            font-weight: 300;
+                            margin-top: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .k-image {
+            padding: 45px 0 40px;
+            background-color: #f1f1f1;
+            figure {
+                .img-responsive {
+                    margin: 0 auto;
+                }
+                figcaption {
+                    padding-left: 30px;
+                    dl {
+                        margin-top: 18px;
+                        text-align: left;
+                        dt {
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #2b2b2b;
+                            @include maven();
+                        }
+                        dd {
+                            font-size: 13px;
+                            color: #666;
+                            font-weight: 300;
+                            margin-top: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .point {
+        background-color: #fff;
+        .article-header {
+            padding: 50px 0 70px;
+            .title {
+                margin-bottom: 55px;
+                img {
+                    width: 195px;
+                }
+            }
+            .point-list {
+                li {
+                    font-size: 14px;
+                    color: #333;
+                    line-height: 24px;
+                    font-weight: 300;
+                    padding-left: 35px;
+                    background-image: url(/design/playtex/mobile/images/board/check_list_img.gif);
+                    background-repeat: no-repeat;
+                    background-position: 0 4;
+                    background-size: 20px auto;
+                    & ~ li {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .article-content {
+            figure {
+                .img-responsive {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 
 
 

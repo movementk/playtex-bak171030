@@ -4535,4 +4535,158 @@ label {
   .global-search .result .paging {
     margin-top: 45px; }
 
+.about .about-playtex {
+  background-image: url(/design/playtex/mobile/images/board/about_playtex_bg.gif);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover; }
+  .about .about-playtex .article-header {
+    position: relative; }
+    .about .about-playtex .article-header:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 2px;
+      height: 98%;
+      z-index: 1;
+      border-left: 2px solid #000; }
+    .about .about-playtex .article-header figure {
+      position: relative;
+      z-index: 2; }
+      .about .about-playtex .article-header figure .img-responsive {
+        width: 100%; }
+    .about .about-playtex .article-header .title {
+      padding-top: 60px;
+      padding-left: 20px; }
+      .about .about-playtex .article-header .title img {
+        width: 195px; }
+      .about .about-playtex .article-header .title small {
+        display: block;
+        font-size: 21px;
+        color: #2b2b2b;
+        font-weight: 500;
+        margin-top: 25px;
+        font-family: 'Maven Pro', sans-serif; }
+  .about .about-playtex .article-content {
+    padding-top: 23px; }
+    .about .about-playtex .article-content b {
+      display: inline-block;
+      font-size: 15px;
+      color: #2b2b2b;
+      font-weight: 400;
+      line-height: 24px;
+      padding-left: 20px; }
+    .about .about-playtex .article-content p {
+      font-size: 13px;
+      color: #2b2b2b;
+      font-weight: 300;
+      line-height: 24px;
+      margin-top: 60px; }
+      .about .about-playtex .article-content p ~ p {
+        margin-top: 35px; }
+.about .brand-concept {
+  padding-bottom: 80px;
+  margin-top: 90px; }
+  .about .brand-concept .title img {
+    width: 195px; }
+  .about .brand-concept .summary {
+    font-size: 18px;
+    color: #2b2b2b;
+    line-height: 30px;
+    margin-top: 25px; }
+  .about .brand-concept .concept-list {
+    margin-top: 110px; }
+    .about .brand-concept .concept-list li {
+      text-align: center; }
+      .about .brand-concept .concept-list li ~ li {
+        margin-top: 70px; }
+      .about .brand-concept .concept-list li figure img {
+        display: inline-block; }
+      .about .brand-concept .concept-list li figure figcaption dl {
+        margin-top: 25px; }
+        .about .brand-concept .concept-list li figure figcaption dl dt {
+          font-size: 19px;
+          font-family: 'Maven Pro', sans-serif;
+          font-weight: 500;
+          color: #333; }
+        .about .brand-concept .concept-list li figure figcaption dl dd {
+          font-size: 13px;
+          color: #666;
+          font-weight: 300;
+          margin-top: 20px; }
+      .about .brand-concept .concept-list li:nth-of-type(1) figure img {
+        width: 138px; }
+      .about .brand-concept .concept-list li:nth-of-type(2) figure img {
+        width: 171px; }
+      .about .brand-concept .concept-list li:nth-of-type(3) figure img {
+        width: 169px; }
+.about .keyword {
+  padding-top: 60px;
+  background-color: #eae1d5; }
+  .about .keyword .title img {
+    width: 225px; }
+  .about .keyword .target {
+    padding-top: 50px;
+    padding-bottom: 40px; }
+    .about .keyword .target figure .img-responsive {
+      margin: 0 auto; }
+    .about .keyword .target figure figcaption {
+      padding-right: 30px; }
+      .about .keyword .target figure figcaption dl {
+        margin-top: 18px;
+        text-align: right; }
+        .about .keyword .target figure figcaption dl dt {
+          font-size: 18px;
+          font-weight: bold;
+          color: #2b2b2b;
+          font-family: 'Maven Pro', sans-serif; }
+        .about .keyword .target figure figcaption dl dd {
+          font-size: 13px;
+          color: #666;
+          font-weight: 300;
+          margin-top: 16px; }
+  .about .keyword .k-image {
+    padding: 45px 0 40px;
+    background-color: #f1f1f1; }
+    .about .keyword .k-image figure .img-responsive {
+      margin: 0 auto; }
+    .about .keyword .k-image figure figcaption {
+      padding-left: 30px; }
+      .about .keyword .k-image figure figcaption dl {
+        margin-top: 18px;
+        text-align: left; }
+        .about .keyword .k-image figure figcaption dl dt {
+          font-size: 18px;
+          font-weight: bold;
+          color: #2b2b2b;
+          font-family: 'Maven Pro', sans-serif; }
+        .about .keyword .k-image figure figcaption dl dd {
+          font-size: 13px;
+          color: #666;
+          font-weight: 300;
+          margin-top: 16px; }
+.about .point {
+  background-color: #fff; }
+  .about .point .article-header {
+    padding: 50px 0 70px; }
+    .about .point .article-header .title {
+      margin-bottom: 55px; }
+      .about .point .article-header .title img {
+        width: 195px; }
+    .about .point .article-header .point-list li {
+      font-size: 14px;
+      color: #333;
+      line-height: 24px;
+      font-weight: 300;
+      padding-left: 35px;
+      background-image: url(/design/playtex/mobile/images/board/check_list_img.gif);
+      background-repeat: no-repeat;
+      background-position: 0 4;
+      background-size: 20px auto; }
+      .about .point .article-header .point-list li ~ li {
+        margin-top: 20px; }
+  .about .point .article-content figure .img-responsive {
+    width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
